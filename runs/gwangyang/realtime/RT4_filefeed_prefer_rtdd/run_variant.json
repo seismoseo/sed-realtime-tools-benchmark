@@ -1,0 +1,5 @@
+{
+ "prefer_rtdd": true,
+ "autoloc_timing": "pickTime",
+ "note": "written by hand after prepare (prepare ran before the variant file existed); same values as its prepare command"
+}

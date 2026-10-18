@@ -1,0 +1,74 @@
+{
+ "generated": "2026-10-17T09:36:33.588718Z",
+ "db_copy_md5_before": "cdd0b0f5cea498f9d23df676a5045904",
+ "db_copy_md5_after": "cdd0b0f5cea498f9d23df676a5045904",
+ "rows": [
+  {
+   "run": "RT5_paced_creationtime",
+   "kma_id": "20210827220322",
+   "rtdd_id": 3,
+   "variant": "P",
+   "input_origin": "Origin/20261017092026.794216.2361",
+   "n_S_added": 0,
+   "exit_code": 0,
+   "wall_s": 0.2,
+   "step1_ok": true,
+   "step2_ok": false,
+   "messaging_disabled_logged": false,
+   "step1_location": "34.940071 127.796724 -1.8103",
+   "failure_lines": "[info/RTDD] Insufficient number of neighbors | [info/RTDD] Failed to perform step 2 origin relocation | [info/RTDD] Cannot relocate origin Origin/20261017092026.794216.2361",
+   "realtime_RTDD_origin": ""
+  },
+  {
+   "run": "RT5_paced_creationtime",
+   "kma_id": "20210827220322",
+   "rtdd_id": 3,
+   "variant": "P_nodw",
+   "input_origin": "Origin/20261017092026.794216.2361",
+   "n_S_added": 0,
+   "exit_code": 0,
+   "wall_s": 3.7,
+   "step1_ok": true,
+   "step2_ok": true,
+   "messaging_disabled_logged": false,
+   "cc_P_attempted": 234,
+   "cc_P_above": 136,
+   "cc_S_attempted": 0,
+   "cc_S_above": 0,
+   "step1_location": "35.011225 127.730397 18.3547",
+   "failure_lines": "",
+   "reloc_publicID": "Origin/20261017093633.572337.414",
+   "reloc_lat": 35.005384343727115,
+   "reloc_lon": 127.7260757758197,
+   "reloc_depth_km": 15.10518026817674,
+   "reloc_time": "2021-08-27T22:03:23.140032Z",
+   "reloc_n_arr_P": 44,
+   "reloc_n_arr_S": 0,
+   "realtime_RTDD_origin": ""
+  }
+ ],
+ "s1_positions": {
+  "20210827220322": {
+   "id": "3",
+   "isotime": "2021-08-27T22:03:23.258211Z",
+   "latitude": "35.00011047",
+   "longitude": "127.72505462",
+   "depth": "14.091912",
+   "magnitude": "2.200",
+   "relocated": "true",
+   "startRms": "0.216404",
+   "finalRms": "0.243627"
+  },
+  "20260202194119": {
+   "id": "9",
+   "isotime": "2026-02-02T19:41:19.942835Z",
+   "latitude": "35.00005232",
+   "longitude": "127.72506671",
+   "depth": "14.144246",
+   "magnitude": "1.600",
+   "relocated": "true",
+   "startRms": "0.221735",
+   "finalRms": "0.214064"
+  }
+ }
+}

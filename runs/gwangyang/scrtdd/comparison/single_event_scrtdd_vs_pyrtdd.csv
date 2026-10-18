@@ -1,0 +1,13 @@
+scrtdd,pyrtdd,n,median_3d_m,max_3d_m,max_3d_event,rms_3d_m
+SEa,R6_single_event_loo_one_step,11,485.822,537.988,3,487.872
+SEm,R6_single_event_loo_one_step,11,486.866,549.058,3,488.419
+SEa,R6f_single_event_loo_one_step_filtered,11,2.505,15.475,3,5.188
+SEm,R6f_single_event_loo_one_step_filtered,11,1.715,1.807,10,1.703
+SEa,R6p_single_event_loo_one_step_padded,11,496.683,503.465,9,491.846
+SEm,R6p_single_event_loo_one_step_padded,11,496.697,502.225,9,492.054
+SEa,R6t_single_event_loo_scrtdd_two_step_automatic,11,485.822,537.987,3,488.150
+SEm,R6t_single_event_loo_scrtdd_two_step_automatic,11,486.865,549.058,3,488.696
+SEa,R6tf_single_event_loo_scrtdd_two_step_automatic_filtered,11,1.675,2.209,3,1.726
+SEm,R6tf_single_event_loo_scrtdd_two_step_automatic_filtered,11,2.162,17.156,3,5.535
+SEa,R6tp_single_event_loo_scrtdd_two_step_automatic_padded,11,495.824,503.586,9,491.383
+SEm,R6tp_single_event_loo_scrtdd_two_step_automatic_padded,11,495.839,502.347,9,491.587

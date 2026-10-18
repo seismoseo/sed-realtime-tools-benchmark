@@ -1,0 +1,695 @@
+{
+ "module": "scevent",
+ "generated": "2026-10-17T08:48:51.017873Z",
+ "files_read_in_order": [
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+   "md5": "5bcc3d9a7cb02ad3a5c40665fb6d310b"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg",
+   "md5": "8f91bdde5a88f71fd41b308efe89c685"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+   "md5": "78d18128446a1284d3acd39f8c4f8407"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT2_filefeed/seiscomp_user/global.cfg",
+   "md5": "ef7386d6bd5bd620a843753d242868bb"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT2_filefeed/seiscomp_user/scevent.cfg",
+   "md5": "20be5d6edd5dad8420da681e3bbbcec3"
+  }
+ ],
+ "n_set": 41,
+ "set": {
+  "core.plugins": {
+   "values": [
+    "dbsqlite3"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+  },
+  "logging.level": {
+   "values": [
+    "2"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+  },
+  "logging.file.rotator": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:24"
+  },
+  "logging.file.rotator.timeSpan": {
+   "values": [
+    "86400"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:27"
+  },
+  "logging.file.rotator.archiveSize": {
+   "values": [
+    "7"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:30"
+  },
+  "connection.server": {
+   "values": [
+    "127.0.0.1:28180/production"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT2_filefeed/seiscomp_user/global.cfg:6"
+  },
+  "connection.timeout": {
+   "values": [
+    "3"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:39"
+  },
+  "connection.encoding": {
+   "values": [
+    "deflate"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:42"
+  },
+  "connection.contentType": {
+   "values": [
+    "binary"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:45"
+  },
+  "recordstream": {
+   "values": [
+    "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT2_filefeed/seiscomp_user/global.cfg:10"
+  },
+  "agencyID": {
+   "values": [
+    "Unset"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:51"
+  },
+  "organization": {
+   "values": [
+    "Unset"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:54"
+  },
+  "picker.filters": {
+   "values": [
+    "BP 0.1 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,1)",
+    "BP 0.1 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,2)",
+    "BP 0.4 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.4,1)",
+    "@BP 0.7 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.7,2)",
+    "BP 1 - 3 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,3)",
+    "BP 1 - 5 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,5)",
+    "BP 2 - 4 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,2.0,4)",
+    "BP 3 - 6 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,3.0,6)",
+    "BP 4 - 8 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,4.0,8)",
+    "HP 3 Hz  3rd order;RMHP(1)>>ITAPER(2)>>BW_HP(3,3)",
+    "BP 0.7 - 2 Hz + STA/LTA(1,50);RMHP(10)->ITAPER(30)->BW(3,0.7,2)->STALTA(1,50)"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:69"
+  },
+  "eventlist.visibleColumns": {
+   "values": [
+    "M",
+    "MType",
+    "Phases",
+    "RMS",
+    "Lat",
+    "Lon",
+    "Depth",
+    "Stat",
+    "Agency",
+    "Region",
+    "ID"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:86"
+  },
+  "ttt.libtau.tables": {
+   "values": [
+    "iasp91",
+    "ak135"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:93"
+  },
+  "ttt.LOCSAT.tables": {
+   "values": [
+    "iasp91",
+    "tab"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:94"
+  },
+  "ttt.homogeneous.tables": {
+   "values": [
+    ""
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:95"
+  },
+  "connection.primaryGroup": {
+   "values": [
+    "EVENT"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:2"
+  },
+  "connection.subscriptions": {
+   "values": [
+    "LOCATION",
+    "RELOCATION",
+    "MAGNITUDE",
+    "FOCMECH",
+    "EVENT"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT2_filefeed/seiscomp_user/scevent.cfg:6"
+  },
+  "eventAssociation.minimumMagnitudes": {
+   "values": [
+    "4"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:10"
+  },
+  "eventAssociation.minimumDefiningPhases": {
+   "values": [
+    "8"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT2_filefeed/seiscomp_user/scevent.cfg:9"
+  },
+  "eventAssociation.eventTimeBefore": {
+   "values": [
+    "1800"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:33"
+  },
+  "eventAssociation.eventTimeAfter": {
+   "values": [
+    "1800"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:37"
+  },
+  "eventAssociation.minimumMatchingArrivals": {
+   "values": [
+    "3"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:42"
+  },
+  "eventAssociation.maximumMatchingArrivalTimeDiff": {
+   "values": [
+    "-1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:49"
+  },
+  "eventAssociation.compareAllArrivalTimes": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:57"
+  },
+  "eventAssociation.maximumTimeSpan": {
+   "values": [
+    "60"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:63"
+  },
+  "eventAssociation.maximumDistance": {
+   "values": [
+    "5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:69"
+  },
+  "eventAssociation.minMwCount": {
+   "values": [
+    "8"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:73"
+  },
+  "eventAssociation.magPriorityOverStationCount": {
+   "values": [
+    "false"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:82"
+  },
+  "eventAssociation.mbOverMwCount": {
+   "values": [
+    "30"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:86"
+  },
+  "eventAssociation.mbOverMwValue": {
+   "values": [
+    "6"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:90"
+  },
+  "eventAssociation.magTypes": {
+   "values": [
+    "M"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:95"
+  },
+  "eventAssociation.enableFallbackMagnitude": {
+   "values": [
+    "false"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:149"
+  },
+  "eventIDPrefix": {
+   "values": [
+    ""
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:153"
+  },
+  "eventIDPattern": {
+   "values": [
+    "%p%Y%04c"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:163"
+  },
+  "eventIDLookupMargin": {
+   "values": [
+    "-1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:172"
+  },
+  "eventAssociation.ignoreFMDerivedOrigins": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:191"
+  },
+  "eventAssociation.declareFakeEventForRejectedOrigin": {
+   "values": [
+    "false"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:196"
+  },
+  "eventAssociation.allowLooseAssociatedArrivals": {
+   "values": [
+    "false"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:199"
+  },
+  "populateFERegion": {
+   "values": [
+    "false"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:203"
+  }
+ },
+ "n_documented_unset": 65,
+ "documented_defaults_of_unset_parameters": {
+  "restAPI": {
+   "default": null,
+   "unit": null,
+   "type": "host-with-port",
+   "described_in": "scevent.xml"
+  },
+  "processing.blacklist.eventIDs": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.minimumScore": {
+   "default": null,
+   "unit": null,
+   "type": "double",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.priorities": {
+   "default": "AGENCY,STATUS,PHASES_AUTOMATIC,TIME_AUTOMATIC",
+   "unit": null,
+   "type": "list:string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.agencies": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.authors": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.methods": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.score": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.enablePreferredFMSelection": {
+   "default": "true",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.delayTimeSpan": {
+   "default": "0",
+   "unit": "s",
+   "type": "int",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.region.rect": {
+   "default": null,
+   "unit": null,
+   "type": "list:double",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.region.minDepth": {
+   "default": null,
+   "unit": "km",
+   "type": "double",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.region.maxDepth": {
+   "default": null,
+   "unit": "km",
+   "type": "double",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.delayFilter.agencyID": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.delayFilter.author": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "scevent.xml"
+  },
+  "eventAssociation.delayFilter.evaluationMode": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "scevent.xml"
+  },
+  "eventIDSync.main": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "scevent.xml"
+  },
+  "eventIDSync.mainTimeout": {
+   "default": "5",
+   "unit": "s",
+   "type": "int",
+   "described_in": "scevent.xml"
+  },
+  "eventIDSync.cacheRetention": {
+   "default": "1800",
+   "unit": "s",
+   "type": "int",
+   "described_in": "scevent.xml"
+  },
+  "eventIDSync.db": {
+   "default": "",
+   "unit": null,
+   "type": "string",
+   "described_in": "scevent.xml"
+  },
+  "eventIDSync.databaseRetention": {
+   "default": "-1",
+   "unit": "s",
+   "type": "int",
+   "described_in": "scevent.xml"
+  },
+  "datacenterID": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "author": {
+   "default": "@appname@@@@hostname@",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "populateCIVersionAttribute": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "plugins": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "cityXML": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "loadCities": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "loadRegions": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "publicIDPattern": {
+   "default": "@classname@/@time/%Y%m%d%H%M%S.%f@.@id@",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "configModule": {
+   "default": "trunk",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "database": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "logging.syslog": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.components": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "logging.component": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.context": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.utc": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.file.rotator.maxFileSize": {
+   "default": "104857600",
+   "unit": "byte",
+   "type": "int",
+   "described_in": "global.xml"
+  },
+  "logging.objects.timeSpan": {
+   "default": "60",
+   "unit": "s",
+   "type": "int",
+   "described_in": "global.xml"
+  },
+  "logging.syslog.facility": {
+   "default": "local0",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "connection.username": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "connection.certificate": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "database.inventory": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "database.config": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "processing.whitelist.agencies": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "processing.blacklist.agencies": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.whitelist.nettype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.whitelist.statype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.blacklist.nettype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.blacklist.statype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "scripts.crashHandler": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "client.startStopMessage": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "client.autoShutdown": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "client.shutdownMasterModule": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "client.shutdownMasterUsername": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "commands.target": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "ttt.default.tableType": {
+   "default": "LOCSAT",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "ttt.default.table": {
+   "default": "iasp91",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.aliases": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.iaspei": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "amplitudes.ttt.interface": {
+   "default": "LOCSAT",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.ttt.model": {
+   "default": "iasp91",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.WoodAnderson.gain": {
+   "default": "2080",
+   "unit": null,
+   "type": "double",
+   "described_in": "global.xml"
+  },
+  "amplitudes.WoodAnderson.T0": {
+   "default": "0.8",
+   "unit": "s",
+   "type": "double",
+   "described_in": "global.xml"
+  },
+  "amplitudes.WoodAnderson.h": {
+   "default": "0.7",
+   "unit": null,
+   "type": "double",
+   "described_in": "global.xml"
+  },
+  "magnitudes.aliases": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  }
+ },
+ "note": "values as the SeisComP configuration parser reads them; a module may still apply its own built-in default where the description gives none (runtime dumps in this folder)"
+}

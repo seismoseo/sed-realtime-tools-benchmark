@@ -1,0 +1,5 @@
+Model,"P recall, all analyst picks","P recall, with data","P recall, 3-C stations","P recall, complete records","S recall, complete records",P precision (lower bound),P precision counting plausible,Pooled P+S F1 (ranking rule),P median |dt| (s),P mean dt (s),"P p95 |dt|, weight 0 (s)","P recall, neighbour within 15 s","P recall, no neighbour within 120 s","P recall at the 13 sites, velocity sensor","P recall at the 13 sites, accelerometer","P misses below minConfidence, complete records",False P picks per station-hour,CPU-s per station-hour
+PhaseNet INSTANCE,0.3068,0.43,0.5642,0.8156,0.8,0.7276,0.9143,0.5051,0.03,-0.0201,0.0616,0.5612,0.8925,0.8667,0.8,30,1.0814,0.2293
+PhaseNet original,0.3006,0.4213,0.5528,0.7967,0.8444,0.6362,0.8215,0.4381,0.0284,0.0416,0.08991999999999997,0.5153,0.8824,0.8417,0.8083,19,3.9252,0.2499
+PhaseNet SCEDC,0.2519,0.353,0.4632,0.6749,0.5778,0.7356,0.838,0.4876,0.0316,0.0338,0.12,0.4337,0.7424,0.7208,0.6708,136,1.8424,0.2163
+EQTP NCEDC,0.2547,0.3571,0.4685,0.6217,0.7556,0.7458,0.8323,0.4595,0.0216,0.0136,0.0870599999999998,0.4694,0.7059,0.6458,0.6792,144,1.2817,3.9203

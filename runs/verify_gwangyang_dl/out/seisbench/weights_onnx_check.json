@@ -1,0 +1,157 @@
+{
+ "onnx": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_instance.onnx",
+ "onnx_sha256": "19dc74e33fc528065565e48191c57b18c6bf6f2443d84d20bfd52f7efda80636",
+ "onnx_metadata": {
+  "seiscomp.picker.numComponents": "3",
+  "seiscomp.picker.sampleRate": "100.0",
+  "seiscomp.picker.windowLength": "3001",
+  "seiscomp.picker.phases": "P,S,N",
+  "seiscomp.picker.normalization": "peak",
+  "seiscomp.picker.componentOrder": "ZNE"
+ },
+ "seisbench_labels": [
+  "P",
+  "S",
+  "N"
+ ],
+ "windows": [
+  "20210827220322|GWYB|S-centred",
+  "20210827220322|NAWB|S-centred",
+  "20210827220322|IMSB|S-centred",
+  "20210827220322|DUSB|S-centred",
+  "20210827220322|GWYB|noise, origin-60 s",
+  "20210828234556|GWYB|S-centred",
+  "20210828234556|NAWB|S-centred",
+  "20210828234556|JASA|S-centred",
+  "20210828234556|DUSB|S-centred",
+  "20210828234556|GWYB|noise, origin-60 s",
+  "20260203021535|GWYB|S-centred",
+  "20260203021535|HAIA|S-centred",
+  "20260203021535|KWJU|S-centred",
+  "20260203021535|CHDA|S-centred",
+  "20260203021535|GWYB|noise, origin-60 s"
+ ],
+ "phases": {
+  "P": {
+   "same_input_max_abs_diff": 1.0281801223754883e-06,
+   "same_input_argmax_equal": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "my_plugin_norm_max_abs_diff": 0.0032417774200439453,
+   "peak_values_torch": [
+    0.9747,
+    0.9678,
+    0.9743,
+    0.9853,
+    0.0091,
+    0.9369,
+    0.8743,
+    0.8897,
+    0.9671,
+    0.0078,
+    0.0232,
+    0.3694,
+    0.0675,
+    0.2995,
+    0.007
+   ]
+  },
+  "S": {
+   "same_input_max_abs_diff": 1.2218952178955078e-06,
+   "same_input_argmax_equal": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "my_plugin_norm_max_abs_diff": 0.0011691078543663025,
+   "peak_values_torch": [
+    0.9548,
+    0.8323,
+    0.6258,
+    0.6962,
+    0.0001,
+    0.9457,
+    0.7725,
+    0.2272,
+    0.6905,
+    0.0003,
+    0.0161,
+    0.7052,
+    0.0251,
+    0.348,
+    0.0011
+   ]
+  },
+  "N": {
+   "same_input_max_abs_diff": 1.1324882507324219e-06,
+   "same_input_argmax_equal": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "my_plugin_norm_max_abs_diff": 0.003021836280822754,
+   "peak_values_torch": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "input_max_abs_diff_my_plugin_norm_vs_seisbench": 0.005765438079833984,
+ "versions": {
+  "python": "3.12.15 (main, Oct 13 2026, 16:52:04) [GCC 15.3.0]",
+  "numpy": "2.5.4",
+  "onnxruntime": "1.31.0",
+  "onnx": "1.23.2"
+ }
+}

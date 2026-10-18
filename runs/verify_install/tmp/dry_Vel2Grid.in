@@ -1,0 +1,8 @@
+# Vel2Grid control statements: HypoDD model kim1983 on a 2-D grid
+VGOUT  ./model/kim1983
+# VGGRID num_x num_y num_z  orig_x orig_y orig_z  dx dy dz  type   (num_x = 2 for 2-D grids)
+VGGRID 2 1201 531 0.0 0.0 -3.0 0.1 0.1 0.1 SLOW_LEN
+# LAYER depth Vp_top Vp_grad Vs_top Vs_grad rho_top rho_grad   (Vs = Vp/1.73; top layer extended to -5 km)
+LAYER  -5.0  5.98 0.0  3.456647 0.0  2.70 0.0
+LAYER  15.0  6.38 0.0  3.687861 0.0  2.70 0.0
+LAYER  32.0  7.95 0.0  4.595376 0.0  2.70 0.0

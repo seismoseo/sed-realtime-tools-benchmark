@@ -1,0 +1,70 @@
+{
+ "Config": {
+  "PSTableOnly": true,
+  "pickUncertaintyClasses": [
+   0.0,
+   0.025,
+   0.05,
+   0.1,
+   0.2,
+   0.4
+  ],
+  "validPphases": [
+   "P",
+   "Pg",
+   "Pn"
+  ],
+  "validSphases": [
+   "S",
+   "Sg",
+   "Sn"
+  ],
+  "wfFilter": "<pyrtdd.hdd.hdd_ext.Config.WF_FILTER_TYPE object at 0x7fea99497c30>"
+ },
+ "ClusteringOptions": {
+  "maxEvStaDist": -1.0,
+  "maxNeighbourDist": 10.0,
+  "maxNumNeigh": 0,
+  "maxNumPhases": 0,
+  "minEvStaDist": 0.0,
+  "minEvStaToInterEvRatio": 3.0,
+  "minNumNeigh": 1,
+  "minNumPhases": 1,
+  "numEllipsoids": 0
+ },
+ "SolverOptions": {
+  "L2normalization": true,
+  "absLocConstraintEnd": 0.0,
+  "absLocConstraintStart": 0.0,
+  "algoIterations": 20,
+  "dampingFactorEnd": 0.01,
+  "dampingFactorStart": 0.01,
+  "downWeightingByResidualEnd": 5.0,
+  "downWeightingByResidualStart": 10.0,
+  "solverIterations": 0,
+  "type": "LSMR",
+  "usePickUncertainties": false,
+  "xcorrWeightScaler": 2.0
+ },
+ "NLLGrid": {
+  "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time",
+  "gridModel": "kim1983",
+  "maxSearchDistance": 0.1,
+  "swapBytes": false,
+  "maxOpenFiles": 512,
+  "accessMethod": "KeepOpen (default)"
+ },
+ "relocateMultiEvents": {
+  "saveProcessing": true,
+  "processingDataDir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/pyrtdd/s_shifted/processing"
+ },
+ "n_clusters": 1,
+ "catalog_files": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/pyrtdd/s_shifted/station.csv",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/pyrtdd/s_shifted/event.csv",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/pyrtdd/s_shifted/phase.csv"
+ ],
+ "solution": "s_shifted",
+ "description": "Every S pick +0.273 s",
+ "picks": "inputs/rtdd_catalog/phase.csv"
+}

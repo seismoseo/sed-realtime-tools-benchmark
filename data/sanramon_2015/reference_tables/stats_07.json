@@ -1,0 +1,156 @@
+{
+ "nodes_touching_benchmark_events": [
+  {
+   "model": 9,
+   "file": "./hypoinverse/models/con.crt",
+   "lat": 37.88333333333333,
+   "lon": -122.0,
+   "r_in": 7.5,
+   "r_tr": 7.0,
+   "dmin_km": 6.931840483408199,
+   "dmax_km": 16.543838115279854,
+   "n_inside_inner": 2,
+   "n_in_transition": 678
+  },
+  {
+   "model": 9,
+   "file": "./hypoinverse/models/con.crt",
+   "lat": 37.803333333333335,
+   "lon": -121.94,
+   "r_in": 7.5,
+   "r_tr": 7.0,
+   "dmin_km": 1.1668878772131717,
+   "dmax_km": 8.343411401357388,
+   "n_inside_inner": 684,
+   "n_in_transition": 1
+  },
+  {
+   "model": 9,
+   "file": "./hypoinverse/models/con.crt",
+   "lat": 37.71666666666667,
+   "lon": -121.88666666666667,
+   "r_in": 7.5,
+   "r_tr": 7.0,
+   "dmin_km": 5.241659922695893,
+   "dmax_km": 14.148152576663888,
+   "n_inside_inner": 5,
+   "n_in_transition": 680
+  },
+  {
+   "model": 26,
+   "file": "./hypoinverse/models/hay.crt",
+   "lat": 37.78,
+   "lon": -122.19166666666666,
+   "r_in": 9.0,
+   "r_tr": 7.0,
+   "dmin_km": 15.732000527687697,
+   "dmax_km": 23.944823811008508,
+   "n_inside_inner": 0,
+   "n_in_transition": 1
+  },
+  {
+   "model": 26,
+   "file": "./hypoinverse/models/hay.crt",
+   "lat": 37.68,
+   "lon": -122.13166666666666,
+   "r_in": 9.0,
+   "r_tr": 7.0,
+   "dmin_km": 13.388100303853468,
+   "dmax_km": 23.646238246860996,
+   "n_inside_inner": 0,
+   "n_in_transition": 1
+  }
+ ],
+ "events_inside_CON_inner_circle": 684,
+ "events_touching_other_model_regions": 1,
+ "n_benchmark_events": 685,
+ "psm_con": [
+  1.708,
+  0.208
+ ],
+ "crt": {
+  "name": "CONCORD-CALAVERAS",
+  "npts": 5,
+  "redv": 0.129,
+  "depths": [
+   0.0,
+   2.0,
+   12.0,
+   24.0,
+   26.0
+  ],
+  "vels": [
+   2.5,
+   4.7,
+   5.77,
+   6.12,
+   7.95
+  ],
+  "grid": [
+   1.5,
+   20,
+   5.0,
+   21,
+   0.6,
+   10,
+   2.0,
+   17
+  ]
+ },
+ "velocity_model_csv": [
+  {
+   "top_km": -3.0,
+   "vp_km_s": 2.5,
+   "vs_km_s": 1.4451,
+   "vp_grad_per_km": 0.0,
+   "vs_grad_per_km": 0.0,
+   "top_km_below_model_surface": NaN,
+   "note": "constant extension of the first model velocity above the model surface (stations up to 3.0 km elevation)"
+  },
+  {
+   "top_km": -0.29,
+   "vp_km_s": 2.5,
+   "vs_km_s": 1.4451,
+   "vp_grad_per_km": 1.1,
+   "vs_grad_per_km": 0.635838,
+   "top_km_below_model_surface": 0.0,
+   "note": "NCSS CON point; linear to next row"
+  },
+  {
+   "top_km": 1.71,
+   "vp_km_s": 4.7,
+   "vs_km_s": 2.7168,
+   "vp_grad_per_km": 0.107,
+   "vs_grad_per_km": 0.06185,
+   "top_km_below_model_surface": 2.0,
+   "note": "NCSS CON point; linear to next row"
+  },
+  {
+   "top_km": 11.71,
+   "vp_km_s": 5.77,
+   "vs_km_s": 3.3353,
+   "vp_grad_per_km": 0.029167,
+   "vs_grad_per_km": 0.016859,
+   "top_km_below_model_surface": 12.0,
+   "note": "NCSS CON point; linear to next row"
+  },
+  {
+   "top_km": 23.71,
+   "vp_km_s": 6.12,
+   "vs_km_s": 3.5376,
+   "vp_grad_per_km": 0.915,
+   "vs_grad_per_km": 0.528902,
+   "top_km_below_model_surface": 24.0,
+   "note": "NCSS CON point; linear to next row"
+  },
+  {
+   "top_km": 25.71,
+   "vp_km_s": 7.95,
+   "vs_km_s": 4.5954,
+   "vp_grad_per_km": 0.0,
+   "vs_grad_per_km": 0.0,
+   "top_km_below_model_surface": 26.0,
+   "note": "NCSS CON half-space"
+  }
+ ]
+}

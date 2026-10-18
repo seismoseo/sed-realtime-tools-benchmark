@@ -1,0 +1,125 @@
+scripts.crashHandler: 
+logging.level: 2
+logging.context: 0
+logging.component: None
+logging.components: []
+logging.output: 
+logging.syslog: 0
+logging.stderr: 0
+logging.utc: 0
+logging.file.rotator: 1
+logging.file.rotator.timeSpan: 86400
+logging.file.rotator.archiveSize: 7
+logging.file.rotator.maxFileSize: 104857600
+--quiet,q: 0
+--verbosity: 2
+--print-context: 0
+--print-component: None
+--component: []
+--console: 0
+--debug: 0
+--trace: 0
+--log-file: 
+--log-utc: 0
+--syslog,s: 0
+--config-file: 
+--plugins: 
+--lockfile,l: 
+certStore: @ROOTDIR@/var/lib/certs
+logging.objects.timeSpan: 60
+agencyID: Unset
+author: scevent@server-a
+loadRegions: 1
+publicIDPattern: 
+processing.whitelist.agencies: []
+processing.blacklist.agencies: []
+amplitudes.aliases: []
+magnitudes.aliases: []
+IntervalSOH: 60
+soh.interval: 60
+database: sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/db/seiscomp.sqlite
+database.inventory: 
+database.config: 
+--db-driver-list: 0
+--database,d: sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/db/seiscomp.sqlite
+--inventory-db: 
+--config-db: 
+inventory.whitelist.nettype: []
+inventory.blacklist.nettype: []
+inventory.whitelist.statype: []
+inventory.blacklist.statype: []
+configModule: trunk
+--config-module: trunk
+connection.username: scevent
+connection.server: 127.0.0.1:28180/production
+connection.primaryGroup: EVENT
+connection.subscriptions: LOCATION RELOCATION MAGNITUDE FOCMECH EVENT
+connection.contentType: binary
+connection.timeout: 3
+connection.certificate: 
+--user,u: scevent
+--host,H: 127.0.0.1:28180/production
+--timeout,t: 3
+--primary-group,g: EVENT
+--subscribe-group,S: LOCATION RELOCATION MAGNITUDE FOCMECH EVENT
+--content-type: binary
+client.startStopMessage: 0
+client.autoShutdown: 0
+client.shutdownMasterModule: 
+client.shutdownMasterUsername: 
+--start-stop-msg: 0
+--auto-shutdown: 0
+--shutdown-master-module: 
+--shutdown-master-username: 
+--test: 0
+--clear-cache: 0
+--db-disable: 0
+--expiry,x: 1
+--origin-id,O: 
+--event-id,E: 
+--ep: 
+--reprocess: 0
+--update-event-id: 0
+--formatted,f: 0
+--disable-info-log: 1
+eventAssociation.minimumMagnitudes: 4
+eventAssociation.minimumMatchingArrivals: 3
+eventAssociation.maximumMatchingArrivalTimeDiff: -1
+eventAssociation.compareAllArrivalTimes: 1
+eventAssociation.allowLooseAssociatedArrivals: 0
+eventAssociation.minimumDefiningPhases: 8
+eventAssociation.minimumScore: None
+eventAssociation.eventTimeBefore: 30m
+eventAssociation.eventTimeAfter: 30m
+eventAssociation.maximumTimeSpan: 1m
+eventAssociation.maximumDistance: 5
+eventAssociation.minMwCount: 8
+eventAssociation.mbOverMwCount: 30
+eventAssociation.mbOverMwValue: 6
+eventAssociation.magPriorityOverStationCount: 0
+eventAssociation.updatePreferredAfterMerge: 0
+eventAssociation.enableFallbackMagnitude: 0
+eventAssociation.magTypes: M
+eventAssociation.agencies: []
+eventAssociation.authors: []
+eventAssociation.methods: []
+eventAssociation.score: 
+eventAssociation.priorities: []
+eventAssociation.delayPrefFocMech: 0
+eventAssociation.ignoreFMDerivedOrigins: 1
+eventAssociation.enablePreferredFMSelection: 1
+eventAssociation.declareFakeEventForRejectedOrigin: 0
+eventAssociation.delayTimeSpan: 0
+eventAssociation.delayFilter.agencyID: None
+eventAssociation.delayFilter.author: None
+eventAssociation.delayFilter.evaluationMode: None
+eventIDPrefix: 
+eventIDPattern: %p%Y%04c
+eventIDLookupMargin: -1
+populateFERegion: 0
+restAPI: -1
+eventIDSync.main: 
+eventIDSync.mainTimeout: 5
+eventIDSync.cacheRetention: 1800
+eventIDSync.db: 
+eventIDSync.databaseRetention: -1

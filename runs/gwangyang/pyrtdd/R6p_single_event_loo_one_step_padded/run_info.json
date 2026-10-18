@@ -1,0 +1,57 @@
+{
+ "run": "R6p_single_event_loo_one_step_padded",
+ "started": "2026-10-17T16:56:20",
+ "host": "server-a",
+ "status": "ok",
+ "n_relocated": 11,
+ "n_failed": 0,
+ "proxy_counters_per_event": {
+  "1": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 833,
+   "n_loaded": null
+  },
+  "2": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 1152,
+   "n_loaded": null
+  },
+  "3": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 1146,
+   "n_loaded": null
+  },
+  "4": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 1150,
+   "n_loaded": null
+  },
+  "5": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 806,
+   "n_loaded": null
+  },
+  "6": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 1116,
+   "n_loaded": null
+  },
+  "7": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 703,
+   "n_loaded": null
+  },
+  "8": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 708,
+   "n_loaded": null
+  },
+  "9": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 935,
+   "n_loaded": null
+  },
+  "10": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 625,
+   "n_loaded": null
+  },
+  "11": {
+   "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 743,
+   "n_loaded": null
+  }
+ },
+ "note": "relocated-event.csv is assembled from the 11 single-event results (ids = original ids); processing/ev<k>/ holds libhdd's own output per event",
+ "wall_time_s": 164.74,
+ "finished": "2026-10-17T16:59:05"
+}

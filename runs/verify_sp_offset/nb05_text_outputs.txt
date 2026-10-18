@@ -1,0 +1,387 @@
+################ cell 2 [1] # ============================== PARAMETERS ==============================
+################ cell 3 [2] # imports, Helvetica, versions
+font family in use: Helvetica (8 faces registered)
+resolved font family: Helvetica | font file matplotlib uses for text: /home/msseo/.local/share/fonts/helvetica-family/Helvetica-Regular.otf
+versions: numpy 2.5.4 | pandas 3.0.6 | obspy 1.5.1 | matplotlib 3.11.2
+
+################ cell 5 [3] # 1.1 route 1: the SAC headers of the copied files (header picks must equal the table valu
+11 hand-pick tables; 16 SAC files from server B: every header pick equals the table value (largest difference 0.0000 microseconds)
+
+          Folder on server B           Event Station Channel           SAC reference time  Header a (s)  Table P (s)  Header t0 (s)  Table S (s)
+0           manual_picks  20210720161418    GWYB     HHZ  2021-07-20T16:14:18.839000Z      2.719455     2.719455       4.379369     4.379369
+1           manual_picks  20210827002315    GWYB     HHZ  2021-08-27T00:23:15.470000Z      2.758391     2.758391       4.408142     4.408142
+2           manual_picks  20210827220322     BAU     ELZ  2021-08-27T22:03:23.170000Z      3.928395     3.928395       6.457196     6.457196
+3           manual_picks  20210827220322    GWYB     HHE  2021-08-27T22:03:23.170000Z      2.758392     2.758392       4.418549     4.418549
+4           manual_picks  20210827220322    GWYB     HHN  2021-08-27T22:03:23.170000Z      2.758392     2.758392       4.418549     4.418549
+5           manual_picks  20210827220322    GWYB     HHZ  2021-08-27T22:03:23.170000Z      2.758392     2.758392       4.418549     4.418549
+6           manual_picks  20210827220322    KWJ2     HHZ  2021-08-27T22:03:23.170000Z     11.917752    11.917752      20.040081    20.040081
+7           manual_picks  20210828133410    GWYB     HHZ  2021-08-28T13:34:11.210000Z      2.768381     2.768381       4.418215     4.418215
+8           manual_picks  20210828133922    GWYB     HHZ  2021-08-28T13:39:22.800000Z      2.698219     2.698219       4.368319     4.368319
+9           manual_picks  20210828234556    GWYB     HHZ  2021-08-28T23:45:56.750000Z      2.748261     2.748261       4.398610     4.398610
+10          manual_picks  20260101024947    GWYB     HHZ  2026-01-01T02:49:47.509000Z      2.771041     2.771041       4.430579     4.430579
+11          manual_picks  20260101084800    GWYB     HHZ  2026-01-01T08:47:59.929000Z      2.770755     2.770755       4.421185     4.421185
+12          manual_picks  20260202194119    GWYB     HHZ  2026-02-02T19:41:19.890000Z      2.740183     2.740183       4.400220     4.400220
+13          manual_picks  20260203021535    GWYB     HHZ  2026-02-03T02:15:35.729000Z      2.788102     2.788102       4.411157     4.411157
+14          manual_picks  20260204054406    GWYB     HHZ  2026-02-04T05:44:06.780000Z      2.711194     2.711194       4.370687     4.370687
+15  waveforms_100km_serverB  20210827220322    GWYB     HHZ  2021-08-27T22:03:23.170000Z      2.738393     2.738393       4.378393     4.378393
+################ cell 6 [4] # 1.1 route 2: absolute times of the tables' PhaseNet column minus the table values; and w
+             Event Reference time (route 1, SAC header)  Picks used by route 2  Route 2 minus route 1 (µs)  Route 2 spread (µs) Local copy reference  Local minus true (ms)  \
+0   20210720161418              2021-07-20 16:14:18.839                     66                         0.7                 12.2         16:14:18.910                   71.0   
+1   20210827002315              2021-08-27 00:23:15.470                     97                        -0.2                 15.0         00:23:15.510                   40.0   
+2   20210827220322              2021-08-27 22:03:23.170                    104                         1.2                 14.5         22:03:23.190                   20.0   
+3   20210828133410              2021-08-28 13:34:11.210                    102                        -0.5                 17.2         13:34:11.250                   40.0   
+4   20210828133922              2021-08-28 13:39:22.800                     65                        -3.1                  9.1         13:39:22.880                   80.0   
+5   20210828234556              2021-08-28 23:45:56.750                     99                        -1.0                 11.0         23:45:56.780                   30.0   
+6   20260101024947              2026-01-01 02:49:47.509                     52                        -0.2                 13.4         02:49:47.580                   71.0   
+7   20260101084800              2026-01-01 08:47:59.929                     57                         0.2                 16.2         08:48:00.110                  181.0   
+8   20260202194119              2026-02-02 19:41:19.890                     80                         0.2                 14.8         19:41:19.920                   30.0   
+9   20260203021535              2026-02-03 02:15:35.729                     40                         0.0                  9.5         02:15:35.870                  141.0   
+10  20260204054406              2026-02-04 05:44:06.780                     49                         1.0                 11.7         05:44:06.920                  140.0   
+
+    PhaseNet+ minus table PhaseNet on the local reference, median (ms)  Same, interquartile range (ms)  
+0                                               -56.1                                             30.0  
+1                                               -15.4                                             34.7  
+2                                                 4.6                                             25.3  
+3                                               -15.4                                             30.0  
+4                                               -60.1                                             30.0  
+5                                                -5.4                                             30.0  
+6                                               -47.2                                             31.8  
+7                                              -161.1                                             30.0  
+8                                                -8.4                                             24.7  
+9                                              -126.4                                             43.9  
+10                                             -115.4                                             30.0  
+Routes 1 and 2 agree within 3.1 µs in all 11 events (route 2 spreads of up to 17 µs are the float32 rounding of SAC header values).
+With the reference time of the local, re-referenced waveform copy every hand pick would come out 20 to 181 ms too late; and the tables' PhaseNet column is not PhaseNet+ (interquartile ranges of 25-44 ms), so that route cannot give the reference time.
+
+################ cell 7 [5] # 1.1 the tidy hand-pick table in absolute UTC: absolute time = SAC reference time + table
+written /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_tables/picks_manual_utc.csv
+697 hand picks: 338 P and 359 S, 11 events, 53 stations
+
+           kma_id network station sensor phase                         time  rel_time_s            sac_reference_utc                                   source_table source_header
+0  20210720161418      KS     BAU     EL     P  2021-07-20T16:14:22.728397Z    3.889397  2021-07-20T16:14:18.839000Z  20210720161418_manual_phasenet_pick_table.csv             a
+1  20210720161418      KS     BAU     EL     S  2021-07-20T16:14:25.258083Z    6.419083  2021-07-20T16:14:18.839000Z  20210720161418_manual_phasenet_pick_table.csv            t0
+2  20210720161418      KS    BLLA     HG     P  2021-07-20T16:14:24.342691Z    5.503691  2021-07-20T16:14:18.839000Z  20210720161418_manual_phasenet_pick_table.csv             a
+3  20210720161418      KS    BLLA     HG     S  2021-07-20T16:14:27.993039Z    9.154039  2021-07-20T16:14:18.839000Z  20210720161418_manual_phasenet_pick_table.csv            t0
+################ cell 9 [6] # 1.2 events, stations and picks; grid travel times from each event's own HypoDD hypocente
+11 events; HypoDD dt.cc centroid 34.999695 N, 127.728890 E, 13.942 km; 54 stations
+
+DL models used: phasenet_original, phasenet_instance, eqtransformer_stead, phasenet_stead
+
+                        P picks  P excluded  Median P residual of kept picks (s)  S picks  S excluded  Median S residual of kept picks (s)
+Picks                                                                                                                                     
+Hand picks                  338           0                                0.031      359           0                               -0.273
+PhaseNet+                   360           9                                0.034      403           8                               -0.267
+DL phasenet_original        391          20                                0.073      379          13                               -0.248
+DL phasenet_instance        344          21                                0.020      316           1                               -0.340
+DL eqtransformer_stead      268           0                                0.013      268           0                               -0.267
+DL phasenet_stead           256           0                                0.022      253           0                               -0.260
+Outlier rule: |residual| > 1.0 s; 72 of 3935 picks excluded in all.
+  Hand picks: kept picks 5-95% residual range -0.48 to +0.17 s, largest |residual| kept 0.77 s; nothing excluded
+  PhaseNet+: kept picks 5-95% residual range -0.45 to +0.17 s, largest |residual| kept 0.94 s; excluded |residual| 1.08-10.81 s
+  DL phasenet_original: kept picks 5-95% residual range -0.42 to +0.21 s, largest |residual| kept 0.67 s; excluded |residual| 1.94-45.80 s
+  DL phasenet_instance: kept picks 5-95% residual range -0.53 to +0.15 s, largest |residual| kept 0.94 s; excluded |residual| 1.02-11.76 s
+  DL eqtransformer_stead: kept picks 5-95% residual range -0.48 to +0.15 s, largest |residual| kept 0.70 s; nothing excluded
+  DL phasenet_stead: kept picks 5-95% residual range -0.45 to +0.16 s, largest |residual| kept 0.63 s; nothing excluded
+
+################ cell 10 [7] # 1.2 S-P pairs: one per picker, event and station with both a P and an S pick
+                        S-P pairs  Excluded (gross outlier)  Pairs used  Events  Stations  Median offset (s)  95% CI low (s)  95% CI high (s)  Lower quartile (s)  Upper quartile (s)  Median without the exclusion (s)
+Picks                                                                                                                                                                                                                  
+Hand picks                    299                         0         299      11        51             -0.273          -0.304           -0.239              -0.343              -0.198                            -0.273
+PhaseNet+                     348                        12         336      11        53             -0.262          -0.289           -0.221              -0.325              -0.192                            -0.267
+DL phasenet_original          379                        22         357      11        53             -0.288          -0.308           -0.245              -0.373              -0.205                            -0.290
+DL phasenet_instance          316                        14         302      11        53             -0.306          -0.344           -0.269              -0.386              -0.236                            -0.312
+DL eqtransformer_stead        268                         0         268      11        53             -0.269          -0.307           -0.231              -0.342              -0.199                            -0.269
+DL phasenet_stead             253                         0         253      11        53             -0.254          -0.296           -0.218              -0.327              -0.192                            -0.254
+Median offset of the hand picks: -0.273 s (95% CI -0.304 to -0.239 s; 2000 bootstrap samples, stations resampled). Sections 7 and 8 shift S picks by +0.273 s.
+
+################ cell 11 [8] # 1.2 hand picks against the PhaseNet+ picks of the same event, station and phase
+                        N  Median (s)  Lower quartile (s)  Upper quartile (s) Within ±0.05 s
+Hand minus PhaseNet+                                                                        
+P pick                308      -0.002              -0.014               0.019            87%
+S pick                322      -0.013              -0.026              -0.004            87%
+S-P time              271      -0.011              -0.041               0.004            76%
+For comparison, hand minus the tables' own 'PhaseNet' column (SeisBench PhaseNet of 2026-04-22, not PhaseNet+): P +0.020 s (N 309), S +0.013 s (N 355)
+Typical S-P error of one picker, from the hand/PhaseNet+ differences (1.4826 x MAD / sqrt 2): 0.022 s
+
+################ cell 13 [9] # 1.3 (b) P-only NonLinLoc locations (hand picks, all stations), then the model S-P under 
+P-only NonLinLoc depths (hand picks, all stations), km: 14.12, 14.48, 15.02, 15.00, 14.91, 14.18, 14.21, 15.24, 14.74, 14.30, 14.16
+
+grid check: |grid S-P - exact 1-D S-P| <= 2.0 ms for all 1815 pairs
+
+                                                    Hand picks: median offset (s) Hand picks: 95% CI (s)  PhaseNet+: median offset (s) PhaseNet+: 95% CI (s)  DL phasenet_original (s)  DL phasenet_instance (s)  \
+Model S-P from                                                                                                                                                                                                     
+Main: kim1983 grids, each event's own HypoDD hy...                         -0.273       -0.304 to -0.237                        -0.262      -0.287 to -0.220                    -0.288                    -0.306   
+(a) kim1983 grids, cluster centroid                                        -0.274       -0.304 to -0.236                        -0.262      -0.288 to -0.220                    -0.290                    -0.309   
+(b) kim1983 grids, P-only NonLinLoc hypocenter                             -0.273       -0.305 to -0.252                        -0.258      -0.288 to -0.231                    -0.280                    -0.307   
+(c) kim2011 (HYPOINVERSE's P and S models), 1-D                            -0.003       -0.041 to +0.036                         0.027      -0.019 to +0.055                    -0.005                    -0.036   
+(d) kim1983, stations at sea level, 1-D                                    -0.260       -0.297 to -0.230                        -0.254      -0.280 to -0.209                    -0.280                    -0.295   
+(e) kim1983 P with HYPOINVERSE's S model, 1-D                              -0.360       -0.401 to -0.302                        -0.338      -0.373 to -0.270                    -0.358                    -0.371   
+(f) kim1983, exact 1-D (check of the grids)                                -0.271       -0.304 to -0.235                        -0.260      -0.286 to -0.219                    -0.287                    -0.305   
+
+                                                    DL eqtransformer_stead (s)  DL phasenet_stead (s)  
+Model S-P from                                                                                         
+Main: kim1983 grids, each event's own HypoDD hy...                      -0.269                 -0.254  
+(a) kim1983 grids, cluster centroid                                     -0.269                 -0.255  
+(b) kim1983 grids, P-only NonLinLoc hypocenter                          -0.272                 -0.262  
+(c) kim2011 (HYPOINVERSE's P and S models), 1-D                          0.000                  0.007  
+(d) kim1983, stations at sea level, 1-D                                 -0.255                 -0.245  
+(e) kim1983 P with HYPOINVERSE's S model, 1-D                           -0.329                 -0.341  
+(f) kim1983, exact 1-D (check of the grids)                             -0.267                 -0.253  
+################ cell 15 [10] # Figure A: nearest and farthest station of the ML 2.2 event that has both hand picks
+Figure A stations (rule: nearest and farthest with both hand picks): GWYB (HH, 7.1 km), DUSB (HH, 99.3 km)
+
+[image/png]
+################ cell 17 [11] # Figure B: record sections (horizontal vector amplitude), aligned on each station's own P
+record-section events: ['20210827220322', '20260202194119']
+
+[image/png]
+event 20210827220322: 52 traces (0 aligned on PhaseNet+ P), 47 hand S picks; stations without any P pick: 1
+
+[image/png]
+event 20260202194119: 38 traces (8 aligned on PhaseNet+ P), 30 hand S picks; stations without any P pick: 9
+
+################ cell 19 [12] # Figure C: S-P against distance
+crossover direct wave -> head wave at the centroid depth: 66.06 km (station at sea level), 66.52 km (station at the median elevation, 134 m)
+
+[image/png]
+        Picks Distance (km)  Pairs  Median offset (s)        95% CI (s)
+0  Hand picks          0-30     67             -0.225  -0.280 to -0.178
+1  Hand picks         30-60    109             -0.243  -0.302 to -0.188
+2  Hand picks         60-70     44             -0.432  -0.514 to -0.341
+3  Hand picks        70-101     79             -0.292  -0.331 to -0.256
+4   PhaseNet+          0-30     66             -0.220  -0.285 to -0.168
+5   PhaseNet+         30-60    122             -0.208  -0.282 to -0.171
+6   PhaseNet+         60-70     43             -0.372  -0.484 to -0.280
+7   PhaseNet+        70-101    105             -0.278  -0.334 to -0.255
+station medians (hand picks, stations with >= 3 pairs): -0.53 to -0.05 s over 44 stations
+
+################ cell 21 [13] # Figure D: per-event median offsets with bootstrap intervals, every picker
+[image/png]
+source              Hand picks  PhaseNet+  DL phasenet_original  DL phasenet_instance  DL eqtransformer_stead  DL phasenet_stead
+1  20210720161418       -0.248     -0.249                -0.299                -0.279                  -0.245             -0.215
+2  20210827002315       -0.239     -0.266                -0.281                -0.325                  -0.284             -0.253
+3  20210827220322       -0.251     -0.269                -0.287                -0.305                  -0.277             -0.282
+4  20210828133410       -0.275     -0.261                -0.274                -0.306                  -0.252             -0.270
+5  20210828133922       -0.255     -0.216                -0.267                -0.269                  -0.289             -0.190
+6  20210828234556       -0.285     -0.267                -0.280                -0.314                  -0.275             -0.265
+7  20260101024947       -0.291     -0.221                -0.302                -0.313                  -0.242             -0.302
+8  20260101084800       -0.283     -0.282                -0.294                -0.334                  -0.293             -0.304
+9  20260202194119       -0.269     -0.269                -0.293                -0.304                  -0.272             -0.241
+10  20260203021535      -0.303     -0.260                -0.299                -0.220                  -0.246             -0.255
+11  20260204054406      -0.311     -0.281                -0.295                -0.246                  -0.309             -0.249
+hand picks: per-event medians from -0.311 to -0.239 s (standard deviation 0.024 s over 11 events)
+
+################ cell 23 [14] # section 6: Wadati fit (origin-time free) and the explanations
+            Pairs  Vp/Vs (common slope + 1)            95% CI  Median of per-event Vp/Vs (events with >= 5 pairs) Per-event intercepts (s)  Median intercept (s)
+Picks                                                                                                                                                           
+Hand picks    299                    1.7284  1.7184 to 1.7363                                              1.730          -0.409 to -0.212                -0.285
+PhaseNet+     336                    1.7272  1.7192 to 1.7344                                              1.726          -0.357 to -0.187                -0.252
+--- Hand picks ---
+
+                                           Free parameters                          Fitted values  RMS (s)  Median residual (s)  Robust spread (s)  Trend (s per 100 km)
+Explanation                                                                                                                                                             
+(i) kim1983 as it is                                     0                                   none    0.310               -0.273              0.106                -0.131
+(ii) one uniform Vp/Vs                                   1                           Vp/Vs 1.7035    0.146               -0.046              0.144                 0.281
+(iii) Vp/Vs 1.73 + one constant                          1                      constant -0.282 s    0.129                0.009              0.106                -0.131
+(iv-a) depth only, one shift                             1  shift -5.65 km (negative = shallower)    0.253               -0.157              0.221                -0.709
+(iv-b) depth only, one depth per event                  11                 shifts -6.6 to -3.9 km    0.252               -0.151              0.225                -0.696
+(v) uniform Vp/Vs + one constant                         2        Vp/Vs 1.7216, constant -0.201 s    0.125                0.009              0.096                 0.001
+(vi) kim2011 as HYPOINVERSE used it                      0                                   none    0.129               -0.003              0.125                 0.198
+(vii) kim1983 with HYPOINVERSE's S model                 0                                   none    0.378               -0.360              0.142                 0.303
+(viii) lower Vp/Vs near the stations only                1                 Vp/Vs 1.660 above 5 km    0.130               -0.040              0.122                 0.159
+(ix) lower Vp/Vs around the source only                  1                Vp/Vs 1.650 at 10-15 km    0.133               -0.035              0.132                 0.214
+Reference: one constant per station                     51                        station medians    0.073                0.000              0.029                -0.005
+--- PhaseNet+ ---
+
+                                           Free parameters                          Fitted values  RMS (s)  Median residual (s)  Robust spread (s)  Trend (s per 100 km)
+Explanation                                                                                                                                                             
+(i) kim1983 as it is                                     0                                   none    0.288               -0.262              0.102                -0.144
+(ii) one uniform Vp/Vs                                   1                           Vp/Vs 1.7054    0.124               -0.031              0.127                 0.238
+(iii) Vp/Vs 1.73 + one constant                          1                      constant -0.265 s    0.113                0.003              0.102                -0.144
+(iv-a) depth only, one shift                             1  shift -5.70 km (negative = shallower)    0.240               -0.146              0.225                -0.717
+(iv-b) depth only, one depth per event                  11                 shifts -7.2 to -4.0 km    0.238               -0.143              0.223                -0.704
+(v) uniform Vp/Vs + one constant                         2        Vp/Vs 1.7206, constant -0.172 s    0.107                0.009              0.088                 0.002
+(vi) kim2011 as HYPOINVERSE used it                      0                                   none    0.118                0.027              0.113                 0.180
+(vii) kim1983 with HYPOINVERSE's S model                 0                                   none    0.349               -0.338              0.138                 0.322
+(viii) lower Vp/Vs near the stations only                1                 Vp/Vs 1.660 above 5 km    0.118               -0.014              0.121                 0.134
+(ix) lower Vp/Vs around the source only                  1                Vp/Vs 1.650 at 10-15 km    0.118               -0.017              0.123                 0.194
+Reference: one constant per station                     53                        station medians    0.057                0.000              0.019                 0.002
+################ cell 24 [15] # Figure E: Wadati diagram, what is left after removing 0.73 x P travel time, and the expl
+[image/png]
+################ cell 27 [16] # section 7: NonLinLoc runs (P only; P + S as picked; P + S with S shifted), all stations 
+hand picks per event: P 15-52, S 20-47 (rule: >= 8 of each) -> Figure F uses Hand picks; PhaseNet+ is run as a check
+NonLinLoc control file (identical for every run except the file names):
+CONTROL 1 54321
+TRANS TRANS_MERC WGS-84 35.0000 127.7286 0.0
+LOCSIG notebook 05_gwangyang_sp_offset
+LOCFILES /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/nlloc/hand_all/20210720161418/p_only/obs.nll NLLOC_OBS /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983 /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/nlloc/hand_all/20210720161418/p_only/loc/event
+LOCHYPOUT SAVE_NLLOC_ALL
+LOCSEARCH OCT 10 10 10 0.01 20000 5000 0 1
+LOCGRID 61 61 61 -15.0 -15.0 -1.0 0.5 0.5 0.5 PROB_DENSITY SAVE
+LOCMETH GAU_ANALYTIC 9999.0 4 -1 -1 -1.0 6 -1.0 1
+LOCGAU 0.1 0.0
+LOCPHASEID P P
+LOCPHASEID S S
+LOCQUAL2ERR 0.1 0.5 1.0 2.0 99999.9
+LOCANGLES ANGLES_NO 5
+LOCPHSTAT 9999.0 -1 9999.0 1.0 1.0 9999.9 -9999.9 9999.9
+
+pick errors in the observation files: P 0.05 s, S 0.1 s; S shift of run 3: +0.273 s
+
+132 NonLinLoc locations, all 'LOCATED'
+
+         Picks      Stations                                       Comparison Depth change, mean ± SE (km) Origin-time change, mean ± SE (s)  Horizontal shift, mean (m)  Events shallower
+0   Hand picks           all                       P+S as picked minus P only               +0.309 ± 0.116                    -0.133 ± 0.010                       267.0                 3
+1   Hand picks           all                     P+S, S shifted, minus P only               +0.237 ± 0.087                    -0.021 ± 0.006                       276.0                 4
+2   Hand picks           all  Effect of the offset: as picked minus S shifted               +0.072 ± 0.047                    -0.111 ± 0.005                        69.0                 5
+3   Hand picks  within 35 km                       P+S as picked minus P only               -0.932 ± 0.115                    +0.054 ± 0.012                       274.0                11
+4   Hand picks  within 35 km                     P+S, S shifted, minus P only               +0.678 ± 0.106                    -0.042 ± 0.011                       105.0                 0
+5   Hand picks  within 35 km  Effect of the offset: as picked minus S shifted               -1.610 ± 0.013                    +0.096 ± 0.006                       240.0                11
+6    PhaseNet+           all                       P+S as picked minus P only               +0.220 ± 0.086                    -0.123 ± 0.008                       227.0                 4
+7    PhaseNet+           all                     P+S, S shifted, minus P only               +0.153 ± 0.102                    -0.011 ± 0.005                       244.0                 6
+8    PhaseNet+           all  Effect of the offset: as picked minus S shifted               +0.067 ± 0.055                    -0.112 ± 0.006                       100.0                 2
+9    PhaseNet+  within 35 km                       P+S as picked minus P only               -1.343 ± 0.164                    +0.095 ± 0.011                       328.0                11
+10   PhaseNet+  within 35 km                     P+S, S shifted, minus P only               +0.313 ± 0.140                    -0.003 ± 0.011                       137.0                 1
+11   PhaseNet+  within 35 km  Effect of the offset: as picked minus S shifted               -1.657 ± 0.027                    +0.098 ± 0.006                       232.0                11
+NonLinLoc depths within 0.02 km of the 15 km layer boundary: 19 of 132; by run:
+
+                                   At the boundary
+source        network run                         
+hand          all     p_only                     2
+                      p_s                        6
+                      p_s_shifted                2
+phasenet_plus all     p_only                     2
+                      p_s                        6
+                      p_s_shifted                1
+                                   Median P picks  Median S picks  Median depth 1σ (km)  Median origin-time 1σ (s)  Median RMS (s)
+source        network run                                                                                                         
+hand          all     p_only                 22.0             0.0                 0.565                      0.031           0.113
+                      p_s                    22.0            30.0                 0.215                      0.018           0.202
+                      p_s_shifted            22.0            30.0                 0.244                      0.018           0.123
+              near    p_only                  7.0             0.0                 1.405                      0.125           0.041
+                      p_s                     7.0             9.0                 0.629                      0.076           0.081
+                      p_s_shifted             7.0             9.0                 0.644                      0.081           0.064
+phasenet_plus all     p_only                 27.0             0.0                 0.455                      0.029           0.108
+                      p_s                    27.0            31.0                 0.217                      0.018           0.188
+                      p_s_shifted            27.0            31.0                 0.233                      0.019           0.127
+              near    p_only                  9.0             0.0                 1.220                      0.124           0.039
+                      p_s                     9.0             9.0                 0.557                      0.071           0.074
+                      p_s_shifted             9.0             9.0                 0.559                      0.076           0.062
+################ cell 28 [17] # Figure F: shifts of runs 2 and 3 relative to the P-only run, per event
+[image/png]
+################ cell 30 [18] # section 8: pyrtdd catalog-only relocation, as picked and with every S pick shifted
+as_picked: 1 cluster(s), 11 of 11 events relocated, S picks shifted by +0.000 s (403 S picks, 360 P picks)
+
+s_shifted: 1 cluster(s), 11 of 11 events relocated, S picks shifted by +0.273 s (403 S picks, 360 P picks)
+
+       East difference (m)  North difference (m)  Up difference (m)  Origin-time difference (ms)
+Event                                                                                           
+1                      0.0                   0.0               -0.0                          0.0
+2                      0.0                   0.0               -0.0                          0.0
+3                      0.0                   0.0               -0.0                          0.0
+4                      0.0                   0.0               -0.0                          0.0
+5                      0.0                   0.0               -0.0                          0.0
+6                      0.0                   0.0               -0.0                          0.0
+7                      0.0                   0.0               -0.0                          0.0
+8                      0.0                   0.0               -0.0                          0.0
+9                      0.0                   0.0               -0.0                          0.0
+10                     0.0                   0.0               -0.0                          0.0
+11                     0.0                   0.0               -0.0                          0.0
+largest position difference 0.000000 m, largest origin-time difference 0.000000 ms
+reproducibility: 'as picked' vs the step-09 control relocation (same picks, same settings): largest difference 0.000000 m
+
+    startRms as picked  finalRms as picked  startRms S shifted  finalRms S shifted
+id                                                                                
+1                1.518               1.632               1.499               1.610
+2                0.772               0.859               0.780               0.859
+3                0.216               0.380               0.154               0.327
+4                0.489               0.585               0.506               0.587
+5                1.486               1.544               1.475               1.528
+6                1.128               1.217               1.136               1.218
+7                0.236               0.428               0.167               0.343
+8                1.561               1.623               1.550               1.617
+9                0.222               0.414               0.157               0.333
+10               1.284               1.318               1.273               1.305
+11               1.024               1.054               0.993               1.028
+################ cell 31 [19] # Figure G: the two pyrtdd solutions on top of each other, and their differences
+[image/png]
+################ cell 33 [20] # 9. key numbers (all computed above)
+                                                                                                                                                                                     Value         Where
+Quantity                                                                                                                                                                                                
+Hand picks: UTC reference established                                              SAC headers and absolute PhaseNet times agree within 3.1 µs (11 events); 16/16 header spot checks exact   Section 1.1
+Hand picks                                                                                                                                            697 (338 P, 359 S); gross outliers 0   Section 1.2
+Median S-P offset, Hand picks                                                                                                    -0.273 s (95% CI -0.304 to -0.239); 299 pairs, 0 excluded  Figures C, D
+Median S-P offset, PhaseNet+                                                                                                    -0.262 s (95% CI -0.289 to -0.221); 336 pairs, 12 excluded  Figures C, D
+Median S-P offset, DL phasenet_original                                                                                         -0.288 s (95% CI -0.308 to -0.245); 357 pairs, 22 excluded  Figures C, D
+Median S-P offset, DL phasenet_instance                                                                                         -0.306 s (95% CI -0.344 to -0.269); 302 pairs, 14 excluded  Figures C, D
+Median S-P offset, DL eqtransformer_stead                                                                                        -0.269 s (95% CI -0.307 to -0.231); 268 pairs, 0 excluded  Figures C, D
+Median S-P offset, DL phasenet_stead                                                                                             -0.254 s (95% CI -0.296 to -0.218); 253 pairs, 0 excluded  Figures C, D
+Per-event medians, hand picks                                                                                                                   -0.311 to -0.239 s (SD 0.024 s, 11 events)      Figure D
+Offset at 0-30 km, hand picks                                                                                                                 -0.225 s (95% CI -0.280 to -0.178), 67 pairs      Figure C
+Offset at 30-60 km, hand picks                                                                                                               -0.243 s (95% CI -0.302 to -0.188), 109 pairs      Figure C
+Offset at 60-70 km, hand picks                                                                                                                -0.432 s (95% CI -0.514 to -0.341), 44 pairs      Figure C
+Offset at 70-101 km, hand picks                                                                                                               -0.292 s (95% CI -0.331 to -0.256), 79 pairs      Figure C
+Hand minus PhaseNet+ (medians)                                                                                                    P -0.002 s, S -0.013 s, S-P -0.011 s (N = 308, 322, 271)   Section 1.2
+Wadati Vp/Vs, Hand picks                                                                            1.7284 (95% CI 1.7184 to 1.7363); per-event median 1.7300; intercepts -0.41 to -0.21 s      Figure E
+Wadati Vp/Vs, PhaseNet+                                                                             1.7272 (95% CI 1.7192 to 1.7344); per-event median 1.7260; intercepts -0.36 to -0.19 s      Figure E
+RMS (i) kim1983 as it is                                                                                                                                            0.310 s (0 free; none)      Figure E
+RMS (ii) one uniform Vp/Vs                                                                                                                                  0.146 s (1 free; Vp/Vs 1.7035)      Figure E
+RMS (iii) Vp/Vs 1.73 + one constant                                                                                                                    0.129 s (1 free; constant -0.282 s)      Figure E
+RMS (iv-a) depth only, one shift                                                                                                   0.253 s (1 free; shift -5.65 km (negative = shallower))      Figure E
+RMS (iv-b) depth only, one depth per event                                                                                                       0.252 s (11 free; shifts -6.6 to -3.9 km)      Figure E
+RMS (v) uniform Vp/Vs + one constant                                                                                                     0.125 s (2 free; Vp/Vs 1.7216, constant -0.201 s)      Figure E
+RMS (vi) kim2011 as HYPOINVERSE used it                                                                                                                             0.129 s (0 free; none)      Figure E
+RMS (vii) kim1983 with HYPOINVERSE's S model                                                                                                                        0.378 s (0 free; none)      Figure E
+RMS (viii) lower Vp/Vs near the stations only                                                                                                     0.130 s (1 free; Vp/Vs 1.660 above 5 km)      Figure E
+RMS (ix) lower Vp/Vs around the source only                                                                                                      0.133 s (1 free; Vp/Vs 1.650 at 10-15 km)      Figure E
+RMS Reference: one constant per station                                                                                                                 0.073 s (51 free; station medians)      Figure E
+Offset with model S-P from (a) kim1983 grids, cluster centroid                                                                        hand -0.274 s (-0.304 to -0.236); PhaseNet+ -0.262 s   Section 1.3
+Offset with model S-P from (b) kim1983 grids, P-only NonLinLoc hypocenter                                                             hand -0.273 s (-0.305 to -0.252); PhaseNet+ -0.258 s   Section 1.3
+Offset with model S-P from (c) kim2011 (HYPOINVERSE's P and S models), 1-D                                                            hand -0.003 s (-0.041 to +0.036); PhaseNet+ +0.027 s   Section 1.3
+Offset with model S-P from (d) kim1983, stations at sea level, 1-D                                                                    hand -0.260 s (-0.297 to -0.230); PhaseNet+ -0.254 s   Section 1.3
+Offset with model S-P from (e) kim1983 P with HYPOINVERSE's S model, 1-D                                                              hand -0.360 s (-0.401 to -0.302); PhaseNet+ -0.338 s   Section 1.3
+NonLinLoc, all stations: P+S as picked minus P only                                                                depth +0.309 ± 0.116 km; origin time -0.133 ± 0.010 s; horizontal 267 m      Figure F
+NonLinLoc, all stations: P+S, S shifted, minus P only                                                              depth +0.237 ± 0.087 km; origin time -0.021 ± 0.006 s; horizontal 276 m      Figure F
+NonLinLoc, all stations: Effect of the offset: as picked minus S shifted                                            depth +0.072 ± 0.047 km; origin time -0.111 ± 0.005 s; horizontal 69 m      Figure F
+NonLinLoc, within 35 km stations: P+S as picked minus P only                                                       depth -0.932 ± 0.115 km; origin time +0.054 ± 0.012 s; horizontal 274 m      Figure F
+NonLinLoc, within 35 km stations: P+S, S shifted, minus P only                                                     depth +0.678 ± 0.106 km; origin time -0.042 ± 0.011 s; horizontal 105 m      Figure F
+NonLinLoc, within 35 km stations: Effect of the offset: as picked minus S shifted                                  depth -1.610 ± 0.013 km; origin time +0.096 ± 0.006 s; horizontal 240 m      Figure F
+NonLinLoc depths at the 15 km layer boundary                                                                                                                           19 of 132 locations     Section 7
+pyrtdd: S shifted minus as picked                                                                                        largest 0.000 mm in position, 0.000 ms in origin time (11 events)      Figure G
+pyrtdd reproducibility vs step 09 control                                                                                                                    largest difference 0.000000 m     Section 8
+saved: /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/summary_key_numbers.csv /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/summary.json
+
+################ cell 34 [21] # 9. take-home messages, written from the computed numbers
+[markdown]
+**Take-home messages**
+
+- **The hand picks now have exact UTC times.** The tables store seconds after the reference time of the server B SAC files, an earlier HYPOINVERSE origin (e.g. 2021-08-27 22:03:23.170 for the $\mathit{M}_{\mathrm{L}}$ 2.2 event); the SAC headers and the absolute April picks agree within 3.1 µs. The reference of the local waveform copy would have made every hand pick 20-181 ms late (section 1.1).
+- **The S-P times are shorter than kim1983 predicts, in every picker.** Median offset -0.273 s for the hand picks (95% CI -0.304 to -0.239, 299 pairs), -0.262 s for PhaseNet+ and -0.306 to -0.254 s for the four deep-learning pickers (Figures C, D). Figures A and B show it on the waveforms: the S energy starts before the model S time.
+- **About the same in every event.** The per-event medians of the hand picks lie between -0.311 and -0.239 s (Figure D).
+- **Not exactly constant with distance.** -0.225 s within 0-30 km, -0.432 s at 60-70 km (around the direct/head-wave crossover) and -0.292 s at 70-101 km; station medians vary from -0.53 to -0.05 s (Figure C).
+- **Vp/Vs 1.73 still fits the slope.** The origin-time-free Wadati fit gives Vp/Vs 1.728 (95% CI 1.718-1.736) for the hand picks and 1.727 for PhaseNet+; the data run parallel to the model line, shifted by about -0.29 s (Figure E a, b).
+- **A constant is needed; a depth change or one Vp/Vs is not enough.** RMS: model as is 0.310 s; one uniform Vp/Vs 0.146 s; depth only 0.252 s even with a free depth per event; Vp/Vs 1.73 + constant 0.129 s (Figure E d).
+- **Where the constant comes from cannot be told from S-P times.** A lower Vp/Vs only near the stations (Vp/Vs 1.660 above 5 km, RMS 0.130 s) or only around the source (Vp/Vs 1.650 at 10-15 km, RMS 0.133 s) fits as well as the constant. The kim2011 model, whose upper crust has a lower Vp/Vs, fits with nothing adjusted: offset -0.003 s, RMS 0.129 s. So the '0.27 s' belongs to kim1983 with Vp/Vs 1.73, not to every model (section 1.3, Figure E c).
+- **Absolute locations that use S are biased, and the station geometry decides where the bias goes.** With all stations, the S picks as picked make the origin time 0.111 ± 0.005 s earlier than with S picks corrected by +0.273 s, while the depth changes by only +0.072 ± 0.047 km. With only the stations within 35 km (median 7 P and 9 S picks), the hypocenter comes out 1.61 ± 0.01 km shallower (11 of 11 events shallower) and the origin time 0.096 ± 0.006 s later (Figure F).
+- **Double-difference relocation is unaffected.** pyrtdd gives identical positions and origin times with and without the S shift (largest differences 0.000 mm and 0.000 ms; Figure G): a delay common to one station and phase cancels in a difference of differences.
+################ cell 35 [22] # 9. caveats and what to do, written from the computed numbers
+[markdown]
+**Caveats**
+
+- **Not a PhaseNet+ artifact, but possibly a shared picking convention.** Hand and PhaseNet+ picks agree closely (medians -0.002 s for P and -0.013 s for S) and show the same offset, and so do four other pickers. All of them could still put the S onset at the same early feature of the waveform, so a picking convention shared by hand and machine picks is not excluded.
+- **The cause cannot be located along the path.** S-P times measure only the total along each path. A low Vp/Vs near the source, a low Vp/Vs under the stations, and a constant picking delay all shorten S-P by a similar amount at every station (Figure E).
+- **The size of the offset depends on the reference model.** It is -0.273 s against kim1983 with Vp/Vs 1.73 (HypoDD and the grids), -0.360 s against kim1983 P speeds with HYPOINVERSE's own S speeds (3.40/3.79/4.58 km/s), and -0.003 s against kim2011. The reference HYPOINVERSE locations (kim1983 run) therefore used S picks whose S-P times are about 0.36 s shorter than its own model predicts.
+- **Station elevations.** The grids include the real station elevations; HYPOINVERSE and HypoDD used sea level. With stations at sea level the offset is -0.260 s instead of -0.273 s.
+- **Layered-model artifact in Figure F.** 19 of 132 NonLinLoc depths sit at the 15 km layer boundary, where the misfit of a layered model has a kink; there the depth does not move freely, so the depth shifts of those solutions (mostly all-station runs with S as picked) may be underestimated.
+- **The distance dependence is not perfectly flat** (larger offsets around the direct/head-wave crossover and beyond it), and the station medians scatter with a standard deviation of 0.11 s (stations with at least 3 pairs), so a single constant is a first-order description only.
+- **What an analyst should do for absolute locations with S picks:** use S station corrections (e.g. NonLinLoc LOCDELAY or HYPOINVERSE station delays from the station medians of Figure C, file `station_median_offsets_hand.csv`), or at least one fitted S-P constant; or use a model with a lower Vp/Vs near the source or under the stations (kim2011 already behaves this way); and check depths against P-only locations, especially with few nearby stations. Double-difference relocation needs no change.
+figures written:
+  A: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_A_single_station_traces.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_A_single_station_traces.pdf
+  B1: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B1_record_section_20210827220322.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B1_record_section_20210827220322.pdf
+  B2: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B2_record_section_20260202194119.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B2_record_section_20260202194119.pdf
+  C: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_C_sp_vs_distance.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_C_sp_vs_distance.pdf
+  D: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_D_offset_per_event.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_D_offset_per_event.pdf
+  E: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_E_wadati_explanations.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_E_wadati_explanations.pdf
+  F: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_F_nlloc_location_shifts.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_F_nlloc_location_shifts.pdf
+  G: /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_G_double_difference_unaffected.png  |  /home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_G_double_difference_unaffected.pdf
+

@@ -1,0 +1,12 @@
+{
+ "argv": [
+  "/home/msseo/miniforge3/envs/pyrtdd/bin/python",
+  "-I",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "pyrtdd (verifier, isolated)",
+ "language": "python"
+}

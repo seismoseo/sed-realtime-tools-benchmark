@@ -1,0 +1,37 @@
+run,hypodd_rep,half,h_rms,h_max,v_rms,v_max,n_inside,inside_ids,max_ratio
+R1,latlon_depthcol,raw,5.7,8.93,8.41,17.74,3,1 5 6,3.193
+R1,latlon_depthcol,round0.1,5.7,8.93,8.41,17.74,3,1 5 6,3.194
+R1,hypodd_xyz,raw,5.74,8.81,8.22,17.36,2,5 6,3.107
+R1,hypodd_xyz,round0.1,5.74,8.81,8.22,17.36,2,5 6,3.109
+R1,mix_latlon_Z,raw,5.7,8.93,8.22,17.36,3,1 5 6,3.107
+R1,mix_latlon_Z,round0.1,5.7,8.93,8.22,17.36,3,1 5 6,3.109
+R1f,latlon_depthcol,raw,3.03,5.7,4.46,9.39,5,2 3 5 7 8,1.46
+R1f,latlon_depthcol,round0.1,3.03,5.7,4.46,9.39,5,2 3 5 7 8,1.46
+R1f,hypodd_xyz,raw,3.11,5.75,4.27,9.01,5,2 3 5 7 8,1.474
+R1f,hypodd_xyz,round0.1,3.11,5.75,4.27,9.01,5,2 3 5 7 8,1.474
+R1f,mix_latlon_Z,raw,3.03,5.7,4.27,9.01,5,2 3 5 7 8,1.46
+R1f,mix_latlon_Z,round0.1,3.03,5.7,4.27,9.01,5,2 3 5 7 8,1.46
+R1fz,latlon_depthcol,raw,2.84,4.95,4.41,7.75,4,3 5 7 8,1.468
+R1fz,latlon_depthcol,round0.1,2.84,4.95,4.41,7.75,4,3 5 7 8,1.469
+R1fz,hypodd_xyz,raw,2.93,4.99,4.21,7.37,5,2 3 5 7 8,1.383
+R1fz,hypodd_xyz,round0.1,2.93,4.99,4.21,7.37,5,2 3 5 7 8,1.383
+R1fz,mix_latlon_Z,raw,2.84,4.95,4.21,7.37,5,2 3 5 7 8,1.383
+R1fz,mix_latlon_Z,round0.1,2.84,4.95,4.21,7.37,5,2 3 5 7 8,1.383
+R2f,latlon_depthcol,raw,4.23,9.49,4.59,7.74,2,3 7,2.353
+R2f,latlon_depthcol,round0.1,4.23,9.49,4.59,7.74,2,3 7,2.353
+R2f,hypodd_xyz,raw,4.28,9.46,4.42,7.53,2,3 7,2.367
+R2f,hypodd_xyz,round0.1,4.28,9.46,4.42,7.53,3,3 7 8,2.367
+R2f,mix_latlon_Z,raw,4.23,9.49,4.42,7.53,2,3 7,2.353
+R2f,mix_latlon_Z,round0.1,4.23,9.49,4.42,7.53,3,3 7 8,2.353
+S1,latlon_depthcol,raw,3.03,5.68,4.51,9.56,5,2 3 5 7 8,1.455
+S1,latlon_depthcol,round0.1,3.03,5.68,4.51,9.56,5,2 3 5 7 8,1.455
+S1,hypodd_xyz,raw,3.11,5.74,4.31,9.18,5,2 3 5 7 8,1.469
+S1,hypodd_xyz,round0.1,3.11,5.74,4.31,9.18,5,2 3 5 7 8,1.469
+S1,mix_latlon_Z,raw,3.03,5.68,4.31,9.18,5,2 3 5 7 8,1.455
+S1,mix_latlon_Z,round0.1,3.03,5.68,4.31,9.18,5,2 3 5 7 8,1.455
+S2,latlon_depthcol,raw,4.23,9.45,4.58,7.77,2,3 7,2.34
+S2,latlon_depthcol,round0.1,4.23,9.45,4.58,7.77,2,3 7,2.34
+S2,hypodd_xyz,raw,4.27,9.42,4.41,7.56,2,3 7,2.354
+S2,hypodd_xyz,round0.1,4.27,9.42,4.41,7.56,2,3 7,2.354
+S2,mix_latlon_Z,raw,4.23,9.45,4.41,7.56,2,3 7,2.34
+S2,mix_latlon_Z,round0.1,4.23,9.45,4.41,7.56,2,3 7,2.34

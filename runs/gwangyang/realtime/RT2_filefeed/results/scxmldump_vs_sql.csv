@@ -1,0 +1,10 @@
+file,origin,in_sql,same_lat,methodID,n_arrivals_xml
+event_2021qzhi.xml,Origin/20261017084921.420508.627,True,True,LOCSAT,8
+event_2021qzhi.xml,Origin/20261017084922.608843.2186,True,True,LOCSAT,28
+event_2021qzhi.xml,Origin/20261017084925.593769.2378,True,True,LOCSAT,48
+event_2021qzhi.xml,Origin/20261017084931.679204.2532,True,True,LOCSAT,55
+event_2021qzhi.xml,Origin/20261017084948.430042.487,True,True,RTDD,55
+event_2026ciqc.xml,Origin/20261017085051.056437.2771,True,True,LOCSAT,10
+event_2026ciqc.xml,Origin/20261017085053.477251.4259,True,True,LOCSAT,30
+event_2026ciqc.xml,Origin/20261017085057.679417.4498,True,True,LOCSAT,37
+event_2026ciqc.xml,Origin/20261017085110.565901.581,True,True,RTDD,37

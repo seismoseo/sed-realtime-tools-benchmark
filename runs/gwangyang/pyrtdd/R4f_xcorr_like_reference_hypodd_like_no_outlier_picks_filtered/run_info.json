@@ -1,0 +1,16 @@
+{
+ "run": "R4f_xcorr_like_reference_hypodd_like_no_outlier_picks_filtered",
+ "started": "2026-10-17T16:53:48",
+ "host": "server-a",
+ "status": "ok",
+ "n_clusters": 1,
+ "cluster_sizes": [
+  11
+ ],
+ "n_relocated": 11,
+ "filter_calls_received_by_proxy": null,
+ "proxy_traces_processed": 1137,
+ "proxy_traces_failed": 0,
+ "wall_time_s": 39.38,
+ "finished": "2026-10-17T16:54:28"
+}

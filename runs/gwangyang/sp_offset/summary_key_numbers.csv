@@ -1,0 +1,59 @@
+Quantity,Value,Where
+Hand picks: UTC reference established,SAC headers and absolute PhaseNet times agree within 3.1 µs (11 events); 16 of 16 header spot checks exact,Section 1.1
+Hand picks,"697 (338 P, 359 S); gross outliers 0",Section 1.2
+"Median S-P offset, Hand picks","-0.273 s (95% CI -0.304 to -0.239); 299 pairs, 0 excluded","Figures C, D"
+"Median S-P offset, PhaseNet+","-0.262 s (95% CI -0.289 to -0.221); 336 pairs, 12 excluded","Figures C, D"
+"Median S-P offset, PhaseNet (original weights)","-0.288 s (95% CI -0.308 to -0.245); 357 pairs, 22 excluded",Figure D
+"Median S-P offset, PhaseNet (INSTANCE weights)","-0.306 s (95% CI -0.344 to -0.269); 302 pairs, 14 excluded",Figure D
+"Median S-P offset, EQTransformer (STEAD weights)","-0.269 s (95% CI -0.307 to -0.231); 268 pairs, 0 excluded",Figure D
+"Median S-P offset, PhaseNet (STEAD weights)","-0.254 s (95% CI -0.296 to -0.218); 253 pairs, 0 excluded",Figure D
+AIC onsets (no pick used) minus model S time,-0.222 s (95% CI -0.248 to -0.190); 97% of 299 pairs before it; AIC onset minus hand S pick +0.059 s (median),Figure B3
+"Per-event medians, hand picks","-0.311 to -0.239 s (SD 0.024 s, 11 events); all pickers -0.334 to -0.190 s",Figure D
+"Event terms (station terms removed), Hand picks",-0.027 to +0.022 s (SD 0.016 s); Kruskal-Wallis p = 2e-09,Section 5.1
+"Event terms (station terms removed), PhaseNet+",-0.014 to +0.010 s (SD 0.007 s); Kruskal-Wallis p = 0.0009,Section 5.1
+"Offset at 0-30 km, hand picks","-0.225 s (95% CI -0.292 to -0.178), 67 pairs from 7 stations; median of station medians -0.220 s",Figure C
+"Offset at 30-60 km, hand picks","-0.243 s (95% CI -0.302 to -0.185), 109 pairs from 14 stations; median of station medians -0.226 s",Figure C
+"Offset at 60-70 km, hand picks","-0.432 s (95% CI -0.513 to -0.346), 44 pairs from 8 stations; median of station medians -0.394 s",Figure C
+"Offset at 70-101 km, hand picks","-0.292 s (95% CI -0.331 to -0.251), 79 pairs from 22 stations; median of station medians -0.275 s",Figure C
+"Station medians, hand picks (>= 3 pairs)","-0.53 to -0.05 s, SD 0.11 s (44 stations)",Figure C
+Hand minus PhaseNet+ (medians),"P -0.002 s, S -0.013 s, S-P -0.011 s (N = 308, 322, 271)",Section 1.2
+Hand vs PhaseNet+ S-P consistency,0.022 s (lower bound on the picking error of one picker),Section 1.2
+"Wadati Vp/Vs, Hand picks",1.7284 (95% CI 1.7188 to 1.7361); per-event median 1.7300; intercepts -0.41 to -0.21 s; against model P travel times 1.7203,Figure E1
+"Wadati Vp/Vs, PhaseNet+",1.7272 (95% CI 1.7195 to 1.7346); per-event median 1.7260; intercepts -0.36 to -0.19 s; against model P travel times 1.7197,Figure E1
+Explanation (i) kim1983 as it is,"RMS 0.310 s [0.274, 0.348]; trend -0.13 [-0.26, -0.04] s per 100 km; within 30 km -0.225 s [-0.292, -0.178]; fitted: none",Figure E2
+Explanation (ii) one uniform Vp/Vs,"RMS 0.146 s [0.122, 0.166]; trend +0.28 [+0.19, +0.36] s per 100 km; within 30 km -0.110 s [-0.189, -0.066]; fitted: Vp/Vs 1.7035",Figure E2
+Explanation (iii) Vp/Vs 1.73 + one constant,"RMS 0.129 s [0.100, 0.153]; trend -0.13 [-0.26, -0.04] s per 100 km; within 30 km +0.057 s [-0.002, +0.111]; fitted: constant -0.282 s",Figure E2
+"Explanation (iv-a) depth only, one shift","RMS 0.253 s [0.209, 0.288]; trend -0.71 [-0.87, -0.60] s per 100 km; within 30 km +0.168 s [+0.010, +0.336]; fitted: shift -5.65 km (negative = shallower)",Figure E2
+"Explanation (iv-b) depth only, one depth per event","RMS 0.252 s [0.207, 0.284]; trend -0.70 [-0.84, -0.58] s per 100 km; within 30 km +0.089 s [+0.019, +0.282]; fitted: shifts -6.6 to -3.9 km",Figure E2
+Explanation (v) uniform Vp/Vs + one constant,"RMS 0.125 s [0.096, 0.148]; trend +0.00 [-0.00, +0.00] s per 100 km; within 30 km +0.012 s [-0.042, +0.055]; fitted: Vp/Vs 1.7216, constant -0.201 s",Figure E2
+Explanation (vi) kim2011 as HYPOINVERSE used it,"RMS 0.129 s [0.108, 0.150]; trend +0.20 [+0.09, +0.28] s per 100 km; within 30 km -0.075 s [-0.161, -0.036]; fitted: none",Figure E2
+Explanation (vii) kim1983 with HYPOINVERSE's S model,"RMS 0.378 s [0.334, 0.420]; trend +0.30 [+0.12, +0.53] s per 100 km; within 30 km -0.350 s [-0.433, -0.270]; fitted: none",Figure E2
+Explanation (viii) lower Vp/Vs near the stations,"RMS 0.130 s [0.108, 0.150]; trend +0.16 [+0.06, +0.26] s per 100 km; within 30 km -0.112 s [-0.191, -0.066]; fitted: Vp/Vs 1.660 above 5 km",Figure E2
+Explanation (ix) lower Vp/Vs around the source,"RMS 0.133 s [0.112, 0.152]; trend +0.21 [+0.12, +0.30] s per 100 km; within 30 km -0.121 s [-0.201, -0.082]; fitted: Vp/Vs 1.650 at 10-15 km",Figure E2
+"Explanation (x) as (viii), plus one depth shift","RMS 0.119 s [0.094, 0.140]; trend +0.02 [-0.03, +0.12] s per 100 km; within 30 km -0.018 s [-0.085, +0.025]; fitted: Vp/Vs 1.680 above 5 km, depth shift -1.75 km",Figure E2
+"Explanation (xi) as (ix), plus one depth shift","RMS 0.125 s [0.101, 0.144]; trend +0.14 [+0.04, +0.24] s per 100 km; within 30 km -0.068 s [-0.140, -0.012]; fitted: Vp/Vs 1.655 at 10-15 km, depth shift -1.25 km",Figure E2
+Explanation Reference: one constant per station,"RMS 0.073 s [0.050, 0.100]; trend -0.00 [-0.02, +0.01] s per 100 km; within 30 km +0.000 s [+0.000, +0.000]; fitted: station medians",Figure E2
+"Offset with model S-P from (a) kim1983 grids, cluster centroid",hand -0.274 s (-0.304 to -0.236); PhaseNet+ -0.262 s,Section 1.3
+"Offset with model S-P from (b) kim1983 grids, P-only NonLinLoc hypocenter",hand -0.273 s (-0.305 to -0.252); PhaseNet+ -0.258 s,Section 1.3
+"Offset with model S-P from (c) kim2011 (HYPOINVERSE's P and S models), 1-D",hand -0.003 s (-0.041 to +0.036); PhaseNet+ +0.027 s,Section 1.3
+"Offset with model S-P from (d) kim1983, stations at sea level, 1-D",hand -0.260 s (-0.297 to -0.230); PhaseNet+ -0.254 s,Section 1.3
+"Offset with model S-P from (e) kim1983 P with HYPOINVERSE's S model, 1-D",hand -0.360 s (-0.401 to -0.302); PhaseNet+ -0.338 s,Section 1.3
+"NonLinLoc, all stations: P+S as picked minus P only",depth +0.309 ± 0.116 km; origin time -0.133 ± 0.010 s; horizontal 267 m,Figure F1
+"NonLinLoc, all stations: P+S, S shifted, minus P only",depth +0.237 ± 0.087 km; origin time -0.021 ± 0.006 s; horizontal 276 m,Figure F1
+"NonLinLoc, all stations: Effect of the offset: as picked minus S shifted",depth +0.072 ± 0.047 km; origin time -0.111 ± 0.005 s; horizontal 69 m,Figure F1
+"NonLinLoc, within 35 km stations: P+S as picked minus P only",depth -0.932 ± 0.115 km; origin time +0.054 ± 0.012 s; horizontal 274 m,Figure F1
+"NonLinLoc, within 35 km stations: P+S, S shifted, minus P only",depth +0.678 ± 0.106 km; origin time -0.042 ± 0.011 s; horizontal 105 m,Figure F1
+"NonLinLoc, within 35 km stations: Effect of the offset: as picked minus S shifted",depth -1.610 ± 0.013 km; origin time +0.096 ± 0.006 s; horizontal 240 m,Figure F1
+"NonLinLoc depths at the 15 km boundary, all stations, p_only","2 within 0.02 km, 3 within 0.1 km, 3 within 0.2 km (of 11)",Figure F2
+"NonLinLoc depths at the 15 km boundary, all stations, p_s","6 within 0.02 km, 7 within 0.1 km, 9 within 0.2 km (of 11)",Figure F2
+"NonLinLoc depths at the 15 km boundary, all stations, p_s_shifted","2 within 0.02 km, 4 within 0.1 km, 7 within 0.2 km (of 11)",Figure F2
+"NonLinLoc depths at the 15 km boundary, within 35 km stations, p_only","0 within 0.02 km, 0 within 0.1 km, 0 within 0.2 km (of 11)",Figure F2
+"NonLinLoc depths at the 15 km boundary, within 35 km stations, p_s","0 within 0.02 km, 0 within 0.1 km, 0 within 0.2 km (of 11)",Figure F2
+"NonLinLoc depths at the 15 km boundary, within 35 km stations, p_s_shifted","0 within 0.02 km, 0 within 0.1 km, 0 within 0.2 km (of 11)",Figure F2
+pyrtdd: Every S pick +0.273 s minus as picked,largest relative change 0.000 m; cluster-mean shift 0.000 m; largest origin-time change 0.000 ms,Figure G
+pyrtdd: Station statics (0.1-0.5 s) minus as picked,largest relative change 0.000 m; cluster-mean shift 0.000 m; largest origin-time change 0.000 ms,Figure G
+pyrtdd: Event terms removed minus as picked,largest relative change 10.926 m; cluster-mean shift 128.950 m; largest origin-time change 8.780 ms,Figure G
+pyrtdd: Event 3 alone shifted (+0.273 s) minus as picked,largest relative change 1120.161 m; cluster-mean shift 4067.141 m; largest origin-time change 6.168 ms,Figure G
+pyrtdd reproducibility vs step 09 control,largest difference 0.000000 m,Section 8
+pyrtdd cluster drift from the start centroid,"+1699 m east, +151 m north, +244 m up",Section 8
+pyrtdd absolute RMS without gross mis-picks,"start 0.205-0.302 s, final 0.378-0.440 s",Section 8

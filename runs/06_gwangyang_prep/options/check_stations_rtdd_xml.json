@@ -1,0 +1,72 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/check_stations_rtdd_xml.py",
+ "run_time": "2026-10-17T13:57:11.622503+09:00",
+ "argv": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/check_stations_rtdd_xml.py",
+  "--xml",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml",
+  "--outdir",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/validate",
+  "--options-json",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/check_stations_rtdd_xml.json"
+ ],
+ "args": {
+  "xml": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml",
+  "outdir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/validate",
+  "options_json": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/check_stations_rtdd_xml.json"
+ },
+ "STATION_CSV": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/station.csv",
+ "PHASE_CSV": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/phase.csv",
+ "CENTROID_CSV": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/event_centroid_start.csv",
+ "centroid": {
+  "latitude": 34.999695,
+  "longitude": 127.728889,
+  "depth_km": 13.942727
+ },
+ "C1_CENTROID": [
+  35.0,
+  127.7286,
+  13.94
+ ],
+ "GRID_VALIDATION": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/validation.csv",
+ "MANIFEST": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/waveform_manifest.csv",
+ "CHANGES": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/inventory_coordinate_changes.csv",
+ "NLLGrid": {
+  "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time",
+  "gridModel": "kim1983",
+  "maxSearchDistance_values_m": [
+   0.1,
+   10.0
+  ],
+  "constructor_signature": "__init__(self: pyrtdd.hdd.hdd_ext.NLLGrid, gridPath: str, gridModel: str, maxSearchDistance: typing.SupportsFloat | typing.SupportsIndex = 0.1, swapBytes: bool = False, maxOpenFiles: typing.SupportsInt | typing.SupportsIndex = 512, accessMethod: str = 'KeepOpen') -> None",
+  "constructor_defaults_from_signature": {
+   "maxSearchDistance": "0.1",
+   "swapBytes": "False",
+   "maxOpenFiles": "512",
+   "accessMethod": "'KeepOpen'"
+  }
+ },
+ "projection_for_own_grid_check": {
+  "proj": "tmerc",
+  "lat_0": 35.0,
+  "lon_0": 127.7286,
+  "k": 1.0,
+  "ellps": "WGS-84"
+ },
+ "inputs": {
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml": "f3e6851c3ae427b23f64edfd489f1175",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/station.csv": "a36bc6bb424bb088616c2875de40f97e",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/phase.csv": "21d150245600cf965f75a82bfdbda041",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/event_centroid_start.csv": "4a316b4de9e96fbe5bc8c6fa089a0204",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/waveform_manifest.csv": "bea95723a3824ad19beab6c0eae7f67c",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/inventory_coordinate_changes.csv": "df850053f15e2cb60654be1c92232a4e"
+ },
+ "versions": {
+  "python": "3.12.15",
+  "obspy": "1.5.1",
+  "pandas": "3.0.6",
+  "numpy": "2.5.4",
+  "pyproj": "3.8.0"
+ },
+ "n_problems": 0
+}

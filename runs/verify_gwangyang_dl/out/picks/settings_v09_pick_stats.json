@@ -1,0 +1,48 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/scripts/v09_pick_stats.py",
+ "PROJECT": "/home/msseo/works/74.SeisComP_rtDD_DLpicker",
+ "DATA": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev",
+ "RUN09": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker",
+ "OUT_DIR": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/out/picks",
+ "VARIANTS": [
+  "phasenet_original",
+  "phasenet_instance",
+  "eqtransformer_stead",
+  "phasenet_stead",
+  "phasenet_instance_fast"
+ ],
+ "MAIN_MODELS": [
+  "phasenet_original",
+  "phasenet_instance",
+  "eqtransformer_stead",
+  "phasenet_stead"
+ ],
+ "TOL": {
+  "P": 0.5,
+  "S": 1.0
+ },
+ "WIN_BEFORE": 5.0,
+ "WIN_AFTER": 60.0,
+ "SENS_TOL": [
+  [
+   0.3,
+   0.6
+  ],
+  [
+   0.2,
+   0.4
+  ],
+  [
+   0.1,
+   0.2
+  ]
+ ],
+ "ML_SPLIT": 1.5,
+ "versions": {
+  "python": "3.12.15 (main, Oct 13 2026, 16:52:04) [GCC 15.3.0]",
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "obspy": "1.5.1",
+  "lxml": "6.1.3.0"
+ }
+}

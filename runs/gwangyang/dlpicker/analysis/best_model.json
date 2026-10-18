@@ -1,0 +1,41 @@
+{
+ "rule": "highest pooled P+S F1 among the main models; ties (<0.005) -> smaller pooled p95 |dt|",
+ "best_model": "phasenet_original",
+ "cfg_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/config/scautopick_phasenet_original.cfg",
+ "bindings_config": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/config/bindings_config.xml",
+ "bindings_keydir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/config/key",
+ "ranking": [
+  {
+   "variant": "phasenet_original",
+   "f1": 0.8549618320610688,
+   "recall": 0.8807339449541285,
+   "precision": 0.830655129789864,
+   "p95_abs_dt_s": 0.0883494499999998,
+   "median_abs_dt_s": 0.0253995
+  },
+  {
+   "variant": "phasenet_instance",
+   "f1": 0.8357388316151203,
+   "recall": 0.7968545216251638,
+   "precision": 0.8786127167630058,
+   "p95_abs_dt_s": 0.1400369,
+   "median_abs_dt_s": 0.044598000000000027
+  },
+  {
+   "variant": "eqtransformer_stead",
+   "f1": 0.7824795842613215,
+   "recall": 0.690694626474443,
+   "precision": 0.9023972602739726,
+   "p95_abs_dt_s": 0.09003719999999998,
+   "median_abs_dt_s": 0.034599999999999964
+  },
+  {
+   "variant": "phasenet_stead",
+   "f1": 0.7488372093023257,
+   "recall": 0.6330275229357798,
+   "precision": 0.9165085388994307,
+   "p95_abs_dt_s": 0.07413189999999985,
+   "median_abs_dt_s": 0.020115
+  }
+ ]
+}

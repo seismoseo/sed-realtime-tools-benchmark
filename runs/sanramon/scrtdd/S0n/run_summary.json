@@ -1,0 +1,187 @@
+{
+ "run": "S0n",
+ "exit_code": 0,
+ "wall_s": 51.0,
+ "time_v": {
+  "user_s": "47.40",
+  "sys_s": "3.32",
+  "cpu_percent": "99%",
+  "wall": "0:50.98",
+  "max_rss_kb": "330528",
+  "exit_status": "0"
+ },
+ "outputs": [
+  "multievent_20261017124857_7288",
+  "reloc-event.csv",
+  "reloc-phase.csv",
+  "reloc-station.csv",
+  "relocated.xml",
+  "scrtdd.log"
+ ],
+ "diagnostics_dirs": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/scrtdd/S0n/work/multievent_20261017124857_7288"
+ ],
+ "log": {
+  "n_lines": 1209,
+  "errors": [
+   "21:48:57 [warning] Cannot find a suitable P time grid (station lat 38.8787 lon -122.443 elevation 709.9). Closest grid is at 26288.8 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_NPV_02.time.hdr",
+   "21:48:57 [warning] Cannot find a suitable P time grid (station lat 36.7437 lon -121.474 elevation 457.3). Closest grid is at 8409.67 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_HSF_02.time.hdr",
+   "21:48:57 [warning] Cannot find a suitable P time grid (station lat 36.764 lon -121.447 elevation 317.2). Closest grid is at 7410.17 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_HSF_02.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 38.0346 lon -120.387 elevation 697). Closest grid is at 21513.7 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_MCUB_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.3887 lon -121.551 elevation 539.5). Closest grid is at 41867.1 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 37.3236 lon -119.319 elevation 888.1). Closest grid is at 135595 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_MCUB_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 39.5545 lon -121.5 elevation 334.7). Closest grid is at 94680.7 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_NDH_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.598 lon -121.403 elevation 261). Closest grid is at 23556.5 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 39.2291 lon -121.786 elevation 249.5). Closest grid is at 52710.9 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_NDH_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.1804 lon -121.644 elevation 1193). Closest grid is at 65401.4 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.646 lon -121.03 elevation 572). Closest grid is at 41568.2 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NP_1865_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.7096 lon -121.343 elevation 250). Closest grid is at 18251.7 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_HSF_02.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.3065 lon -121.567 elevation 1505). Closest grid is at 51014.4 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.5472 lon -121.394 elevation 173). Closest grid is at 28657.2 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.6109 lon -121.315 elevation 1052). Closest grid is at 28149 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NC_HSF_02.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.5734 lon -121.627 elevation 173). Closest grid is at 21997.9 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.4071 lon -121.731 elevation 711). Closest grid is at 42443.2 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.7765 lon -121.35 elevation 142). Closest grid is at 12392.5 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.NP_1865_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.3837 lon -121.429 elevation 884). Closest grid is at 44119.3 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr",
+   "21:48:58 [warning] Cannot find a suitable P time grid (station lat 36.6674 lon -121.52 elevation 375). Closest grid is at 11579.4 [m] /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time/sanramon_con.P.PB_B067_--.time.hdr"
+  ],
+  "warnings_n": 610,
+  "successfully_relocated": 680,
+  "clusters": 1,
+  "waveform_line": null,
+  "iterations_logged": 21,
+  "iteration_lines": [
+   "0 680 dampingFactor=0.01 downWeightingByResidual=10.00 absLocConstraint=0.30",
+   "1 680 dampingFactor=0.01 downWeightingByResidual=9.74 absLocConstraint=0.30",
+   "2 680 dampingFactor=0.01 downWeightingByResidual=9.47 absLocConstraint=0.30",
+   "3 680 dampingFactor=0.01 downWeightingByResidual=9.21 absLocConstraint=0.30",
+   "4 680 dampingFactor=0.01 downWeightingByResidual=8.95 absLocConstraint=0.30",
+   "5 680 dampingFactor=0.01 downWeightingByResidual=8.68 absLocConstraint=0.30",
+   "6 680 dampingFactor=0.01 downWeightingByResidual=8.42 absLocConstraint=0.30",
+   "7 680 dampingFactor=0.01 downWeightingByResidual=8.16 absLocConstraint=0.30",
+   "8 680 dampingFactor=0.01 downWeightingByResidual=7.89 absLocConstraint=0.30",
+   "9 680 dampingFactor=0.01 downWeightingByResidual=7.63 absLocConstraint=0.30",
+   "10 680 dampingFactor=0.01 downWeightingByResidual=7.37 absLocConstraint=0.30",
+   "11 680 dampingFactor=0.01 downWeightingByResidual=7.11 absLocConstraint=0.30",
+   "12 680 dampingFactor=0.01 downWeightingByResidual=6.84 absLocConstraint=0.30",
+   "13 680 dampingFactor=0.01 downWeightingByResidual=6.58 absLocConstraint=0.30",
+   "14 680 dampingFactor=0.01 downWeightingByResidual=6.32 absLocConstraint=0.30",
+   "15 680 dampingFactor=0.01 downWeightingByResidual=6.05 absLocConstraint=0.30",
+   "16 680 dampingFactor=0.01 downWeightingByResidual=5.79 absLocConstraint=0.30",
+   "17 680 dampingFactor=0.01 downWeightingByResidual=5.53 absLocConstraint=0.30",
+   "18 680 dampingFactor=0.01 downWeightingByResidual=5.26 absLocConstraint=0.30",
+   "19 680 dampingFactor=0.01 downWeightingByResidual=5.00 absLocConstraint=0.30",
+   "20 680 dampingFactor=0.01 downWeightingByResidual=4.74 absLocConstraint=0.30"
+  ],
+  "event_rms_lines": [
+   "min 92.669 1st quartile 158.134 median 235.116 3rd quartile 382.865 max 1493.463 ",
+   "min 101.294 1st quartile 189.202 median 236.937 3rd quartile 316.576 max 1562.473 ",
+   "min 97.315 1st quartile 194.882 median 243.233 3rd quartile 318.383 max 1573.705 ",
+   "min 93.672 1st quartile 195.261 median 243.041 3rd quartile 317.880 max 1574.096 ",
+   "min 99.406 1st quartile 195.221 median 242.919 3rd quartile 317.698 max 1574.033 ",
+   "min 108.645 1st quartile 195.090 median 242.914 3rd quartile 317.710 max 1573.847 ",
+   "min 109.850 1st quartile 195.102 median 243.070 3rd quartile 317.757 max 1573.758 ",
+   "min 109.973 1st quartile 195.325 median 243.188 3rd quartile 317.828 max 1573.690 ",
+   "min 110.087 1st quartile 195.225 median 243.183 3rd quartile 317.895 max 1573.534 ",
+   "min 110.259 1st quartile 195.192 median 243.302 3rd quartile 317.960 max 1573.447 ",
+   "min 110.485 1st quartile 195.238 median 243.464 3rd quartile 317.864 max 1573.431 ",
+   "min 110.782 1st quartile 195.417 median 244.106 3rd quartile 317.623 max 1573.411 ",
+   "min 111.106 1st quartile 195.375 median 244.149 3rd quartile 317.511 max 1573.398 ",
+   "min 111.556 1st quartile 195.507 median 243.986 3rd quartile 317.336 max 1573.454 ",
+   "min 111.819 1st quartile 195.607 median 243.793 3rd quartile 317.257 max 1573.344 ",
+   "min 112.257 1st quartile 195.708 median 243.765 3rd quartile 317.060 max 1573.387 ",
+   "min 112.599 1st quartile 196.029 median 243.871 3rd quartile 317.053 max 1573.330 ",
+   "min 113.005 1st quartile 196.124 median 243.619 3rd quartile 316.788 max 1573.335 ",
+   "min 113.575 1st quartile 196.183 median 244.182 3rd quartile 316.504 max 1573.379 ",
+   "min 114.132 1st quartile 196.504 median 244.622 3rd quartile 317.147 max 1573.365 ",
+   "min 114.071 1st quartile 196.805 median 245.104 3rd quartile 316.773 max 1573.358 "
+  ],
+  "dd_residual_lines": [
+   [
+    "324723",
+    "median 0.893 MedianAbsoluteDeviation 48.000"
+   ],
+   [
+    "324690",
+    "median -0.953 MedianAbsoluteDeviation 31.325"
+   ],
+   [
+    "324640",
+    "median -0.263 MedianAbsoluteDeviation 28.565"
+   ],
+   [
+    "324649",
+    "median -0.115 MedianAbsoluteDeviation 28.030"
+   ],
+   [
+    "324649",
+    "median -0.074 MedianAbsoluteDeviation 27.732"
+   ],
+   [
+    "324649",
+    "median -0.037 MedianAbsoluteDeviation 27.512"
+   ],
+   [
+    "324649",
+    "median -0.024 MedianAbsoluteDeviation 27.329"
+   ],
+   [
+    "324649",
+    "median -0.009 MedianAbsoluteDeviation 27.148"
+   ],
+   [
+    "324649",
+    "median 0.014 MedianAbsoluteDeviation 26.973"
+   ],
+   [
+    "324649",
+    "median 0.026 MedianAbsoluteDeviation 26.793"
+   ],
+   [
+    "324640",
+    "median 0.039 MedianAbsoluteDeviation 26.617"
+   ],
+   [
+    "324640",
+    "median 0.059 MedianAbsoluteDeviation 26.439"
+   ],
+   [
+    "324595",
+    "median 0.067 MedianAbsoluteDeviation 26.259"
+   ],
+   [
+    "324595",
+    "median 0.048 MedianAbsoluteDeviation 26.085"
+   ],
+   [
+    "324595",
+    "median 0.063 MedianAbsoluteDeviation 25.900"
+   ],
+   [
+    "324595",
+    "median 0.074 MedianAbsoluteDeviation 25.676"
+   ],
+   [
+    "324595",
+    "median 0.067 MedianAbsoluteDeviation 25.458"
+   ],
+   [
+    "324595",
+    "median 0.056 MedianAbsoluteDeviation 25.224"
+   ],
+   [
+    "324595",
+    "median 0.073 MedianAbsoluteDeviation 24.961"
+   ],
+   [
+    "324595",
+    "median 0.062 MedianAbsoluteDeviation 24.688"
+   ],
+   [
+    "324595",
+    "median 0.042 MedianAbsoluteDeviation 24.446"
+   ]
+  ]
+ },
+ "reloc_event_rows": 680
+}

@@ -1,0 +1,6 @@
+# Generic NonLinLoc control statements (written by install/02_build_nonlinloc.sh)
+# CONTROL message_flag random_seed   (values as in scrtdd's test recipe)
+CONTROL 1 99991
+# TRANS TRANS_MERC refEllipsoid latOrig longOrig rotAngle : ellipsoidal transverse Mercator centred on the
+# Gwangyang cluster (see the script header for why not AZIMUTHAL_EQUIDIST / SIMPLE)
+TRANS TRANS_MERC WGS-84 35.0000 127.7286 0.0

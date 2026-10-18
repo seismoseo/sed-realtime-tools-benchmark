@@ -1,0 +1,14 @@
+nsta,n,agree,sense,dl_vertical,analyst_channels
+BK.BDM,12,1.000,Direct,HNZ,HHZ
+BK.BKS,15,1.000,Direct,HNZ,HHZ
+BK.BL67,9,1.000,Direct,HNZ,HHZ
+BK.BRK,6,0.833,Direct,HNZ,"HHZ,HNZ"
+BK.CMAB,4,1.000,Direct,CN1,CN1
+BK.JRSC,3,0.333,Direct,HNZ,HHZ
+BK.PETB,1,0.000,Inverted,HN1,HN1
+BK.VAK,12,1.000,Direct,HNZ,HHZ
+BK.WENL,7,0.857,Direct,HNZ,HHZ
+NC.CBR,22,0.955,Direct,HNZ,EHZ
+NC.CCH1,12,1.000,Direct,HN1,EP1
+NC.CGP1,9,1.000,Direct,HN1,EP1
+NC.CNI,19,0.895,Direct,HNZ,EHZ

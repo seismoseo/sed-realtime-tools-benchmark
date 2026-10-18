@@ -1,0 +1,173 @@
+{
+ "rule": "neighbours: same event, direct channel, |daz| <= 10.0, |dtakeoff| <= 10.0, >= 2, majority >= 70 %",
+ "n_inverted_channel_picks": 941,
+ "n_direct_channel_picks": 18061,
+ "inverted_tests": 148,
+ "inverted_frac_same": 0.31756756756756754,
+ "control_tests": 809,
+ "control_frac_same": 0.695920889987639,
+ "per_channel": [
+  {
+   "network": "BK",
+   "station": "MHDL",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -57462000.0,
+   "n_tests": 50,
+   "frac_same_as_direct_neighbours": 0.12
+  },
+  {
+   "network": "BK",
+   "station": "OXMT",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -57462000.0,
+   "n_tests": 44,
+   "frac_same_as_direct_neighbours": 0.29545454545454547
+  },
+  {
+   "network": "BK",
+   "station": "PETB",
+   "channel": "EP1",
+   "dip": 90.0,
+   "gain": 1650460000.0,
+   "n_tests": 2,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "BK",
+   "station": "PETB",
+   "channel": "HN1",
+   "dip": 90.0,
+   "gain": 5178540.0,
+   "n_tests": 3,
+   "frac_same_as_direct_neighbours": 0.3333333333333333
+  },
+  {
+   "network": "BK",
+   "station": "SBRN",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -57462000.0,
+   "n_tests": 16,
+   "frac_same_as_direct_neighbours": 0.5
+  },
+  {
+   "network": "BK",
+   "station": "SM2B",
+   "channel": "CN1",
+   "dip": -90.0,
+   "gain": -4279080.0,
+   "n_tests": 4,
+   "frac_same_as_direct_neighbours": 0.25
+  },
+  {
+   "network": "BK",
+   "station": "SM2B",
+   "channel": "DP1",
+   "dip": -90.0,
+   "gain": -2096810000.0,
+   "n_tests": 2,
+   "frac_same_as_direct_neighbours": 0.5
+  },
+  {
+   "network": "BK",
+   "station": "VALB",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -2097150000.0,
+   "n_tests": 12,
+   "frac_same_as_direct_neighbours": 0.5833333333333334
+  },
+  {
+   "network": "BP",
+   "station": "CCRB",
+   "channel": "DP1",
+   "dip": 90.0,
+   "gain": 57447500000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "NC",
+   "station": "MBS1",
+   "channel": "EP1",
+   "dip": 90.0,
+   "gain": 358400000.0,
+   "n_tests": 2,
+   "frac_same_as_direct_neighbours": 0.5
+  },
+  {
+   "network": "NC",
+   "station": "MDH1",
+   "channel": "DP1",
+   "dip": 90.0,
+   "gain": 2335390000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "NN",
+   "station": "BAB",
+   "channel": "EHZ",
+   "dip": 90.0,
+   "gain": 218287000000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "NN",
+   "station": "DON",
+   "channel": "EHZ",
+   "dip": 90.0,
+   "gain": 7713030000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "NN",
+   "station": "KBF",
+   "channel": "EHZ",
+   "dip": -90.0,
+   "gain": -408204375480.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "NN",
+   "station": "LOY",
+   "channel": "EHZ",
+   "dip": -90.0,
+   "gain": -408204375480.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "NN",
+   "station": "LUL",
+   "channel": "EHZ",
+   "dip": -90.0,
+   "gain": -408204375480.0,
+   "n_tests": 4,
+   "frac_same_as_direct_neighbours": 0.5
+  },
+  {
+   "network": "NN",
+   "station": "PNT",
+   "channel": "HHZ",
+   "dip": 90.0,
+   "gain": 755821000.0,
+   "n_tests": 2,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "NN",
+   "station": "RUB",
+   "channel": "HHZ",
+   "dip": 90.0,
+   "gain": 755821000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  }
+ ]
+}

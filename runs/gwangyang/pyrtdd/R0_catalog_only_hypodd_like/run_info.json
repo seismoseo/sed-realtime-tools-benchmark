@@ -1,0 +1,13 @@
+{
+ "run": "R0_catalog_only_hypodd_like",
+ "started": "2026-10-17T16:48:04",
+ "host": "server-a",
+ "status": "ok",
+ "n_clusters": 1,
+ "cluster_sizes": [
+  11
+ ],
+ "n_relocated": 11,
+ "wall_time_s": 0.38,
+ "finished": "2026-10-17T16:48:05"
+}

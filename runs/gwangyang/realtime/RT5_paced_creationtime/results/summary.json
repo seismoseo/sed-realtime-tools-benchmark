@@ -1,0 +1,90 @@
+{
+ "run": "RT5_paced_creationtime",
+ "generated": "2026-10-17T12:39:18.789747Z",
+ "db_counts": {
+  "Network": 1,
+  "Station": 54,
+  "SensorLocation": 54,
+  "Stream": 255,
+  "ConfigModule": 1,
+  "ConfigStation": 54,
+  "ParameterSet": 108,
+  "Parameter": 108,
+  "Pick": 197,
+  "Amplitude": 374,
+  "Origin": 10,
+  "Arrival": 316,
+  "Event": 2,
+  "OriginReference": 10
+ },
+ "events": [
+  {
+   "publicID": "2021qzhi",
+   "preferredOriginID": "Origin/20261017092315.907923.2528"
+  },
+  {
+   "publicID": "2026ciqc",
+   "preferredOriginID": "Origin/20261017093001.907738.4424"
+  }
+ ],
+ "kma_of_event": {
+  "2021qzhi": "20210827220322",
+  "2026ciqc": "20260202194119"
+ },
+ "scxmldump_origins_checked": 10,
+ "scxmldump_all_in_sql_same_lat": true,
+ "autoloc": {
+  "picks_processed": 197,
+  "xx_rejected": 0,
+  "too_many_recent": 0,
+  "waiting_for_amplitude_lines": 197,
+  "low_snr_ignored": 0,
+  "origins_reported": 7,
+  "origins_not_sent_no_improvement": 0
+ },
+ "scrtdd_other": {
+  "ignored_author": 0,
+  "skipped_nonpreferred": 0,
+  "errors": []
+ },
+ "scevent_lines_about_RTDD": [
+  "2026/10/17 18:23:33 [info/SCEVENT] 2021qzhi: associated origin Origin/20261017092332.207771.488",
+  "2026/10/17 18:23:33 [debug/SCEVENT] ... looking for preferred magnitude in origin Origin/20261017092332.207771.488",
+  "2026/10/17 18:23:33 [debug/SCEVENT] ... checking whether origin Origin/20261017092332.207771.488 can become preferred",
+  "2026/10/17 18:30:01 [info/SCEVENT] 2026ciqc: associated origin Origin/20261017093000.450382.576",
+  "2026/10/17 18:30:01 [debug/SCEVENT] ... looking for preferred magnitude in origin Origin/20261017093000.450382.576",
+  "2026/10/17 18:30:01 [debug/SCEVENT] ... checking whether origin Origin/20261017093000.450382.576 can become preferred",
+  "2026/10/17 18:30:01 [info/SCEVENT] 2026ciqc: set preferredOriginID to Origin/20261017093000.450382.576",
+  "2026/10/17 18:30:16 [info/SCEVENT] 2026ciqc: associated origin Origin/20261017093014.735641.584",
+  "2026/10/17 18:30:16 [debug/SCEVENT] ... looking for preferred magnitude in origin Origin/20261017093014.735641.584",
+  "2026/10/17 18:30:16 [debug/SCEVENT] ... checking whether origin Origin/20261017093014.735641.584 can become preferred"
+ ],
+ "scevent_preferred_lines": [
+  "2026/10/17 18:20:24 [info/SCEVENT] 2021qzhi: set preferredOriginID to Origin/20261017092022.907847.1850",
+  "2026/10/17 18:20:28 [info/SCEVENT] 2021qzhi: set preferredOriginID to Origin/20261017092026.794216.2361",
+  "2026/10/17 18:23:17 [info/SCEVENT] 2021qzhi: set preferredOriginID to Origin/20261017092315.907923.2528",
+  "2026/10/17 18:29:48 [info/SCEVENT] 2026ciqc: set preferredOriginID to Origin/20261017092948.050892.3735",
+  "2026/10/17 18:30:01 [info/SCEVENT] 2026ciqc: set preferredOriginID to Origin/20261017093000.450382.576",
+  "2026/10/17 18:30:03 [info/SCEVENT] 2026ciqc: set preferredOriginID to Origin/20261017093001.907738.4424"
+ ],
+ "cost_cpu_s": {
+  "scrtdd": 6.11,
+  "scautoloc": 1.08,
+  "scevent": 0.07,
+  "scmaster": 0.73,
+  "msrtsimul_20210827220322": null,
+  "scautopick_20210827220322": null,
+  "msrtsimul_20260202194119": null,
+  "scautopick_20260202194119": null,
+  "scautopick_20210827220322_paced": {
+   "cpu_s": 1.46,
+   "wall": "8:49.06"
+  },
+  "scautopick_20260202194119_paced": {
+   "cpu_s": 1.12,
+   "wall": "9:00.05"
+  }
+ },
+ "rt_analyze_script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/scripts/rt_analyze.py",
+ "rt_analyze_md5": "fd07c0f9ef75fc7bdce5e53bfd266383"
+}

@@ -1,0 +1,1349 @@
+{
+ "per_run": {
+  "RT1_filefeed": {
+   "counts": {
+    "Pick": 112,
+    "Amplitude": 219,
+    "Origin": 0,
+    "Arrival": 0,
+    "Event": 0,
+    "OriginReference": 0,
+    "Magnitude": 0
+   },
+   "by_author_method": {},
+   "relocation_blocks": [],
+   "n_blocks": 0,
+   "n_sent": 0,
+   "n_failed": 0,
+   "ignored_own_origins": [],
+   "duplicate_inputs": [],
+   "problems": [],
+   "n_RTDD_in_db": 0,
+   "events": {
+    "20210827220322": {
+     "rtdd_id": 3,
+     "events": [],
+     "n_scautoloc": 0,
+     "scautoloc_nP": [],
+     "scautoloc_nS": [],
+     "n_RTDD": 0,
+     "RTDD_nP": [],
+     "RTDD_nS": [],
+     "RTDD_authors": [],
+     "RTDD_earthModel": [],
+     "preferred": [],
+     "preferred_kind": [],
+     "n_picks": 112,
+     "n_DL3C": 56,
+     "n_SDL3C": 56
+    },
+    "20260202194119": {
+     "rtdd_id": 9,
+     "events": [],
+     "n_scautoloc": 0,
+     "scautoloc_nP": [],
+     "scautoloc_nS": [],
+     "n_RTDD": 0,
+     "RTDD_nP": [],
+     "RTDD_nS": [],
+     "RTDD_authors": [],
+     "RTDD_earthModel": [],
+     "preferred": [],
+     "preferred_kind": [],
+     "n_picks": 0,
+     "n_DL3C": 0,
+     "n_SDL3C": 0
+    }
+   }
+  },
+  "RT2_filefeed": {
+   "counts": {
+    "Pick": 197,
+    "Amplitude": 374,
+    "Origin": 9,
+    "Arrival": 308,
+    "Event": 2,
+    "OriginReference": 9,
+    "Magnitude": 0
+   },
+   "by_author_method": {
+    "scautoloc@server-a|LOCSAT": 7,
+    "scrtdd@server-a|RTDD": 2
+   },
+   "relocation_blocks": [
+    {
+     "input": "Origin/20261017084931.679204.2532",
+     "profile": "gwangyang",
+     "output": "Origin/20261017084948.430042.487",
+     "failed": false,
+     "log_time": "2026/10/17 17:49:43"
+    },
+    {
+     "input": "Origin/20261017085057.679417.4498",
+     "profile": "gwangyang",
+     "output": "Origin/20261017085110.565901.581",
+     "failed": false,
+     "log_time": "2026/10/17 17:51:09"
+    }
+   ],
+   "n_blocks": 2,
+   "n_sent": 2,
+   "n_failed": 0,
+   "ignored_own_origins": [],
+   "duplicate_inputs": [],
+   "problems": [],
+   "n_RTDD_in_db": 2,
+   "events": {
+    "20210827220322": {
+     "rtdd_id": 3,
+     "events": [
+      "2021qzhi"
+     ],
+     "n_scautoloc": 4,
+     "scautoloc_nP": [
+      8,
+      28,
+      48,
+      55
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 1,
+     "RTDD_nP": [
+      55
+     ],
+     "RTDD_nS": [
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017084931.679204.2532"
+     ],
+     "preferred_kind": [
+      "LOCSAT"
+     ],
+     "n_picks": 112,
+     "n_DL3C": 56,
+     "n_SDL3C": 56
+    },
+    "20260202194119": {
+     "rtdd_id": 9,
+     "events": [
+      "2026ciqc"
+     ],
+     "n_scautoloc": 3,
+     "scautoloc_nP": [
+      10,
+      30,
+      37
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 1,
+     "RTDD_nP": [
+      37
+     ],
+     "RTDD_nS": [
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017085057.679417.4498"
+     ],
+     "preferred_kind": [
+      "LOCSAT"
+     ],
+     "n_picks": 85,
+     "n_DL3C": 43,
+     "n_SDL3C": 42
+    }
+   }
+  },
+  "RT3_paced": {
+   "counts": {
+    "Pick": 197,
+    "Amplitude": 374,
+    "Origin": 11,
+    "Arrival": 386,
+    "Event": 2,
+    "OriginReference": 11,
+    "Magnitude": 0
+   },
+   "by_author_method": {
+    "scautoloc@server-a|LOCSAT": 7,
+    "scrtdd@server-a|RTDD": 4
+   },
+   "relocation_blocks": [
+    {
+     "input": "Origin/20261017085739.417114.2378",
+     "profile": "gwangyang",
+     "output": "Origin/20261017085754.962006.483",
+     "failed": false,
+     "log_time": "2026/10/17 17:57:50"
+    },
+    {
+     "input": "Origin/20261017090028.897549.2528",
+     "profile": "gwangyang",
+     "output": "Origin/20261017090041.329277.491",
+     "failed": false,
+     "log_time": "2026/10/17 18:00:39"
+    },
+    {
+     "input": "Origin/20261017090738.553826.4256",
+     "profile": "gwangyang",
+     "output": "Origin/20261017090750.619088.580",
+     "failed": false,
+     "log_time": "2026/10/17 18:07:49"
+    },
+    {
+     "input": "Origin/20261017091118.897041.4495",
+     "profile": "gwangyang",
+     "output": "Origin/20261017091130.775467.589",
+     "failed": false,
+     "log_time": "2026/10/17 18:11:29"
+    }
+   ],
+   "n_blocks": 4,
+   "n_sent": 4,
+   "n_failed": 0,
+   "ignored_own_origins": [
+    "Origin/20261017085754.962006.483"
+   ],
+   "duplicate_inputs": [],
+   "problems": [],
+   "n_RTDD_in_db": 4,
+   "events": {
+    "20210827220322": {
+     "rtdd_id": 3,
+     "events": [
+      "2021qzhi"
+     ],
+     "n_scautoloc": 4,
+     "scautoloc_nP": [
+      8,
+      28,
+      48,
+      55
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 2,
+     "RTDD_nP": [
+      48,
+      55
+     ],
+     "RTDD_nS": [
+      0,
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017090028.897549.2528"
+     ],
+     "preferred_kind": [
+      "LOCSAT"
+     ],
+     "n_picks": 112,
+     "n_DL3C": 56,
+     "n_SDL3C": 56
+    },
+    "20260202194119": {
+     "rtdd_id": 9,
+     "events": [
+      "2026ciqc"
+     ],
+     "n_scautoloc": 3,
+     "scautoloc_nP": [
+      10,
+      30,
+      37
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 2,
+     "RTDD_nP": [
+      30,
+      37
+     ],
+     "RTDD_nS": [
+      0,
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017091118.897041.4495"
+     ],
+     "preferred_kind": [
+      "LOCSAT"
+     ],
+     "n_picks": 85,
+     "n_DL3C": 43,
+     "n_SDL3C": 42
+    }
+   }
+  },
+  "RT4_filefeed_prefer_rtdd": {
+   "counts": {
+    "Pick": 197,
+    "Amplitude": 374,
+    "Origin": 9,
+    "Arrival": 308,
+    "Event": 2,
+    "OriginReference": 9,
+    "Magnitude": 0
+   },
+   "by_author_method": {
+    "scautoloc@server-a|LOCSAT": 7,
+    "scrtdd@server-a|RTDD": 2
+   },
+   "relocation_blocks": [
+    {
+     "input": "Origin/20261017091435.623316.2532",
+     "profile": "gwangyang",
+     "output": "Origin/20261017091450.954037.487",
+     "failed": false,
+     "log_time": "2026/10/17 18:14:46"
+    },
+    {
+     "input": "Origin/20261017091539.623638.4498",
+     "profile": "gwangyang",
+     "output": "Origin/20261017091552.45078.583",
+     "failed": false,
+     "log_time": "2026/10/17 18:15:51"
+    }
+   ],
+   "n_blocks": 2,
+   "n_sent": 2,
+   "n_failed": 0,
+   "ignored_own_origins": [
+    "Origin/20261017091450.954037.487",
+    "Origin/20261017091552.45078.583"
+   ],
+   "duplicate_inputs": [],
+   "problems": [],
+   "n_RTDD_in_db": 2,
+   "events": {
+    "20210827220322": {
+     "rtdd_id": 3,
+     "events": [
+      "2021qzhi"
+     ],
+     "n_scautoloc": 4,
+     "scautoloc_nP": [
+      8,
+      28,
+      48,
+      55
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 1,
+     "RTDD_nP": [
+      55
+     ],
+     "RTDD_nS": [
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017091450.954037.487"
+     ],
+     "preferred_kind": [
+      "RTDD"
+     ],
+     "n_picks": 112,
+     "n_DL3C": 56,
+     "n_SDL3C": 56
+    },
+    "20260202194119": {
+     "rtdd_id": 9,
+     "events": [
+      "2026ciqc"
+     ],
+     "n_scautoloc": 3,
+     "scautoloc_nP": [
+      10,
+      30,
+      37
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 1,
+     "RTDD_nP": [
+      37
+     ],
+     "RTDD_nS": [
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017091552.45078.583"
+     ],
+     "preferred_kind": [
+      "RTDD"
+     ],
+     "n_picks": 85,
+     "n_DL3C": 43,
+     "n_SDL3C": 42
+    }
+   }
+  },
+  "RT5_paced_creationtime": {
+   "counts": {
+    "Pick": 197,
+    "Amplitude": 374,
+    "Origin": 10,
+    "Arrival": 316,
+    "Event": 2,
+    "OriginReference": 10,
+    "Magnitude": 0
+   },
+   "by_author_method": {
+    "scautoloc@server-a|LOCSAT": 7,
+    "scrtdd@server-a|RTDD": 3
+   },
+   "relocation_blocks": [
+    {
+     "input": "Origin/20261017092026.794216.2361",
+     "profile": "gwangyang",
+     "output": null,
+     "failed": true,
+     "log_time": "2026/10/17 18:20:39"
+    },
+    {
+     "input": "Origin/20261017092315.907923.2528",
+     "profile": "gwangyang",
+     "output": "Origin/20261017092332.207771.488",
+     "failed": false,
+     "log_time": "2026/10/17 18:23:27"
+    },
+    {
+     "input": "Origin/20261017092948.050892.3735",
+     "profile": "gwangyang",
+     "output": "Origin/20261017093000.450382.576",
+     "failed": false,
+     "log_time": "2026/10/17 18:29:59"
+    },
+    {
+     "input": "Origin/20261017093001.907738.4424",
+     "profile": "gwangyang",
+     "output": "Origin/20261017093014.735641.584",
+     "failed": false,
+     "log_time": "2026/10/17 18:30:13"
+    }
+   ],
+   "n_blocks": 4,
+   "n_sent": 3,
+   "n_failed": 1,
+   "ignored_own_origins": [],
+   "duplicate_inputs": [],
+   "problems": [],
+   "n_RTDD_in_db": 3,
+   "events": {
+    "20210827220322": {
+     "rtdd_id": 3,
+     "events": [
+      "2021qzhi"
+     ],
+     "n_scautoloc": 4,
+     "scautoloc_nP": [
+      8,
+      24,
+      44,
+      55
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 1,
+     "RTDD_nP": [
+      55
+     ],
+     "RTDD_nS": [
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017092315.907923.2528"
+     ],
+     "preferred_kind": [
+      "LOCSAT"
+     ],
+     "n_picks": 112,
+     "n_DL3C": 56,
+     "n_SDL3C": 56
+    },
+    "20260202194119": {
+     "rtdd_id": 9,
+     "events": [
+      "2026ciqc"
+     ],
+     "n_scautoloc": 3,
+     "scautoloc_nP": [
+      10,
+      23,
+      37
+     ],
+     "scautoloc_nS": [
+      0,
+      0,
+      0
+     ],
+     "n_RTDD": 2,
+     "RTDD_nP": [
+      23,
+      37
+     ],
+     "RTDD_nS": [
+      0,
+      0
+     ],
+     "RTDD_authors": [
+      "scrtdd@server-a"
+     ],
+     "RTDD_earthModel": [
+      "NLLGrid:kim1983"
+     ],
+     "preferred": [
+      "Origin/20261017093001.907738.4424"
+     ],
+     "preferred_kind": [
+      "LOCSAT"
+     ],
+     "n_picks": 85,
+     "n_DL3C": 43,
+     "n_SDL3C": 42
+    }
+   }
+  }
+ },
+ "checks": [
+  {
+   "item": "RT1_filefeed Pick rows",
+   "computed": 112,
+   "claimed": 112,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT1_filefeed Amplitude rows",
+   "computed": 219,
+   "claimed": 219,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT1_filefeed Origin rows",
+   "computed": 0,
+   "claimed": 0,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT2_filefeed Pick rows",
+   "computed": 197,
+   "claimed": 197,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT2_filefeed Amplitude rows",
+   "computed": 374,
+   "claimed": 374,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT2_filefeed Origin rows",
+   "computed": 9,
+   "claimed": 9,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT2_filefeed Arrival rows",
+   "computed": 308,
+   "claimed": 308,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT2_filefeed Event rows",
+   "computed": 2,
+   "claimed": 2,
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs scautoloc_input absolute dE_m",
+   "computed": -314.268,
+   "claimed": -314,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs scautoloc_input absolute dN_m",
+   "computed": -238.624,
+   "claimed": -239,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs scautoloc_input absolute dU_m",
+   "computed": -2747.095,
+   "claimed": -2747,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs scautoloc_input absolute d3D_m",
+   "computed": 2775.291,
+   "claimed": 2775,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs scautoloc_input absolute dT_ms",
+   "computed": 826.881,
+   "claimed": 827,
+   "tolerance": 1.0,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs S1 absolute dE_m",
+   "computed": -44.987,
+   "claimed": -45.0,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs S1 absolute dN_m",
+   "computed": -16.001,
+   "claimed": -16.0,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs S1 absolute dU_m",
+   "computed": -38.047,
+   "claimed": -38.0,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs S1 absolute d3D_m",
+   "computed": 61.053,
+   "claimed": 61.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs S1 absolute dT_ms",
+   "computed": -0.775,
+   "claimed": -0.8,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1f absolute dE_m",
+   "computed": -44.949,
+   "claimed": -45.0,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1f absolute dN_m",
+   "computed": -17.413,
+   "claimed": -17.4,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1f absolute dU_m",
+   "computed": -37.07,
+   "claimed": -37.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1f absolute d3D_m",
+   "computed": 60.81,
+   "claimed": 60.8,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1f absolute dT_ms",
+   "computed": -0.726,
+   "claimed": -0.7,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1 relative dE_m",
+   "computed": -38.094,
+   "claimed": -38.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1 relative dN_m",
+   "computed": -9.391,
+   "claimed": -9.4,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1 relative dU_m",
+   "computed": -46.239,
+   "claimed": -46.2,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1 relative d3D_m",
+   "computed": 60.642,
+   "claimed": 60.6,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1 absolute d3D_m",
+   "computed": 459.391,
+   "claimed": 459,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs R1 absolute dT_ms",
+   "computed": 1.807,
+   "claimed": 1.8,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs HypoDD_dtcc relative dE_m",
+   "computed": -43.864,
+   "claimed": -43.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs HypoDD_dtcc relative dN_m",
+   "computed": -16.936,
+   "claimed": -16.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs HypoDD_dtcc relative dU_m",
+   "computed": -27.73,
+   "claimed": -27.7,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs HypoDD_dtcc relative d3D_m",
+   "computed": 54.588,
+   "claimed": 54.6,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs HypoDD_dtcc absolute d3D_m",
+   "computed": 412.986,
+   "claimed": 413,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 RTDD_final vs HypoDD_dtcc absolute dT_ms",
+   "computed": -12.564,
+   "claimed": -12.6,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs scautoloc_input absolute dE_m",
+   "computed": -458.442,
+   "claimed": -458,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs scautoloc_input absolute dN_m",
+   "computed": -226.675,
+   "claimed": -227,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs scautoloc_input absolute dU_m",
+   "computed": -3886.361,
+   "claimed": -3886,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs scautoloc_input absolute d3D_m",
+   "computed": 3919.866,
+   "claimed": 3920,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs scautoloc_input absolute dT_ms",
+   "computed": 690.275,
+   "claimed": 690,
+   "tolerance": 1.0,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs S1 absolute dE_m",
+   "computed": -1.522,
+   "claimed": -1.5,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs S1 absolute dN_m",
+   "computed": -0.987,
+   "claimed": -1.0,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs S1 absolute dU_m",
+   "computed": -4.917,
+   "claimed": -4.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs S1 absolute d3D_m",
+   "computed": 5.241,
+   "claimed": 5.2,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs S1 absolute dT_ms",
+   "computed": -0.949,
+   "claimed": -0.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1f absolute dE_m",
+   "computed": -1.579,
+   "claimed": -1.6,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1f absolute dN_m",
+   "computed": -2.481,
+   "claimed": -2.5,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1f absolute dU_m",
+   "computed": -4.115,
+   "claimed": -4.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1f absolute d3D_m",
+   "computed": 5.058,
+   "claimed": 5.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1f absolute dT_ms",
+   "computed": -0.957,
+   "claimed": -1.0,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1 relative dE_m",
+   "computed": 2.278,
+   "claimed": 2.3,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1 relative dN_m",
+   "computed": -1.534,
+   "claimed": -1.5,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1 relative dU_m",
+   "computed": 3.121,
+   "claimed": 3.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1 relative d3D_m",
+   "computed": 4.157,
+   "claimed": 4.2,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1 absolute d3D_m",
+   "computed": 497.399,
+   "claimed": 497,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs R1 absolute dT_ms",
+   "computed": -4.496,
+   "claimed": -4.5,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs HypoDD_dtcc relative dE_m",
+   "computed": -1.486,
+   "claimed": -1.5,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs HypoDD_dtcc relative dN_m",
+   "computed": 5.162,
+   "claimed": 5.2,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs HypoDD_dtcc relative dU_m",
+   "computed": -6.933,
+   "claimed": -6.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs HypoDD_dtcc relative d3D_m",
+   "computed": 8.771,
+   "claimed": 8.8,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs HypoDD_dtcc absolute d3D_m",
+   "computed": 367.553,
+   "claimed": 368,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 RTDD_final vs HypoDD_dtcc absolute dT_ms",
+   "computed": -18.114,
+   "claimed": -18.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 scautoloc_final vs S1 horizontal",
+   "computed": 349.39,
+   "claimed": 349,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 scautoloc_final vs S1 too shallow",
+   "computed": 2709.048,
+   "claimed": 2709,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev3 scautoloc_final vs S1 dT_ms",
+   "computed": -827.656,
+   "claimed": -830,
+   "tolerance": 10.0,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 scautoloc_final vs S1 horizontal",
+   "computed": 509.619,
+   "claimed": 510,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 scautoloc_final vs S1 too shallow",
+   "computed": 3881.444,
+   "claimed": 3881,
+   "tolerance": 1.5,
+   "agrees": true
+  },
+  {
+   "item": "RT2 ev9 scautoloc_final vs S1 dT_ms",
+   "computed": -691.224,
+   "claimed": -690,
+   "tolerance": 10.0,
+   "agrees": true
+  },
+  {
+   "item": "ev3 final RTDD vs S1 identical in all runs",
+   "computed": "[[\"RT2_filefeed\", 61.053, \"Origin/20261017084948.430042.487\"], [\"RT3_paced\", 61.053, \"Origin/20261017090041.329277.491\"], [\"RT4_filefeed_prefer_rtdd\", 61.053, \"Origin/20261017091450.954037.487\"], [\"RT5_paced_creationtime\", 61.053, \"Origin/20261017092332.207771.488\"]]",
+   "claimed": "identical in RT3/RT4/RT5",
+   "tolerance": 0.001,
+   "agrees": true
+  },
+  {
+   "item": "ev9 final RTDD vs S1 identical in all runs",
+   "computed": "[[\"RT2_filefeed\", 5.241, \"Origin/20261017085110.565901.581\"], [\"RT3_paced\", 5.241, \"Origin/20261017091130.775467.589\"], [\"RT4_filefeed_prefer_rtdd\", 5.241, \"Origin/20261017091552.45078.583\"], [\"RT5_paced_creationtime\", 5.241, \"Origin/20261017093014.735641.584\"]]",
+   "claimed": "identical in RT3/RT4/RT5",
+   "tolerance": 0.001,
+   "agrees": true
+  },
+  {
+   "item": "offline P ev3 vs real-time RTDD 3D m",
+   "computed": 0.0,
+   "claimed": 0.0,
+   "tolerance": 0.005,
+   "agrees": true
+  },
+  {
+   "item": "offline P ev3 vs real-time RTDD dT ms",
+   "computed": 0.0,
+   "claimed": 0.0,
+   "tolerance": 0.0005,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev3 vs S1 dE_m",
+   "computed": -21.84,
+   "claimed": -21.8,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev3 vs S1 dN_m",
+   "computed": 8.866,
+   "claimed": 8.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev3 vs S1 dU_m",
+   "computed": -33.385,
+   "claimed": -33.4,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev3 vs S1 d3D_m",
+   "computed": 40.867,
+   "claimed": 40.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev3 vs S1 dT_ms",
+   "computed": -2.456,
+   "claimed": -2.5,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev3 vs SEa 3D",
+   "computed": 5.419,
+   "claimed": 5.4,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline P ev9 vs real-time RTDD 3D m",
+   "computed": 0.0,
+   "claimed": 0.0,
+   "tolerance": 0.005,
+   "agrees": true
+  },
+  {
+   "item": "offline P ev9 vs real-time RTDD dT ms",
+   "computed": 0.0,
+   "claimed": 0.0,
+   "tolerance": 0.0005,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev9 vs S1 dE_m",
+   "computed": -0.405,
+   "claimed": -0.4,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev9 vs S1 dN_m",
+   "computed": -0.858,
+   "claimed": -0.9,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev9 vs S1 dU_m",
+   "computed": -0.743,
+   "claimed": -0.7,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev9 vs S1 d3D_m",
+   "computed": 1.206,
+   "claimed": 1.2,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev9 vs S1 dT_ms",
+   "computed": 0.125,
+   "claimed": 0.1,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline PS ev9 vs SEa 3D",
+   "computed": 2.181,
+   "claimed": 2.2,
+   "tolerance": 0.15,
+   "agrees": true
+  },
+  {
+   "item": "offline-check origins found in RT3 database",
+   "computed": 0,
+   "claimed": 0,
+   "tolerance": 0,
+   "agrees": true,
+   "detail": "[]"
+  },
+  {
+   "item": "RT1_filefeed 20210827220322 picks identical to step 09 (multiset)",
+   "computed": "112 db / 112 step09; DL3C 56 SDL3C 56",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT1_filefeed 20260202194119 picks identical to step 09 (multiset)",
+   "computed": "0 db / 85 step09; DL3C 0 SDL3C 0",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": false
+  },
+  {
+   "item": "RT2_filefeed 20210827220322 picks identical to step 09 (multiset)",
+   "computed": "112 db / 112 step09; DL3C 56 SDL3C 56",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT2_filefeed 20260202194119 picks identical to step 09 (multiset)",
+   "computed": "85 db / 85 step09; DL3C 43 SDL3C 42",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT3_paced 20210827220322 picks identical to step 09 (multiset)",
+   "computed": "112 db / 112 step09; DL3C 56 SDL3C 56",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT3_paced 20260202194119 picks identical to step 09 (multiset)",
+   "computed": "85 db / 85 step09; DL3C 43 SDL3C 42",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT4_filefeed_prefer_rtdd 20210827220322 picks identical to step 09 (multiset)",
+   "computed": "112 db / 112 step09; DL3C 56 SDL3C 56",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT4_filefeed_prefer_rtdd 20260202194119 picks identical to step 09 (multiset)",
+   "computed": "85 db / 85 step09; DL3C 43 SDL3C 42",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT5_paced_creationtime 20210827220322 picks identical to step 09 (multiset)",
+   "computed": "112 db / 112 step09; DL3C 56 SDL3C 56",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  },
+  {
+   "item": "RT5_paced_creationtime 20260202194119 picks identical to step 09 (multiset)",
+   "computed": "85 db / 85 step09; DL3C 43 SDL3C 42",
+   "claimed": "identical (112 / 85)",
+   "tolerance": 0,
+   "agrees": true
+  }
+ ],
+ "n_checks": 97,
+ "n_agree": 96,
+ "offline": [
+  {
+   "kma_id": "20210827220322",
+   "rtdd_id": 3,
+   "variant": "P",
+   "publicID": "Origin/20261017090158.998801.425",
+   "author": "scrtdd@server-a",
+   "n_P": 55,
+   "n_S": 0,
+   "lat": 34.999966236385816,
+   "lon": 127.72456181536302,
+   "depth_km": 14.129959194675383,
+   "time": "2021-08-27T22:03:23.257436",
+   "vs_realtime_3D_m": 0.0,
+   "vs_realtime_dT_ms": 0.0,
+   "vs_S1_dE": -44.98721231165949,
+   "vs_S1_dN": -16.00136012212301,
+   "vs_S1_dU": -38.0471946753822,
+   "vs_S1_3D": 61.05310655485622,
+   "vs_S1_dT_ms": -0.775,
+   "vs_SEa_3D": 29.33435459217547
+  },
+  {
+   "kma_id": "20210827220322",
+   "rtdd_id": 3,
+   "variant": "PS",
+   "publicID": "Origin/20261017090215.262948.480",
+   "author": "scrtdd@server-a",
+   "n_P": 55,
+   "n_S": 52,
+   "lat": 35.00019038782045,
+   "lon": 127.724815380098,
+   "depth_km": 14.125296684874733,
+   "time": "2021-08-27T22:03:23.255755",
+   "vs_realtime_3D_m": 34.29190761922124,
+   "vs_realtime_dT_ms": -1.681,
+   "vs_S1_dE": -21.839732790863668,
+   "vs_S1_dN": 8.866129134106913,
+   "vs_S1_dU": -33.384684874732784,
+   "vs_S1_3D": 40.867093833354446,
+   "vs_S1_dT_ms": -2.456,
+   "vs_SEa_3D": 5.419131191788908
+  },
+  {
+   "kma_id": "20260202194119",
+   "rtdd_id": 9,
+   "variant": "P",
+   "publicID": "Origin/20261017090218.952474.407",
+   "author": "scrtdd@server-a",
+   "n_P": 37,
+   "n_S": 0,
+   "lat": 35.00004342550668,
+   "lon": 127.72505003571177,
+   "depth_km": 14.149162777118043,
+   "time": "2026-02-02T19:41:19.941886",
+   "vs_realtime_3D_m": 0.0,
+   "vs_realtime_dT_ms": 0.0,
+   "vs_S1_dE": -1.5221643650964631,
+   "vs_S1_dN": -0.9867602066129797,
+   "vs_S1_dU": -4.9167771180425035,
+   "vs_S1_3D": 5.240742055113069,
+   "vs_S1_dT_ms": -0.949,
+   "vs_SEa_3D": 6.153212438981942
+  },
+  {
+   "kma_id": "20260202194119",
+   "rtdd_id": 9,
+   "variant": "PS",
+   "publicID": "Origin/20261017090230.351075.445",
+   "author": "scrtdd@server-a",
+   "n_P": 37,
+   "n_S": 37,
+   "lat": 35.00004458561261,
+   "lon": 127.72506226805172,
+   "depth_km": 14.144989479693367,
+   "time": "2026-02-02T19:41:19.942960",
+   "vs_realtime_3D_m": 4.322027501904182,
+   "vs_realtime_dT_ms": 1.074,
+   "vs_S1_dE": -0.4054970888995403,
+   "vs_S1_dN": -0.8580573871704574,
+   "vs_S1_dU": -0.7434796933658561,
+   "vs_S1_3D": 1.2055921463045374,
+   "vs_S1_dT_ms": 0.125,
+   "vs_SEa_3D": 2.1814784735076302
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "run": "P0a0",
+ "what": "sensitivity: P0 without absolute-location equations (absLocConstraint 0)",
+ "started": "2026-10-17T21:54:43",
+ "host": "server-a",
+ "pid": 1899961,
+ "status": "ok",
+ "n_input_events": 685,
+ "n_clusters": 1,
+ "cluster_sizes": [
+  680
+ ],
+ "n_clustered": 680,
+ "n_relocated": 680,
+ "clustering_s": 1.4,
+ "relocation_incl_xcorr_s": 56.7,
+ "wall_time_s": 59.0,
+ "peak_rss_mb_process_so_far": 436.9,
+ "cpu_user_s_process_so_far": 56.3,
+ "finished": "2026-10-17T21:55:42"
+}

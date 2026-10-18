@@ -1,0 +1,12 @@
+{
+ "n": 264,
+ "max_abs_diff_m": 320.1724387803324,
+ "diff_m_at_max_distance": -136.03413209609982,
+ "rel_diff_pct_range_beyond_20km": [
+  -0.12573418971578387,
+  0.3010344299981109
+ ],
+ "median_rel_diff_pct_beyond_20km": 0.08549897006053896,
+ "median_rel_diff_pct_NS": 0.26589721966170576,
+ "median_rel_diff_pct_EW": -0.09911768794513354
+}

@@ -1,0 +1,7 @@
+set,event_id,phase,time_utc,network,station,location,channel,channel_type,weight_code,epi_dist_km,in_phase_csv,has_metadata,covered_pick_channel,rtdd_components,covered_rtdd_components,covered_pm10s
+cc,72537675,P,2015-10-15T13:10:27.90Z,NC,J053,01,HNZ,HN,7,58.0,False,False,True,Z,False,
+cc,72540130,P,2015-10-18T22:31:34.93Z,NC,J053,01,HNZ,HN,8,58.4,False,False,True,Z,False,
+cc,72540130,P,2015-10-18T22:31:37.77Z,NC,NRL,,ELN,EL,3,50.6,True,True,True,Z,False,
+cc,72542915,P,2015-10-24T07:43:53.41Z,NC,J053,01,HNZ,HN,6,57.4,False,False,True,Z,False,
+cc,72542920,P,2015-10-24T07:44:14.10Z,NC,J053,01,HNZ,HN,6,57.5,False,False,True,Z,False,
+cc,72547150,P,2015-11-01T06:38:43.10Z,NC,J053,01,HNZ,HN,7,57.5,False,False,True,Z,False,

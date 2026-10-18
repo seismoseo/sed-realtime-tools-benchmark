@@ -1,0 +1,755 @@
+# scdlrtpicker v1.1.1 models (49 files in /home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models)
+# written 2026-10-17 12:56 KST by install/05_tests.sh --stage models
+# Part 1: python show_model_info.py *.onnx   (comparison table; run inside models/ so the
+#         file column shows names instead of long paths)
+# Part 2: python show_model_info.py <file>   (full detail, one block per model)
+# Part 3: SeisBench metadata of each weight set (install/05_seisbench_weight_info.py)
+# python 3.12.15, onnx 1.23.2
+
+######## Part 1
+file                                         nc  order  window  rate   norm  pol  unc  phases                   
+-------------------------------------------  --  -----  ------  -----  ----  ---  ---  -------------------------
+basicphaseae_ethz.onnx                       3   ZNE    600     100.0  std   -    -    P,S,N                    
+basicphaseae_geofon.onnx                     3   ZNE    600     100.0  std   -    -    P,S,N                    
+basicphaseae_instance.onnx                   3   ZNE    600     100.0  std   -    -    P,S,N                    
+basicphaseae_iquique.onnx                    3   ZNE    600     100.0  std   -    -    P,S,N                    
+basicphaseae_lendb.onnx                      3   ZNE    600     100.0  std   -    -    P,S,N                    
+basicphaseae_neic.onnx                       3   ZNE    600     100.0  std   -    -    P,S,N                    
+basicphaseae_scedc.onnx                      3   ZNE    600     100.0  std   -    -    P,S,N                    
+basicphaseae_stead.onnx                      3   ZNE    600     100.0  std   -    -    P,S,N                    
+eqcctp_original.onnx                         3   ZNE    6000    100.0  std   -    -    P                        
+eqccts_original.onnx                         3   ZNE    6000    100.0  std   -    -    S                        
+eqtp_ncedc.onnx                              3   ZNE    12000   100.0  std   yes  -    Polarity_U,Polarity_D,P,S
+eqtransformer_ethz.onnx                      3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_geofon.onnx                    3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_instance.onnx                  3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_iquique.onnx                   3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_lendb.onnx                     3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_neic.onnx                      3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_original.onnx                  3   ZNE    6000    100.0  std   -    -    Detection,P,S            
+eqtransformer_original_nonconservative.onnx  3   ZNE    6000    100.0  std   -    -    Detection,P,S            
+eqtransformer_scedc.onnx                     3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_stead.onnx                     3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+eqtransformer_volpick.onnx                   3   ZNE    6000    100.0  peak  -    -    Detection,P,S            
+obstransformer_obst2024.onnx                 3   ZNE    6000    100.0  std   -    -    Detection,P,S            
+phasenet_aq2009.onnx                         3   ZNE    3001    100.0  std   -    -    P,S,N                    
+phasenet_diting.onnx                         3   ZNE    3001    50.0   std   -    -    N,P,S                    
+phasenet_ethz.onnx                           3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_geofon.onnx                         3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_instance.onnx                       3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_iquique.onnx                        3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_jma.onnx                            3   ZNE    3001    100.0  std   -    -    P,S,N                    
+phasenet_jma_wc.onnx                         3   ZNE    3001    100.0  std   -    -    P,S,N                    
+phasenet_lendb.onnx                          3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_neic.onnx                           3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_original.onnx                       3   ENZ    3001    100.0  std   -    -    N,P,S                    
+phasenet_phasenet_sn.onnx                    3   ENZ    3001    100.0  std   -    -    N,P,S                    
+phasenet_pisdl.onnx                          3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_scedc.onnx                          3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_stead.onnx                          3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenet_volpick.onnx                        3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_ethz.onnx                      3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_geofon.onnx                    3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_instance.onnx                  3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_iquique.onnx                   3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_lendb.onnx                     3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_neic.onnx                      3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_scedc.onnx                     3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+phasenetlight_stead.onnx                     3   ZNE    3001    100.0  peak  -    -    P,S,N                    
+skynet_original.onnx                         3   ENZ    30000   100.0  peak  -    -    P,S,N                    
+skynet_original_multiphase.onnx              3   ENZ    30000   100.0  peak  -    -    P,S,N                    
+
+######## Part 2
+
+basicphaseae_ethz.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+basicphaseae_geofon.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+basicphaseae_instance.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+basicphaseae_iquique.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+basicphaseae_lendb.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+basicphaseae_neic.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+basicphaseae_scedc.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+basicphaseae_stead.onnx
+  input tensor  : [1, 3, 600]
+  output tensor : [1, 3, 600]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 600
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 6 s  (a trigger-centred pick lands ~3 s after the trigger)
+
+eqcctp_original.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 1, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : P
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqccts_original.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 1, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtp_ncedc.onnx
+  input tensor  : [1, 3, 12000]
+  output tensor : [1, 4, 12000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 12000
+  seiscomp.picker.phases            : Polarity_U,Polarity_D,P,S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  seiscomp.picker.polarityLabels    : Polarity_U,Polarity_D
+  -> window duration                : 120 s  (a trigger-centred pick lands ~60 s after the trigger)
+
+eqtransformer_ethz.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_geofon.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_instance.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_iquique.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_lendb.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_neic.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_original_nonconservative.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_original.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_scedc.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_stead.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+eqtransformer_volpick.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+obstransformer_obst2024.onnx
+  input tensor  : [1, 3, 6000]
+  output tensor : [1, 3, 6000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 6000
+  seiscomp.picker.phases            : Detection,P,S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60 s  (a trigger-centred pick lands ~30 s after the trigger)
+
+phasenet_aq2009.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_diting.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 50.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : N,P,S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 60.02 s  (a trigger-centred pick lands ~30.01 s after the trigger)
+
+phasenet_ethz.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_geofon.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_instance.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_iquique.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_jma.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_jma_wc.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_lendb.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_ethz.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_geofon.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_instance.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_iquique.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_lendb.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_neic.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_scedc.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenetlight_stead.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_neic.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_original.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : N,P,S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ENZ
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_phasenet_sn.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : N,P,S
+  seiscomp.picker.normalization     : std
+  seiscomp.picker.componentOrder    : ENZ
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_pisdl.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_scedc.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_stead.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+phasenet_volpick.onnx
+  input tensor  : [1, 3, 3001]
+  output tensor : [1, 3, 3001]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 3001
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ZNE
+  -> window duration                : 30.01 s  (a trigger-centred pick lands ~15.005 s after the trigger)
+
+skynet_original_multiphase.onnx
+  input tensor  : [1, 3, 30000]
+  output tensor : [1, 3, 30000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 30000
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ENZ
+  -> window duration                : 300 s  (a trigger-centred pick lands ~150 s after the trigger)
+
+skynet_original.onnx
+  input tensor  : [1, 3, 30000]
+  output tensor : [1, 3, 30000]
+  seiscomp.picker.numComponents     : 3
+  seiscomp.picker.sampleRate        : 100.0
+  seiscomp.picker.windowLength      : 30000
+  seiscomp.picker.phases            : P,S,N
+  seiscomp.picker.normalization     : peak
+  seiscomp.picker.componentOrder    : ENZ
+  -> window duration                : 300 s  (a trigger-centred pick lands ~150 s after the trigger)
+
+######## Part 3
+# SeisBench metadata of the weight sets behind scdlrtpicker's shipped .onnx models
+# source: https://hifis-storage.desy.de:2880/Helmholtz/HelmholtzAI/SeisBench/models/v3/<model>/<weights>.json.v<N> (newest N on the server)
+# columns: file | SeisBench model/weights vN | SeisBench default P/S threshold | norm SeisBench vs onnx | SeisBench preprocessing not done by the plugin | docstring
+
+basicphaseae_ethz.onnx | basicphaseae/ethz v1 (versions on server: [1]) | P 0.480 / S 0.183 | norm (class default) vs onnx std | -
+    Model trained on ETHZ for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+basicphaseae_geofon.onnx | basicphaseae/geofon v1 (versions on server: [1]) | P 0.234 / S 0.005 | norm (class default) vs onnx std | -
+    Model trained on GEOFON for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+basicphaseae_instance.onnx | basicphaseae/instance v1 (versions on server: [1]) | P 0.042 / S 0.029 | norm (class default) vs onnx std | -
+    Model trained on INSTANCE for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+basicphaseae_iquique.onnx | basicphaseae/iquique v1 (versions on server: [1]) | P 0.510 / S 0.314 | norm (class default) vs onnx std | -
+    Model trained on Iquique for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+basicphaseae_lendb.onnx | basicphaseae/lendb v1 (versions on server: [1]) | P 0.062 / S 0.062 | norm (class default) vs onnx std | -
+    Model trained on LenDB for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+basicphaseae_neic.onnx | basicphaseae/neic v1 (versions on server: [1]) | P 0.224 / S 0.715 | norm (class default) vs onnx std | -
+    Model trained on NEIC for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+basicphaseae_scedc.onnx | basicphaseae/scedc v1 (versions on server: [1]) | P 0.256 / S 0.198 | norm (class default) vs onnx std | -
+    Model trained on SCEDC for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+basicphaseae_stead.onnx | basicphaseae/stead v1 (versions on server: [1]) | P 0.504 / S 0.285 | norm (class default) vs onnx std | -
+    Model trained on STEAD for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqcctp_original.onnx | eqcctp/original v1 (versions on server: [1]) | P 0.500 / S - | norm std vs onnx std | -
+    EQCCT P-branch (Saad et al., 2023) — institutional PyTorch checkpoint in SeisBench format (6000 samples, 100 Hz, ZNE, peak norm). Pair with original.pt in ``contrib/eqcct/`` or ``<cache_model_root>/eqcct/`` after export.
+
+eqccts_original.onnx | eqccts/original v1 (versions on server: [1]) | P - / S 0.500 | norm std vs onnx std | -
+    EQCCT S-branch (Saad et al., 2023) — institutional PyTorch checkpoint in SeisBench format (6000 samples, 100 Hz, ZNE, peak norm). Pair with original.pt in ``contrib/eqccts/`` or ``<cache_model_root>/eqccts/`` after export.
+
+eqtp_ncedc.onnx | eqtp/ncedc v1 (versions on server: [1]) | P - / S - | norm (class default) vs onnx std | -
+    Model trained on NCEDC for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_ethz.onnx | eqtransformer/ethz v2 (versions on server: [1, 2]) | P 0.030 / S 0.030 | norm peak vs onnx peak | -
+    Model trained on ETHZ for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_geofon.onnx | eqtransformer/geofon v2 (versions on server: [1, 2]) | P 0.876 / S 0.876 | norm peak vs onnx peak | -
+    Model trained on GEOFON for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_instance.onnx | eqtransformer/instance v2 (versions on server: [1, 2]) | P 0.005 / S 0.005 | norm peak vs onnx peak | -
+    Model trained on INSTANCE for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_iquique.onnx | eqtransformer/iquique v2 (versions on server: [1, 2]) | P 0.300 / S 0.300 | norm peak vs onnx peak | -
+    Model trained on Iquique for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_lendb.onnx | eqtransformer/lendb v2 (versions on server: [1, 2]) | P 0.576 / S 0.576 | norm peak vs onnx peak | -
+    Model trained on LenDB for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_neic.onnx | eqtransformer/neic v2 (versions on server: [1, 2]) | P 0.300 / S 0.300 | norm peak vs onnx peak | -
+    Model trained on NEIC for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_original.onnx | eqtransformer/original v3 (versions on server: [1, 2, 3]) | P - / S - | norm (class default) vs onnx std | filter ['bandpass'] {'freqmin': 1, 'freqmax': 45, 'corners': 2, 'zerophase': True}
+    Original (conservative) EQTransformer model from Mousavi et al. (2020). Originally published under MIT License. Original available at https://github.com/smousavi05/EQTransformer/blob/01bf112a00c1a3bbb43adb2c7dba3e21b5fbcdb9/ModelsAndSampleData/EqT_model_conservative.h5 . Converted to SeisBench by Jannes Münchmeyer (munchmej@gfz-potsdam.de) and Calum Chamberlain (calum.chamberlain@vuw.ac.nz).
+
+eqtransformer_original_nonconservative.onnx | eqtransformer/original_nonconservative v1 (versions on server: [1]) | P - / S - | norm (class default) vs onnx std | filter ['bandpass'] {'freqmin': 1, 'freqmax': 45, 'corners': 2, 'zerophase': True}
+    Original (non-conservative) EQTransformer model from Mousavi et al. (2020). Originally published under MIT License. Original available at https://github.com/smousavi05/EQTransformer/blob/01bf112a00c1a3bbb43adb2c7dba3e21b5fbcdb9/ModelsAndSampleData/EqT_original_model.h5 . Converted to SeisBench by Calum Chamberlain (calum.chamberlain@vuw.ac.nz) and Jannes Münchmeyer (munchmej@gfz-potsdam.de).
+
+eqtransformer_scedc.onnx | eqtransformer/scedc v2 (versions on server: [1, 2]) | P 0.014 / S 0.014 | norm peak vs onnx peak | -
+    Model trained on SCEDC for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_stead.onnx | eqtransformer/stead v2 (versions on server: [1, 2]) | P 0.718 / S 0.718 | norm peak vs onnx peak | -
+    Model trained on STEAD for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+eqtransformer_volpick.onnx | eqtransformer/volpick v1 (versions on server: [1]) | P 0.220 / S 0.220 | norm peak vs onnx peak | -
+    Model trained on volcano-tectonic and long-period earthquakes with a learning rate of 0.001. Threshold selected for optimal F1 score on the validation set. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference Yiyuan Zhong and Yen Joe Tan (2024). Geophysical Research Letters, 51, e2024GL108438. https://doi.org/10.1029/2024GL108438.
+
+obstransformer_obst2024.onnx | obstransformer/obst2024 v1 (versions on server: [1]) | P - / S - | norm (class default) vs onnx std | filter ['bandpass'] {'freqmin': 3, 'freqmax': 20, 'corners': 4, 'zerophase': False}
+    The OBS dataset built and used for training by Niksejel et al. (2024): Niksejel, A. and Zhang, M., 2024. OBSTransformer: a deep-learning seismic phase picker for OBS data using automated labelling and transfer learning. Geophysical Journal International, p.ggae049, https://doi.org/10.1093/gji/ggae049. Email: alireza.niksejel@dal.ca
+
+phasenet_aq2009.onnx | phasenet/aq2009 v1 (versions on server: [1]) | P 0.300 / S 0.300 | norm std vs onnx std | -
+    PhaseNet model trained by Rossella Fonzetti and Daniele Bailo, Istituto Nazionale di Geofisica e Vulcanologia (INGV), on the AQ2009 dataset (Bagagli et al., 2023), a seismic waveform dataset prepared from the 2009 L'Aquila earthquake sequence and used for P- and S-phase picking experiments. The training run consisted of 60 epochs with a batch size of 1024, a learning rate of 0.0005, standard normalization, and cross-entropy loss. The distributed weights correspond to checkpoint epoch 41, selected as the best model because it showed the best validation behaviour before the onset of overfitting 
+
+phasenet_diting.onnx | phasenet/diting v2 (versions on server: [1, 2]) | P 0.300 / S 0.300 | norm std vs onnx std | -
+    Model trained on the DiTing dataset, a large-scale Chinese seismic benchmark dataset. For models fine-tuned on individual regions in China, please see: https://github.com/JUNZHU-SEIS/USTC-Pickers If you use this model, please reference: Zhu J, Li ZF and Fang LH (2023). USTC-Pickers: a Unified Set of seismic phase pickers Transfer learned for China. Earthq Sci 36(2): 95–112, doi: 10.1016/j.eqs.2023.03.001
+
+phasenet_ethz.onnx | phasenet/ethz v2 (versions on server: [1, 2]) | P 0.361 / S 0.345 | norm peak vs onnx peak | -
+    Model trained on ETHZ for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_geofon.onnx | phasenet/geofon v2 (versions on server: [1, 2]) | P 0.570 / S 0.073 | norm peak vs onnx peak | -
+    Model trained on GEOFON for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_instance.onnx | phasenet/instance v2 (versions on server: [1, 2]) | P 0.086 / S 0.119 | norm peak vs onnx peak | -
+    Model trained on INSTANCE for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_iquique.onnx | phasenet/iquique v2 (versions on server: [1, 2]) | P 1.120 / S 0.143 | norm peak vs onnx peak | -
+    Model trained on Iquique for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_jma.onnx | phasenet/jma v1 (versions on server: [1]) | P 0.100 / S 0.100 | norm std vs onnx std | -
+    Model trained on the JMA (Japanese Meterological Agency) dataset. See Naoi et al. (2024) for details (https://doi.org/10.1186/s40623-024-02091-8). Remember to cite the publication, if you use this model in your work.
+
+phasenet_jma_wc.onnx | phasenet/jma_wc v1 (versions on server: [1]) | P 0.100 / S 0.100 | norm std vs onnx std | -
+    PhaseNetWC model trained on the JMA (Japanese Meterological Agency) dataset. The model differs from a standard PhaseNet model in that each convolutional layer has double the number of filters as in a regular PhaseNet. See Naoi et al. (2024) for details (https://doi.org/10.1186/s40623-024-02091-8). Remember to cite the publication, if you use this model in your work.
+
+phasenet_lendb.onnx | phasenet/lendb v2 (versions on server: [1, 2]) | P 0.266 / S 0.266 | norm peak vs onnx peak | -
+    Model trained on LenDB for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_neic.onnx | phasenet/neic v2 (versions on server: [1, 2]) | P 0.357 / S 0.449 | norm peak vs onnx peak | -
+    Model trained on NEIC for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_original.onnx | phasenet/original v2 (versions on server: [1, 2]) | P - / S - | norm std vs onnx std | -
+    Original PhaseNet model from Zhu et al. (2018). Originally published under MIT License. Original available at https://github.com/AI4EPS/PhaseNet/tree/master/model/190703-214543 . Converted to SeisBench by Jannes Münchmeyer (munchmej@univ-grenoble-alpes.fr) with help from Sacha Lapins, Yiyuan Zhong, and Jun Zhu
+
+phasenet_phasenet_sn.onnx | phasenet/phasenet_sn v1 (versions on server: [1]) | P - / S - | norm std vs onnx std | -
+    PhaseNet model trained on data from the SNet offshore Japan and corresponding land stations. For details on the model training see Suzuki et al. (2025, doi:10.1126/science.adt6389). Original available at https://zenodo.org/records/13854225 . Converted to SeisBench by Jannes Münchmeyer (munchmej@univ-grenoble-alpes.fr).
+
+phasenet_pisdl.onnx | phasenet/pisdl v1 (versions on server: [1]) | P 0.200 / S 0.200 | norm peak vs onnx peak | -
+    Model trained on induced data from different regions. The dataset induced is available in SeisBench. If you use this model, please reference: Heuel J., Maurer V., Frietsch M., Rietbrock A. (2025). Picking Induced Seismicity with Deep Learning. Seismica, 4 (2). https://doi.org/10.26443/seismica.v4i2.1579
+
+phasenet_scedc.onnx | phasenet/scedc v2 (versions on server: [1, 2]) | P 0.409 / S 0.404 | norm peak vs onnx peak | -
+    Model trained on SCEDC for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_stead.onnx | phasenet/stead v2 (versions on server: [1, 2]) | P 0.268 / S 0.261 | norm peak vs onnx peak | -
+    Model trained on STEAD for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenet_volpick.onnx | phasenet/volpick v1 (versions on server: [1]) | P 0.390 / S 0.340 | norm peak vs onnx peak | -
+    Model trained on volcano-tectonic and long-period earthquakes with a learning rate of 0.0005. Threshold selected for optimal F1 score on the validation set. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference Yiyuan Zhong and Yen Joe Tan (2024). Geophysical Research Letters, 51, e2024GL108438. https://doi.org/10.1029/2024GL108438.
+
+phasenetlight_ethz.onnx | phasenetlight/ethz v2 (versions on server: [1, 2]) | P 0.444 / S 0.450 | norm peak vs onnx peak | -
+    Model trained on ETHZ for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenetlight_geofon.onnx | phasenetlight/geofon v2 (versions on server: [1, 2]) | P 0.244 / S 0.126 | norm peak vs onnx peak | -
+    Model trained on GEOFON for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenetlight_instance.onnx | phasenetlight/instance v2 (versions on server: [1, 2]) | P 0.097 / S 0.113 | norm peak vs onnx peak | -
+    Model trained on INSTANCE for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenetlight_iquique.onnx | phasenetlight/iquique v2 (versions on server: [1, 2]) | P 0.411 / S 0.389 | norm peak vs onnx peak | -
+    Model trained on Iquique for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenetlight_lendb.onnx | phasenetlight/lendb v2 (versions on server: [1, 2]) | P 0.301 / S 0.301 | norm peak vs onnx peak | -
+    Model trained on LenDB for 100 epochs with a learning rate of 0.001. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenetlight_neic.onnx | phasenetlight/neic v2 (versions on server: [1, 2]) | P 0.292 / S 0.548 | norm peak vs onnx peak | -
+    Model trained on NEIC for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenetlight_scedc.onnx | phasenetlight/scedc v2 (versions on server: [1, 2]) | P 0.328 / S 0.394 | norm peak vs onnx peak | -
+    Model trained on SCEDC for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+phasenetlight_stead.onnx | phasenetlight/stead v2 (versions on server: [1, 2]) | P 0.502 / S 0.476 | norm peak vs onnx peak | -
+    Model trained on STEAD for 100 epochs with a learning rate of 0.01. Threshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted. When using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench Jannes Münchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)
+
+skynet_original.onnx | skynet/original v1 (versions on server: [1]) | P - / S - | norm peak vs onnx peak | -
+    Original Skynet model by Suarez & Beroza (2025)
+
+skynet_original_multiphase.onnx | skynet/original_multiphase v1 (versions on server: [1]) | P - / S - | norm peak vs onnx peak | -
+    Multiphase Skynet model by Suarez & Beroza (2025)
+

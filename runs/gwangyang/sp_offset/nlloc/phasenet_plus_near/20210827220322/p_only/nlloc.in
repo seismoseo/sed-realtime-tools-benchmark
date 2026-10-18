@@ -1,0 +1,14 @@
+CONTROL 1 54321
+TRANS TRANS_MERC WGS-84 35.0000 127.7286 0.0
+LOCSIG notebook 05_gwangyang_sp_offset
+LOCFILES /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/nlloc/phasenet_plus_near/20210827220322/p_only/obs.nll NLLOC_OBS /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983 /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/sp_offset/nlloc/phasenet_plus_near/20210827220322/p_only/loc/event
+LOCHYPOUT SAVE_NLLOC_ALL
+LOCSEARCH OCT 10 10 10 0.01 20000 5000 0 1
+LOCGRID 61 61 61 -15.0 -15.0 -1.0 0.5 0.5 0.5 PROB_DENSITY SAVE
+LOCMETH GAU_ANALYTIC 9999.0 4 -1 -1 -1.0 6 -1.0 1
+LOCGAU 0.1 0.0
+LOCPHASEID P P
+LOCPHASEID S S
+LOCQUAL2ERR 0.1 0.5 1.0 2.0 99999.9
+LOCANGLES ANGLES_NO 5
+LOCPHSTAT 9999.0 -1 9999.0 1.0 1.0 9999.9 -9999.9 9999.9

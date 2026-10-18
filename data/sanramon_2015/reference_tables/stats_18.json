@@ -1,0 +1,39 @@
+{
+ "stations": [
+  "NC_NDH_--",
+  "NP_ELK_01",
+  "NC_MCUB_--",
+  "NC_HSL_02",
+  "PB_B067_--",
+  "NC_JPSB_--",
+  "NC_NPRB_--",
+  "NC_NHS_--"
+ ],
+ "summary": [
+  {
+   "transform": "AZIMUTHAL_EQUIDIST",
+   "max_abs_m": 315.4439732865342,
+   "mean_m": 122.35235606787498
+  },
+  {
+   "transform": "LAMBERT",
+   "max_abs_m": 11.472288428151955,
+   "mean_m": -7.253893546566914
+  },
+  {
+   "transform": "SDC",
+   "max_abs_m": 21.587852955107678,
+   "mean_m": 7.198756956553254
+  },
+  {
+   "transform": "SIMPLE",
+   "max_abs_m": 418.1327859754589,
+   "mean_m": -16.294943798337513
+  },
+  {
+   "transform": "TRANS_MERC",
+   "max_abs_m": 6.855106588204762,
+   "mean_m": 2.063683581690512
+  }
+ ]
+}

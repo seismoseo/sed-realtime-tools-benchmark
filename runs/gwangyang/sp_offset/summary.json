@@ -1,0 +1,474 @@
+{
+ "hand_median_offset_s": -0.2727327346801758,
+ "hand_ci95_s": [
+  -0.30441856384277344,
+  -0.23856592178344727
+ ],
+ "s_shift_s": 0.2727327346801758,
+ "offsets": {
+  "hand": {
+   "Median offset (s)": -0.2727327346801758,
+   "95% CI low (s)": -0.30441856384277344,
+   "95% CI high (s)": -0.23856592178344727,
+   "Pairs used": 299.0
+  },
+  "phasenet_plus": {
+   "Median offset (s)": -0.26181912422180176,
+   "95% CI low (s)": -0.2893643379211426,
+   "95% CI high (s)": -0.22094488143920898,
+   "Pairs used": 336.0
+  },
+  "dl_phasenet_original": {
+   "Median offset (s)": -0.2884790897369385,
+   "95% CI low (s)": -0.3082531064748764,
+   "95% CI high (s)": -0.24451088905334473,
+   "Pairs used": 357.0
+  },
+  "dl_phasenet_instance": {
+   "Median offset (s)": -0.3057519197463989,
+   "95% CI low (s)": -0.34448634684085844,
+   "95% CI high (s)": -0.2693014144897461,
+   "Pairs used": 302.0
+  },
+  "dl_eqtransformer_stead": {
+   "Median offset (s)": -0.26887965202331543,
+   "95% CI low (s)": -0.30718421936035156,
+   "95% CI high (s)": -0.23073267936706543,
+   "Pairs used": 268.0
+  },
+  "dl_phasenet_stead": {
+   "Median offset (s)": -0.2542903423309326,
+   "95% CI low (s)": -0.29640346169471743,
+   "95% CI high (s)": -0.21755552291870117,
+   "Pairs used": 253.0
+  }
+ },
+ "aic": {
+  "med": -0.22222161293029785,
+  "lo": -0.2484496623277664,
+  "hi": -0.19046223163604736,
+  "n": 299,
+  "before": 0.9698996655518395,
+  "minus_hand": 0.05927228927612305,
+  "minus_hand_q": [
+   0.03139317035675049,
+   0.07901322841644287
+  ]
+ },
+ "wadati": {
+  "hand": {
+   "slope": 0.7284475253506824,
+   "vpvs": 1.7284475253506824,
+   "lo": 1.7187546934266371,
+   "hi": 1.736132236921637,
+   "intercepts": {
+    "20210720161418": -0.30864743131102446,
+    "20210827002315": -0.2477770609315626,
+    "20210827220322": -0.2120519294640785,
+    "20210828133410": -0.22574197010353172,
+    "20210828133922": -0.29015992854969785,
+    "20210828234556": -0.28084348303906614,
+    "20260101024947": -0.3494658528833605,
+    "20260101084800": -0.2850096438036526,
+    "20260202194119": -0.2842990431669338,
+    "20260203021535": -0.40910095559773024,
+    "20260204054406": -0.3789224611222396
+   },
+   "per_event_median": 1.7299673261450255,
+   "rms": 0.17456032784777673
+  },
+  "phasenet_plus": {
+   "slope": 0.7271896829613603,
+   "vpvs": 1.7271896829613604,
+   "lo": 1.7195188768413519,
+   "hi": 1.7346067930669957,
+   "intercepts": {
+    "20210720161418": -0.29522625506501904,
+    "20210827002315": -0.22788831994895212,
+    "20210827220322": -0.20263748012823357,
+    "20210828133410": -0.1865825127954647,
+    "20210828133922": -0.25167584126460546,
+    "20210828234556": -0.2398555275141377,
+    "20260101024947": -0.24599782876926415,
+    "20260101084800": -0.3569770057989092,
+    "20260202194119": -0.2629101507430116,
+    "20260203021535": -0.3327842601604083,
+    "20260204054406": -0.34388545619725275
+   },
+   "per_event_median": 1.7259981972492358,
+   "rms": 0.14456616630671293
+  }
+ },
+ "event_terms": {
+  "hand": {
+   "sd": 0.015686302438694736,
+   "kw_p": 2.3528426092726636e-09,
+   "terms": {
+    "20210720161418": -0.006209708609551275,
+    "20210827002315": 0.022312755599386946,
+    "20210827220322": 0.012943143859274642,
+    "20210828133410": 0.011674280181296126,
+    "20210828133922": 0.0,
+    "20210828234556": 0.007662415504455566,
+    "20260101024947": -0.01290428638458252,
+    "20260101084800": -0.016394381508462175,
+    "20260202194119": 0.009236927047140853,
+    "20260203021535": -0.027343873962990983,
+    "20260204054406": -0.01786864041548597
+   }
+  },
+  "phasenet_plus": {
+   "sd": 0.006597307107919903,
+   "kw_p": 0.0009213546437621355,
+   "terms": {
+    "20210720161418": 0.0,
+    "20210827002315": 0.010084811037955888,
+    "20210827220322": 0.0017540020084823027,
+    "20210828133410": 0.006999926004453982,
+    "20210828133922": -0.006393888409765187,
+    "20210828234556": -0.000445051755860959,
+    "20260101024947": 0.0006413024998153105,
+    "20260101084800": -0.006234564731158798,
+    "20260202194119": 0.001317221467473928,
+    "20260203021535": -0.0020438035362926286,
+    "20260204054406": -0.014205650720640506
+   }
+  }
+ },
+ "explanations_hand": {
+  "i": {
+   "Free parameters": 0,
+   "Fitted values": "none",
+   "RMS": 0.31018249618251653,
+   "RMS lo": 0.2739756991489132,
+   "RMS hi": 0.34795927773069785,
+   "dRMS": 0.1813066406967046,
+   "dRMS lo": 0.1562322330519175,
+   "dRMS hi": 0.21033617013921496,
+   "Trend": -0.1307055832548286,
+   "Trend lo": -0.25535188737512576,
+   "Trend hi": -0.035449946796365005,
+   "Near1": -0.2649862766265869,
+   "Near": -0.22517967224121094,
+   "Near lo": -0.2918403148651123,
+   "Near hi": -0.17827177047729492,
+   "Far": -0.2964823246002197,
+   "Near stations negative": 7,
+   "Near stations": 7
+  },
+  "ii": {
+   "Free parameters": 1,
+   "Fitted values": "Vp/Vs 1.7035",
+   "RMS": 0.1458425344332492,
+   "RMS lo": 0.1215213470470806,
+   "RMS hi": 0.16613560969217553,
+   "dRMS": 0.01696667894743728,
+   "dRMS lo": -0.0031580192733400942,
+   "dRMS hi": 0.03713942584265066,
+   "Trend": 0.2809413662269964,
+   "Trend lo": 0.1914952799664585,
+   "Trend hi": 0.36025898978819104,
+   "Near1": -0.19509709237425943,
+   "Near": -0.11019959511433841,
+   "Near lo": -0.18857649511367883,
+   "Near hi": -0.06597879251599781,
+   "Far": -0.003827034013827557,
+   "Near stations negative": 7,
+   "Near stations": 7
+  },
+  "iii": {
+   "Free parameters": 1,
+   "Fitted values": "constant -0.282 s",
+   "RMS": 0.12887585548581193,
+   "RMS lo": 0.10015961623625239,
+   "RMS hi": 0.15262384873846999,
+   "dRMS": 0.0,
+   "dRMS lo": 0.0,
+   "dRMS hi": 0.0,
+   "Trend": -0.1307055832548286,
+   "Trend lo": -0.25535188737512576,
+   "Trend hi": -0.035449946796365005,
+   "Near1": 0.017155876925159075,
+   "Near": 0.05696248131053505,
+   "Near lo": -0.001593701091557681,
+   "Near hi": 0.1114588556813339,
+   "Far": -0.014340171048473738,
+   "Near stations negative": 1,
+   "Near stations": 7
+  },
+  "iva": {
+   "Free parameters": 1,
+   "Fitted values": "shift -5.65 km (negative = shallower)",
+   "RMS": 0.2533603728225978,
+   "RMS lo": 0.20862867542634494,
+   "RMS hi": 0.2876678518096268,
+   "dRMS": 0.1244845173367859,
+   "dRMS lo": 0.08987424586065389,
+   "dRMS hi": 0.15117715724408434,
+   "Trend": -0.709368432765157,
+   "Trend lo": -0.8666890930914755,
+   "Trend hi": -0.6001535437071481,
+   "Near1": 0.3145319461822511,
+   "Near": 0.1676662063598635,
+   "Near lo": 0.010441416501998813,
+   "Near hi": 0.3355737417936326,
+   "Far": -0.21262848377227783,
+   "Near stations negative": 1,
+   "Near stations": 7
+  },
+  "ivb": {
+   "Free parameters": 11,
+   "Fitted values": "shifts -6.6 to -3.9 km",
+   "RMS": 0.2516114351285902,
+   "RMS lo": 0.20702414693868615,
+   "RMS hi": 0.2843521811660428,
+   "dRMS": 0.12273557964277826,
+   "dRMS lo": 0.08727646436530309,
+   "dRMS hi": 0.148501106411599,
+   "Trend": -0.6962234915140803,
+   "Trend lo": -0.8359639265456279,
+   "Trend hi": -0.5763039056704337,
+   "Near1": 0.3484921455383301,
+   "Near": 0.08929872512817383,
+   "Near lo": 0.019455328583717346,
+   "Near hi": 0.2823219448328018,
+   "Far": -0.20947682857513428,
+   "Near stations negative": 1,
+   "Near stations": 7
+  },
+  "v": {
+   "Free parameters": 2,
+   "Fitted values": "Vp/Vs 1.7216, constant -0.201 s",
+   "RMS": 0.12462504327183425,
+   "RMS lo": 0.09612032946932018,
+   "RMS hi": 0.14784999108956562,
+   "dRMS": -0.0042508122139776755,
+   "dRMS lo": -0.012601546028425748,
+   "dRMS hi": -0.00026337406020438074,
+   "Trend": 0.0006183671902360985,
+   "Trend lo": -0.001951922770714176,
+   "Trend hi": 0.0038613828637426317,
+   "Near1": -0.04136404955251938,
+   "Near": 0.011671419263371785,
+   "Near lo": -0.042283203892111515,
+   "Near hi": 0.054838512105638115,
+   "Far": 0.004949914276684897,
+   "Near stations negative": 2,
+   "Near stations": 7
+  },
+  "vi": {
+   "Free parameters": 0,
+   "Fitted values": "none",
+   "RMS": 0.1291462721187635,
+   "RMS lo": 0.1082555717916746,
+   "RMS hi": 0.15049886703423296,
+   "dRMS": 0.0002704166329515756,
+   "dRMS lo": -0.01551558538163115,
+   "dRMS hi": 0.02042692111642304,
+   "Trend": 0.1983492327733407,
+   "Trend lo": 0.09175756097806638,
+   "Trend hi": 0.27728909477006447,
+   "Near1": -0.1714068423268138,
+   "Near": -0.0748423030084302,
+   "Near lo": -0.16137330231675873,
+   "Near hi": -0.03644969081801541,
+   "Far": 0.03262882443441306,
+   "Near stations negative": 7,
+   "Near stations": 7
+  },
+  "vii": {
+   "Free parameters": 0,
+   "Fitted values": "none",
+   "RMS": 0.37847864074239324,
+   "RMS lo": 0.33371646050888976,
+   "RMS hi": 0.4200210350197972,
+   "dRMS": 0.2496027852565813,
+   "dRMS lo": 0.20325959383119482,
+   "dRMS hi": 0.29507842618568053,
+   "Trend": 0.3032060373891464,
+   "Trend lo": 0.12285820910293115,
+   "Trend hi": 0.5294756262978471,
+   "Near1": -0.3409711141423548,
+   "Near": -0.34968839988917244,
+   "Near lo": -0.43266722222366827,
+   "Near hi": -0.2704059243230348,
+   "Far": -0.37467705155666486,
+   "Near stations negative": 7,
+   "Near stations": 7
+  },
+  "viii": {
+   "Free parameters": 1,
+   "Fitted values": "Vp/Vs 1.660 above 5 km",
+   "RMS": 0.12982899658927777,
+   "RMS lo": 0.10804245607275732,
+   "RMS hi": 0.15044768192210128,
+   "dRMS": 0.0009531411034658377,
+   "dRMS lo": -0.018032924002344897,
+   "dRMS hi": 0.02368712683937794,
+   "Trend": 0.15882942048138718,
+   "Trend lo": 0.05789515377675488,
+   "Trend hi": 0.2607234813127807,
+   "Near1": -0.19741264424149207,
+   "Near": -0.11249742393276652,
+   "Near lo": -0.19114713683593454,
+   "Near hi": -0.06643208525979638,
+   "Far": 0.0029454942911466553,
+   "Near stations negative": 7,
+   "Near stations": 7
+  },
+  "ix": {
+   "Free parameters": 1,
+   "Fitted values": "Vp/Vs 1.650 at 10-15 km",
+   "RMS": 0.13281274480375094,
+   "RMS lo": 0.11186076732901955,
+   "RMS hi": 0.15238017279249538,
+   "dRMS": 0.003936889317939007,
+   "dRMS lo": -0.015932967920290454,
+   "dRMS hi": 0.027537023709311506,
+   "Trend": 0.2142756553391535,
+   "Trend lo": 0.12419331453322256,
+   "Trend hi": 0.3007002176171431,
+   "Near1": -0.20569252106606406,
+   "Near": -0.1211882760223073,
+   "Near lo": -0.2007101148828152,
+   "Near hi": -0.0816159441889539,
+   "Far": -0.0023260291107138897,
+   "Near stations negative": 7,
+   "Near stations": 7
+  },
+  "x": {
+   "Free parameters": 2,
+   "Fitted values": "Vp/Vs 1.680 above 5 km, depth shift -1.75 km",
+   "RMS": 0.11876318957079607,
+   "RMS lo": 0.09415980412568406,
+   "RMS hi": 0.14030523363772138,
+   "dRMS": -0.010112665915015862,
+   "dRMS lo": -0.023419903990565538,
+   "dRMS hi": 0.0004705555227945615,
+   "Trend": 0.018237994169217637,
+   "Trend lo": -0.03338296602368453,
+   "Trend hi": 0.12419084161667467,
+   "Near1": -0.02719256305963791,
+   "Near": -0.018143883681570827,
+   "Near lo": -0.08491366849873383,
+   "Near hi": 0.025053324919624365,
+   "Far": 0.005794701209318909,
+   "Near stations negative": 5,
+   "Near stations": 7
+  },
+  "xi": {
+   "Free parameters": 2,
+   "Fitted values": "Vp/Vs 1.655 at 10-15 km, depth shift -1.25 km",
+   "RMS": 0.1250540569485084,
+   "RMS lo": 0.10072629895845898,
+   "RMS hi": 0.14416184989103067,
+   "dRMS": -0.0038217985373035224,
+   "dRMS lo": -0.020261307343922938,
+   "dRMS hi": 0.011607169516302376,
+   "Trend": 0.1436067597541453,
+   "Trend lo": 0.044745295777575085,
+   "Trend hi": 0.23714103990521884,
+   "Near1": -0.09128111238485959,
+   "Near": -0.06821861803051821,
+   "Near lo": -0.14015947575030846,
+   "Near hi": -0.012444052254515836,
+   "Far": -0.0029079787057542106,
+   "Near stations negative": 7,
+   "Near stations": 7
+  },
+  "ref": {
+   "Free parameters": 51,
+   "Fitted values": "station medians",
+   "RMS": 0.07298661458731309,
+   "RMS lo": 0.05026575769213459,
+   "RMS hi": 0.09974930305057483,
+   "dRMS": -0.05588924089849884,
+   "dRMS lo": -0.07773597755296016,
+   "dRMS hi": -0.03446600588551957,
+   "Trend": -0.004525128695454112,
+   "Trend lo": -0.021420199865572767,
+   "Trend hi": 0.011743584978701961,
+   "Near1": 0.0,
+   "Near": 0.0,
+   "Near lo": 0.0,
+   "Near hi": 0.0,
+   "Far": 0.0,
+   "Near stations negative": 0,
+   "Near stations": 7
+  }
+ },
+ "dd_controls": {
+  "Every S pick +0.273 s": {
+   "Cluster-mean shift (m)": 0.0,
+   "Largest relative change (m)": 0.0,
+   "Event with the largest relative change": 1,
+   "Largest origin-time change (ms)": 0.0
+  },
+  "Station statics (0.1-0.5 s)": {
+   "Cluster-mean shift (m)": 0.0,
+   "Largest relative change (m)": 0.0,
+   "Event with the largest relative change": 1,
+   "Largest origin-time change (ms)": 0.0
+  },
+  "Event terms removed": {
+   "Cluster-mean shift (m)": 128.95,
+   "Largest relative change (m)": 10.926,
+   "Event with the largest relative change": 10,
+   "Largest origin-time change (ms)": 8.78
+  },
+  "Event 3 alone shifted (+0.273 s)": {
+   "Cluster-mean shift (m)": 4067.141,
+   "Largest relative change (m)": 1120.161,
+   "Event with the largest relative change": 3,
+   "Largest origin-time change (ms)": 6.168
+  }
+ },
+ "dd_max_diff_m": 0.0,
+ "dd_max_diff_ms": 0.0,
+ "figures": {
+  "A": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_A_single_station_traces.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_A_single_station_traces.pdf"
+  ],
+  "B1": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B1_record_section_20210827220322.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B1_record_section_20210827220322.pdf"
+  ],
+  "B2": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B2_record_section_20260202194119.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B2_record_section_20260202194119.pdf"
+  ],
+  "B3": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B3_aic_onsets.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_B3_aic_onsets.pdf"
+  ],
+  "C": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_C_sp_vs_distance.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_C_sp_vs_distance.pdf"
+  ],
+  "D": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_D_offset_per_event.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_D_offset_per_event.pdf"
+  ],
+  "E1": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_E1_wadati.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_E1_wadati.pdf"
+  ],
+  "E2": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_E2_explanations.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_E2_explanations.pdf"
+  ],
+  "F1": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_F1_nlloc_offset_effect.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_F1_nlloc_offset_effect.pdf"
+  ],
+  "F2": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_F2_nlloc_depth_misfit.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_F2_nlloc_depth_misfit.pdf"
+  ],
+  "G": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_G_double_difference_controls.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/05_G_double_difference_controls.pdf"
+  ]
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "variant": "R1f_xcorr_like_reference_hypodd_like_filtered__it3_damp0.01",
+ "base": "R1f_xcorr_like_reference_hypodd_like_filtered",
+ "changed": {
+  "algoIterations": 3,
+  "dampingFactorStart": 0.01,
+  "dampingFactorEnd": 0.01
+ },
+ "SolverOptions": {
+  "L2normalization": true,
+  "absLocConstraintEnd": 0.0,
+  "absLocConstraintStart": 0.0,
+  "algoIterations": 3,
+  "dampingFactorEnd": 0.01,
+  "dampingFactorStart": 0.01,
+  "downWeightingByResidualEnd": 5.0,
+  "downWeightingByResidualStart": 10.0,
+  "solverIterations": 0,
+  "type": "LSMR",
+  "usePickUncertainties": false,
+  "xcorrWeightScaler": 2.0
+ },
+ "ClusteringOptions": {
+  "maxEvStaDist": -1.0,
+  "maxNeighbourDist": 10.0,
+  "maxNumNeigh": 0,
+  "maxNumPhases": 0,
+  "minEvStaDist": 0.0,
+  "minEvStaToInterEvRatio": 3.0,
+  "minNumNeigh": 1,
+  "minNumPhases": 1,
+  "numEllipsoids": 0
+ },
+ "XcorrOptions": {
+  "enable": true,
+  "maxEvStaDist": -1.0,
+  "maxInterEvDist": -1.0,
+  "minEvStaDist": 0.0,
+  "phase": {
+   "P": {
+    "components": [
+     "Z"
+    ],
+    "endOffset": 0.5,
+    "maxDelay": 0.5,
+    "minCoef": 0.7,
+    "startOffset": -0.5,
+    "winScaling": 0.0
+   },
+   "S": {
+    "components": [
+     "L2"
+    ],
+    "endOffset": 0.5,
+    "maxDelay": 0.5,
+    "minCoef": 0.7,
+    "startOffset": -0.5,
+    "winScaling": 0.0
+   }
+  }
+ },
+ "Config": {
+  "PSTableOnly": true,
+  "pickUncertaintyClasses": [
+   0.0,
+   0.025,
+   0.05,
+   0.1,
+   0.2,
+   0.4
+  ],
+  "validPphases": [
+   "P"
+  ],
+  "validSphases": [
+   "S"
+  ],
+  "wfFilter": {
+   "extraTraceLen": 1.0,
+   "filterStr": "",
+   "resampleFreq": 0.0
+  }
+ },
+ "travel_time_table": {
+  "type": "NLLGrid",
+  "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time",
+  "gridModel": "kim1983",
+  "maxSearchDistance": 0.1,
+  "swapBytes": false,
+  "maxOpenFiles": 512,
+  "accessMethod": "KeepOpen"
+ },
+ "xcorr_source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1f_xcorr_like_reference_hypodd_like_filtered/xcorr_cache.csv (read back; no waveforms)",
+ "catalog_files": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1f_xcorr_like_reference_hypodd_like_filtered/inputs/station.csv",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1f_xcorr_like_reference_hypodd_like_filtered/inputs/event.csv",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1f_xcorr_like_reference_hypodd_like_filtered/inputs/phase.csv"
+ ]
+}

@@ -1,0 +1,112 @@
+Parsing /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml ... done
+Merging inventory ... done
+Checking inventory ... done
+I SensorLocation BK.RB2B.40.CN?
+  found 2 but not 3 components in 2015-07-16T21:30:00.0000Z
+I Stream CI.TER..EHZ
+  no sensor and thus no response information available
+I SensorLocation NC.BPC..EH?
+  found 2 but not 3 components in 2015-04-09T21:00:00.0000Z
+I Stream NC.CBR..HNE
+  no sensor and thus no response information available
+I Stream NC.CBR..HNN
+  no sensor and thus no response information available
+I Stream NC.CBR..HNZ
+  no sensor and thus no response information available
+I Stream NC.CNI..HNE
+  no sensor and thus no response information available
+I Stream NC.CNI..HNN
+  no sensor and thus no response information available
+I Stream NC.CNI..HNZ
+  no sensor and thus no response information available
+I SensorLocation NC.CVP..EL?
+  found 2 but not 3 components in 2015-08-19T19:20:00.0000Z
+W SensorLocation NC.MDH1.
+  sensor location is 2606 m below parent station. Differences > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1..DP1
+  channel depth is 2592 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1..DP2
+  channel depth is 2592 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1..DP3
+  channel depth is 2592 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+I SensorLocation NC.NBP..EH?
+  found 2 but not 3 components in 2015-06-24T20:20:00.0000Z
+I SensorLocation NC.NRL..EL?
+  found 2 but not 3 components in 2015-07-08T15:18:00.0000Z
+I Stream NN.BFC..EHZ
+  negative gain and positive dip, consider positive gain and negative dip
+I Stream NN.VPK..EHZ
+  negative gain and positive dip, consider positive gain and negative dip
+I Stream NP.1804..HNE
+  no sensor and thus no response information available
+I Stream NP.1804..HNN
+  no sensor and thus no response information available
+I Stream NP.1804..HNZ
+  no sensor and thus no response information available
+I Stream NP.1847..HNE
+  no sensor and thus no response information available
+I Stream NP.1847..HNN
+  no sensor and thus no response information available
+I Stream NP.1847..HNZ
+  no sensor and thus no response information available
+I Stream WR.KPK..EHZ
+  no sensor and thus no response information available
+I Stream WR.KPK..EHE
+  no sensor and thus no response information available
+I Stream WR.KPK..EHN
+  no sensor and thus no response information available
+W Stream WR.ORV..EHE
+  channel depth is -0.5 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+I Stream WR.ORV..EHE
+  no sensor and thus no response information available
+W Stream WR.ORV..EHN
+  channel depth is -0.5 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+I Stream WR.ORV..EHN
+  no sensor and thus no response information available
+W Stream WR.ORV..EHZ
+  channel depth is -0.5 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+I Stream WR.ORV..EHZ
+  no sensor and thus no response information available
+I Stream WR.PAM..EHE
+  no sensor and thus no response information available
+I Stream WR.PAM..EHN
+  no sensor and thus no response information available
+I Stream WR.PAM..EHZ
+  no sensor and thus no response information available
+I Stream WR.SAQ..EHE
+  no sensor and thus no response information available
+I Stream WR.SAQ..EHN
+  no sensor and thus no response information available
+I Stream WR.SAQ..EHZ
+  no sensor and thus no response information available
+I Stream WR.SLD..EHE
+  no sensor and thus no response information available
+I Stream WR.SLD..EHN
+  no sensor and thus no response information available
+I Stream WR.SLD..EHZ
+  no sensor and thus no response information available
+I Stream WR.SPR..EHE
+  no sensor and thus no response information available
+I Stream WR.SPR..EHZ
+  no sensor and thus no response information available
+I Stream WR.SPR..EHN
+  no sensor and thus no response information available
+I SensorLocation WR.SPR..EH?
+  found 2 but not 3 components in 2015-09-17T15:50:00.0000Z
+C Network NN
+  overlapping epochs 1971-01-01 00:00:00 - ... and 1971-09-20 00:00:00 - ...
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml and 
+             /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/inventory_sc.xml
+   Network [NN][1971-01-01T00:00:00.0000Z]
+    start: "1971-01-01T00:00:00.0000Z" != "1971-09-20T00:00:00.0000Z"
+    description: "Nevada Seismic Network ()" != "Western Great Basin/Eastern Sierra Nevada"
+    restricted: != missing or empty on Object 2
+1 conflict
+7 warnings

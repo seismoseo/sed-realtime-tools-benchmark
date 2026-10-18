@@ -1,0 +1,150 @@
+{
+ "scmaster": {
+  "pid": 1759672,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scmaster",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scmaster.log",
+   "--verbosity=3"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/work/scmaster",
+  "started": "2026-10-17T09:16:41.339836Z"
+ },
+ "scevent": {
+  "pid": 1759677,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scevent",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scevent.log",
+   "--verbosity=4",
+   "-H",
+   "127.0.0.1:28180/production"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/work/scevent",
+  "started": "2026-10-17T09:16:41.877923Z"
+ },
+ "scautoloc": {
+  "pid": 1759680,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scautoloc",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scautoloc.log",
+   "--verbosity=4",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--playback",
+   "--timing",
+   "creationTime"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/work/scautoloc",
+  "started": "2026-10-17T09:16:44.879400Z"
+ },
+ "scrtdd": {
+  "pid": 1759686,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scrtdd",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scrtdd.log",
+   "--verbosity=4",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--dump-diagnostics"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/work/scrtdd",
+  "started": "2026-10-17T09:16:47.881019Z"
+ },
+ "msrtsimul_20210827220322": {
+  "pid": 1759814,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "msrtsimul",
+   "-c",
+   "-m",
+   "historic",
+   "-s",
+   "1.0",
+   "-v",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/data/20210827220322_sorted.mseed"
+  ],
+  "started": "2026-10-17T09:17:01.637205Z"
+ },
+ "scautopick_20210827220322": {
+  "pid": 1759815,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "/usr/bin/timeout",
+   "900",
+   "/usr/bin/time",
+   "-v",
+   "-o",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scautopick_20210827220322_paced.time.txt",
+   "scautopick",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--playback",
+   "--verbosity=4",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scautopick_20210827220322_paced.log",
+   "-I",
+   "file://-"
+  ],
+  "started": "2026-10-17T09:17:01.637921Z"
+ },
+ "msrtsimul_20260202194119": {
+  "pid": 1765534,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "msrtsimul",
+   "-c",
+   "-m",
+   "historic",
+   "-s",
+   "1.0",
+   "-v",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/data/20260202194119_sorted.mseed"
+  ],
+  "started": "2026-10-17T09:26:25.863283Z"
+ },
+ "scautopick_20260202194119": {
+  "pid": 1765535,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "/usr/bin/timeout",
+   "900",
+   "/usr/bin/time",
+   "-v",
+   "-o",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scautopick_20260202194119_paced.time.txt",
+   "scautopick",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--playback",
+   "--verbosity=4",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/logs/scautopick_20260202194119_paced.log",
+   "-I",
+   "file://-"
+  ],
+  "started": "2026-10-17T09:26:25.864270Z"
+ }
+}

@@ -1,0 +1,34 @@
+Usage:
+  msrtsimul [options] file
+
+miniSEED real-time playback and simulation
+
+msrtsimul reads sorted (and possibly multiplexed) miniSEED files and
+writes individual records in pseudo-real-time. This is useful e.g. for testing and
+simulating data acquisition. Output is
+$SEISCOMP_ROOT/var/run/seedlink/mseedfifo unless --seedlink or -c is used.
+
+Verbosity:
+  -h, --help            Display this help message.
+  -v, --verbose         Verbose mode.
+
+Playback:
+  -j, --jump            Minutes to skip (float).
+  -c, --stdout          Write on standard output.
+  -d, --delays          Seconds to add as artificial delays.
+      --seedlink        Choose the seedlink module name. Useful if a seedlink
+                        alias or non-standard names are used. Replaces
+                        'seedlink' in the standard mseedfifo path.
+  -m  --mode            Choose between 'realtime' and 'historic'.
+  -s, --speed           Speed factor (float).
+      --test            Test mode.
+  -u, --unlimited       Allow miniSEED records which are not 512 bytes. By default
+                        seedlink supports 512 bytes only.
+
+Examples:
+Play back miniSEED waveforms in real time with verbose output
+  msrtsimul -v data.mseed
+
+Play back miniSEED waveforms in real time skipping the first 1.5 minutes
+  msrtsimul -j 1.5 data.mseed
+

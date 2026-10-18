@@ -1,0 +1,36 @@
+{
+ "set": "dl",
+ "limit": 1,
+ "events": 1,
+ "plan_lines": 687,
+ "ncedc": {
+  "results": {
+   "skip": 3
+  },
+  "failed": 0,
+  "seconds": 0.0
+ },
+ "fallback": {
+  "results": {
+   "200": 1
+  },
+  "failed": 0,
+  "missing_lines": 28,
+  "missing_channels": 28,
+  "earthscope_channels_with_data": [
+   "NC.J057.01.HNE",
+   "NC.J057.01.HNN",
+   "NC.J057.01.HNZ"
+  ],
+  "seconds": 2.6
+ },
+ "build": {
+  "files_written": 1,
+  "files_unchanged": 0,
+  "unexpected_traces": 0,
+  "overlaps_cut": 0,
+  "seconds": 2.8
+ },
+ "failed_requests": [],
+ "finished_utc": "2026-10-17T04:53:40.467983Z"
+}

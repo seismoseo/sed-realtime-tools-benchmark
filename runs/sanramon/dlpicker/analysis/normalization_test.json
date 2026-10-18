@@ -1,0 +1,82 @@
+{
+ "missed": {
+  "n": 154,
+  "n_100hz": 118,
+  "reach_min_conf_plugin_norm": 2,
+  "reach_min_conf_seisbench_norm": 13,
+  "median_P_plugin_norm": 0.015121981501579285,
+  "median_P_seisbench_norm": 0.01428133249282837,
+  "reach_100hz_plugin": 0,
+  "reach_100hz_seisbench": 8,
+  "by_sensor": {
+   "CN": {
+    "n": 1,
+    "plugin": 0,
+    "seisbench": 0
+   },
+   "EH": {
+    "n": 12,
+    "plugin": 0,
+    "seisbench": 4
+   },
+   "EP": {
+    "n": 20,
+    "plugin": 0,
+    "seisbench": 0
+   },
+   "HH": {
+    "n": 57,
+    "plugin": 0,
+    "seisbench": 2
+   },
+   "HN": {
+    "n": 64,
+    "plugin": 2,
+    "seisbench": 7
+   }
+  }
+ },
+ "matched": {
+  "n": 617,
+  "n_100hz": 393,
+  "reach_min_conf_plugin_norm": 614,
+  "reach_min_conf_seisbench_norm": 604,
+  "median_P_plugin_norm": 0.9560881853103638,
+  "median_P_seisbench_norm": 0.9556496739387512,
+  "reach_100hz_plugin": 392,
+  "reach_100hz_seisbench": 384,
+  "by_sensor": {
+   "CN": {
+    "n": 26,
+    "plugin": 26,
+    "seisbench": 26
+   },
+   "DP": {
+    "n": 7,
+    "plugin": 7,
+    "seisbench": 7
+   },
+   "EH": {
+    "n": 114,
+    "plugin": 114,
+    "seisbench": 111
+   },
+   "EP": {
+    "n": 75,
+    "plugin": 75,
+    "seisbench": 74
+   },
+   "HH": {
+    "n": 92,
+    "plugin": 91,
+    "seisbench": 87
+   },
+   "HN": {
+    "n": 303,
+    "plugin": 301,
+    "seisbench": 299
+   }
+  }
+ },
+ "reproduction_max_abs_diff_logged_vs_recomputed_bestP_100hz": 0.004996814727783183
+}

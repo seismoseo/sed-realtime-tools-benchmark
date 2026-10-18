@@ -1,0 +1,324 @@
+==== 12_dlpicker.sh  2026-10-17 22:34:49 KST  host server-a  APPLY=1  STAGE=seisbench
+== stage seisbench: SeisBench EQTP('ncedc') on 72540765 72542520 72541095 72545170 72537850 (env dl-base, read-only, CPU)
++ mkdir -p /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/seisbench/cache
++ (SEISBENCH_CACHE_ROOT=/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/seisbench/cache OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='') nice -n 10 /usr/bin/time -v -o /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/seisbench/time.txt /home/msseo/miniforge3/envs/dl-base/bin/python -I /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/scripts/12_seisbench_run.py ...
+2026-10-17 22:34:55,917 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,964 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,965 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,966 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,966 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,967 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,968 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,968 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,969 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,969 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,970 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,970 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,971 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,971 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,972 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,973 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,973 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,974 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,975 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,975 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,976 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,976 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,977 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,978 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,978 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,978 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,979 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,980 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,986 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,987 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,987 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,987 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,988 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,988 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,988 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,988 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,989 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,989 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,989 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,989 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,989 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,990 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,990 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,990 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,990 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,990 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,991 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,991 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,991 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,991 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,992 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,992 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,992 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,993 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,993 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,993 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,993 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,995 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:40,999 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,000 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,000 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,001 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,001 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,002 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,003 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,003 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,004 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,004 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,005 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,006 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,006 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,006 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,007 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,008 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,009 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,009 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,010 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,010 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,011 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,011 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,011 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,012 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,013 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,014 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-17 22:37:41,014 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+eqtp_ncedc: SeisBench EQTP.from_pretrained('ncedc') version 1; 1457 picks; classify CPU 231.2 s, wall 231.9 s for 40.54 station-hours (5.70 CPU s per station-hour); test windows ['NC.CRH.HN', 'NC.CBR.EH', 'NC.CLCB.HN', 'NC.CMOB.HN', 'NC.CSL.HN', 'NC.CMC.HN', 'BK.BDM.HH', 'NC.CNI.EH']
++ py /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/scripts/12_weights_check.py --npz /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/seisbench/eqtp_ncedc_weights_test.npz --model /home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/eqtp_ncedc.onnx --out /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/seisbench/weights_check.json
+windows ['NC.CRH.HN', 'NC.CBR.EH', 'NC.CLCB.HN', 'NC.CMOB.HN', 'NC.CSL.HN', 'NC.CMC.HN', 'BK.BDM.HH', 'NC.CNI.EH']
+same input: max |ONNX - torch| = {'Polarity_U': 9.149312973022461e-06, 'Polarity_D': 1.2218952178955078e-05, 'P': 2.0265579223632812e-05, 'S': 5.3942203521728516e-06}; same weights: True
+plugin input differs from SeisBench's by <= 10.3; outputs differ by <= {'Polarity_U': 0.200109601020813, 'Polarity_D': 0.36199676990509033, 'P': 0.4068138301372528, 'S': 0.387444406747818}
+  NC.CRH.HN: H/Z std [1.21, 1.217]; P shift -1 samples (peak 0.9405 -> 0.9198), S shift 4 (peak 0.4088 -> 0.395), polarity D(0.8283) -> D(0.8223)
+  NC.CBR.EH: H/Z std [0.791, 1.243]; P shift 0 samples (peak 0.6332 -> 0.6506), S shift 0 (peak 0.6239 -> 0.6248), polarity U(0.177) -> U(0.2107)
+  NC.CLCB.HN: H/Z std [1.852, 1.748]; P shift 0 samples (peak 0.962 -> 0.9566), S shift 0 (peak 0.9352 -> 0.9378), polarity D(0.7395) -> D(0.6922)
+  NC.CMOB.HN: H/Z std [2.064, 2.902]; P shift 0 samples (peak 0.8454 -> 0.9018), S shift 92 (peak 0.4121 -> 0.3078), polarity D(0.5168) -> D(0.5267)
+  NC.CSL.HN: H/Z std [2.516, 1.715]; P shift 1 samples (peak 0.9669 -> 0.9619), S shift 2 (peak 0.8967 -> 0.8741), polarity D(0.672) -> D(0.5311)
+  NC.CMC.HN: H/Z std [1.182, 1.335]; P shift 0 samples (peak 0.9716 -> 0.969), S shift 0 (peak 0.8713 -> 0.8963), polarity U(0.7648) -> U(0.7247)
+  BK.BDM.HH: H/Z std [1.063, 1.149]; P shift 0 samples (peak 0.9239 -> 0.9326), S shift 0 (peak 0.7126 -> 0.7218), polarity D(0.8455) -> D(0.8533)
+  NC.CNI.EH: H/Z std [1.591, 2.317]; P shift -1 samples (peak 0.948 -> 0.9714), S shift 0 (peak 0.9012 -> 0.9039), polarity D(0.9488) -> D(0.9506)
++ py /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/scripts/12_compare_seisbench.py --run-dir /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker --model eqtp_ncedc --events 72540765 72542520 72541095 72545170 72537850 --p-tol 0.5 --s-tol 1.0 --out-dir /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/seisbench
+{
+ "model": "eqtp_ncedc",
+ "events": [
+  "72540765",
+  "72542520",
+  "72541095",
+  "72545170",
+  "72537850"
+ ],
+ "rules": "P 0.5 s, S 1.0 s; window -5.0..+60.0 s",
+ "plugin_vs_seisbench": {
+  "P": {
+   "n_pairs": 278,
+   "median_abs_dt_s": 0.02,
+   "frac_within_0p02_s": 0.539568345323741,
+   "frac_within_0p05_s": 0.8345323741007195,
+   "frac_identical": 0.11510791366906475,
+   "p95_abs_dt_s": 0.13000015,
+   "mean_dt_s": -0.007896143884892097,
+   "max_abs_dt_s": 0.43999999999999995,
+   "n_plugin": 329,
+   "n_seisbench": 678,
+   "polarity_both_set": 166,
+   "polarity_agree": 0.927710843373494,
+   "polarity_set_plugin_only": 19,
+   "polarity_set_seisbench_only": 48
+  },
+  "S": {
+   "n_pairs": 199,
+   "median_abs_dt_s": 0.020000000000000018,
+   "frac_within_0p02_s": 0.5175879396984925,
+   "frac_within_0p05_s": 0.8190954773869347,
+   "frac_identical": 0.10552763819095477,
+   "p95_abs_dt_s": 0.11100079999999996,
+   "mean_dt_s": 0.006984532663316573,
+   "max_abs_dt_s": 0.594999,
+   "n_plugin": 249,
+   "n_seisbench": 779
+  }
+ },
+ "vs_reference": {
+  "P": {
+   "plugin": {
+    "n_ref_3c": 380,
+    "n_matched_3c": 158,
+    "recall_3c": 0.41578947368421054,
+    "n_in_window": 223,
+    "precision": 0.7757847533632287,
+    "median_abs_dt_s": 0.030001,
+    "mean_dt_s": 0.022682670886075947,
+    "polarity_matched_with_analyst_fm": 145,
+    "polarity_coverage": 0.8206896551724138,
+    "polarity_agreement": 0.7563025210084033
+   },
+   "seisbench": {
+    "n_ref_3c": 380,
+    "n_matched_3c": 321,
+    "recall_3c": 0.8447368421052631,
+    "n_in_window": 467,
+    "precision": 0.7366167023554604,
+    "median_abs_dt_s": 0.03160700000000005,
+    "mean_dt_s": 0.017604947040498434,
+    "polarity_matched_with_analyst_fm": 280,
+    "polarity_coverage": 0.8535714285714285,
+    "polarity_agreement": 0.8200836820083682
+   },
+   "recall_3c_complete": {
+    "plugin": 0.579185520361991,
+    "seisbench": 0.8190045248868778
+   },
+   "n_3c_complete": 221,
+   "recall_3c_incomplete": {
+    "plugin": 0.18867924528301888,
+    "seisbench": 0.8805031446540881
+   },
+   "n_3c_incomplete": 159
+  },
+  "S": {
+   "plugin": {
+    "n_ref_3c": 27,
+    "n_matched_3c": 12,
+    "recall_3c": 0.4444444444444444,
+    "n_in_window": 210,
+    "precision": 0.05714285714285714,
+    "median_abs_dt_s": 0.03,
+    "mean_dt_s": 0.004033333333333337
+   },
+   "seisbench": {
+    "n_ref_3c": 27,
+    "n_matched_3c": 25,
+    "recall_3c": 0.9259259259259259,
+    "n_in_window": 535,
+    "precision": 0.05420560747663551,
+    "median_abs_dt_s": 0.048392,
+    "mean_dt_s": -0.0031286000000000074
+   },
+   "recall_3c_complete": {
+    "plugin": 0.6666666666666666,
+    "seisbench": 0.9166666666666666
+   },
+   "n_3c_complete": 12,
+   "recall_3c_incomplete": {
+    "plugin": 0.26666666666666666,
+    "seisbench": 0.9333333333333333
+   },
+   "n_3c_incomplete": 15
+  }
+ },
+ "found_by_only_one": {
+  "P": {
+   "only_seisbench": 168,
+   "only_plugin": 5,
+   "neither": 54,
+   "only_seisbench_by_tier_and_plugin_reason": {
+    "3c_incomplete | record_starts_too_late": 100,
+    "3c_complete | window_picked_other_time": 43,
+    "3c_incomplete | window_picked_other_time": 7,
+    "3c_complete | no_detector_trigger": 6,
+    "3c_complete | trigger_not_turned_into_picker": 6,
+    "3c_complete | model_below_minConfidence": 3,
+    "3c_incomplete | trigger_not_turned_into_picker": 2,
+    "3c_incomplete | model_below_minConfidence": 1
+   }
+  },
+  "S": {
+   "only_seisbench": 13,
+   "only_plugin": 0,
+   "neither": 2,
+   "only_seisbench_by_tier_and_plugin_reason": {
+    "3c_incomplete | no_P_pick_so_no_S_picker": 10,
+    "3c_complete | window_picked_other_time": 2,
+    "3c_complete | no_P_pick_so_no_S_picker": 1
+   }
+  }
+ }
+}
++ py /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/scripts/12_normalization_test.py --run-dir /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker --model /home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/eqtp_ncedc.onnx --variant eqtp_ncedc
+{
+ "missed": {
+  "n": 154,
+  "n_100hz": 118,
+  "reach_min_conf_plugin_norm": 2,
+  "reach_min_conf_seisbench_norm": 13,
+  "median_P_plugin_norm": 0.015121981501579285,
+  "median_P_seisbench_norm": 0.01428133249282837,
+  "reach_100hz_plugin": 0,
+  "reach_100hz_seisbench": 8,
+  "by_sensor": {
+   "CN": {
+    "n": 1,
+    "plugin": 0,
+    "seisbench": 0
+   },
+   "EH": {
+    "n": 12,
+    "plugin": 0,
+    "seisbench": 4
+   },
+   "EP": {
+    "n": 20,
+    "plugin": 0,
+    "seisbench": 0
+   },
+   "HH": {
+    "n": 57,
+    "plugin": 0,
+    "seisbench": 2
+   },
+   "HN": {
+    "n": 64,
+    "plugin": 2,
+    "seisbench": 7
+   }
+  }
+ },
+ "matched": {
+  "n": 617,
+  "n_100hz": 393,
+  "reach_min_conf_plugin_norm": 614,
+  "reach_min_conf_seisbench_norm": 604,
+  "median_P_plugin_norm": 0.9560881853103638,
+  "median_P_seisbench_norm": 0.9556496739387512,
+  "reach_100hz_plugin": 392,
+  "reach_100hz_seisbench": 384,
+  "by_sensor": {
+   "CN": {
+    "n": 26,
+    "plugin": 26,
+    "seisbench": 26
+   },
+   "DP": {
+    "n": 7,
+    "plugin": 7,
+    "seisbench": 7
+   },
+   "EH": {
+    "n": 114,
+    "plugin": 114,
+    "seisbench": 111
+   },
+   "EP": {
+    "n": 75,
+    "plugin": 75,
+    "seisbench": 74
+   },
+   "HH": {
+    "n": 92,
+    "plugin": 91,
+    "seisbench": 87
+   },
+   "HN": {
+    "n": 303,
+    "plugin": 301,
+    "seisbench": 299
+   }
+  }
+ },
+ "reproduction_max_abs_diff_logged_vs_recomputed_bestP_100hz": 0.004996814727783183
+}
+   ~/.seisbench: /home/msseo/.seisbench
+==== 12_dlpicker.sh finished with exit code 0 (22:41:32)

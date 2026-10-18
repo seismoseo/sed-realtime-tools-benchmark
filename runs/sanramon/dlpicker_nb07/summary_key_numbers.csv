@@ -1,0 +1,10 @@
+Quantity,Value,Where
+Picker runs,"8 variants x 26 events + 8 start-up probes = 216 logs; 0 [error] lines, 75 [warning] lines",Section 1.1
+Analyst picks (weight 0-3),"2422 P, 163 S; on complete 3-C records 846 P, 90 S",Figure 1
+Best model (fixed rule),"phasenet_instance: pooled F1 0.505; P recall complete records 0.82, all picks 0.31","Figures 1, 2"
+P timing,median |dt| 0.022-0.032 s; weight-0 p95 0.062-0.120 s,Figure 3
+Swarm overlap,"P recall complete records, neighbour within 15 s: 0.43-0.56; none within 120 s: 0.71-0.89",Figure 4
+Accelerometer vs velocity (13 sites),P recall difference -3 to +7 points; S +5 to +27 points,Figure 6
+EQTP polarity,coverage 0.83 / 0.62; agreement on normal channels 0.83 / 0.90 (at 0.5 / 0.7),Figure 7
+Plugin vs SeisBench EQTP (5 events),P recall at 3-C stations 0.42 vs 0.84; same-arrival median |dt| 0.020 s,Figure 8
+Cost,"PhaseNet 0.22-0.25, EQTP 3.92, SeisBench EQTP 5.70 CPU-s per station-hour",Figure 8

@@ -1,0 +1,5 @@
+eventId,isotime,lowerUncertainty,upperUncertainty,type,networkCode,stationCode,locationCode,channelCode
+3,2021-08-27T22:03:25.930000Z,,,P,KS,GWYB,,HHZ
+3,2021-08-27T22:03:27.580000Z,,,S,KS,GWYB,,HHN
+4,2021-08-28T13:34:13.990000Z,,,P,KS,GWYB,,HHZ
+4,2021-08-28T13:34:15.630000Z,,,S,KS,GWYB,,HHN

@@ -1,0 +1,53 @@
+{
+ "run": "RT1_filefeed",
+ "generated": "2026-10-17T12:39:11.245067Z",
+ "db_counts": {
+  "Network": 1,
+  "Station": 54,
+  "SensorLocation": 54,
+  "Stream": 255,
+  "ConfigModule": 1,
+  "ConfigStation": 54,
+  "ParameterSet": 108,
+  "Parameter": 108,
+  "Pick": 112,
+  "Amplitude": 219,
+  "Origin": 0,
+  "Arrival": 0,
+  "Event": 0,
+  "OriginReference": 0
+ },
+ "events": [],
+ "kma_of_event": {},
+ "scxmldump_origins_checked": 0,
+ "scxmldump_all_in_sql_same_lat": false,
+ "autoloc": {
+  "picks_processed": 112,
+  "xx_rejected": 55,
+  "too_many_recent": 1,
+  "waiting_for_amplitude_lines": 112,
+  "low_snr_ignored": 0,
+  "origins_reported": 0,
+  "origins_not_sent_no_improvement": 0
+ },
+ "scrtdd_other": {
+  "ignored_author": 0,
+  "skipped_nonpreferred": 0,
+  "errors": []
+ },
+ "scevent_lines_about_RTDD": [],
+ "scevent_preferred_lines": [],
+ "cost_cpu_s": {
+  "scrtdd": 0.12,
+  "scautoloc": 0.14,
+  "scevent": 0.02,
+  "scmaster": 0.22,
+  "scautopick_20210827220322": null,
+  "scautopick_20210827220322_file": {
+   "cpu_s": 1.07,
+   "wall": "0:12.48"
+  }
+ },
+ "rt_analyze_script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/scripts/rt_analyze.py",
+ "rt_analyze_md5": "fd07c0f9ef75fc7bdce5e53bfd266383"
+}

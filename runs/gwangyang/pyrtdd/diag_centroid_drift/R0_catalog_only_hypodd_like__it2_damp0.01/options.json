@@ -1,0 +1,99 @@
+{
+ "variant": "R0_catalog_only_hypodd_like__it2_damp0.01",
+ "base": "R0_catalog_only_hypodd_like",
+ "changed": {
+  "algoIterations": 2,
+  "dampingFactorStart": 0.01,
+  "dampingFactorEnd": 0.01
+ },
+ "SolverOptions": {
+  "L2normalization": true,
+  "absLocConstraintEnd": 0.0,
+  "absLocConstraintStart": 0.0,
+  "algoIterations": 2,
+  "dampingFactorEnd": 0.01,
+  "dampingFactorStart": 0.01,
+  "downWeightingByResidualEnd": 5.0,
+  "downWeightingByResidualStart": 10.0,
+  "solverIterations": 0,
+  "type": "LSMR",
+  "usePickUncertainties": false,
+  "xcorrWeightScaler": 2.0
+ },
+ "ClusteringOptions": {
+  "maxEvStaDist": -1.0,
+  "maxNeighbourDist": 10.0,
+  "maxNumNeigh": 0,
+  "maxNumPhases": 0,
+  "minEvStaDist": 0.0,
+  "minEvStaToInterEvRatio": 3.0,
+  "minNumNeigh": 1,
+  "minNumPhases": 1,
+  "numEllipsoids": 0
+ },
+ "XcorrOptions": {
+  "enable": false,
+  "maxEvStaDist": -1.0,
+  "maxInterEvDist": -1.0,
+  "minEvStaDist": 0.0,
+  "phase": {
+   "P": {
+    "components": [
+     "Z"
+    ],
+    "endOffset": 0.5,
+    "maxDelay": 0.5,
+    "minCoef": 0.7,
+    "startOffset": -0.5,
+    "winScaling": 0.02
+   },
+   "S": {
+    "components": [
+     "L2"
+    ],
+    "endOffset": 1.0,
+    "maxDelay": 0.5,
+    "minCoef": 0.7,
+    "startOffset": -0.5,
+    "winScaling": 0.04
+   }
+  }
+ },
+ "Config": {
+  "PSTableOnly": true,
+  "pickUncertaintyClasses": [
+   0.0,
+   0.025,
+   0.05,
+   0.1,
+   0.2,
+   0.4
+  ],
+  "validPphases": [
+   "P"
+  ],
+  "validSphases": [
+   "S"
+  ],
+  "wfFilter": {
+   "extraTraceLen": 1.0,
+   "filterStr": "",
+   "resampleFreq": 0.0
+  }
+ },
+ "travel_time_table": {
+  "type": "NLLGrid",
+  "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time",
+  "gridModel": "kim1983",
+  "maxSearchDistance": 0.1,
+  "swapBytes": false,
+  "maxOpenFiles": 512,
+  "accessMethod": "KeepOpen"
+ },
+ "xcorr_source": "off",
+ "catalog_files": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R0_catalog_only_hypodd_like/inputs/station.csv",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R0_catalog_only_hypodd_like/inputs/event.csv",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R0_catalog_only_hypodd_like/inputs/phase.csv"
+ ]
+}

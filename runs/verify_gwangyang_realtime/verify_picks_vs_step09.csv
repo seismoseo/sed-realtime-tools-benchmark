@@ -1,0 +1,11 @@
+run,kma_id,n_db,n_step09,identical_multiset,n_db_distinct,n_step09_distinct,only_in_db,only_in_step09,n_DL3C,n_SDL3C
+RT1_filefeed,20210827220322,112,112,True,109,109,0,0,56,56
+RT1_filefeed,20260202194119,0,85,False,0,84,0,84,0,0
+RT2_filefeed,20210827220322,112,112,True,109,109,0,0,56,56
+RT2_filefeed,20260202194119,85,85,True,84,84,0,0,43,42
+RT3_paced,20210827220322,112,112,True,109,109,0,0,56,56
+RT3_paced,20260202194119,85,85,True,84,84,0,0,43,42
+RT4_filefeed_prefer_rtdd,20210827220322,112,112,True,109,109,0,0,56,56
+RT4_filefeed_prefer_rtdd,20260202194119,85,85,True,84,84,0,0,43,42
+RT5_paced_creationtime,20210827220322,112,112,True,109,109,0,0,56,56
+RT5_paced_creationtime,20260202194119,85,85,True,84,84,0,0,43,42

@@ -1,0 +1,167 @@
+{
+ "runs": [
+  "R0_catalog_only_hypodd_like",
+  "R1_xcorr_like_reference_hypodd_like",
+  "R1f_xcorr_like_reference_hypodd_like_filtered",
+  "R1fw_xcorr_like_reference_hypodd_like_filtered_xcorrweight100",
+  "R1fz_xcorr_like_reference_hypodd_like_filtered_zerophase",
+  "R2_xcorr_default_rtdd_default",
+  "R2f_xcorr_default_rtdd_default_filtered",
+  "R3a_catalog_only_hypodd_like_hypoinverse_start",
+  "R3b_xcorr_like_reference_hypodd_like_hypoinverse_start",
+  "R3bf_xcorr_like_reference_hypodd_like_hypoinverse_start_filtered",
+  "R4_xcorr_like_reference_hypodd_like_no_outlier_picks",
+  "R4f_xcorr_like_reference_hypodd_like_no_outlier_picks_filtered",
+  "R5_xcorr_like_reference_hypodd_like_homogeneous",
+  "R5f_xcorr_like_reference_hypodd_like_homogeneous_filtered",
+  "R6_single_event_loo_one_step",
+  "R6f_single_event_loo_one_step_filtered",
+  "R6p_single_event_loo_one_step_padded",
+  "R6t_single_event_loo_scrtdd_two_step_automatic",
+  "R6tf_single_event_loo_scrtdd_two_step_automatic_filtered",
+  "R6tp_single_event_loo_scrtdd_two_step_automatic_padded",
+  "V0_stock_no_disk_cache",
+  "V1_port_check_preprocess_nofilter"
+ ],
+ "origin": [
+  35.0,
+  127.7286
+ ],
+ "hypodd_convention": "hypoDD.log 'Cluster centroid at' + hypoDD.reloc X/Y/Z (0.1 m); bootstrap half-widths unrounded from bootstrap_errors.csv",
+ "hypodd_log_centroid": {
+  "hypodd_dtcc": [
+   34.999695,
+   127.728889,
+   13.942727
+  ],
+  "hypodd_dtct": [
+   34.999695,
+   127.728889,
+   13.942727
+  ]
+ },
+ "hypodd_log_final_centroid_shift_x_y_zdown_t_m_ms": {
+  "hypodd_dtcc": [
+   0.0,
+   -0.0,
+   -1.0,
+   -6.3
+  ],
+  "hypodd_dtct": [
+   -0.1,
+   22.8,
+   -71.9,
+   148.8
+  ]
+ },
+ "f_within_fractions": "counted on the 1-ms grid: |round(diff_ms)| <= 2 / <= 5",
+ "run_pairs": [
+  [
+   "R0_catalog_only_hypodd_like",
+   "R3a_catalog_only_hypodd_like_hypoinverse_start",
+   "start position (catalog only)"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R3b_xcorr_like_reference_hypodd_like_hypoinverse_start",
+   "start position"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R3bf_xcorr_like_reference_hypodd_like_hypoinverse_start_filtered",
+   "start position (filtered)"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R4_xcorr_like_reference_hypodd_like_no_outlier_picks",
+   "17 outlier picks removed"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R4f_xcorr_like_reference_hypodd_like_no_outlier_picks_filtered",
+   "17 outlier picks removed (filtered)"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R5_xcorr_like_reference_hypodd_like_homogeneous",
+   "homogeneous velocity"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R5f_xcorr_like_reference_hypodd_like_homogeneous_filtered",
+   "homogeneous velocity (filtered)"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R6_single_event_loo_one_step",
+   "single-event leave-one-out, one step"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R6t_single_event_loo_scrtdd_two_step_automatic",
+   "single-event, scrtdd two-step, automatic"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R6p_single_event_loo_one_step_padded",
+   "single-event, one step, batch-loading fixed (unfiltered)"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R6tp_single_event_loo_scrtdd_two_step_automatic_padded",
+   "single-event, scrtdd two-step, automatic, batch-loading fixed (unfiltered)"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R6f_single_event_loo_one_step_filtered",
+   "single-event, one step (filtered)"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R6tf_single_event_loo_scrtdd_two_step_automatic_filtered",
+   "single-event, scrtdd two-step, automatic (filtered)"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "band-pass actually applied vs not"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R1fz_xcorr_like_reference_hypodd_like_filtered_zerophase",
+   "causal vs zero-phase band-pass"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R1fw_xcorr_like_reference_hypodd_like_filtered_xcorrweight100",
+   "xcorrWeightScaler 2 vs 100"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "R2_xcorr_default_rtdd_default",
+   "rtDD default solver + xcorr"
+  ],
+  [
+   "R1f_xcorr_like_reference_hypodd_like_filtered",
+   "R2f_xcorr_default_rtdd_default_filtered",
+   "rtDD default solver + xcorr (filtered)"
+  ],
+  [
+   "R0_catalog_only_hypodd_like",
+   "R1_xcorr_like_reference_hypodd_like",
+   "adding cross-correlation"
+  ],
+  [
+   "R1_xcorr_like_reference_hypodd_like",
+   "V0_stock_no_disk_cache",
+   "waveform disk cache on vs off"
+  ],
+  [
+   "V0_stock_no_disk_cache",
+   "V1_port_check_preprocess_nofilter",
+   "libhdd resampler vs numpy port (validation)"
+  ]
+ ],
+ "cc_min": 0.7,
+ "special_event": 3
+}

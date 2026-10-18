@@ -1,0 +1,3 @@
+eventId1,eventId2,networkCode,stationCode,locationCode,phaseType,valid,coefficient,lag
+3,4,KS,GWYB,,P,true,0.640372,-0.020000
+3,4,KS,GWYB,,S,true,0.892787,0.000000

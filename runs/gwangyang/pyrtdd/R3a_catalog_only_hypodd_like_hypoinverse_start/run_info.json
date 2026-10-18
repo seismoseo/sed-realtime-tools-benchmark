@@ -1,0 +1,13 @@
+{
+ "run": "R3a_catalog_only_hypodd_like_hypoinverse_start",
+ "started": "2026-10-17T16:52:20",
+ "host": "server-a",
+ "status": "ok",
+ "n_clusters": 1,
+ "cluster_sizes": [
+  11
+ ],
+ "n_relocated": 11,
+ "wall_time_s": 0.34,
+ "finished": "2026-10-17T16:52:20"
+}

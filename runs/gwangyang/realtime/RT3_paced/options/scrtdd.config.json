@@ -1,0 +1,816 @@
+{
+ "module": "scrtdd",
+ "generated": "2026-10-17T08:53:54.891433Z",
+ "files_read_in_order": [
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+   "md5": "5bcc3d9a7cb02ad3a5c40665fb6d310b"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scrtdd.cfg",
+   "md5": "931dc7a1cccf37697642c2c2a5feb2ae"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+   "md5": "78d18128446a1284d3acd39f8c4f8407"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg",
+   "md5": "d745f8ad66539bbf6bde0ddfea3264c6"
+  },
+  {
+   "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg",
+   "md5": "360e138b6c78602279c15772894f31cd"
+  }
+ ],
+ "n_set": 82,
+ "set": {
+  "core.plugins": {
+   "values": [
+    "dbsqlite3"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+  },
+  "logging.level": {
+   "values": [
+    "2"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+  },
+  "logging.file.rotator": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:24"
+  },
+  "logging.file.rotator.timeSpan": {
+   "values": [
+    "86400"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:27"
+  },
+  "logging.file.rotator.archiveSize": {
+   "values": [
+    "7"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:30"
+  },
+  "connection.server": {
+   "values": [
+    "127.0.0.1:28180/production"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:6"
+  },
+  "connection.timeout": {
+   "values": [
+    "3"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:39"
+  },
+  "connection.encoding": {
+   "values": [
+    "deflate"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:42"
+  },
+  "connection.contentType": {
+   "values": [
+    "binary"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:45"
+  },
+  "recordstream": {
+   "values": [
+    "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:10"
+  },
+  "agencyID": {
+   "values": [
+    "Unset"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:51"
+  },
+  "organization": {
+   "values": [
+    "Unset"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:54"
+  },
+  "picker.filters": {
+   "values": [
+    "BP 0.1 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,1)",
+    "BP 0.1 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,2)",
+    "BP 0.4 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.4,1)",
+    "@BP 0.7 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.7,2)",
+    "BP 1 - 3 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,3)",
+    "BP 1 - 5 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,5)",
+    "BP 2 - 4 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,2.0,4)",
+    "BP 3 - 6 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,3.0,6)",
+    "BP 4 - 8 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,4.0,8)",
+    "HP 3 Hz  3rd order;RMHP(1)>>ITAPER(2)>>BW_HP(3,3)",
+    "BP 0.7 - 2 Hz + STA/LTA(1,50);RMHP(10)->ITAPER(30)->BW(3,0.7,2)->STALTA(1,50)"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:69"
+  },
+  "eventlist.visibleColumns": {
+   "values": [
+    "M",
+    "MType",
+    "Phases",
+    "RMS",
+    "Lat",
+    "Lon",
+    "Depth",
+    "Stat",
+    "Agency",
+    "Region",
+    "ID"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:86"
+  },
+  "ttt.libtau.tables": {
+   "values": [
+    "iasp91",
+    "ak135"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:93"
+  },
+  "ttt.LOCSAT.tables": {
+   "values": [
+    "iasp91",
+    "tab"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:94"
+  },
+  "ttt.homogeneous.tables": {
+   "values": [
+    ""
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:95"
+  },
+  "connection.primaryGroup": {
+   "values": [
+    "RELOCATION"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:25"
+  },
+  "connection.subscriptions": {
+   "values": [
+    "SERVICE_REQUEST",
+    "EVENT",
+    "LOCATION",
+    "PICK"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:27"
+  },
+  "automaticOrigins": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:31"
+  },
+  "manualOrigins": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:33"
+  },
+  "onlyPreferredOrigins": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:29"
+  },
+  "activeProfiles": {
+   "values": [
+    "gwangyang"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:17"
+  },
+  "performance.delayTime": {
+   "values": [
+    "10"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:35"
+  },
+  "performance.profileTimeAlive": {
+   "values": [
+    "-1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:37"
+  },
+  "performance.cacheWaveforms": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:39"
+  },
+  "performance.cacheDirectory": {
+   "values": [
+    "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/rtdd_cache"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:42"
+  },
+  "performance.cachedWaveformLength": {
+   "values": [
+    "10"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:44"
+  },
+  "plugins": {
+   "values": [
+    "tttnll"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:8"
+  },
+  "ttt.NLLGrid.tables": {
+   "values": [
+    "kim1983"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:10"
+  },
+  "ttt.NLLGrid.kim1983.tablePath": {
+   "values": [
+    "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:12"
+  },
+  "ttt.NLLGrid.kim1983.maxSearchDistance": {
+   "values": [
+    "0.1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:15"
+  },
+  "acceptedOriginAuthors": {
+   "values": [
+    "scautoloc@server-a"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:22"
+  },
+  "profile.gwangyang.regionType": {
+   "values": [
+    "CIRCULAR"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:46"
+  },
+  "profile.gwangyang.region": {
+   "values": [
+    "35.0000",
+    "127.7286",
+    "30"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:48"
+  },
+  "profile.gwangyang.methodID": {
+   "values": [
+    "RTDD"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:50"
+  },
+  "profile.gwangyang.tableType": {
+   "values": [
+    "NLLGrid"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:52"
+  },
+  "profile.gwangyang.tableModel": {
+   "values": [
+    "kim1983"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:54"
+  },
+  "profile.gwangyang.PSTableOnly": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:56"
+  },
+  "profile.gwangyang.P-Phases": {
+   "values": [
+    "P"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:58"
+  },
+  "profile.gwangyang.S-Phases": {
+   "values": [
+    "S"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:60"
+  },
+  "profile.gwangyang.pickUncertaintyClasses": {
+   "values": [
+    "0.000",
+    "0.025",
+    "0.050",
+    "0.100",
+    "0.200",
+    "0.400"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:62"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventFiltering.minNumPhases": {
+   "values": [
+    "1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:64"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventFiltering.minNumNeighbours": {
+   "values": [
+    "1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:66"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.phaseFiltering.minStationToEventPairDistRatio": {
+   "values": [
+    "3"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:68"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.phaseFiltering.minStationDistance": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:70"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.phaseFiltering.maxStationDistance": {
+   "values": [
+    "-1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:72"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.multiEvent.maxNumNeighbours": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:74"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.multiEvent.maxNeighbourDistance": {
+   "values": [
+    "10"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:76"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.multiEvent.numEllipsoids": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:78"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.singleEvent.maxNumNeighbours": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:80"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.singleEvent.maxNeighbourDistance": {
+   "values": [
+    "10"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:82"
+  },
+  "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.singleEvent.numEllipsoids": {
+   "values": [
+    "5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:84"
+  },
+  "profile.gwangyang.solver.solverType": {
+   "values": [
+    "LSMR"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:86"
+  },
+  "profile.gwangyang.solver.algoIterations": {
+   "values": [
+    "20"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:88"
+  },
+  "profile.gwangyang.solver.downWeightingByResidual": {
+   "values": [
+    "10",
+    "5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:90"
+  },
+  "profile.gwangyang.solver.dampingFactor": {
+   "values": [
+    "0.01"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:92"
+  },
+  "profile.gwangyang.solver.absoluteLocationConstraint": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:94"
+  },
+  "profile.gwangyang.solver.xcorrWeightScaler": {
+   "values": [
+    "2.0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:96"
+  },
+  "profile.gwangyang.solver.usePickUncertainties": {
+   "values": [
+    "false"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:98"
+  },
+  "profile.gwangyang.crossCorrelation.enable": {
+   "values": [
+    "true"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:100"
+  },
+  "profile.gwangyang.crossCorrelation.minStationDistance": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:102"
+  },
+  "profile.gwangyang.crossCorrelation.maxStationDistance": {
+   "values": [
+    "-1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:104"
+  },
+  "profile.gwangyang.crossCorrelation.maxInterEventDistance": {
+   "values": [
+    "-1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:106"
+  },
+  "profile.gwangyang.crossCorrelation.p-phase.minCCCoef": {
+   "values": [
+    "0.7"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:108"
+  },
+  "profile.gwangyang.crossCorrelation.p-phase.winStart": {
+   "values": [
+    "-0.5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:110"
+  },
+  "profile.gwangyang.crossCorrelation.p-phase.winEnd": {
+   "values": [
+    "0.5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:112"
+  },
+  "profile.gwangyang.crossCorrelation.p-phase.winScaling": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:114"
+  },
+  "profile.gwangyang.crossCorrelation.p-phase.maxDelay": {
+   "values": [
+    "0.5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:116"
+  },
+  "profile.gwangyang.crossCorrelation.p-phase.components": {
+   "values": [
+    "Z"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:118"
+  },
+  "profile.gwangyang.crossCorrelation.s-phase.minCCCoef": {
+   "values": [
+    "0.7"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:120"
+  },
+  "profile.gwangyang.crossCorrelation.s-phase.winStart": {
+   "values": [
+    "-0.5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:122"
+  },
+  "profile.gwangyang.crossCorrelation.s-phase.winEnd": {
+   "values": [
+    "0.5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:124"
+  },
+  "profile.gwangyang.crossCorrelation.s-phase.winScaling": {
+   "values": [
+    "0"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:126"
+  },
+  "profile.gwangyang.crossCorrelation.s-phase.maxDelay": {
+   "values": [
+    "0.5"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:128"
+  },
+  "profile.gwangyang.crossCorrelation.s-phase.components": {
+   "values": [
+    "L2"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:130"
+  },
+  "profile.gwangyang.crossCorrelation.waveformFiltering.filterString": {
+   "values": [
+    "BW(4,5,20)"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:132"
+  },
+  "profile.gwangyang.crossCorrelation.waveformFiltering.margin": {
+   "values": [
+    "1"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:134"
+  },
+  "profile.gwangyang.crossCorrelation.waveformFiltering.resampling": {
+   "values": [
+    "1000"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:136"
+  },
+  "profile.gwangyang.catalog.eventFile": {
+   "values": [
+    "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/event.csv"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:139"
+  },
+  "profile.gwangyang.catalog.phaFile": {
+   "values": [
+    "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/phase.csv"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:142"
+  },
+  "profile.gwangyang.catalog.stationFile": {
+   "values": [
+    "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/station.csv"
+   ],
+   "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:145"
+  }
+ },
+ "n_documented_unset": 43,
+ "documented_defaults_of_unset_parameters": {
+  "datacenterID": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "author": {
+   "default": "@appname@@@@hostname@",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "populateCIVersionAttribute": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "cityXML": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "loadCities": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "loadRegions": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "publicIDPattern": {
+   "default": "@classname@/@time/%Y%m%d%H%M%S.%f@.@id@",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "configModule": {
+   "default": "trunk",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "database": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "logging.syslog": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.components": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "logging.component": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.context": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.utc": {
+   "default": null,
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "logging.file.rotator.maxFileSize": {
+   "default": "104857600",
+   "unit": "byte",
+   "type": "int",
+   "described_in": "global.xml"
+  },
+  "logging.objects.timeSpan": {
+   "default": "60",
+   "unit": "s",
+   "type": "int",
+   "described_in": "global.xml"
+  },
+  "logging.syslog.facility": {
+   "default": "local0",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "connection.username": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "connection.certificate": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "database.inventory": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "database.config": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "processing.whitelist.agencies": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "processing.blacklist.agencies": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.whitelist.nettype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.whitelist.statype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.blacklist.nettype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "inventory.blacklist.statype": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "scripts.crashHandler": {
+   "default": null,
+   "unit": null,
+   "type": "file",
+   "described_in": "global.xml"
+  },
+  "client.startStopMessage": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "client.autoShutdown": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "client.shutdownMasterModule": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "client.shutdownMasterUsername": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "commands.target": {
+   "default": null,
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "ttt.default.tableType": {
+   "default": "LOCSAT",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "ttt.default.table": {
+   "default": "iasp91",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.aliases": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.iaspei": {
+   "default": "false",
+   "unit": null,
+   "type": "boolean",
+   "described_in": "global.xml"
+  },
+  "amplitudes.ttt.interface": {
+   "default": "LOCSAT",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.ttt.model": {
+   "default": "iasp91",
+   "unit": null,
+   "type": "string",
+   "described_in": "global.xml"
+  },
+  "amplitudes.WoodAnderson.gain": {
+   "default": "2080",
+   "unit": null,
+   "type": "double",
+   "described_in": "global.xml"
+  },
+  "amplitudes.WoodAnderson.T0": {
+   "default": "0.8",
+   "unit": "s",
+   "type": "double",
+   "described_in": "global.xml"
+  },
+  "amplitudes.WoodAnderson.h": {
+   "default": "0.7",
+   "unit": null,
+   "type": "double",
+   "described_in": "global.xml"
+  },
+  "magnitudes.aliases": {
+   "default": null,
+   "unit": null,
+   "type": "list:string",
+   "described_in": "global.xml"
+  }
+ },
+ "note": "values as the SeisComP configuration parser reads them; a module may still apply its own built-in default where the description gives none (runtime dumps in this folder)"
+}

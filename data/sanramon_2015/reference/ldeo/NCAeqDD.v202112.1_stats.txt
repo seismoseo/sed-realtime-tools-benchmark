@@ -1,0 +1,34 @@
+NCAeqDD 1984-2021 (version NCAeqDD.v202112.1):
+----------------------------------------------
+
+# of total original events in NCSN catalog       1,068,766
+# of events with waveforms                         871,662 (81.6%)
+# of events with NSTA >= 6 (before relocation)     889,469
+# of events relocated (NSTA>=6)                    879,627 (98.9%)
+# of phase picks                                19,110,766
+
+Correlation statistics:
+# of corr events (nccP >=> 3 per pair):            721,858 (87.7%)
+# of P-wave correlation times (Cf >= 0.7):             4.6 billion
+# of S-wave correlation times (Cf >= 0.7):             4.2 billion
+
+Difference between 2021 DD and initial (NCSN)
+|med| (km):  DX = 0.16; DY = 0.18; DZ = 0.41
+|mean| (km): DX = 0.35; DY = 0.37; DZ = 0.75
+STD (km):    DX = 0.70; DY = 0.74; DZ = 1.42
+
+Difference between 2021 and 2019 DD locations
+|med| (km):  DX = 0.01; DY = 0.01; DZ = 0.03
+|mean| (km): DX = 0.04; DY = 0.04; DZ = 0.14
+STD (km):    DX = 0.17; DY = 0.17; DZ = 0.39
+
+Location errors:
+Median lateral rel loc err (picks) (km):   0.068
+Median vertical rel loc err (picks) (km):  0.081
+Median lateral rel loc err (xcorr) (km):   0.025
+Mean vert rel loc err (xcorr) (km):        0.031
+ 
+Residual statistics:
+Relocated pick RMS (s):                    0.061
+Relocated x-corr RMS (s):                  0.009
+Relocated pick RMS *(year>2000) (s):       0.060

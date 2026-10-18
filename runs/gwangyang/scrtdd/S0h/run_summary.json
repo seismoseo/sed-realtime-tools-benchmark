@@ -1,0 +1,72 @@
+{
+ "run": "S0h",
+ "exit_code": 0,
+ "wall_s": 0.4,
+ "outputs": [
+  "multievent_20261017072240_6560",
+  "reloc-event.csv",
+  "reloc-phase.csv",
+  "reloc-station.csv",
+  "relocated.xml",
+  "scrtdd.log"
+ ],
+ "diagnostics_dirs": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S0h/work/multievent_20261017072240_6560"
+ ],
+ "log": {
+  "n_lines": 599,
+  "errors": [],
+  "warnings_n": 0,
+  "successfully_relocated": 11,
+  "clusters": 1,
+  "waveform_line": null,
+  "iterations_logged": 21,
+  "iteration_lines": [
+   "0 11 dampingFactor=0.01 downWeightingByResidual=10.00 absLocConstraint=0.00",
+   "1 11 dampingFactor=0.01 downWeightingByResidual=9.74 absLocConstraint=0.00",
+   "2 11 dampingFactor=0.01 downWeightingByResidual=9.47 absLocConstraint=0.00",
+   "3 11 dampingFactor=0.01 downWeightingByResidual=9.21 absLocConstraint=0.00",
+   "4 11 dampingFactor=0.01 downWeightingByResidual=8.95 absLocConstraint=0.00",
+   "5 11 dampingFactor=0.01 downWeightingByResidual=8.68 absLocConstraint=0.00",
+   "6 11 dampingFactor=0.01 downWeightingByResidual=8.42 absLocConstraint=0.00",
+   "7 11 dampingFactor=0.01 downWeightingByResidual=8.16 absLocConstraint=0.00",
+   "8 11 dampingFactor=0.01 downWeightingByResidual=7.89 absLocConstraint=0.00",
+   "9 11 dampingFactor=0.01 downWeightingByResidual=7.63 absLocConstraint=0.00",
+   "10 11 dampingFactor=0.01 downWeightingByResidual=7.37 absLocConstraint=0.00",
+   "11 11 dampingFactor=0.01 downWeightingByResidual=7.11 absLocConstraint=0.00",
+   "12 11 dampingFactor=0.01 downWeightingByResidual=6.84 absLocConstraint=0.00",
+   "13 11 dampingFactor=0.01 downWeightingByResidual=6.58 absLocConstraint=0.00",
+   "14 11 dampingFactor=0.01 downWeightingByResidual=6.32 absLocConstraint=0.00",
+   "15 11 dampingFactor=0.01 downWeightingByResidual=6.05 absLocConstraint=0.00",
+   "16 11 dampingFactor=0.01 downWeightingByResidual=5.79 absLocConstraint=0.00",
+   "17 11 dampingFactor=0.01 downWeightingByResidual=5.53 absLocConstraint=0.00",
+   "18 11 dampingFactor=0.01 downWeightingByResidual=5.26 absLocConstraint=0.00",
+   "19 11 dampingFactor=0.01 downWeightingByResidual=5.00 absLocConstraint=0.00",
+   "20 11 dampingFactor=0.01 downWeightingByResidual=4.74 absLocConstraint=0.00"
+  ],
+  "event_rms_lines": [
+   "min 198.687 1st quartile 231.808 median 1015.960 3rd quartile 1282.615 max 1552.561 ",
+   "min 223.364 1st quartile 244.164 median 1024.895 3rd quartile 1286.630 max 1562.722 ",
+   "min 215.786 1st quartile 239.780 median 1025.222 3rd quartile 1294.059 max 1567.623 ",
+   "min 231.552 1st quartile 266.007 median 1023.069 3rd quartile 1314.964 max 1587.675 ",
+   "min 243.364 1st quartile 288.096 median 1022.406 3rd quartile 1317.379 max 1595.517 ",
+   "min 252.186 1st quartile 299.809 median 1022.795 3rd quartile 1314.732 max 1597.441 ",
+   "min 260.766 1st quartile 309.338 median 1023.831 3rd quartile 1313.114 max 1598.773 ",
+   "min 272.950 1st quartile 322.265 median 1025.933 3rd quartile 1311.470 max 1600.551 ",
+   "min 285.687 1st quartile 335.535 median 1028.464 3rd quartile 1311.349 max 1603.003 ",
+   "min 304.404 1st quartile 354.789 median 1032.732 3rd quartile 1311.680 max 1606.647 ",
+   "min 323.000 1st quartile 373.778 median 1037.398 3rd quartile 1313.061 max 1610.738 ",
+   "min 342.138 1st quartile 393.462 median 1042.641 3rd quartile 1315.397 max 1615.502 ",
+   "min 353.026 1st quartile 404.443 median 1045.797 3rd quartile 1316.803 max 1618.369 ",
+   "min 359.581 1st quartile 411.014 median 1047.775 3rd quartile 1317.886 max 1622.243 ",
+   "min 363.029 1st quartile 414.390 median 1048.826 3rd quartile 1318.692 max 1624.220 ",
+   "min 366.213 1st quartile 417.414 median 1049.813 3rd quartile 1319.352 max 1625.981 ",
+   "min 367.462 1st quartile 418.395 median 1050.192 3rd quartile 1319.707 max 1626.548 ",
+   "min 368.056 1st quartile 418.620 median 1050.371 3rd quartile 1319.920 max 1626.690 ",
+   "min 368.375 1st quartile 418.460 median 1050.457 3rd quartile 1320.101 max 1626.632 ",
+   "min 368.739 1st quartile 418.509 median 1050.570 3rd quartile 1320.268 max 1626.579 ",
+   "min 369.193 1st quartile 418.672 median 1050.658 3rd quartile 1320.315 max 1626.596 "
+  ]
+ },
+ "reloc_event_rows": 11
+}

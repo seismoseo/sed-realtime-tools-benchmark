@@ -1,0 +1,1329 @@
+{
+ "variant": "phasenet_original",
+ "cfg_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/scautopick_phasenet_original.cfg",
+ "cfg_file_values": {
+  "plugins": "dlrtpicker",
+  "picker": "DL3C",
+  "spicker": "SDL3C",
+  "module.trunk.global.picker.DL3C.model": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_original.onnx",
+  "module.trunk.global.spicker.SDL3C.model": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_original.onnx",
+  "module.trunk.global.picker.DL3C.maxAttempts": "1",
+  "module.trunk.global.spicker.SDL3C.minLatency": "15",
+  "module.trunk.global.spicker.SDL3C.maxLatency": "30",
+  "module.trunk.global.spicker.SDL3C.maxAttempts": "4",
+  "module.trunk.global.spicker.SDL3C.strategy": "best",
+  "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "timeCorrection": "0",
+  "thresholds.triggerOn": "1.8",
+  "thresholds.triggerOff": "1.0",
+  "killPendingSPickers": "false",
+  "thresholds.deadTime": "15",
+  "thresholds.minAmplOffset": "1.8",
+  "thresholds.amplMaxTimeWindow": "5",
+  "ringBufferSize": "300",
+  "leadTime": "60",
+  "initTime": "60",
+  "thresholds.maxGapLength": "4.5",
+  "amplitudes": "MLv, mb, mB",
+  "extraPickComments": "true"
+ },
+ "plugin_resolved": {
+  "picker.DL3C": {
+   "minConfidence": {
+    "value": 0.4,
+    "source": "plugin default (dl.cpp:63,125)"
+   },
+   "polarityMinConfidence": {
+    "value": 0.5,
+    "source": "plugin default (dl.cpp:64,130-131)"
+   },
+   "polarityMaxTilt": {
+    "value": 20.0,
+    "source": "plugin default (dl.cpp:134-135)"
+   },
+   "uncertaintyMap": {
+    "value": null,
+    "source": "plugin default (dl.cpp:162 (unset: no uncertainty))"
+   },
+   "strategy": {
+    "value": "fast",
+    "source": "plugin default (dl.cpp:173-175)"
+   },
+   "maxLatency": {
+    "value": "windowDuration/2",
+    "source": "plugin default (dl.cpp:197-198)"
+   },
+   "minLatency": {
+    "value": "= maxLatency",
+    "source": "plugin default (dl.cpp:201-202)"
+   },
+   "maxAttempts": {
+    "value": "1",
+    "source": "cfg file"
+   },
+   "S-veto (internal)": {
+    "value": "P peak skipped if S curve >= 0.8 * P there",
+    "source": "plugin default (dl.cpp:408-445)"
+   },
+   "model": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_original.onnx",
+    "source": "cfg file"
+   },
+   "resolved": {
+    "window_duration_s": 30.01,
+    "minLatency_s": 15.005,
+    "maxLatency_s": 15.005,
+    "attempts": 1,
+    "attempt_window_ends_after_reference_s": [
+     15.005
+    ],
+    "attempt_window_starts_after_reference_s": [
+     -15.005
+    ],
+    "reference": "detector trigger"
+   }
+  },
+  "spicker.SDL3C": {
+   "minConfidence": {
+    "value": 0.3,
+    "source": "plugin default (S_dl.cpp:49,106)"
+   },
+   "phaseHint": {
+    "value": "S",
+    "source": "plugin default (S_dl.cpp:49,112)"
+   },
+   "uncertaintyMap": {
+    "value": null,
+    "source": "plugin default (S_dl.cpp:122 (unset: no uncertainty))"
+   },
+   "strategy": {
+    "value": "best",
+    "source": "cfg file"
+   },
+   "maxLatency": {
+    "value": "30",
+    "source": "cfg file"
+   },
+   "minLatency": {
+    "value": "15",
+    "source": "cfg file"
+   },
+   "maxAttempts": {
+    "value": "4",
+    "source": "cfg file"
+   },
+   "search region (internal)": {
+    "value": "only samples strictly after the reference P pick",
+    "source": "plugin default (S_dl.cpp:345-354)"
+   },
+   "model": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_original.onnx",
+    "source": "cfg file"
+   },
+   "resolved": {
+    "window_duration_s": 30.01,
+    "minLatency_s": 15.0,
+    "maxLatency_s": 30.0,
+    "attempts": 4,
+    "attempt_window_ends_after_reference_s": [
+     15.0,
+     20.0,
+     25.0,
+     30.0
+    ],
+    "attempt_window_starts_after_reference_s": [
+     -15.01,
+     -10.01,
+     -5.01,
+     -0.01
+    ],
+    "reference": "P pick"
+   }
+  }
+ },
+ "model_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_original.onnx",
+ "model_metadata": {
+  "seiscomp.picker.numComponents": "3",
+  "seiscomp.picker.sampleRate": "100.0",
+  "seiscomp.picker.windowLength": "3001",
+  "seiscomp.picker.phases": "N,P,S",
+  "seiscomp.picker.normalization": "std",
+  "seiscomp.picker.componentOrder": "ENZ"
+ },
+ "scautopick_resolved": {
+  "dump_config_module": {
+   "amplitude group": "AMPLITUDE",
+   "testMode": "false",
+   "offline": "true",
+   "useAllStreams": "false",
+   "calculateAmplitudes": "true",
+   "calculateAmplitudeTypes": "MLv, mB, mb",
+   "update amplitude types": "[]",
+   "interpolateGaps": "false",
+   "maxGapLength": "4.50s",
+   "defaultFilter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+   "defaultTriggerOnThreshold": "1.80",
+   "defaultTriggerOffThreshold": "1.00s",
+   "minDuration": "-1.00s",
+   "maxDuration": "-1.00",
+   "triggerDeadTime": "15.00s",
+   "amplitudeMaxTimeWindow": "5.00s",
+   "amplitudeMinOffset": "1.80s",
+   "defaultTimeCorrection": "0.00s",
+   "ringBufferSize": "300s",
+   "leadTime": "60s",
+   "initTime": "60s",
+   "pickerType": "DL3C",
+   "secondaryPickerType": "SDL3C",
+   "killPendingSPickers": "false",
+   "sendDetections": "false"
+  },
+  "dump_config_streams": {
+   "BK.BDM.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BKS.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BL67.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BL88.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BRK.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.CMAB.40.DP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.CVS.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.HERB.40.CN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.JRSC.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.MHC.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.MHDL.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.OHLN.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.OXMT.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.PETB.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.RFSB.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.SBRN.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.SCCB.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.SM2B.40.CN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.SVIN.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.VAK.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.VALB.40.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.WENL.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C001.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C002.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C003.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C004.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C005.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C006.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C008.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C011.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C013.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C017.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C020.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C021.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C024.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C026.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C027.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C028.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C029.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C031.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C032.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C033.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C039.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C044.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C047.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C048.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C049.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C051.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C054.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C055.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C056.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C057.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C058.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C061.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C062.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C063.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C064.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C067.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C069.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C071.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C072.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C073.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CAG..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CBP..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CBR..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CCH1..EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CCOB..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CDOB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CGP1..EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CLCB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CMC.02.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CMOB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CMW..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CMW1..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CNI..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CPI..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CRH..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CSL..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CUSLD.03.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CVL..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CYD..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CYD1..EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J001.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J004.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J006.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J007.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J008.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J016.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J019.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J020.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J022.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J025.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J027.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J030.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J032.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J034.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J035.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J037.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J039.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J041.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J042.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J043.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J045.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J049.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J050.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J051.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J052.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J056.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J057.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J059.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J060.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J061.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JBNB..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JBR..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JMGB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JPR..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JSCB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.N001.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.N017.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NBO..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NGVB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NHC..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NHF..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NLH..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.RWSVT.03.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1002..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1003..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1662.D0.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1675..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1689.NS.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1690.ER.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1691..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1722..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1737..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1739..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1750..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1752..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1753..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1754..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1755..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1756..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1760..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1771..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1772..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1775..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1778..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1788..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1795..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1796..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1799..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1801..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1804..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1806..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1810.0B.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1813..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1814..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1815..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1816..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1817..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1821..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1822..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1824..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1825..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1830..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1836..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1842..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1844..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1846..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1847..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1853..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1854..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1856..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1877.B0.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.DIX.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.KIR.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.MCD.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.MOD.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.PLA.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.SIA.02.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "PB.B054..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "PB.B057..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   }
+  },
+  "n_streams": 181,
+  "dump_settings": {
+   "scripts.crashHandler": "",
+   "logging.level": "2",
+   "logging.context": "0",
+   "logging.component": "None",
+   "logging.components": "[]",
+   "logging.output": "",
+   "logging.syslog": "0",
+   "logging.stderr": "0",
+   "logging.utc": "0",
+   "logging.file.rotator": "1",
+   "logging.file.rotator.timeSpan": "86400",
+   "logging.file.rotator.archiveSize": "7",
+   "logging.file.rotator.maxFileSize": "104857600",
+   "--quiet,q": "0",
+   "--verbosity": "2",
+   "--print-context": "0",
+   "--print-component": "None",
+   "--component": "[]",
+   "--console": "0",
+   "--debug": "0",
+   "--trace": "0",
+   "--log-file": "",
+   "--log-utc": "0",
+   "--syslog,s": "0",
+   "--config-file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/scautopick_phasenet_original.cfg",
+   "--plugins": "",
+   "--lockfile,l": "",
+   "certStore": "@ROOTDIR@/var/lib/certs",
+   "logging.objects.timeSpan": "60",
+   "agencyID": "UNSET",
+   "author": "scautopick@server-a",
+   "loadRegions": "0",
+   "publicIDPattern": "",
+   "processing.whitelist.agencies": "[]",
+   "processing.blacklist.agencies": "[]",
+   "amplitudes.aliases": "[]",
+   "magnitudes.aliases": "[]",
+   "IntervalSOH": "60",
+   "soh.interval": "60",
+   "recordstream": "file:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/input/72536875_sorted.mseed",
+   "--record-driver-list": "0",
+   "--record-url,I": "file:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/input/72536875_sorted.mseed",
+   "--record-file": "",
+   "--record-type": ""
+  }
+ },
+ "binding_set": "main",
+ "bound_stations": {
+  "n": 181,
+  "per_sensor": {
+   "HH": 15,
+   "HN": 145,
+   "DP": 1,
+   "CN": 2,
+   "EP": 9,
+   "EH": 9
+  }
+ }
+}

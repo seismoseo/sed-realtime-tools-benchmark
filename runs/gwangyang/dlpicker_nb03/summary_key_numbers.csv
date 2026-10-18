@@ -1,0 +1,12 @@
+Quantity,Value,Where
+Picker runs,"5 variants x 11 events; 60 scautopick logs, 0 [error] lines, 10 [warning] lines (10 Duplicate pick)",Section 1.1
+Stations and data,"54 bound (5 EL, 32 HG, 17 HH); 71.0 station-hours",Section 1.3
+Reference,360 P and 403 S PhaseNet+ picks; 17 outliers,Section 1.1
+Best model (fixed rule),"phasenet_original: pooled F1 0.855, recall P 0.91 / S 0.86",Figure 1
+Recall ML>=1.5 / ML<1.5 (KMA ML),P 0.79-0.95 / 0.43-0.82; S 0.76-0.93 / 0.38-0.76,Figure 3
+Plugin vs SeisBench,median |dt| 0.010-0.020 s; within 5 samples 89%-96%; |mean dt| ≤ 0.0052 s,Figure 6
+Fast vs reliable P,within 5 samples 92%; latency median 1.29 s vs 15.19 s; false P 2.48 vs 0.63 per station-hour,Figure 7
+"DD, best model vs PhaseNet+ control",49.1 m 3-D RMS (16.4 / 8.0 / 45.6 m E/N/U),Figure 9
+"DD, catalog-only vs dt.cc","dt.ct 51.3 m, control 52.7 m, best model 81.8 m; one point 50.4 m",Figure 9
+"DD, cluster drift from start","control 1723 m, best model 82 m, dt.cc 1.1 m",Figure 9
+Consistency checks,43 of 43 passed,Section 1.2

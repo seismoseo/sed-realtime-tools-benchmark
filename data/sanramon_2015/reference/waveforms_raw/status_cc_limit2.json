@@ -1,0 +1,30 @@
+{
+ "set": "cc",
+ "limit": 2,
+ "events": 2,
+ "plan_lines": 51,
+ "ncedc": {
+  "results": {
+   "200": 2
+  },
+  "failed": 0,
+  "seconds": 6.7
+ },
+ "fallback": {
+  "results": {},
+  "failed": 0,
+  "missing_lines": 0,
+  "missing_channels": 0,
+  "earthscope_channels_with_data": [],
+  "seconds": 0.0
+ },
+ "build": {
+  "day_files_written": 51,
+  "day_files_unchanged": 0,
+  "unexpected_traces": 0,
+  "overlaps_cut": 0,
+  "seconds": 0.1
+ },
+ "failed_requests": [],
+ "finished_utc": "2026-10-17T04:49:55.329260Z"
+}

@@ -1,0 +1,59 @@
+[
+ {
+  "event": "20210827220322",
+  "feed": "file",
+  "data": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/data/20210827220322_sorted.mseed",
+  "data_md5": "e4060fd40f343d785f1840aa3f2e41b5",
+  "pick_argv": [
+   "nice",
+   "-n",
+   "10",
+   "/usr/bin/timeout",
+   "900",
+   "/usr/bin/time",
+   "-v",
+   "-o",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scautopick_20210827220322_file.time.txt",
+   "scautopick",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--playback",
+   "--verbosity=4",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scautopick_20210827220322_file.log",
+   "-I",
+   "file:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/data/20210827220322_sorted.mseed"
+  ],
+  "feed_argv": null,
+  "wall_start": "2026-10-17T08:41:35.918914Z",
+  "scautopick_exit": 0,
+  "scautopick_wall_s": 12.49,
+  "scautopick_time_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scautopick_20210827220322_file.time.txt",
+  "msrtsimul_exit": null,
+  "wall_scautopick_end": "2026-10-17T08:41:48.407250Z",
+  "relocation_logged_after_s": null,
+  "wall_end": "2026-10-17T08:46:23.452825Z",
+  "alive_after": {
+   "scmaster": true,
+   "scevent": true,
+   "scautoloc": true,
+   "scrtdd": true
+  },
+  "db_counts_after": {
+   "Network": 1,
+   "Station": 54,
+   "SensorLocation": 54,
+   "Stream": 255,
+   "ConfigModule": 1,
+   "ConfigStation": 54,
+   "ParameterSet": 108,
+   "Parameter": 108,
+   "Pick": 112,
+   "Amplitude": 219,
+   "Origin": 0,
+   "Arrival": 0,
+   "Event": 0,
+   "OriginReference": 0
+  }
+ }
+]

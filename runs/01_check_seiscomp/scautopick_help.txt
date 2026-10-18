@@ -1,0 +1,160 @@
+Usage:
+  scautopick [options]
+
+Detect P and S phases creating phase picks and amplitudes
+
+Verbose:
+  -q [ --quiet ]                        Quiet mode: no logging output
+  --verbosity arg                       Verbosity level [0..4]
+  --print-context arg                   Print source file and line number
+  --print-component arg                 Print the log component (default: 
+                                        file:1, stdout:0)
+  --component arg                       Limits the logging to a certain 
+                                        component. This option can be given 
+                                        more than once
+  --console arg                         Send log output to stdout
+  --debug                               debug mode: --verbosity=4 --console=1
+  --trace                               trace mode: --verbosity=4 --console=1 
+                                        --print-component=1 --print-context=1
+  --log-file arg                        Use alternative log file
+  --log-utc arg                         Use UTC instead of local timezone
+  -s [ --syslog ]                       Use syslog
+  -l [ --lockfile ] arg                 Path to lock file.
+  -v [ --v ]                            Increase verbosity level (may be 
+                                        repeated, eg. -vv).
+
+Generic:
+  --config-file arg                     The alternative module configuration 
+                                        file. When this option is used, the 
+                                        module configuration is only read from 
+                                        the given file and no other 
+                                        configuration stage is considered. 
+                                        Therefore, all configuration including 
+                                        the definition of plugins must be 
+                                        contained in that file or given along 
+                                        with other command-line options such as
+                                        --plugins.
+  --plugins arg                         Load given plugins.
+  --auto-shutdown arg (=0)              Enables automatic application shutdown 
+                                        triggered by a status message.
+  --shutdown-master-module arg          Triggers shutdown if the module name of
+                                        the received messages match.
+  --shutdown-master-username arg        Triggers shutdown if the user name of 
+                                        the received messages match.
+  -h [ --help ]                         Produce help message.
+  -V [ --version ]                      Show version information.
+  --print-config-vars                   Print all available configuration 
+                                        variables and exit.
+  --validate-schema-params              Validates the applications description 
+                                        xml and exit.
+  --dump-settings                       Dump the bound settings and exit.
+  -D [ --daemon ]                       Run as daemon.
+
+Database:
+  --db-driver-list                      List all supported database drivers.
+  -d [ --database ] arg                 The database connection string, format:
+                                        service://user:pwd@host/database.
+  --inventory-db arg                    Load the inventory from the given 
+                                        database or file, format: 
+                                        [service://]location.
+  --config-db arg                       Load the configuration from the given 
+                                        database or file, format: 
+                                        [service://]location.
+  --config-module arg (=trunk)          The configmodule to use.
+  --db-disable                          Do not use the database at all.
+
+Messaging:
+  -u [ --user ] arg (=scautopick)       Client name used when connecting to the
+                                        messaging.
+  -H [ --host ] arg (=localhost/production)
+                                        Messaging URL (host[:port][/queue]).
+  -t [ --timeout ] arg (=3)             Connection timeout in seconds.
+  -g [ --primary-group ] arg (=PICK)    The primary message group of the 
+                                        client.
+  -S [ --subscribe-group ] arg          A group to subscribe to. This option 
+                                        can be given more than once.
+  --content-type arg (=binary)          Sets the message content type (binary, 
+                                        json or xml).
+  --start-stop-msg arg (=0)             Sets sending of a start- and a stop 
+                                        message.
+
+Records:
+  --record-driver-list                  List all supported RecordStream 
+                                        drivers.
+  -I [ --record-url ] arg               The RecordStream source URL. Format: 
+                                        [service://]location[#type]. 'service' 
+                                        is the name of the RecordStream driver 
+                                        which can be queried with 
+                                        '--record-driver-list'. If 'service' is
+                                        not given, 'file://' is used and simply
+                                        the name of a miniSEED file can be 
+                                        given.
+  --record-file arg                     Specify a file as record source.
+  --record-type arg                     Specify a type for the records being 
+                                        read.
+
+Mode:
+  --amplitudes arg (=1)                 Enable/disable computation of 
+                                        amplitudes.
+  --dump-config                         Dump the configuration and exit.
+  --dump-records                        Dump records to ASCII when in offline 
+                                        mode.
+  --ep                                  Same as offline but outputs all result 
+                                        as event parameters to stdout in XML. 
+                                        Consider '--playback' or configure 
+                                        accordingly for processing data from 
+                                        the past.
+  --offline                             Do not connect to a messaging server.
+  --playback                            Use playback mode that does not set a 
+                                        request time window and works best with
+                                        files.
+  --test                                Do not send any object.
+
+Settings:
+  --ampl-max-time-window arg (=10)      The timewindow length after pick to 
+                                        calculate 'max' amplitude
+  --any-stream arg (=0)                 Use all/configured received Z streams 
+                                        for picking.
+  --before arg (=60)                    The timespan in seconds before now to 
+                                        start picking.
+  --buffer-size arg (=300)              The waveform ringbuffer size in 
+                                        seconds.
+  --extra-comments                      Add extra comments to picks.
+                                        Supported: SNR.
+  --filter arg                          The filter used for picking.
+  --gap-interpolation arg (=0)          Enables/disables the linear 
+                                        interpolation of gaps
+  --gap-tolerance arg (=4.5)            The maximum gap length to tolerate 
+                                        (reset otherwise).
+  --init-time arg (=60)                 The initialization (inactive) time 
+                                        after the first record arrived per 
+                                        trace.
+  --min-ampl-offset arg (=3)            The amplitude offset for amplitude 
+                                        dependend dead time calculation.
+  --send-detections                     If picker is configured, then initial 
+                                        detections are sent as well. To 
+                                        distinguish between detections and 
+                                        picks the evaluation status of the pick
+                                        is set to rejected. This is meant to be
+                                        a debug option which can be used to 
+                                        compare detections and picks by their 
+                                        evaluation status.
+  --time-correction arg (=-0.80000000000000004)
+                                        The time correction in seconds for a 
+                                        pick.
+  --trigger-dead-time arg (=30)         The dead-time after a pick has been 
+                                        detected.
+  --trigger-off arg (=1.5)              The trigger-off threshold.
+  --trigger-on arg (=3)                 The trigger-on threshold.
+
+Output:
+  -f [ --formatted ]                    Use formatted XML output. Otherwise XML
+                                        is unformatted.
+
+Examples:
+Real-time processing with informative debug output
+  scautopick --debug
+
+Non-real-time playback of miniSEED data in a file. Picks and amplitudes are printed to stdout as SCML
+  scautopick -d localhost --playback --ep -I data.mseed
+

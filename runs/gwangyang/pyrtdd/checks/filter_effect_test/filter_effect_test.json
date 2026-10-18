@@ -1,0 +1,72 @@
+{
+ "none": [
+  {
+   "phaseType": "P",
+   "valid": true,
+   "coefficient": 0.640372,
+   "lag": -0.02
+  },
+  {
+   "phaseType": "S",
+   "valid": true,
+   "coefficient": 0.892787,
+   "lag": 0.0
+  }
+ ],
+ "bp5_20": [
+  {
+   "phaseType": "P",
+   "valid": true,
+   "coefficient": 0.640372,
+   "lag": -0.02
+  },
+  {
+   "phaseType": "S",
+   "valid": true,
+   "coefficient": 0.892787,
+   "lag": 0.0
+  }
+ ],
+ "lp1": [
+  {
+   "phaseType": "P",
+   "valid": true,
+   "coefficient": 0.640372,
+   "lag": -0.02
+  },
+  {
+   "phaseType": "S",
+   "valid": true,
+   "coefficient": 0.892787,
+   "lag": 0.0
+  }
+ ],
+ "zeroing": [
+  {
+   "phaseType": "P",
+   "valid": true,
+   "coefficient": 0.640372,
+   "lag": -0.02
+  },
+  {
+   "phaseType": "S",
+   "valid": true,
+   "coefficient": 0.892787,
+   "lag": 0.0
+  }
+ ],
+ "negating": [
+  {
+   "phaseType": "P",
+   "valid": true,
+   "coefficient": 0.640372,
+   "lag": -0.02
+  },
+  {
+   "phaseType": "S",
+   "valid": true,
+   "coefficient": 0.892787,
+   "lag": 0.0
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+Run,Cluster-mean shift (m),Largest relative change (m),Event with the largest relative change,Largest origin-time change (ms)
+Every S pick +0.273 s,0.0,0.0,1,0.0
+Station statics (0.1-0.5 s),0.0,0.0,1,0.0
+Event terms removed,128.95,10.926,10,8.78
+Event 3 alone shifted (+0.273 s),4067.141,1120.161,3,6.168

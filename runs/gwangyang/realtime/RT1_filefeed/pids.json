@@ -1,0 +1,90 @@
+{
+ "scmaster": {
+  "pid": 1645411,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scmaster",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scmaster.log",
+   "--verbosity=3"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/work/scmaster",
+  "started": "2026-10-17T08:41:05.469457Z"
+ },
+ "scevent": {
+  "pid": 1645416,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scevent",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scevent.log",
+   "--verbosity=4",
+   "-H",
+   "127.0.0.1:28180/production"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/work/scevent",
+  "started": "2026-10-17T08:41:06.006804Z"
+ },
+ "scautoloc": {
+  "pid": 1645419,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scautoloc",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scautoloc.log",
+   "--verbosity=4",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--playback"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/work/scautoloc",
+  "started": "2026-10-17T08:41:09.008068Z"
+ },
+ "scrtdd": {
+  "pid": 1645424,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "scrtdd",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scrtdd.log",
+   "--verbosity=4",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--dump-diagnostics"
+  ],
+  "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/work/scrtdd",
+  "started": "2026-10-17T08:41:12.009822Z"
+ },
+ "scautopick_20210827220322": {
+  "pid": 1645689,
+  "argv": [
+   "nice",
+   "-n",
+   "10",
+   "/usr/bin/timeout",
+   "900",
+   "/usr/bin/time",
+   "-v",
+   "-o",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scautopick_20210827220322_file.time.txt",
+   "scautopick",
+   "-H",
+   "127.0.0.1:28180/production",
+   "--playback",
+   "--verbosity=4",
+   "--log-file",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/logs/scautopick_20210827220322_file.log",
+   "-I",
+   "file:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT1_filefeed/data/20210827220322_sorted.mseed"
+  ],
+  "started": "2026-10-17T08:41:35.919746Z"
+ }
+}

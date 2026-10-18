@@ -1,0 +1,3 @@
+folder,n_dd,median_residual_ms,MAD_ms,cutoff_ms,n_beyond_cutoff,n_weight_gt0,sum_weight,step2_completed
+singleevent_20261017_091446_20210827_220322_430555,271,913.04,86.39,1280.80,8,263,70.17,True
+singleevent_20261017_091551_20260202_194119_251611,219,879.38,119.40,1770.18,4,215,124.28,True

@@ -1,0 +1,70 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/make_stations_rtdd_xml.py",
+ "run_time": "2026-10-17T13:53:57.593567+09:00",
+ "argv": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/make_stations_rtdd_xml.py",
+  "--master",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_supplement/inventory/KS_KG_metadata_1.0.2.xml",
+  "--out",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml",
+  "--changes",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/inventory_coordinate_changes.csv",
+  "--options-json",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/make_stations_rtdd_xml.json"
+ ],
+ "args": {
+  "master": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_supplement/inventory/KS_KG_metadata_1.0.2.xml",
+  "out": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml",
+  "changes": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/inventory_coordinate_changes.csv",
+  "sources_csv": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/stations_rtdd_channel_sources.csv",
+  "options_json": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/make_stations_rtdd_xml.json"
+ },
+ "PERIOD": [
+  "2021-07-01T00:00:00",
+  "2026-03-01T00:00:00"
+ ],
+ "EVAL_FREQS_HZ": [
+  0.05,
+  0.1,
+  0.5,
+  1.0,
+  2.0,
+  5.0,
+  10.0,
+  20.0,
+  30.0,
+  40.0,
+  45.0
+ ],
+ "inputs": {
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/inventory/merged_inventory.xml": "aba3bbc639ad46fe02b821b72f1a718e",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_supplement/inventory/KS_KG_metadata_1.0.2.xml": "687bf07ddca65c76e0855de6d3c2673d",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/station.csv": "a36bc6bb424bb088616c2875de40f97e",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/waveform_manifest.csv": "bea95723a3824ad19beab6c0eae7f67c"
+ },
+ "outputs": {
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml": "f3e6851c3ae427b23f64edfd489f1175",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/inventory_coordinate_changes.csv": "df850053f15e2cb60654be1c92232a4e",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/checks/stations_rtdd_channel_sources.csv": "d480336017b6de644920187b795a63d1"
+ },
+ "rules": {
+  "channel_codes": "exactly the NET.STA.LOC.CHA of the SAC files (waveform_manifest.csv)",
+  "source_order": [
+   "merged_inventory.xml (if it covers every SAC window of the channel exactly once)",
+   "KS_KG_metadata_1.0.2.xml (master), same coverage test"
+  ],
+  "epochs_kept": "every channel epoch of the chosen source overlapping PERIOD",
+  "coordinates": "station and channel latitude/longitude/elevation := station.csv; depth kept",
+  "unchanged": "epoch boundaries, azimuth, dip, depth, sample rate, sensor, datalogger, response, existing comments; station/network elements copied from the source",
+  "added": "one Comment per station and per channel epoch; selected_number_of_channels/stations set to the numbers written"
+ },
+ "versions": {
+  "python": "3.12.15",
+  "obspy": "1.5.1",
+  "pandas": "3.0.6",
+  "numpy": "2.5.4",
+  "lxml": "6.1.3"
+ },
+ "n_problems": 0,
+ "problems": []
+}

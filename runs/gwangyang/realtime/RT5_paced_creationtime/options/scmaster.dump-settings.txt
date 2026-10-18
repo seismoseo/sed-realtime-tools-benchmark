@@ -1,0 +1,54 @@
+scripts.crashHandler: 
+logging.level: 2
+logging.context: 0
+logging.component: None
+logging.components: []
+logging.output: 
+logging.syslog: 0
+logging.stderr: 0
+logging.utc: 0
+logging.file.rotator: 1
+logging.file.rotator.timeSpan: 86400
+logging.file.rotator.archiveSize: 7
+logging.file.rotator.maxFileSize: 104857600
+--quiet,q: 0
+--verbosity: 2
+--print-context: 0
+--print-component: None
+--component: []
+--console: 0
+--debug: 0
+--trace: 0
+--log-file: 
+--log-utc: 0
+--syslog,s: 0
+--config-file: 
+--plugins: 
+--lockfile,l: 
+certStore: @ROOTDIR@/var/lib/certs
+defaultGroups: AMPLITUDE PICK LOCATION RELOCATION MAGNITUDE FOCMECH EVENT QC PUBLICATION GUI INVENTORY ROUTING CONFIG LOGGING IMPORT_GROUP SERVICE_REQUEST SERVICE_PROVIDE
+queues: [1]
+{
+*KEY*: production
+queues.groups: AMPLITUDE PICK LOCATION RELOCATION MAGNITUDE FOCMECH EVENT QC PUBLICATION GUI INVENTORY ROUTING CONFIG LOGGING IMPORT_GROUP SERVICE_REQUEST SERVICE_PROVIDE
+queues.acl: 127.0.0.1/32
+queues.plugins: dbstore
+queues.maxPayloadSize: 1048576
+queues.processors.messages: dbstore
+queues.processors.messages.dbstore.driver: sqlite3
+queues.processors.messages.dbstore.read: /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/db/seiscomp.sqlite
+}
+interface.bind: 127.0.0.1:28180
+--bind: 127.0.0.1:28180
+interface.acl: 127.0.0.1/32
+interface.socketPortReuse: 1
+interface.ssl.bind: 127.0.0.1:-1
+--sbind: 127.0.0.1:-1
+interface.ssl.acl: 
+interface.ssl.socketPortReuse: 1
+interface.ssl.key: /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/seiscomp_user/ssl/key.pem
+interface.ssl.certificate: /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT5_paced_creationtime/seiscomp_user/ssl/cert.pem
+interface.ssl.verifyPeer: 0
+http.filebase: /home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/share/scmaster/http/
+http.staticPath: /
+http.brokerPath: /

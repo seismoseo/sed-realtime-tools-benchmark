@@ -1,0 +1,30 @@
+{
+ "catalog_loaded": {
+  "events": 685,
+  "events_with_phases": 685,
+  "phases": 25684,
+  "stations": 415,
+  "mainshock_id_present": true,
+  "csv_events": 685,
+  "csv_phases": 25684,
+  "csv_stations": 415
+ },
+ "grid_lookup": {
+  "stations": 264,
+  "lookups": 528,
+  "failed": 0,
+  "failures": [],
+  "max_abs_diff_vs_ray1d_s": {
+   "P": 0.01348794762936123,
+   "S": 0.0233415232802745
+  },
+  "median_abs_diff_s": {
+   "P": 0.010308013545297978,
+   "S": 0.017838799796216165
+  },
+  "takeoff_dip_range": [
+   41.9,
+   172.2
+  ]
+ }
+}

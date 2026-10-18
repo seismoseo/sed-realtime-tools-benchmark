@@ -1,0 +1,10 @@
+scrtdd,pyrtdd,available,n,max_abs_position_diff_m,max_3d_diff_m,rms_3d_diff_m,centroid_diff_E_m,centroid_diff_N_m,centroid_diff_U_m,relative_geometry_max_3d_m,relative_geometry_rms_3d_m,max_abs_time_diff_ms,identical_as_written
+S0,R0_catalog_only_hypodd_like,True,11,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+S0n,R0_catalog_only_hypodd_like,True,11,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+S0h,R3a_catalog_only_hypodd_like_hypoinverse_start,True,11,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+S1,R1f_xcorr_like_reference_hypodd_like_filtered,True,11,1.5742,1.7834,1.6918,-0.1281,-1.4764,0.8053,0.2479,0.1323,0.0490,False
+S1,R1_xcorr_like_reference_hypodd_like,True,11,488.0010,501.9937,494.9390,-102.4416,63.7860,479.9492,11.7758,7.1033,3.5470,False
+S1h,R3bf_xcorr_like_reference_hypodd_like_hypoinverse_start_filtered,True,11,45.4520,45.6871,45.3167,-3.2312,-3.5536,45.0608,0.4505,0.2400,0.0520,False
+S1h,R3b_xcorr_like_reference_hypodd_like_hypoinverse_start,True,11,521.2970,688.3221,683.5453,-172.7285,417.1985,513.1212,11.7076,7.1459,3.7770,False
+S2,R2f_xcorr_default_rtdd_default_filtered,True,11,0.6880,0.8230,0.7149,0.4632,0.0384,-0.5368,0.1529,0.0828,0.0350,False
+S2,R2_xcorr_default_rtdd_default,True,11,322.7850,330.5088,319.7385,-67.6174,-5.5072,-312.2950,18.7430,10.1039,35.5070,False

@@ -1,0 +1,191 @@
+{
+ "ncss_parser_check": {
+  "n_archive": 706,
+  "n_csv": 706,
+  "n_both": 706,
+  "max_dlat_deg": 6.6666666711512335e-06,
+  "max_dlon_deg": 6.666666678256661e-06,
+  "max_ddepth_km": 0.0030000000000001137,
+  "max_dt_s": 0.0,
+  "max_dmag": 0.0
+ },
+ "ncedc_dd_box_csv_n": 683,
+ "ncedc_dd_box_from_wide_n": 683,
+ "ddread_vs_ddcsv": {
+  "n": 683,
+  "max_dlat": 0.0,
+  "max_dlon": 0.0,
+  "max_ddep": 0.0
+ },
+ "ddraw_vs_ddcsv_max_dhoriz_m": 11.811208952250137,
+ "ddraw_erh_field_values": [
+  0.0
+ ],
+ "ddraw_erz_field_range_km": [
+  0.02,
+  0.06,
+  0.46
+ ],
+ "matching": {
+  "ncss_wide": 706,
+  "ncss_box": 680,
+  "ncedc_dd_wide": 704,
+  "ncedc_dd_box": 683,
+  "ldeo_dd_wide": 704,
+  "ldeo_dd_box": 677,
+  "ncedc_dd_box_not_in_ncss": [],
+  "ncss_box_not_in_ncedc_dd": [
+   71098004,
+   72540935
+  ],
+  "ldeo_dd_box_not_in_ncss": [],
+  "ncss_box_not_in_ldeo_dd": [
+   71098004,
+   72541935
+  ],
+  "ncedc_dd_box_not_in_ldeo": [
+   72541935
+  ],
+  "ldeo_box_not_in_ncedc_dd": [
+   72540935
+  ],
+  "ncss_box_dd_outside_box": [],
+  "dd_box_ncss_outside_box": [
+   71098439,
+   72547870,
+   72549560,
+   72550205,
+   72554471
+  ],
+  "benchmark_events": 685
+ },
+ "picks": {
+  "n_rows": 26499,
+  "n_P": 23282,
+  "n_S": 3217,
+  "n_usable_P": 23056,
+  "n_usable_S": 3210,
+  "amplitude_only_lines_skipped": 4968,
+  "other_lines_without_time": 0,
+  "weight_codes_P": {
+   "0": 5344,
+   "1": 5649,
+   "2": 10461,
+   "3": 1602,
+   "5": 5,
+   "6": 12,
+   "7": 146,
+   "8": 63
+  },
+  "weight_codes_S": {
+   "0": 4,
+   "1": 1505,
+   "2": 1684,
+   "3": 17,
+   "6": 4,
+   "7": 3
+  }
+ },
+ "ncss_depth_datum_m": {
+  "n_with_datum": 705,
+  "min": 120.0,
+  "median": 290.0,
+  "max": 421.0,
+  "events_without_datum": [
+   72536151
+  ]
+ },
+ "differences": {
+  "ncss_to_ncedc_dd_dh_km": {
+   "n": 683,
+   "median": 0.3286184773941079,
+   "median_abs": 0.3286184773941079,
+   "p90_abs": 0.6847572880603736,
+   "max_abs": 2.714600990342402
+  },
+  "ncss_to_ncedc_dd_de_km": {
+   "n": 683,
+   "median": 0.17693265351038123,
+   "median_abs": 0.2214516900466911,
+   "p90_abs": 0.5532732383296094,
+   "max_abs": 2.153497420902072
+  },
+  "ncss_to_ncedc_dd_dn_km": {
+   "n": 683,
+   "median": 0.13380456172928576,
+   "median_abs": 0.16493914118937358,
+   "p90_abs": 0.4435936273609128,
+   "max_abs": 1.6527272596941316
+  },
+  "ncss_model_minus_ncedc_dd_dz_km": {
+   "n": 683,
+   "median": 1.157,
+   "median_abs": 1.1600000000000001,
+   "p90_abs": 1.8282,
+   "max_abs": 3.448999999999998
+  },
+  "ncss_geoid_minus_ncedc_dd_dz_km": {
+   "n": 683,
+   "median": 0.8410000000000002,
+   "median_abs": 0.8620000000000001,
+   "p90_abs": 1.5295999999999994,
+   "max_abs": 3.316
+  },
+  "ncss_minus_ncedc_dd_dt_s": {
+   "n": 683,
+   "median": -0.07,
+   "median_abs": 0.07,
+   "p90_abs": 0.14,
+   "max_abs": 0.33
+  },
+  "ncss_to_ldeo_dd_dh_km": {
+   "n": 683,
+   "median": 0.24063059013071605,
+   "median_abs": 0.24063059013071605,
+   "p90_abs": 0.5093601302507024,
+   "max_abs": 2.7462255746390163
+  },
+  "ncss_geoid_minus_ldeo_dd_dz_km": {
+   "n": 683,
+   "median": 0.492,
+   "median_abs": 0.5889999999999995,
+   "p90_abs": 1.2729999999999995,
+   "max_abs": 2.99
+  },
+  "ncss_minus_ldeo_dd_dt_s": {
+   "n": 683,
+   "median": -0.021,
+   "median_abs": 0.039,
+   "p90_abs": 0.09560000000000014,
+   "max_abs": 0.31
+  },
+  "ncedc_dd_to_ldeo_dd_dh_km": {
+   "n": 682,
+   "median": 0.25154989437363406,
+   "median_abs": 0.25154989437363406,
+   "p90_abs": 0.44757525162386147,
+   "max_abs": 1.5769514282901598
+  },
+  "ncedc_dd_minus_ldeo_dd_dz_km": {
+   "n": 682,
+   "median": -0.32399999999999984,
+   "median_abs": 0.37849999999999984,
+   "p90_abs": 0.9718999999999995,
+   "max_abs": 2.9939999999999998
+  },
+  "ncedc_dd_geoidapprox_minus_ldeo_dz_km": {
+   "n": 682,
+   "median": -0.6134999999999997,
+   "median_abs": 0.6399999999999997,
+   "p90_abs": 1.2388000000000006,
+   "max_abs": 2.7300000000000004
+  },
+  "ncedc_dd_minus_ldeo_dd_dt_s": {
+   "n": 682,
+   "median": 0.048,
+   "median_abs": 0.05,
+   "p90_abs": 0.1,
+   "max_abs": 0.251
+  }
+ }
+}

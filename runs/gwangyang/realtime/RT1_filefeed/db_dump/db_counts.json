@@ -1,0 +1,16 @@
+{
+ "Network": 1,
+ "Station": 54,
+ "SensorLocation": 54,
+ "Stream": 255,
+ "ConfigModule": 1,
+ "ConfigStation": 54,
+ "ParameterSet": 108,
+ "Parameter": 108,
+ "Pick": 112,
+ "Amplitude": 219,
+ "Origin": 0,
+ "Arrival": 0,
+ "Event": 0,
+ "OriginReference": 0
+}

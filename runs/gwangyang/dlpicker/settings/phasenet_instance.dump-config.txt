@@ -1,0 +1,82 @@
+Configuration:
+amplitude group                  AMPLITUDE
+testMode                         false
+offline                          true
+useAllStreams                    false
+calculateAmplitudes              true
+calculateAmplitudeTypes          MLv, mB, mb
+update amplitude types           []
+interpolateGaps                  false
+maxGapLength                     4.50s
+defaultFilter                    RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+defaultTriggerOnThreshold        1.80
+defaultTriggerOffThreshold       1.00s
+minDuration                      -1.00s
+maxDuration                      -1.00
+triggerDeadTime                  15.00s
+amplitudeMaxTimeWindow           5.00s
+amplitudeMinOffset               1.80s
+defaultTimeCorrection            0.00s
+ringBufferSize                   300s
+leadTime                         60s
+initTime                         60s
+pickerType                       DL3C
+secondaryPickerType              SDL3C
+killPendingSPickers              false
+sendDetections                   false
+
+Stream configuration:
+KS.BAU..EL      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.BLLA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.BOSB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.CGPA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.CGWB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.CHDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.CHRB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.CLSA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.DGHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.DUSB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.EURB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.GACA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.GKSA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.GMNA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.GWYB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.HACA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.HADA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.HAIA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.HAMB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.HCNA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.IMSB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JAGA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JAHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JASA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JEU2..EL     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JINA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JLSA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JNHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.JNYA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.KCH2..EL     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.KH2B..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.KKDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.KUJA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.KWJ2..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.KWJU..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.MALA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.MMD..HH      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.MNDB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.NAHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.NAJA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.NAWB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.NLDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.SACA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.SCHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.SIDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.SUCA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.TOY2..EL     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.WICA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.YALB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.YESA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.YGJA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.YKDB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.YNDB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+KS.YOA..EL      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)

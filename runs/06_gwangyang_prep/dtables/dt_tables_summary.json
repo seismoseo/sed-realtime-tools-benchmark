@@ -1,0 +1,123 @@
+{
+ "dtcc_P_pair_files": 55,
+ "dtcc_S_pair_files": 55,
+ "dtcc_used_is_P07_then_S07_bytes": true,
+ "dtct_copies_identical": {
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/00.ph2dt/dt.ct": true,
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/01.dt.ct/dt.ct": true
+ },
+ "hypoDD_inp_reads": [
+  "dt.cc_0.7_combined",
+  "dt.ct"
+ ],
+ "used_equals_measured_filtered": true,
+ "hypodd_res_used": {
+  "rows_in_res": 1472,
+  "matched": 1472,
+  "max_abs_DT_minus_dt_s": 0.0
+ },
+ "hypodd_res_dtct": {
+  "rows_in_res": 2645,
+  "matched": 2645,
+  "max_abs_DT_minus_dt_s": 1.799999999996249e-06
+ },
+ "sign_check_measured_vs_dtct": {
+  "n": 2729,
+  "pearson_r": 0.5190186540054013,
+  "median_abs_dtcc_minus_dtct_ms": 20.999999999999996,
+  "median_abs_dtcc_plus_dtct_ms": 121.00000000000001,
+  "fraction_closer_with_same_sign": 0.7614510809820447
+ },
+ "xcorr_shift_measured": {
+  "n": 2801,
+  "median_abs_ms": 21.006,
+  "p95_abs_ms": 353.999,
+  "max_abs_ms": 955.005,
+  "on_1ms_grid_within_0p02ms": 1.0,
+  "missing_sac_pick": 0
+ },
+ "xcorr_shift_used": {
+  "n": 2526,
+  "median_abs_ms": 19.004,
+  "p95_abs_ms": 293.0005,
+  "max_abs_ms": 748.9970000000001,
+  "on_1ms_grid_within_0p02ms": 1.0,
+  "missing_sac_pick": 0
+ },
+ "dtcc_measured": {
+  "rows": 2801,
+  "P": 1226,
+  "S": 1575,
+  "pairs": 55,
+  "stations": 53,
+  "cc_min": 0.32956,
+  "cc_max": 0.99829,
+  "cc_below_0p7": 275,
+  "cc_negative": 0,
+  "cc_above_1": 0,
+  "dt_min_s": -10.989,
+  "dt_max_s": 10.968,
+  "otc_values": [
+   0.0
+  ]
+ },
+ "dtcc_used": {
+  "rows": 2526,
+  "P": 1017,
+  "S": 1509,
+  "pairs": 55,
+  "stations": 53,
+  "cc_min": 0.70074,
+  "cc_max": 0.99829,
+  "cc_below_0p7": 0,
+  "cc_negative": 0,
+  "cc_above_1": 0,
+  "dt_min_s": -10.989,
+  "dt_max_s": 8.115,
+  "otc_values": [
+   0.0
+  ],
+  "kept_in_final_iteration": 1472
+ },
+ "dtct": {
+  "rows": 2729,
+  "P": 1181,
+  "S": 1548,
+  "pairs": 55,
+  "stations": 53,
+  "weights": [
+   0.1,
+   0.15,
+   0.2,
+   0.5,
+   1.0
+  ],
+  "dt_min_s": -1.11,
+  "dt_max_s": 0.78,
+  "tt_vs_catalog_max_abs_s": 0.0,
+  "kept_in_final_iteration": 2645
+ },
+ "first_pair_order_hypodd_ids_increasing": true,
+ "outputs": {
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_tables/dtcc_measured.csv": "b061e09b7c2d16d54f215125e2a77d03",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_tables/dtcc_used.csv": "50b1b95f057f5addffeba653c881375f",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_tables/dtct.csv": "457eddb3902f32e57756c578e7111075"
+ },
+ "problems": [],
+ "sign_convention": "dt_s = (t1 - ot1) - (t2 - ot2): travel time of event 1 (kma_id_1/rtdd_id_1) minus travel time of event 2 at that station; HypoDD dt.cc/dt.ct convention; rtDD: dt = dt_catalog - lag",
+ "column_descriptions": {
+  "dt_s": "differential travel time (s), event 1 minus event 2 (dt.cc: as written; dt.ct: TT1 - TT2)",
+  "cc": "cross-correlation coefficient written by the reference (also HypoDD's weight)",
+  "weight": "dt.ct weight (mean of the two .pha pick weights)",
+  "tt1_catalog_s/tt2_catalog_s": "catalog travel time = phase.csv pick - event.csv origin (= .pha travel time)",
+  "dt_catalog_s": "tt1_catalog_s - tt2_catalog_s (what dt.ct holds for this station/phase if ph2dt kept it)",
+  "tt1_sac_s/tt2_sac_s": "SAC header pick (phase_extra.sac_header_time) - origin: the picks the reference correlated around",
+  "xcorr_shift_s": "implied correction of event 1's pick by the reference cross-correlation: dt_s - (tt1_sac_s - tt2_sac_s)",
+  "rtdd_equivalent_lag_s": "the rtDD lag (xcorr.csv, same event order) that gives the same dt from the catalog picks: dt_catalog_s - dt_s",
+  "in_dtct/dt_ct_s": "the same pair/station/phase exists in dt.ct, and its TT1 - TT2",
+  "cc_passes_0p7": "0.7 <= cc <= 1.0 (the reference threshold)",
+  "in_dtcc_used": "the line is in dt.cc_0.7_combined",
+  "kept_in_final_iteration/final_residual_ms/final_weight": "listed in 02.dt.cc/hypoDD.res (the last of 28 iterations): kept, its residual (ms) and weight",
+  "source_file/line_no": "where the value was read (relative to data/gwangyang_11ev)"
+ }
+}

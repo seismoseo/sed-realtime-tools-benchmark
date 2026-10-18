@@ -1,0 +1,4 @@
+# Grid2Time control statements: 2-D time grids plus take-off-angle grids (needed by scrtdd/pyrtdd)
+GTMODE GRID2D ANGLES_YES
+# Podvin & Lecomte finite-difference eikonal solver: hs_eps_init message_flag (as in scrtdd's recipe)
+GT_PLFD  1.0e-3  0

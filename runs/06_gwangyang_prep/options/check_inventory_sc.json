@@ -1,0 +1,42 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/check_inventory_sc.py",
+ "run_time": "2026-10-17T13:59:05.817248+09:00",
+ "argv": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/check_inventory_sc.py",
+  "--scml",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/inventory_sc.xml",
+  "--stationxml",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml",
+  "--station-csv",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/station.csv",
+  "--outdir",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/scinv",
+  "--scinv-ls-nslc",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/scinv/scinv_ls_nslc.txt",
+  "--options-json",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/check_inventory_sc.json"
+ ],
+ "args": {
+  "scml": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/inventory_sc.xml",
+  "stationxml": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml",
+  "station_csv": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/station.csv",
+  "outdir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/scinv",
+  "scinv_ls_nslc": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/scinv/scinv_ls_nslc.txt",
+  "options_json": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/check_inventory_sc.json"
+ },
+ "PHASE_CSV": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/phase.csv",
+ "FAR_FUTURE_YEARS": [
+  2099,
+  9999
+ ],
+ "REL_TOL_GAIN": 1e-12,
+ "SEISCOMP_ROOT": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp",
+ "python": "3.12.15",
+ "inputs": {
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/inventory_sc.xml": "2d40fa9f6def8f3f0a3933a7e935af6f",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/stations_rtdd.xml": "f3e6851c3ae427b23f64edfd489f1175",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/station.csv": "a36bc6bb424bb088616c2875de40f97e",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/phase.csv": "21d150245600cf965f75a82bfdbda041"
+ },
+ "n_problems": 0
+}

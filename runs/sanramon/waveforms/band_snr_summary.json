@@ -1,0 +1,204 @@
+{
+ "parameters": {
+  "windows": {
+   "P": [
+    -0.5,
+    0.5,
+    0.02
+   ],
+   "S": [
+    -0.5,
+    1.0,
+    0.04
+   ]
+  },
+  "noise_gap_s": 1.0,
+  "nfft_s": 4.0,
+  "taper": 0.1,
+  "centres_hz": [
+   0.5,
+   0.63,
+   0.8,
+   1.0,
+   1.25,
+   1.6,
+   2.0,
+   2.5,
+   3.15,
+   4.0,
+   5.0,
+   6.3,
+   8.0,
+   10.0,
+   12.5,
+   16.0,
+   20.0,
+   25.0,
+   31.5,
+   40.0
+  ],
+  "snr_ok": 3.0
+ },
+ "n_picks": 21835,
+ "n_by_phase": {
+  "P": 18785,
+  "S": 3050
+ },
+ "band_median_snr_ge3": {
+  "all|all|all": {
+   "n": 21835,
+   "median_snr_ge3_from_hz": 1.6,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|all|all": {
+   "n": 18785,
+   "median_snr_ge3_from_hz": 2.0,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "S|all|all": {
+   "n": 3050,
+   "median_snr_ge3_from_hz": 1.0,
+   "median_snr_ge3_to_hz": 16.0
+  },
+  "P|M<1|all": {
+   "n": 1848,
+   "median_snr_ge3_from_hz": 5.0,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|1<=M<2|all": {
+   "n": 10244,
+   "median_snr_ge3_from_hz": 2.5,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|2<=M<3|all": {
+   "n": 5519,
+   "median_snr_ge3_from_hz": 1.25,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|M>=3|all": {
+   "n": 1174,
+   "median_snr_ge3_from_hz": 0.5,
+   "median_snr_ge3_to_hz": 25.0
+  },
+  "S|M<1|all": {
+   "n": 357,
+   "median_snr_ge3_from_hz": 2.0,
+   "median_snr_ge3_to_hz": 16.0
+  },
+  "S|1<=M<2|all": {
+   "n": 1986,
+   "median_snr_ge3_from_hz": 1.0,
+   "median_snr_ge3_to_hz": 16.0
+  },
+  "S|2<=M<3|all": {
+   "n": 613,
+   "median_snr_ge3_from_hz": 0.5,
+   "median_snr_ge3_to_hz": 25.0
+  },
+  "S|M>=3|all": {
+   "n": 94,
+   "median_snr_ge3_from_hz": 0.5,
+   "median_snr_ge3_to_hz": 25.0
+  },
+  "P|all|0-15 km": {
+   "n": 5181,
+   "median_snr_ge3_from_hz": 1.6,
+   "median_snr_ge3_to_hz": 31.5
+  },
+  "P|all|15-30 km": {
+   "n": 7787,
+   "median_snr_ge3_from_hz": 2.0,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|all|30-60 km": {
+   "n": 5817,
+   "median_snr_ge3_from_hz": 2.5,
+   "median_snr_ge3_to_hz": 16.0
+  },
+  "S|all|0-15 km": {
+   "n": 2040,
+   "median_snr_ge3_from_hz": 0.8,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "S|all|15-30 km": {
+   "n": 999,
+   "median_snr_ge3_from_hz": 1.0,
+   "median_snr_ge3_to_hz": 16.0
+  },
+  "S|all|30-60 km": {
+   "n": 11,
+   "median_snr_ge3_from_hz": 1.6,
+   "median_snr_ge3_to_hz": 12.5
+  },
+  "P|all|type BH": {
+   "n": 20,
+   "median_snr_ge3_from_hz": 2.5,
+   "median_snr_ge3_to_hz": 6.3
+  },
+  "P|all|type CN": {
+   "n": 519,
+   "median_snr_ge3_from_hz": 2.0,
+   "median_snr_ge3_to_hz": 31.5
+  },
+  "P|all|type DP": {
+   "n": 332,
+   "median_snr_ge3_from_hz": 0.5,
+   "median_snr_ge3_to_hz": 31.5
+  },
+  "P|all|type EH": {
+   "n": 10438,
+   "median_snr_ge3_from_hz": 1.6,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|all|type EP": {
+   "n": 1894,
+   "median_snr_ge3_from_hz": 2.5,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|all|type HH": {
+   "n": 2642,
+   "median_snr_ge3_from_hz": 3.15,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "P|all|type HN": {
+   "n": 2940,
+   "median_snr_ge3_from_hz": 3.15,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "S|all|type BH": {
+   "n": 2,
+   "median_snr_ge3_from_hz": 0.8,
+   "median_snr_ge3_to_hz": 10.0
+  },
+  "S|all|type CN": {
+   "n": 127,
+   "median_snr_ge3_from_hz": 1.6,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "S|all|type EH": {
+   "n": 802,
+   "median_snr_ge3_from_hz": 1.0,
+   "median_snr_ge3_to_hz": 16.0
+  },
+  "S|all|type EL": {
+   "n": 20,
+   "median_snr_ge3_from_hz": 0.8,
+   "median_snr_ge3_to_hz": 12.5
+  },
+  "S|all|type EP": {
+   "n": 555,
+   "median_snr_ge3_from_hz": 0.5,
+   "median_snr_ge3_to_hz": 20.0
+  },
+  "S|all|type HH": {
+   "n": 158,
+   "median_snr_ge3_from_hz": 1.0,
+   "median_snr_ge3_to_hz": 12.5
+  },
+  "S|all|type HN": {
+   "n": 1386,
+   "median_snr_ge3_from_hz": 1.0,
+   "median_snr_ge3_to_hz": 16.0
+  }
+ }
+}

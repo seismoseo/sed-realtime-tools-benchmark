@@ -1,0 +1,56 @@
+{
+ "time": "2026-10-17T08:47:10.407806Z",
+ "stop": {
+  "scrtdd": {
+   "pid": 1645424,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 0.12,
+   "vmhwm_kB": 30260,
+   "stop_s": 0.2
+  },
+  "scautoloc": {
+   "pid": 1645419,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 0.14,
+   "vmhwm_kB": 28928,
+   "stop_s": 0.2
+  },
+  "scevent": {
+   "pid": 1645416,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 0.02,
+   "vmhwm_kB": 26284,
+   "stop_s": 0.2
+  },
+  "scmaster": {
+   "pid": 1645411,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 0.22,
+   "vmhwm_kB": 26108,
+   "stop_s": 0.2
+  },
+  "scautopick_20210827220322": {
+   "pid": 1645689,
+   "state": "already gone"
+  }
+ },
+ "pid_gone": {
+  "scmaster": true,
+  "scevent": true,
+  "scautoloc": true,
+  "scrtdd": true,
+  "scautopick_20210827220322": true
+ },
+ "pgrep_x_this_user": {
+  "scmaster": [],
+  "scevent": [],
+  "scautoloc": [],
+  "scrtdd": [],
+  "scautopick": [],
+  "msrtsimul": [],
+  "seedlink": []
+ },
+ "ss_port": [],
+ "ss_our_pids": [],
+ "user_dot_seiscomp_exists": false
+}

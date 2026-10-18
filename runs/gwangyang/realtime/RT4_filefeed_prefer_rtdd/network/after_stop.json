@@ -1,0 +1,61 @@
+{
+ "time": "2026-10-17T09:16:40.556935Z",
+ "stop": {
+  "scrtdd": {
+   "pid": 1758133,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 5.23,
+   "vmhwm_kB": 36368,
+   "stop_s": 0.2
+  },
+  "scautoloc": {
+   "pid": 1758128,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 0.78,
+   "vmhwm_kB": 36796,
+   "stop_s": 0.2
+  },
+  "scevent": {
+   "pid": 1758123,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 0.03,
+   "vmhwm_kB": 27496,
+   "stop_s": 0.2
+  },
+  "scmaster": {
+   "pid": 1758118,
+   "state": "terminated (SIGTERM)",
+   "cpu_s": 0.6,
+   "vmhwm_kB": 26880,
+   "stop_s": 0.2
+  },
+  "scautopick_20210827220322": {
+   "pid": 1758173,
+   "state": "already gone"
+  },
+  "scautopick_20260202194119": {
+   "pid": 1758899,
+   "state": "already gone"
+  }
+ },
+ "pid_gone": {
+  "scmaster": true,
+  "scevent": true,
+  "scautoloc": true,
+  "scrtdd": true,
+  "scautopick_20210827220322": true,
+  "scautopick_20260202194119": true
+ },
+ "pgrep_x_this_user": {
+  "scmaster": [],
+  "scevent": [],
+  "scautoloc": [],
+  "scrtdd": [],
+  "scautopick": [],
+  "msrtsimul": [],
+  "seedlink": []
+ },
+ "ss_port": [],
+ "ss_our_pids": [],
+ "user_dot_seiscomp_exists": false
+}

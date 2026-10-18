@@ -1,0 +1,169 @@
+{
+ "best_model": "phasenet_original",
+ "events": {
+  "big": "20210827220322",
+  "small": "20260203021535"
+ },
+ "waveform_stations": {
+  "20210827220322": [
+   "GWYB",
+   "HADA",
+   "CHDA",
+   "DUSB"
+  ],
+  "20260203021535": [
+   "GWYB",
+   "NAHA",
+   "KWJ2",
+   "SIDA"
+  ]
+ },
+ "per_run": {
+  "PhaseNet original": {
+   "P recall": 0.9056,
+   "S recall": 0.8586,
+   "P precision": 0.7913,
+   "S precision": 0.8715,
+   "Pooled F1": 0.855,
+   "P recall, ML<1.5": 0.8197,
+   "S recall, ML<1.5": 0.7576,
+   "P median dt (s)": 0.0301,
+   "S median dt (s)": 0.0254,
+   "P p95 |dt| (s)": 0.1089,
+   "S p95 |dt| (s)": 0.0601,
+   "P lost below minConfidence": 15,
+   "S lost for want of a P pick": 51,
+   "False P per station-hour": 1.2561,
+   "CPU-s per station-hour": 0.1347,
+   "DD: 3-D RMS vs control (m)": 49.09
+  },
+  "PhaseNet INSTANCE": {
+   "P recall": 0.8417,
+   "S recall": 0.7568,
+   "P precision": 0.8417,
+   "S precision": 0.9187,
+   "Pooled F1": 0.8357,
+   "P recall, ML<1.5": 0.6475,
+   "S recall, ML<1.5": 0.5455,
+   "P median dt (s)": -0.0196,
+   "S median dt (s)": -0.0646,
+   "P p95 |dt| (s)": 0.0799,
+   "S p95 |dt| (s)": 0.1637,
+   "P lost below minConfidence": 35,
+   "S lost for want of a P pick": 81,
+   "False P per station-hour": 0.628,
+   "CPU-s per station-hour": 0.1216,
+   "DD: 3-D RMS vs control (m)": 84.02
+  },
+  "PhaseNet INSTANCE fast": {
+   "P recall": 0.8639,
+   "S recall": 0.7742,
+   "P precision": 0.7814,
+   "S precision": 0.9231,
+   "Pooled F1": 0.8312,
+   "P recall, ML<1.5": 0.7131,
+   "S recall, ML<1.5": 0.6061,
+   "P median dt (s)": -0.0199,
+   "S median dt (s)": -0.0646,
+   "P p95 |dt| (s)": 0.0847,
+   "S p95 |dt| (s)": 0.1599,
+   "P lost below minConfidence": 23,
+   "S lost for want of a P pick": 59,
+   "False P per station-hour": 2.4836,
+   "CPU-s per station-hour": 0.2828,
+   "DD: 3-D RMS vs control (m)": NaN
+  },
+  "EQTransformer STEAD": {
+   "P recall": 0.7361,
+   "S recall": 0.6501,
+   "P precision": 0.9075,
+   "S precision": 0.8973,
+   "Pooled F1": 0.7825,
+   "P recall, ML<1.5": 0.4918,
+   "S recall, ML<1.5": 0.3758,
+   "P median dt (s)": -0.0246,
+   "S median dt (s)": -0.0349,
+   "P p95 |dt| (s)": 0.0737,
+   "S p95 |dt| (s)": 0.1044,
+   "P lost below minConfidence": 83,
+   "S lost for want of a P pick": 139,
+   "False P per station-hour": 0.0424,
+   "CPU-s per station-hour": 0.339,
+   "DD: 3-D RMS vs control (m)": 102.84
+  },
+  "PhaseNet STEAD": {
+   "P recall": 0.6639,
+   "S recall": 0.6055,
+   "P precision": 0.9019,
+   "S precision": 0.9313,
+   "Pooled F1": 0.7488,
+   "P recall, ML<1.5": 0.4262,
+   "S recall, ML<1.5": 0.3879,
+   "P median dt (s)": -0.0146,
+   "S median dt (s)": -0.0246,
+   "P p95 |dt| (s)": 0.0747,
+   "S p95 |dt| (s)": 0.0699,
+   "P lost below minConfidence": 106,
+   "S lost for want of a P pick": 155,
+   "False P per station-hour": 0.081,
+   "CPU-s per station-hour": 0.1102,
+   "DD: 3-D RMS vs control (m)": 111.16
+  }
+ },
+ "checks_passed": 43,
+ "checks_total": 43,
+ "log_stats": {
+  "n_logs": 60,
+  "n_error": 0,
+  "n_warning": 10,
+  "warning_kinds": {
+   "Duplicate pick": 10
+  }
+ },
+ "figures": {
+  "1": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_1_recall_precision_f1.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_1_recall_precision_f1.pdf"
+  ],
+  "2": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_2_pick_time_differences.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_2_pick_time_differences.pdf"
+  ],
+  "3": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_3_recall_by_magnitude_distance_sensor.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_3_recall_by_magnitude_distance_sensor.pdf"
+  ],
+  "4a": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_4a_waveforms_event3_20210827220322.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_4a_waveforms_event3_20210827220322.pdf"
+  ],
+  "4b": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_4b_waveforms_event10_20260203021535.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_4b_waveforms_event10_20260203021535.pdf"
+  ],
+  "5": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_5_why_picks_were_missed.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_5_why_picks_were_missed.pdf"
+  ],
+  "6": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_6_plugin_vs_seisbench.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_6_plugin_vs_seisbench.pdf"
+  ],
+  "7": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_7_fast_vs_reliable.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_7_fast_vs_reliable.pdf"
+  ],
+  "8": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_8_false_picks_and_cost.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_8_false_picks_and_cost.pdf"
+  ],
+  "9a": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_9a_dd_relocation_geometry.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_9a_dd_relocation_geometry.pdf"
+  ],
+  "9b": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_9b_dd_relocation_rms.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/03_9b_dd_relocation_rms.pdf"
+  ]
+ }
+}

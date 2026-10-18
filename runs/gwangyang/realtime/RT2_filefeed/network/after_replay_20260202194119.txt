@@ -1,0 +1,5 @@
+# 2026-10-17T08:51:46.464994Z listening sockets of our PIDs [1650409, 1650415, 1650426, 1650446] (ss -ltnp/-lunp)
+tcp LISTEN 0      10        127.0.0.1:28180 0.0.0.0:* users:(("scmaster",pid=1650409,fd=8))
+# everything on port 28180
+tcp LISTEN 0      10        127.0.0.1:28180 0.0.0.0:* users:(("scmaster",pid=1650409,fd=8))
+# sockets other than 127.0.0.1:28180/tcp: []

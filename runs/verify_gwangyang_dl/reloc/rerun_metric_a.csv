@@ -1,0 +1,7 @@
+n_events,rms_3d_m,rms_east_m,rms_north_m,rms_up_m,rms_horizontal_m,max_3d_m,spread_A_m,spread_B_m,solution,reference,max_abs_position_diff_m
+11,0.000,0.000,0.000,0.000,0.000,0.000,96.865,96.865,my_dl_phasenet_original_window,dl_phasenet_original_window,0.000
+11,0.000,0.000,0.000,0.000,0.000,0.000,74.509,74.509,my_control_phasenet_plus,control_phasenet_plus,0.000
+11,49.094,16.419,8.008,45.569,18.268,70.957,96.865,74.509,my_dl_phasenet_original_window,my_control_phasenet_plus,1735.362
+11,81.766,18.901,9.910,78.932,21.341,154.113,96.865,50.385,my_dl_phasenet_original_window,hypodd_dtcc,217.738
+11,89.303,35.299,21.544,79.151,41.354,155.779,96.865,69.058,my_dl_phasenet_original_window,hypodd_dtct,281.738
+11,52.726,16.956,8.638,49.172,19.029,110.206,74.509,50.385,my_control_phasenet_plus,hypodd_dtcc,1730.778

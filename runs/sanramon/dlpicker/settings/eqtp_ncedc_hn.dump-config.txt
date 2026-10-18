@@ -1,0 +1,41 @@
+Configuration:
+amplitude group                  AMPLITUDE
+testMode                         false
+offline                          true
+useAllStreams                    false
+calculateAmplitudes              true
+calculateAmplitudeTypes          MLv, mB, mb
+update amplitude types           []
+interpolateGaps                  false
+maxGapLength                     4.50s
+defaultFilter                    RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+defaultTriggerOnThreshold        1.80
+defaultTriggerOffThreshold       1.00s
+minDuration                      -1.00s
+maxDuration                      -1.00
+triggerDeadTime                  60.00s
+amplitudeMaxTimeWindow           5.00s
+amplitudeMinOffset               1.80s
+defaultTimeCorrection            0.00s
+ringBufferSize                   300s
+leadTime                         180s
+initTime                         60s
+pickerType                       DL3C
+secondaryPickerType              SDL3C
+killPendingSPickers              false
+sendDetections                   false
+
+Stream configuration:
+BK.BDM.00.HN    1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.BKS.00.HN    1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.BL67.00.HN   1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.BRK.00.HN    1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.CMAB.40.CN   1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.JRSC.00.HN   1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.PETB.40.HN   1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.VAK.00.HN    1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+BK.WENL.00.HN   1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+NC.CBR..HN      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+NC.CCH1..HN     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+NC.CGP1..HN     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)
+NC.CNI..HN      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)

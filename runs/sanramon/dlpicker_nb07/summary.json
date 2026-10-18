@@ -1,0 +1,147 @@
+{
+ "best_model": "phasenet_instance",
+ "swarm_station": "NC.CBR",
+ "waveform_stations": [
+  "NC.CBR",
+  "BK.BDM",
+  "BK.CVS",
+  "NC.CRH",
+  "NC.C029"
+ ],
+ "per_model": {
+  "PhaseNet INSTANCE": {
+   "P recall, all analyst picks": 0.3068,
+   "P recall, with data": 0.43,
+   "P recall, 3-C stations": 0.5642,
+   "P recall, complete records": 0.8156,
+   "S recall, complete records": 0.8,
+   "P precision (lower bound)": 0.7276,
+   "P precision counting plausible": 0.9143,
+   "Pooled P+S F1 (ranking rule)": 0.5051,
+   "P median |dt| (s)": 0.03,
+   "P mean dt (s)": -0.0201,
+   "P p95 |dt|, weight 0 (s)": 0.0616,
+   "P recall, neighbour within 15 s": 0.5612,
+   "P recall, no neighbour within 120 s": 0.8925,
+   "P recall at the 13 sites, velocity sensor": 0.8667,
+   "P recall at the 13 sites, accelerometer": 0.8,
+   "P misses below minConfidence, complete records": 30,
+   "False P picks per station-hour": 1.0814,
+   "CPU-s per station-hour": 0.2293
+  },
+  "PhaseNet original": {
+   "P recall, all analyst picks": 0.3006,
+   "P recall, with data": 0.4213,
+   "P recall, 3-C stations": 0.5528,
+   "P recall, complete records": 0.7967,
+   "S recall, complete records": 0.8444,
+   "P precision (lower bound)": 0.6362,
+   "P precision counting plausible": 0.8215,
+   "Pooled P+S F1 (ranking rule)": 0.4381,
+   "P median |dt| (s)": 0.0284,
+   "P mean dt (s)": 0.0416,
+   "P p95 |dt|, weight 0 (s)": 0.08991999999999997,
+   "P recall, neighbour within 15 s": 0.5153,
+   "P recall, no neighbour within 120 s": 0.8824,
+   "P recall at the 13 sites, velocity sensor": 0.8417,
+   "P recall at the 13 sites, accelerometer": 0.8083,
+   "P misses below minConfidence, complete records": 19,
+   "False P picks per station-hour": 3.9252,
+   "CPU-s per station-hour": 0.2499
+  },
+  "PhaseNet SCEDC": {
+   "P recall, all analyst picks": 0.2519,
+   "P recall, with data": 0.353,
+   "P recall, 3-C stations": 0.4632,
+   "P recall, complete records": 0.6749,
+   "S recall, complete records": 0.5778,
+   "P precision (lower bound)": 0.7356,
+   "P precision counting plausible": 0.838,
+   "Pooled P+S F1 (ranking rule)": 0.4876,
+   "P median |dt| (s)": 0.0316,
+   "P mean dt (s)": 0.0338,
+   "P p95 |dt|, weight 0 (s)": 0.12,
+   "P recall, neighbour within 15 s": 0.4337,
+   "P recall, no neighbour within 120 s": 0.7424,
+   "P recall at the 13 sites, velocity sensor": 0.7208,
+   "P recall at the 13 sites, accelerometer": 0.6708,
+   "P misses below minConfidence, complete records": 136,
+   "False P picks per station-hour": 1.8424,
+   "CPU-s per station-hour": 0.2163
+  },
+  "EQTP NCEDC": {
+   "P recall, all analyst picks": 0.2547,
+   "P recall, with data": 0.3571,
+   "P recall, 3-C stations": 0.4685,
+   "P recall, complete records": 0.6217,
+   "S recall, complete records": 0.7556,
+   "P precision (lower bound)": 0.7458,
+   "P precision counting plausible": 0.8323,
+   "Pooled P+S F1 (ranking rule)": 0.4595,
+   "P median |dt| (s)": 0.0216,
+   "P mean dt (s)": 0.0136,
+   "P p95 |dt|, weight 0 (s)": 0.0870599999999998,
+   "P recall, neighbour within 15 s": 0.4694,
+   "P recall, no neighbour within 120 s": 0.7059,
+   "P recall at the 13 sites, velocity sensor": 0.6458,
+   "P recall at the 13 sites, accelerometer": 0.6792,
+   "P misses below minConfidence, complete records": 144,
+   "False P picks per station-hour": 1.2817,
+   "CPU-s per station-hour": 3.9203
+  }
+ },
+ "file_checks_passed": 117,
+ "file_checks_total": 117,
+ "note12_statements": 47,
+ "note12_agree": 43,
+ "note12_disagree": [
+  "nbtable",
+  "eq01",
+  "dpprec",
+  "x16"
+ ],
+ "log_stats": {
+  "n_logs": 216,
+  "n_event_runs": 208,
+  "n_probe_runs": 8,
+  "n_error": 0,
+  "n_warning": 75,
+  "warning_kinds": {
+   "Duplicate pick": 75
+  }
+ },
+ "figures": {
+  "1": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_1_reachable_analyst_picks.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_1_reachable_analyst_picks.pdf"
+  ],
+  "2": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_2_recall_precision.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_2_recall_precision.pdf"
+  ],
+  "3": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_3_pick_time_differences.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_3_pick_time_differences.pdf"
+  ],
+  "4": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_4_swarm_overlap.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_4_swarm_overlap.pdf"
+  ],
+  "5": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_5_waveforms_mainshock_72540765.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_5_waveforms_mainshock_72540765.pdf"
+  ],
+  "6": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_6_accelerometer_vs_velocity.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_6_accelerometer_vs_velocity.pdf"
+  ],
+  "7": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_7_eqtp_polarity.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_7_eqtp_polarity.pdf"
+  ],
+  "8": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_8_plugin_vs_seisbench_and_cost.png",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/notebooks/figures/07_8_plugin_vs_seisbench_and_cost.pdf"
+  ]
+ }
+}

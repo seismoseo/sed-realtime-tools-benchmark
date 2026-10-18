@@ -1,0 +1,50 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_realtime/scripts/verify_rt_db.py",
+ "script_md5": "1915911f3e4b3220b4b67c1d49b3ede5",
+ "runs": [
+  "RT1_filefeed",
+  "RT2_filefeed",
+  "RT3_paced",
+  "RT4_filefeed_prefer_rtdd",
+  "RT5_paced_creationtime"
+ ],
+ "origin_for_centroids": [
+  35.0,
+  127.7286
+ ],
+ "replay": {
+  "20210827220322": 3,
+  "20260202194119": 9
+ },
+ "ref_ids": [
+  1,
+  2,
+  4,
+  5,
+  6,
+  7,
+  8,
+  10,
+  11
+ ],
+ "pick_window_s": [
+  -200,
+  400
+ ],
+ "solutions": {
+  "S1": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S1/work/reloc-event.csv",
+  "R1f": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1f_xcorr_like_reference_hypodd_like_filtered/relocated-event.csv",
+  "R1": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1_xcorr_like_reference_hypodd_like/relocated-event.csv",
+  "HypoDD_dtcc": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_tables/hypodd_dtcc.csv",
+  "SEa": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/single_event_results.csv",
+  "SEm": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/single_event_results.csv"
+ },
+ "step09": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/output/phasenet_original",
+ "tolerances": {
+  "m_small": 0.15,
+  "m_large": 1.5,
+  "ms": 0.15
+ },
+ "conversion": "local tangent plane on WGS84, radii of curvature at the mean latitude of each pair",
+ "db_open": "copy, sqlite URI mode=ro&immutable=1"
+}

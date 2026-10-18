@@ -1,0 +1,14 @@
+solution,relocator,n_events,shift_east_m,shift_north_m,shift_up_m,shift_horizontal_m,shift_3d_m
+hypodd_dtct,HypoDD,11,0.03,22.68,71.91,22.68,75.40
+hypodd_dtcc,HypoDD,11,0.10,0.01,1.09,0.10,1.10
+control_phasenet_plus,pyrtdd,11,1698.96,150.86,243.50,1705.64,1722.94
+dl_phasenet_instance_window,pyrtdd,11,263.61,158.45,-186.66,307.56,359.77
+dl_phasenet_instance_window_tt,pyrtdd,11,-30.85,-233.52,345.16,235.55,417.87
+dl_phasenet_stead_window,pyrtdd,11,-82.74,-243.15,-190.96,256.84,320.05
+dl_phasenet_stead_window_tt,pyrtdd,11,-82.74,-243.15,-190.96,256.84,320.05
+dl_eqtransformer_stead_window,pyrtdd,11,-173.19,-160.58,415.50,236.18,477.93
+dl_eqtransformer_stead_window_tt,pyrtdd,11,-173.19,-160.58,415.50,236.18,477.93
+dl_phasenet_original_window,pyrtdd,11,-0.19,-49.94,-65.13,49.94,82.07
+dl_phasenet_original_window_tt,pyrtdd,11,-64.92,-9.25,57.60,65.58,87.28
+dl_phasenet_original_matched_only,pyrtdd,11,-22.56,44.95,38.14,50.29,63.12
+control_phasenet_plus_same_subset,pyrtdd,11,402.25,302.06,-73.78,503.04,508.42

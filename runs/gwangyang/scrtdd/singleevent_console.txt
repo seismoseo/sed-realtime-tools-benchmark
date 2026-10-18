@@ -1,0 +1,125 @@
+# scrtdd_singleevent.py APPLY 2026-10-17T16:32:20+09:00 modes=SEa,SEm events=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# reference catalog: /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S1/work/reloc-event.csv (leave-one-out); start origins: /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/event.csv
+   inventory database /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite reused (same inventory md5, unchanged since import)
+
+== SEa: origins and picks 'automatic'
+   loo_1: 10 events, 704 picks
+   loo_2: 10 events, 661 picks
+   loo_3: 10 events, 661 picks
+   loo_4: 10 events, 661 picks
+   loo_5: 10 events, 709 picks
+   loo_6: 10 events, 664 picks
+   loo_7: 10 events, 720 picks
+   loo_8: 10 events, 717 picks
+   loo_9: 10 events, 692 picks
+   loo_10: 10 events, 725 picks
+   loo_11: 10 events, 716 picks
+   SCML written: 11 single-origin files + origins_all.xml (automatic)
+-- SEa event 1
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev1/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_1.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 11.3 s
+   step1 ok, step2 ok, neighbours 10,10, CC P 157/213 S 242/265, relocated origins in XML: 1
+-- SEa event 2
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev2/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_2.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 15.2 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 233/302 S 320/348, relocated origins in XML: 1
+-- SEa event 3
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev3/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_3.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 15.6 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 185/304 S 307/345, relocated origins in XML: 1
+-- SEa event 4
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev4/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_4.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 15.7 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 255/303 S 322/347, relocated origins in XML: 1
+-- SEa event 5
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev5/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_5.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 11.8 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 112/181 S 262/270, relocated origins in XML: 1
+-- SEa event 6
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev6/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_6.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 15.5 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 225/294 S 308/337, relocated origins in XML: 1
+-- SEa event 7
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev7/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_7.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 9.7 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 115/150 S 231/242, relocated origins in XML: 1
+-- SEa event 8
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev8/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_8.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 9.6 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 104/157 S 221/239, relocated origins in XML: 1
+-- SEa event 9
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev9/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_9.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 12.7 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 181/243 S 279/293, relocated origins in XML: 1
+-- SEa event 10
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev10/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_10.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 8.5 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 83/132 S 203/216, relocated origins in XML: 1
+-- SEa event 11
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/ev11/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/origins/origin_11.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 9.8 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 105/173 S 238/248, relocated origins in XML: 1
+   results: /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEa/single_event_results.csv
+
+== SEm: origins and picks 'manual'
+   loo_1: 10 events, 704 picks
+   loo_2: 10 events, 661 picks
+   loo_3: 10 events, 661 picks
+   loo_4: 10 events, 661 picks
+   loo_5: 10 events, 709 picks
+   loo_6: 10 events, 664 picks
+   loo_7: 10 events, 720 picks
+   loo_8: 10 events, 717 picks
+   loo_9: 10 events, 692 picks
+   loo_10: 10 events, 725 picks
+   loo_11: 10 events, 716 picks
+   SCML written: 11 single-origin files + origins_all.xml (manual)
+-- SEm event 1
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev1/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_1.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 11.9 s
+   step1 ok, step2 ok, neighbours 10,10, CC P 161/213 S 245/265, relocated origins in XML: 1
+-- SEm event 2
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev2/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_2.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 16.2 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 246/302 S 320/348, relocated origins in XML: 1
+-- SEm event 3
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev3/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_3.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 16.2 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 199/304 S 315/345, relocated origins in XML: 1
+-- SEm event 4
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev4/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_4.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 16.2 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 261/303 S 328/347, relocated origins in XML: 1
+-- SEm event 5
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev5/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_5.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 11.2 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 117/181 S 262/270, relocated origins in XML: 1
+-- SEm event 6
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev6/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_6.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 15.6 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 231/294 S 311/337, relocated origins in XML: 1
+-- SEm event 7
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev7/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_7.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 10.3 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 116/150 S 233/242, relocated origins in XML: 1
+-- SEm event 8
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev8/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_8.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 9.5 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 106/157 S 224/239, relocated origins in XML: 1
+-- SEm event 9
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev9/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_9.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 13.6 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 187/243 S 281/293, relocated origins in XML: 1
+-- SEm event 10
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev10/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_10.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 9.1 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 85/132 S 203/216, relocated origins in XML: 1
+-- SEm event 11
+  $ (cd /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/ev11/work ; nice -n 10 /usr/bin/timeout 570 scrtdd --ep /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/origins/origin_11.xml --profile gwangyang -d sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds --dump-diagnostics --verbosity=3 --console=1 > relocated.xml 2> scrtdd.log )
+  exit code 0, 10.5 s
+   step1 ok, step2 ok, neighbours 9,10, CC P 111/173 S 238/248, relocated origins in XML: 1
+   results: /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/SEm/single_event_results.csv
+   inventory database md5 after the runs 9a7180882d8f484f2e8386cf53d4b75d (unchanged)
+
+# done 2026-10-17T16:36:57+09:00
+EXIT=0

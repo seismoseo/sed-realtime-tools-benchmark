@@ -1,0 +1,48 @@
+{
+ "lat0": 35.0,
+ "lon0": 127.7286,
+ "solutions": {
+  "R0": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R0_catalog_only_hypodd_like/relocated-event.csv",
+  "R1": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1_xcorr_like_reference_hypodd_like/relocated-event.csv",
+  "R1f": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1f_xcorr_like_reference_hypodd_like_filtered/relocated-event.csv",
+  "R1fz": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R1fz_xcorr_like_reference_hypodd_like_filtered_zerophase/relocated-event.csv",
+  "R2": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R2_xcorr_default_rtdd_default/relocated-event.csv",
+  "R2f": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R2f_xcorr_default_rtdd_default_filtered/relocated-event.csv",
+  "R3a": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R3a_catalog_only_hypodd_like_hypoinverse_start/relocated-event.csv",
+  "R3bf": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R3bf_xcorr_like_reference_hypodd_like_hypoinverse_start_filtered/relocated-event.csv",
+  "R4f": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R4f_xcorr_like_reference_hypodd_like_no_outlier_picks_filtered/relocated-event.csv",
+  "R5f": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/pyrtdd/R5f_xcorr_like_reference_hypodd_like_homogeneous_filtered/relocated-event.csv",
+  "S0": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S0/work/reloc-event.csv",
+  "S0n": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S0n/work/reloc-event.csv",
+  "S0h": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S0h/work/reloc-event.csv",
+  "S1": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S1/work/reloc-event.csv",
+  "S1h": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S1h/work/reloc-event.csv",
+  "S2": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S2/work/reloc-event.csv",
+  "S2sc": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S2sc/work/reloc-event.csv"
+ },
+ "hypodd_centroid": {
+  "02.dt.cc": [
+   34.999695,
+   127.728889,
+   13.942727
+  ],
+  "01.dt.ct": [
+   34.999695,
+   127.728889,
+   13.942727
+  ]
+ },
+ "datum_shift_s": {
+  "200000": 0.0,
+  "200001": 0.0,
+  "200002": 0.01,
+  "200003": 0.0,
+  "200004": 0.0,
+  "200005": 0.0,
+  "200006": 0.0,
+  "200007": 0.0,
+  "200008": 0.0,
+  "200009": 0.0,
+  "200010": 0.0
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/scripts/v09_seisbench_rerun.py",
+ "events": [
+  "20210827220322",
+  "20210828234556",
+  "20260203021535"
+ ],
+ "model_class": "PhaseNet",
+ "weights": "instance",
+ "weights_version": "2",
+ "weights_files_sha256": {
+  "instance.json.v2": "d0f33eb054818b6eef1dcf090947f7239b68f290c2e9180d9a807df325300182",
+  "instance.pt.v2": "dddcc3d872106a8cd2013ce7a035c972a7f435749b5c02a015efd5ce3767da6d"
+ },
+ "explicit_args": {
+  "P_threshold": 0.4,
+  "S_threshold": 0.3,
+  "strict": true
+ },
+ "resolved_args": {
+  "batch_size": 256,
+  "overlap": 1500,
+  "stacking": "avg",
+  "stride": 1,
+  "strict": true,
+  "flexible_horizontal_components": true,
+  "zerophase_resample": true,
+  "*_threshold": 0.3,
+  "blinding": [
+   250,
+   250
+  ],
+  "P_threshold": 0.4,
+  "S_threshold": 0.3
+ },
+ "class_default_args": {
+  "batch_size": 256,
+  "overlap": 1500,
+  "stacking": "avg",
+  "stride": 1,
+  "strict": false,
+  "flexible_horizontal_components": true,
+  "zerophase_resample": true,
+  "*_threshold": 0.3,
+  "blinding": [
+   0,
+   0
+  ]
+ },
+ "weight_default_args": {
+  "P_threshold": 0.08639824281948567,
+  "S_threshold": 0.1194333034644735,
+  "blinding": [
+   250,
+   250
+  ]
+ },
+ "component_order": "ZNE",
+ "in_samples": 3001,
+ "sampling_rate": 100,
+ "labels": "PSN",
+ "norm": "peak",
+ "norm_amp_per_comp": false,
+ "norm_detrend": false,
+ "threads": 2,
+ "cache_root": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/seisbench/cache",
+ "versions": {
+  "seisbench": "0.11.0",
+  "torch": "2.12.0+cu130",
+  "obspy": "1.4.2",
+  "numpy": "2.3.5",
+  "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]"
+ },
+ "xdas_stub": "placeholder classes DataArray, Coordinate, InterpCoordinate in sys.modules['xdas']",
+ "load": {
+  "cpu_s": 0.020942999999999934,
+  "wall_s": 0.0178985595703125
+ },
+ "timing": {
+  "20210827220322": {
+   "cpu_s": 2.992521000000001,
+   "wall_s": 1.593102216720581,
+   "n_traces": 159
+  },
+  "20210828234556": {
+   "cpu_s": 2.520542999999999,
+   "wall_s": 1.2998597621917725,
+   "n_traces": 156
+  },
+  "20260203021535": {
+   "cpu_s": 2.2152140000000013,
+   "wall_s": 1.1317553520202637,
+   "n_traces": 141
+  }
+ },
+ "n_picks": 228,
+ "weight_test_windows": [
+  "20210827220322|GWYB|S-centred",
+  "20210827220322|NAWB|S-centred",
+  "20210827220322|IMSB|S-centred",
+  "20210827220322|DUSB|S-centred",
+  "20210827220322|GWYB|noise, origin-60 s",
+  "20210828234556|GWYB|S-centred",
+  "20210828234556|NAWB|S-centred",
+  "20210828234556|JASA|S-centred",
+  "20210828234556|DUSB|S-centred",
+  "20210828234556|GWYB|noise, origin-60 s",
+  "20260203021535|GWYB|S-centred",
+  "20260203021535|HAIA|S-centred",
+  "20260203021535|KWJU|S-centred",
+  "20260203021535|CHDA|S-centred",
+  "20260203021535|GWYB|noise, origin-60 s"
+ ]
+}

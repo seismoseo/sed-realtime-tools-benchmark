@@ -1,0 +1,468 @@
+{
+ "event_id": 3,
+ "station": "KS.GWYB",
+ "channel_root": "HH",
+ "p_pick": "2021-08-27T22:03:25.930000Z",
+ "s_pick": "2021-08-27T22:03:27.580000Z",
+ "level1": {
+  "A_shared_causal": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4",
+   "error": null,
+   "rel_diff_vs_obspy_causal": 0.0,
+   "rel_diff_vs_obspy_zerophase": 0.6608917812038314
+  },
+  "B_zerophase_1": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+   "error": null,
+   "rel_diff_vs_obspy_causal": 0.6904323465491823,
+   "rel_diff_vs_obspy_zerophase": 0.0
+  },
+  "C_zerophase_0": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+   "error": null,
+   "rel_diff_vs_obspy_causal": 0.0,
+   "rel_diff_vs_obspy_zerophase": 0.6608917812038314
+  },
+  "D_zerophase_True": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=True",
+   "error": "ValueError: could not convert string to float: 'True'"
+  },
+  "note": "rel_diff = max|proxy - obspy| / max|obspy|; 0 means identical"
+ },
+ "level2": {
+  "A_shared_causal": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4",
+   "resampleFreq": 0.0,
+   "n_filter_calls": 6,
+   "xcorr_rows": [
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "P",
+     "valid": true,
+     "coefficient": 0.640372,
+     "lag": -0.02
+    },
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "S",
+     "valid": true,
+     "coefficient": 0.892787,
+     "lag": 0.0
+    }
+   ],
+   "calls": [
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHZ",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 0.673100347234864
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHZ",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 0.6285330491310509
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHE",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.7473263153186425
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHN",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.4278111683542132
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHE",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.6652414509621807
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHN",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.370373042145436
+    }
+   ]
+  },
+  "B_zerophase_1": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+   "resampleFreq": 0.0,
+   "n_filter_calls": 6,
+   "xcorr_rows": [
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "P",
+     "valid": true,
+     "coefficient": 0.640372,
+     "lag": -0.02
+    },
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "S",
+     "valid": true,
+     "coefficient": 0.892787,
+     "lag": 0.0
+    }
+   ],
+   "calls": [
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHZ",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.6654364173259809,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHZ",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.6623326572533587,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHE",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 1.8631058199073538,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHN",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 1.663985524709925,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHE",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 1.7408169549094807,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHN",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 1.4826301258146164,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    }
+   ]
+  },
+  "C_zerophase_0": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+   "resampleFreq": 0.0,
+   "n_filter_calls": 6,
+   "xcorr_rows": [
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "P",
+     "valid": true,
+     "coefficient": 0.640372,
+     "lag": -0.02
+    },
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "S",
+     "valid": true,
+     "coefficient": 0.892787,
+     "lag": 0.0
+    }
+   ],
+   "calls": [
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHZ",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 0.673100347234864
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHZ",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 0.6285330491310509
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHE",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.7473263153186425
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHN",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.4278111683542132
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHE",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.6652414509621807
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=0",
+     "fs_at_filter_Hz": 100.0,
+     "channel": "HHN",
+     "npts": 401,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.370373042145436
+    }
+   ]
+  },
+  "D_zerophase_True": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=True",
+   "resampleFreq": 0.0,
+   "n_filter_calls": 0,
+   "xcorr_rows": [
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "P",
+     "valid": false,
+     "coefficient": 0.0,
+     "lag": 0.0
+    },
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "S",
+     "valid": false,
+     "coefficient": 0.0,
+     "lag": 0.0
+    }
+   ],
+   "calls": [],
+   "note": "libhdd made no filter() call (filtering failed before or traces unavailable)"
+  }
+ },
+ "level2_1000Hz": {
+  "A_shared_causal": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4",
+   "resampleFreq": 1000.0,
+   "n_filter_calls": 6,
+   "xcorr_rows": [
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "P",
+     "valid": true,
+     "coefficient": 0.67071,
+     "lag": -0.022
+    },
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "S",
+     "valid": true,
+     "coefficient": 0.883588,
+     "lag": -0.009
+    }
+   ],
+   "calls": [
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHZ",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 0.7124064934109726
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHZ",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 0.6177455547234448
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHE",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.7961096714170972
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHN",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.568749292632086
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHE",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.5284196094003544
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHN",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.0,
+     "rel_diff_vs_obspy_zerophase": 1.332498327272254
+    }
+   ]
+  },
+  "B_zerophase_1": {
+   "filterStr": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+   "resampleFreq": 1000.0,
+   "n_filter_calls": 6,
+   "xcorr_rows": [
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "P",
+     "valid": true,
+     "coefficient": 0.67071,
+     "lag": -0.022
+    },
+    {
+     "eventId1": 3,
+     "eventId2": 4,
+     "networkCode": "KS",
+     "stationCode": "GWYB",
+     "locationCode": NaN,
+     "phaseType": "S",
+     "valid": true,
+     "coefficient": 0.883588,
+     "lag": -0.009
+    }
+   ],
+   "calls": [
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHZ",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.7223831450893498,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHZ",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 0.6546779784287416,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHE",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 1.981020997597496,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHN",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 1.769386046017837,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHE",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 1.4464250895359363,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    },
+    {
+     "filterStr_received": "bandpass;freqmin=5;freqmax=20;corners=4;zerophase=1",
+     "fs_at_filter_Hz": 1000.0,
+     "channel": "HHN",
+     "npts": 4010,
+     "rel_diff_vs_obspy_causal": 1.331214208274175,
+     "rel_diff_vs_obspy_zerophase": 0.0
+    }
+   ]
+  }
+ },
+ "versions": {
+  "obspy": "1.5.1",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "python": "3.12.15"
+ }
+}

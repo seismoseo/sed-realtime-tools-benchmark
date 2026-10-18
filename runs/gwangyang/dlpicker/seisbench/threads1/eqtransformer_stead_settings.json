@@ -1,0 +1,82 @@
+{
+ "model": "eqtransformer_stead",
+ "seisbench_class": "EQTransformer",
+ "dataset": "stead",
+ "weights_version": "2",
+ "weights_docstring": "Model trained on STEAD for 100 epochs with a learning rate of 0.001.\nThreshold selected for optimal F1 score on in-domain evaluation. Depending on the target region, the thresholds might need to be adjusted.\nWhen using this model, please reference the SeisBench publications listed at https://github.com/seisbench/seisbench\n\nJannes M\u00fcnchmeyer, Jack Woollam (munchmej@gfz-potsdam.de, jack.woollam@kit.edu)",
+ "explicit_args": {
+  "P_threshold": 0.4,
+  "S_threshold": 0.3,
+  "strict": true
+ },
+ "resolved_args": {
+  "batch_size": 256,
+  "overlap": 3000,
+  "stacking": "max",
+  "stride": 1,
+  "strict": true,
+  "flexible_horizontal_components": true,
+  "zerophase_resample": true,
+  "*_threshold": 0.1,
+  "detection_threshold": 0.717965,
+  "blinding": [
+   500,
+   500
+  ],
+  "P_threshold": 0.4,
+  "S_threshold": 0.3
+ },
+ "class_default_args": {
+  "batch_size": 256,
+  "overlap": 3000,
+  "stacking": "max",
+  "stride": 1,
+  "strict": false,
+  "flexible_horizontal_components": true,
+  "zerophase_resample": true,
+  "*_threshold": 0.1,
+  "detection_threshold": 0.3,
+  "blinding": [
+   500,
+   500
+  ]
+ },
+ "weight_default_args": {
+  "detection_threshold": 0.717965,
+  "P_threshold": 0.717965,
+  "S_threshold": 0.717965
+ },
+ "component_order": "ZNE",
+ "sampling_rate": 100,
+ "in_samples": 6000,
+ "norm": "peak",
+ "norm_amp_per_comp": false,
+ "norm_detrend": false,
+ "filter_args": null,
+ "filter_kwargs": null,
+ "labels": [
+  "Detection",
+  "P",
+  "S"
+ ],
+ "cpu_load_s": 0.033933000000004654,
+ "wall_load_s": 0.03410744667053223,
+ "cpu_classify_s": 67.95195199999999,
+ "wall_classify_s": 67.84342670440674,
+ "station_hours_Z": 71.04074444444444,
+ "cpu_s_per_station_hour": 0.956520832254792,
+ "n_picks": 630,
+ "weights_test_stations": [
+  "GWYB",
+  "BAU",
+  "HAIA",
+  "JASA",
+  "MMD",
+  "YOA"
+ ],
+ "output_names": [
+  "Detection",
+  "P",
+  "S"
+ ]
+}

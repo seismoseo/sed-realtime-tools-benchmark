@@ -1,0 +1,728 @@
+  network KS
+    epoch 1902-01-01
+    station BAU
+      epoch 2016-05-30
+      location __
+        epoch 2016-05-31
+        channel ELE
+          epoch 2016-05-31
+        channel ELN
+          epoch 2016-05-31
+        channel ELZ
+          epoch 2016-05-31
+    station BLLA
+      epoch 2018-02-11
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station BOSB
+      epoch 2012-10-19
+      location __
+        epoch 2021-06-11
+        channel HHE
+          epoch 2021-06-11 - 2022-04-13
+        channel HHE
+          epoch 2022-04-13 - 2022-04-14
+        channel HHE
+          epoch 2022-04-14
+        channel HHN
+          epoch 2021-06-11 - 2022-04-13
+        channel HHN
+          epoch 2022-04-13 - 2022-04-14
+        channel HHN
+          epoch 2022-04-14
+        channel HHZ
+          epoch 2021-06-11 - 2022-04-13
+        channel HHZ
+          epoch 2022-04-13 - 2022-04-14
+        channel HHZ
+          epoch 2022-04-14
+    station CGPA
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19
+        channel HGE
+          epoch 2018-12-19
+        channel HGN
+          epoch 2018-12-19
+        channel HGZ
+          epoch 2018-12-19
+    station CGWB
+      epoch 1902-01-01
+      location __
+        epoch 2018-03-09
+        channel HHE
+          epoch 2018-03-09
+        channel HHN
+          epoch 2018-03-09
+        channel HHZ
+          epoch 2018-03-09
+    station CHDA
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19
+        channel HGE
+          epoch 2018-12-19
+        channel HGN
+          epoch 2018-12-19
+        channel HGZ
+          epoch 2018-12-19
+    station CHRB
+      epoch 1902-01-01
+      location __
+        epoch 2018-12-19
+        channel HHE
+          epoch 2018-12-19
+        channel HHN
+          epoch 2018-12-19
+        channel HHZ
+          epoch 2018-12-19
+    station CLSA
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19
+        channel HGE
+          epoch 2018-12-19
+        channel HGN
+          epoch 2018-12-19
+        channel HGZ
+          epoch 2018-12-19
+    station DGHA
+      epoch 2018-03-08
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station DUSB
+      epoch 2016-05-31
+      location __
+        epoch 2016-05-31
+        channel HHE
+          epoch 2016-05-31 - 2022-10-21
+        channel HHE
+          epoch 2022-10-21 - 2022-10-22
+        channel HHE
+          epoch 2022-10-22 - 2024-12-05
+        channel HHE
+          epoch 2024-12-05
+        channel HHN
+          epoch 2016-05-31 - 2022-10-21
+        channel HHN
+          epoch 2022-10-21 - 2022-10-22
+        channel HHN
+          epoch 2022-10-22 - 2024-12-05
+        channel HHN
+          epoch 2024-12-05
+        channel HHZ
+          epoch 2016-05-31 - 2022-10-21
+        channel HHZ
+          epoch 2022-10-21 - 2022-10-22
+        channel HHZ
+          epoch 2022-10-22 - 2024-12-05
+        channel HHZ
+          epoch 2024-12-05
+    station EURB
+      epoch 2012-11-11
+      location __
+        epoch 2012-11-11
+        channel HHE
+          epoch 2012-11-11 - 2022-08-02 23:59:59
+        channel HHE
+          epoch 2022-08-03 - 2022-11-03 23:59:59
+        channel HHE
+          epoch 2022-11-03 23:59:59 - 2022-11-04
+        channel HHE
+          epoch 2022-11-04 - 2025-05-15
+        channel HHE
+          epoch 2025-05-15
+        channel HHN
+          epoch 2012-11-11 - 2022-08-02 23:59:59
+        channel HHN
+          epoch 2022-08-03 - 2022-11-03 23:59:59
+        channel HHN
+          epoch 2022-11-03 23:59:59 - 2022-11-04
+        channel HHN
+          epoch 2022-11-04 - 2025-05-15
+        channel HHN
+          epoch 2025-05-15
+        channel HHZ
+          epoch 2012-11-11 - 2022-08-02 23:59:59
+        channel HHZ
+          epoch 2022-08-03 - 2022-11-03 23:59:59
+        channel HHZ
+          epoch 2022-11-03 23:59:59 - 2022-11-04
+        channel HHZ
+          epoch 2022-11-04 - 2025-05-15
+        channel HHZ
+          epoch 2025-05-15
+    station GACA
+      epoch 2018-03-08
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station GKSA
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19
+        channel HGE
+          epoch 2018-12-19
+        channel HGN
+          epoch 2018-12-19
+        channel HGZ
+          epoch 2018-12-19
+    station GMNA
+      epoch 2018-03-08
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station GWYB
+      epoch 2012-10-20
+      location __
+        epoch 2018-10-03
+        channel HHE
+          epoch 2018-10-03 - 2023-07-04
+        channel HHE
+          epoch 2023-07-04
+        channel HHN
+          epoch 2018-10-03 - 2023-07-04
+        channel HHN
+          epoch 2023-07-04
+        channel HHZ
+          epoch 2018-10-03 - 2023-07-04
+        channel HHZ
+          epoch 2023-07-04
+    station HACA
+      epoch 2015-09-29
+      location __
+        epoch 2015-10-01
+        channel HGE
+          epoch 2015-10-01 - 2025-11-14
+        channel HGE
+          epoch 2025-11-14
+        channel HGN
+          epoch 2015-10-01 - 2025-11-14
+        channel HGN
+          epoch 2025-11-14
+        channel HGZ
+          epoch 2015-10-01 - 2025-11-14
+        channel HGZ
+          epoch 2025-11-14
+    station HADA
+      epoch 1902-01-01
+      location __
+        epoch 2018-03-09 - 2099-12-31 23:59:59
+        channel HGE
+          epoch 2018-03-09 - 2099-12-31 23:59:59
+        channel HGN
+          epoch 2018-03-09 - 2099-12-31 23:59:59
+        channel HGZ
+          epoch 2018-03-09 - 2099-12-31 23:59:59
+    station HAIA
+      epoch 2018-03-09
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station HAMB
+      epoch 2012-11-02
+      location __
+        epoch 2017-05-23
+        channel HHE
+          epoch 2017-05-23 - 2023-07-04
+        channel HHE
+          epoch 2023-07-04 - 2025-05-28
+        channel HHE
+          epoch 2025-05-28 - 2026-02-22
+        channel HHE
+          epoch 2026-02-22
+        channel HHN
+          epoch 2017-05-23 - 2023-07-04
+        channel HHN
+          epoch 2023-07-04 - 2025-05-28
+        channel HHN
+          epoch 2025-05-28 - 2026-02-22
+        channel HHN
+          epoch 2026-02-22
+        channel HHZ
+          epoch 2017-05-23 - 2023-07-04
+        channel HHZ
+          epoch 2023-07-04 - 2025-05-28
+        channel HHZ
+          epoch 2025-05-28 - 2026-02-22
+        channel HHZ
+          epoch 2026-02-22
+    station HCNA
+      epoch 2016-05-30
+      location __
+        epoch 2016-05-31
+        channel HGE
+          epoch 2016-05-31
+        channel HGN
+          epoch 2016-05-31
+        channel HGZ
+          epoch 2016-05-31
+    station IMSB
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19 - 2026-03-25
+        channel HHE
+          epoch 2018-12-19 - 2026-01-02
+        channel HHE
+          epoch 2026-01-02 - 2026-02-05
+        channel HHE
+          epoch 2026-02-05 - 2026-03-25
+        channel HHN
+          epoch 2018-12-19 - 2026-01-02
+        channel HHN
+          epoch 2026-01-02 - 2026-02-05
+        channel HHN
+          epoch 2026-02-05 - 2026-03-25
+        channel HHZ
+          epoch 2018-12-19 - 2026-01-02
+        channel HHZ
+          epoch 2026-01-02 - 2026-02-05
+        channel HHZ
+          epoch 2026-02-05 - 2026-03-25
+    station JAGA
+      epoch 2018-12-19
+      location __
+        epoch 2018-12-19
+        channel HGE
+          epoch 2018-12-19 - 2024-01-31
+        channel HGE
+          epoch 2024-01-31
+        channel HGN
+          epoch 2018-12-19 - 2024-01-31
+        channel HGN
+          epoch 2024-01-31
+        channel HGZ
+          epoch 2018-12-19 - 2024-01-31
+        channel HGZ
+          epoch 2024-01-31
+    station JAHA
+      epoch 2016-12-15
+      location __
+        epoch 2016-12-16
+        channel HGE
+          epoch 2016-12-16
+        channel HGN
+          epoch 2016-12-16
+        channel HGZ
+          epoch 2016-12-16
+    station JASA
+      epoch 2016-12-15
+      location __
+        epoch 2016-12-16
+        channel HGE
+          epoch 2016-12-16
+        channel HGN
+          epoch 2016-12-16
+        channel HGZ
+          epoch 2016-12-16
+    station JEU2
+      epoch 2016-11-16
+      location __
+        epoch 2016-12-16
+        channel ELE
+          epoch 2016-12-16
+        channel ELN
+          epoch 2016-12-16
+        channel ELZ
+          epoch 2016-12-16
+    station JINA
+      epoch 2016-05-30
+      location __
+        epoch 2016-05-31
+        channel HGE
+          epoch 2016-05-31
+        channel HGN
+          epoch 2016-05-31
+        channel HGZ
+          epoch 2016-05-31
+    station JLSA
+      epoch 2018-12-19
+      location __
+        epoch 2021-03-29
+        channel HGE
+          epoch 2021-03-29
+        channel HGN
+          epoch 2021-03-29
+        channel HGZ
+          epoch 2021-03-29
+    station JNHA
+      epoch 2018-03-09
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09 - 2022-04-18
+        channel HGE
+          epoch 2022-04-18
+        channel HGN
+          epoch 2018-03-09 - 2022-04-18
+        channel HGN
+          epoch 2022-04-18
+        channel HGZ
+          epoch 2018-03-09 - 2022-04-18
+        channel HGZ
+          epoch 2022-04-18
+    station JNYA
+      epoch 2018-03-08
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station KCH2
+      epoch 2016-05-29
+      location __
+        epoch 2016-05-31
+        channel ELE
+          epoch 2016-05-31
+        channel ELN
+          epoch 2016-05-31
+        channel ELZ
+          epoch 2016-05-31
+    station KH2B
+      epoch 2018-12-11
+      location __
+        epoch 2020-03-18
+        channel HHE
+          epoch 2020-03-18
+        channel HHN
+          epoch 2020-03-18
+        channel HHZ
+          epoch 2020-03-18
+    station KKDA
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19
+        channel HGE
+          epoch 2018-12-19
+        channel HGN
+          epoch 2018-12-19
+        channel HGZ
+          epoch 2018-12-19
+    station KUJA
+      epoch 2012-10-08
+      location __
+        epoch 2012-10-08
+        channel HGE
+          epoch 2012-10-08
+        channel HGN
+          epoch 2012-10-08
+        channel HGZ
+          epoch 2012-10-08
+    station KWJ2
+      epoch 2015-09-29
+      location __
+        epoch 2015-10-01
+        channel HHE
+          epoch 2015-10-01 - 2025-10-22
+        channel HHE
+          epoch 2025-10-22
+        channel HHN
+          epoch 2015-10-01 - 2025-10-22
+        channel HHN
+          epoch 2025-10-22
+        channel HHZ
+          epoch 2015-10-01 - 2025-10-22
+        channel HHZ
+          epoch 2025-10-22
+    station KWJU
+      epoch 1902-01-01
+      location __
+        epoch 2015-10-01
+        channel HHE
+          epoch 2015-10-01
+        channel HHN
+          epoch 2015-10-01
+        channel HHZ
+          epoch 2015-10-01
+    station MALA
+      epoch 2018-03-09
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09 - 2024-01-31
+        channel HGE
+          epoch 2024-01-31
+        channel HGN
+          epoch 2018-03-09 - 2024-01-31
+        channel HGN
+          epoch 2024-01-31
+        channel HGZ
+          epoch 2018-03-09 - 2024-01-31
+        channel HGZ
+          epoch 2024-01-31
+    station MMD
+      epoch 2018-03-08
+      location __
+        epoch 2018-03-09
+        channel HHE
+          epoch 2018-03-09
+        channel HHN
+          epoch 2018-03-09
+        channel HHZ
+          epoch 2018-03-09
+    station MNDB
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19
+        channel HHE
+          epoch 2018-12-19
+        channel HHN
+          epoch 2018-12-19
+        channel HHZ
+          epoch 2018-12-19
+    station NAHA
+      epoch 2018-03-09
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station NAJA
+      epoch 2018-03-08
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09 - 2025-07-17
+        channel HGE
+          epoch 2025-07-17
+        channel HGN
+          epoch 2018-03-09 - 2025-07-17
+        channel HGN
+          epoch 2025-07-17
+        channel HGZ
+          epoch 2018-03-09 - 2025-07-17
+        channel HGZ
+          epoch 2025-07-17
+    station NAWB
+      epoch 2012-12-20
+      location __
+        epoch 2019-10-30 - 2026-08-31
+        channel HHE
+          epoch 2019-10-30 - 2023-07-04
+        channel HHE
+          epoch 2023-07-04 - 2025-09-16
+        channel HHE
+          epoch 2025-09-16 - 2026-08-31
+        channel HHN
+          epoch 2019-10-30 - 2023-07-04
+        channel HHN
+          epoch 2023-07-04 - 2025-09-16
+        channel HHN
+          epoch 2025-09-16 - 2026-08-31
+        channel HHZ
+          epoch 2019-10-30 - 2023-07-04
+        channel HHZ
+          epoch 2023-07-04 - 2025-09-16
+        channel HHZ
+          epoch 2025-09-16 - 2026-08-31
+    station NLDA
+      epoch 2018-03-09
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09 - 2024-02-01
+        channel HGE
+          epoch 2024-02-01
+        channel HGN
+          epoch 2018-03-09 - 2024-02-01
+        channel HGN
+          epoch 2024-02-01
+        channel HGZ
+          epoch 2018-03-09 - 2024-02-01
+        channel HGZ
+          epoch 2024-02-01
+    station SACA
+      epoch 2016-12-15
+      location __
+        epoch 2016-12-16
+        channel HGE
+          epoch 2016-12-16
+        channel HGN
+          epoch 2016-12-16
+        channel HGZ
+          epoch 2016-12-16
+    station SCHA
+      epoch 2015-05-30
+      location __
+        epoch 2016-05-31
+        channel HGE
+          epoch 2016-05-31
+        channel HGN
+          epoch 2016-05-31
+        channel HGZ
+          epoch 2016-05-31
+    station SIDA
+      epoch 2024-12-22
+      location __
+        epoch 2024-12-22
+        channel HGE
+          epoch 2024-12-22
+        channel HGN
+          epoch 2024-12-22
+        channel HGZ
+          epoch 2024-12-22
+    station SUCA
+      epoch 2012-11-25
+      location __
+        epoch 2012-11-25
+        channel HGE
+          epoch 2012-11-25 - 2022-10-19
+        channel HGE
+          epoch 2022-10-19 - 2022-11-29
+        channel HGE
+          epoch 2022-11-29 - 2023-07-03
+        channel HGE
+          epoch 2023-07-03
+        channel HGN
+          epoch 2012-11-25 - 2022-10-19
+        channel HGN
+          epoch 2022-10-19 - 2022-11-29
+        channel HGN
+          epoch 2022-11-29 - 2023-07-03
+        channel HGN
+          epoch 2023-07-03
+        channel HGZ
+          epoch 2012-11-25 - 2022-10-19
+        channel HGZ
+          epoch 2022-10-19 - 2022-11-29
+        channel HGZ
+          epoch 2022-11-29 - 2023-07-03
+        channel HGZ
+          epoch 2023-07-03
+    station TOY2
+      epoch 2016-12-15
+      location __
+        epoch 2016-12-15
+        channel ELE
+          epoch 2016-12-15
+        channel ELN
+          epoch 2016-12-15
+        channel ELZ
+          epoch 2016-12-15
+    station WICA
+      epoch 2018-12-11
+      location __
+        epoch 2018-12-19
+        channel HGE
+          epoch 2018-12-19
+        channel HGN
+          epoch 2018-12-19
+        channel HGZ
+          epoch 2018-12-19
+    station YALB
+      epoch 1902-01-01
+      location __
+        epoch 2018-03-09
+        channel HHE
+          epoch 2018-03-09
+        channel HHN
+          epoch 2018-03-09
+        channel HHZ
+          epoch 2018-03-09
+    station YESA
+      epoch 2016-05-30
+      location __
+        epoch 2016-05-31
+        channel HGE
+          epoch 2016-05-31
+        channel HGN
+          epoch 2016-05-31
+        channel HGZ
+          epoch 2016-05-31
+    station YGJA
+      epoch 2018-03-08
+      location __
+        epoch 2018-03-09
+        channel HGE
+          epoch 2018-03-09
+        channel HGN
+          epoch 2018-03-09
+        channel HGZ
+          epoch 2018-03-09
+    station YKDB
+      epoch 1902-01-01
+      location __
+        epoch 2020-05-04
+        channel HHE
+          epoch 2020-05-04 - 2022-04-05
+        channel HHE
+          epoch 2022-04-06
+        channel HHN
+          epoch 2020-05-04 - 2022-04-05
+        channel HHN
+          epoch 2022-04-06
+        channel HHZ
+          epoch 2020-05-04 - 2022-04-05
+        channel HHZ
+          epoch 2022-04-06
+    station YNDB
+      epoch 1902-01-01
+      location __
+        epoch 2021-06-30
+        channel HHE
+          epoch 2021-06-30 - 2022-02-08
+        channel HHE
+          epoch 2022-02-09 - 2022-04-27
+        channel HHE
+          epoch 2022-04-28 - 2022-07-01
+        channel HHE
+          epoch 2022-07-02
+        channel HHN
+          epoch 2021-06-30 - 2022-02-08
+        channel HHN
+          epoch 2022-02-09 - 2022-04-27
+        channel HHN
+          epoch 2022-04-28 - 2022-07-01
+        channel HHN
+          epoch 2022-07-02
+        channel HHZ
+          epoch 2021-06-30 - 2022-02-08
+        channel HHZ
+          epoch 2022-02-09 - 2022-04-27
+        channel HHZ
+          epoch 2022-04-28 - 2022-07-01
+        channel HHZ
+          epoch 2022-07-02
+    station YOA
+      epoch 2016-05-30
+      location __
+        epoch 2016-05-31
+        channel ELE
+          epoch 2016-05-31
+        channel ELN
+          epoch 2016-05-31
+        channel ELZ
+          epoch 2016-05-31

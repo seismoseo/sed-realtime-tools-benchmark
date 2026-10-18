@@ -1,0 +1,21 @@
+{
+ "run": "P0rep",
+ "what": "check: identical repeat of P0 (is pyrtdd deterministic run to run?)",
+ "started": "2026-10-17T21:46:09",
+ "host": "server-a",
+ "pid": 1894365,
+ "status": "ok",
+ "n_input_events": 685,
+ "n_clusters": 1,
+ "cluster_sizes": [
+  680
+ ],
+ "n_clustered": 680,
+ "n_relocated": 680,
+ "clustering_s": 1.4,
+ "relocation_incl_xcorr_s": 55.4,
+ "wall_time_s": 57.68,
+ "peak_rss_mb_process_so_far": 437.1,
+ "cpu_user_s_process_so_far": 54.7,
+ "finished": "2026-10-17T21:47:07"
+}

@@ -1,0 +1,1 @@
+publicID,eventID,kma_id,creationInfo_author,methodID,evaluationMode,created,t,latitude_value,longitude_value,depth_value,depthType,quality_usedPhaseCount,quality_associatedPhaseCount,quality_standardError,quality_azimuthalGap,quality_minimumDistance,n_arr_P,n_arr_S,n_arr_weight_gt0,is_preferred

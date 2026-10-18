@@ -1,0 +1,17 @@
+model,binding_set,variant,phase,n_ref_all,n_matched_all,recall_all,n_ref_with_data,n_matched_with_data,recall_with_data,n_ref_3c,n_matched_3c,recall_3c,n_ref_3c_complete,n_matched_3c_complete,recall_3c_complete,n_dl_in_window,n_dl_matched_any_event,n_dl_matched_other_event,precision,n_dl_plausible_unmatched,precision_counting_plausible,f1,n_dt,median_abs_dt_s,mad_dt_s,p95_abs_dt_s,mean_dt_s,median_dt_s,max_abs_dt_s
+eqtp_ncedc,main (velocity sensor),eqtp_ncedc,P,240,155,0.6458,240,155,0.6458,240,155,0.6458,240,155,0.6458,218,175,20,0.8028,4,0.8211,0.7158,155,0.0200,0.0200,0.1130,0.0193,0.0084,0.4600
+eqtp_ncedc,main (velocity sensor),eqtp_ncedc,S,41,32,0.7805,41,32,0.7805,41,32,0.7805,41,32,0.7805,207,38,6,0.1836,99,0.6618,0.2972,32,0.0300,0.0250,0.1625,-0.0191,-0.0050,0.2200
+eqtp_ncedc,hn (accelerometer),eqtp_ncedc_hn,P,240,163,0.6792,240,163,0.6792,240,163,0.6792,240,163,0.6792,217,184,21,0.8479,6,0.8756,0.7542,163,0.0216,0.0216,0.1098,0.0040,-0.0016,0.4000
+eqtp_ncedc,hn (accelerometer),eqtp_ncedc_hn,S,41,21,0.5122,41,21,0.5122,41,21,0.5122,41,21,0.5122,193,26,5,0.1347,98,0.6425,0.2133,21,0.0500,0.0600,0.1800,0.0137,0.0100,0.2500
+phasenet_original,main (velocity sensor),phasenet_original,P,240,202,0.8417,240,202,0.8417,240,202,0.8417,240,202,0.8417,275,228,26,0.8291,21,0.9055,0.8353,202,0.0200,0.0200,0.1380,0.0322,0.0184,0.4784
+phasenet_original,main (velocity sensor),phasenet_original,S,41,34,0.8293,41,34,0.8293,41,34,0.8293,41,34,0.8293,267,41,7,0.1536,157,0.7416,0.2591,34,0.0350,0.0300,0.1700,0.0500,0.0300,0.3300
+phasenet_original,hn (accelerometer),phasenet_original_hn,P,240,194,0.8083,240,194,0.8083,240,194,0.8083,240,194,0.8083,272,226,32,0.8309,24,0.9191,0.8195,194,0.0200,0.0200,0.1675,0.0294,0.0100,0.4500
+phasenet_original,hn (accelerometer),phasenet_original_hn,S,41,32,0.7805,41,32,0.7805,41,32,0.7805,41,32,0.7805,267,38,6,0.1423,156,0.7266,0.2407,32,0.0300,0.0300,0.1545,0.0275,0.0200,0.3500
+phasenet_scedc,main (velocity sensor),phasenet_scedc,P,240,173,0.7208,240,173,0.7208,240,173,0.7208,240,173,0.7208,217,194,21,0.8940,10,0.9401,0.7981,173,0.0200,0.0200,0.1184,0.0085,0.0000,0.3200
+phasenet_scedc,main (velocity sensor),phasenet_scedc,S,41,21,0.5122,41,21,0.5122,41,21,0.5122,41,21,0.5122,116,23,2,0.1983,61,0.7241,0.2859,21,0.0400,0.0300,0.1100,0.0152,0.0200,0.1200
+phasenet_scedc,hn (accelerometer),phasenet_scedc_hn,P,240,161,0.6708,240,161,0.6708,240,161,0.6708,240,161,0.6708,207,189,28,0.9130,7,0.9469,0.7734,161,0.0300,0.0300,0.1684,0.0341,0.0100,0.4200
+phasenet_scedc,hn (accelerometer),phasenet_scedc_hn,S,41,18,0.4390,41,18,0.4390,41,18,0.4390,41,18,0.4390,114,20,2,0.1754,58,0.6842,0.2507,18,0.0300,0.0300,0.1278,-0.0073,-0.0200,0.2284
+phasenet_instance,main (velocity sensor),phasenet_instance,P,240,208,0.8667,240,208,0.8667,240,208,0.8667,240,208,0.8667,266,233,25,0.8759,18,0.9436,0.8713,208,0.0292,0.0200,0.1571,-0.0227,-0.0216,0.4700
+phasenet_instance,main (velocity sensor),phasenet_instance,S,41,34,0.8293,41,34,0.8293,41,34,0.8293,41,34,0.8293,222,40,6,0.1802,138,0.8018,0.2960,34,0.0400,0.0300,0.1300,-0.0345,-0.0308,0.1600
+phasenet_instance,hn (accelerometer),phasenet_instance_hn,P,240,192,0.8000,240,192,0.8000,240,192,0.8000,240,192,0.8000,253,223,31,0.8814,18,0.9526,0.8387,192,0.0316,0.0200,0.1538,-0.0248,-0.0300,0.3816
+phasenet_instance,hn (accelerometer),phasenet_instance_hn,S,41,24,0.5854,41,24,0.5854,41,24,0.5854,41,24,0.5854,210,30,6,0.1429,137,0.7952,0.2297,24,0.0600,0.0400,0.1370,-0.0542,-0.0600,0.2600

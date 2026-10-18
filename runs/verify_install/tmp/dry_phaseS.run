@@ -1,0 +1,9 @@
+# S-wave grids (written by install/02_build_nonlinloc.sh); run from /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983:
+#   Vel2Grid run/phaseS.run ; Grid2Time run/phaseS.run
+VGTYPE S
+# GTFILES <input file root> <output file root> wave_type
+GTFILES  ./model/kim1983  ./time/kim1983 S
+INCLUDE stations.in
+INCLUDE run/general.in
+INCLUDE run/Vel2Grid.in
+INCLUDE run/Grid2Time.in

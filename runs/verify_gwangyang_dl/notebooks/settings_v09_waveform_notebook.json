@@ -1,0 +1,9 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/scripts/v09_build_waveform_notebook.py",
+ "notebook": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/notebooks/v09_waveform_examples.ipynb",
+ "kernel": "v09pyrtdd",
+ "transport": "ipc",
+ "ipc_prefix": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/notebooks/ipc/k",
+ "timeout_s": 600,
+ "python": "3.12.15 (main, Oct 13 2026, 16:52:04) [GCC 15.3.0]"
+}

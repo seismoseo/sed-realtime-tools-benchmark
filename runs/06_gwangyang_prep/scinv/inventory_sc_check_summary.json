@@ -1,0 +1,35 @@
+{
+ "counts": {
+  "networks": 1,
+  "sensors": 255,
+  "dataloggers": 255,
+  "responsePAZ": 36,
+  "responseFIR": 5,
+  "responsePolynomial": 0,
+  "responseIIR": 0,
+  "responseFAP": 0
+ },
+ "scinv_ls_nslc": {
+  "n": 162,
+  "equals_stationxml_codes": true,
+  "only_in_ls": [],
+  "only_in_stationxml": []
+ },
+ "stations": 54,
+ "sensor_locations": 54,
+ "streams": 255,
+ "stationxml_channel_epochs": 255,
+ "stationxml_epochs_missing": 0,
+ "sensor_locations_equal_station_csv": 54,
+ "sensor_locations_per_station_max": 1,
+ "streams_equal_stationxml": 255,
+ "streams_far_future_end_to_open": 18,
+ "picks": 763,
+ "picks_getSensorLocation_equal_station_csv": 763,
+ "station_start_dates": [
+  "1902-01-01T00:00:00",
+  "2012-10-08T00:00:00",
+  "2012-10-19T00:00:00"
+ ],
+ "problems": []
+}

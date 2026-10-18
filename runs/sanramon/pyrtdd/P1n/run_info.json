@@ -1,0 +1,37 @@
+{
+ "run": "P1n",
+ "what": "sensitivity: P1 with nearest-neighbour clustering (P1 cross-correlations re-used)",
+ "started": "2026-10-17T22:10:22",
+ "host": "server-a",
+ "pid": 1909459,
+ "status": "ok",
+ "n_input_events": 685,
+ "n_clusters": 1,
+ "cluster_sizes": [
+  680
+ ],
+ "n_clustered": 680,
+ "n_relocated": 680,
+ "clustering_s": 0.5,
+ "relocation_incl_xcorr_s": 949.7,
+ "proxy_traces_processed": 22992,
+ "proxy_traces_failed": 6972,
+ "proxy_failed_by_channel_orientation": {
+  "Z": 4749,
+  "1": 2223
+ },
+ "proxy_loaded_by_channel_type": {
+  "HN": 4433,
+  "EH": 11818,
+  "EP": 2907,
+  "DP": 311,
+  "HH": 2799,
+  "CN": 720,
+  "BH": 4
+ },
+ "inventory_read_s": 2.0,
+ "wall_time_s": 953.13,
+ "peak_rss_mb_process_so_far": 981.8,
+ "cpu_user_s_process_so_far": 939.9,
+ "finished": "2026-10-17T22:26:16"
+}

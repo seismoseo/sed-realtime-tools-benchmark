@@ -1,0 +1,12 @@
+single_event_run,versus,kind,n,median_3d_m,max_3d_m,max_3d_event,median_3d_without_event3_m,mean_dE_m,mean_dN_m,mean_dU_m,after_removing_catalog_offset_median_3d_m,after_removing_catalog_offset_max_3d_m,after_removing_catalog_offset_max_event
+SEa,S1,own reference catalog,11,1.707,44.033,3,1.601,,,,,,
+SEm,S1,own reference catalog,11,0.318,27.597,3,0.289,,,,,,
+R6_single_event_loo_one_step,R1_xcorr_like_reference_hypodd_like,own reference catalog,11,31.371,107.439,3,29.640,,,,,,
+R6f_single_event_loo_one_step_filtered,R1f_xcorr_like_reference_hypodd_like_filtered,own reference catalog,11,0.285,27.681,3,0.282,,,,,,
+R6p_single_event_loo_one_step_padded,R1_xcorr_like_reference_hypodd_like,own reference catalog,11,0.665,33.091,3,0.577,,,,,,
+R6t_single_event_loo_scrtdd_two_step_automatic,R1_xcorr_like_reference_hypodd_like,own reference catalog,11,31.371,107.439,3,29.640,,,,,,
+R6tf_single_event_loo_scrtdd_two_step_automatic_filtered,R1f_xcorr_like_reference_hypodd_like_filtered,own reference catalog,11,1.744,43.527,3,1.621,,,,,,
+R6tp_single_event_loo_scrtdd_two_step_automatic_padded,R1_xcorr_like_reference_hypodd_like,own reference catalog,11,1.748,38.658,3,1.679,,,,,,
+S1,R1f_xcorr_like_reference_hypodd_like_filtered,the two reference catalogs (multi-event),11,1.697,1.783,10,1.692,-0.128,-1.476,0.805,,,
+SEa,R6tf_single_event_loo_scrtdd_two_step_automatic_filtered,scrtdd vs pyrtdd single event,11,1.675,2.209,3,1.672,-0.209,-1.494,0.793,0.127,1.075,3.000
+SEm,R6f_single_event_loo_one_step_filtered,scrtdd vs pyrtdd single event,11,1.715,1.807,10,1.703,-0.125,-1.483,0.810,0.096,0.158,5.000

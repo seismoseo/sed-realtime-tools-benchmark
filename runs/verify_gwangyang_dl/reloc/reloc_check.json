@@ -1,0 +1,253 @@
+{
+ "settings": {
+  "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/scripts/v09_reloc_check.py",
+  "BEST": "phasenet_original",
+  "WIN": [
+   -5.0,
+   60.0
+  ],
+  "CLUSTERING": {
+   "numEllipsoids": 0,
+   "maxNeighbourDist": 10.0,
+   "minNumNeigh": 1,
+   "maxNumNeigh": 0,
+   "minNumPhases": 1
+  },
+  "SOLVER": {
+   "absLocConstraintStart": 0.0,
+   "absLocConstraintEnd": 0.0,
+   "dampingFactorStart": 0.01,
+   "dampingFactorEnd": 0.01
+  },
+  "NLL": {
+   "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time",
+   "gridModel": "kim1983",
+   "maxSearchDistance": 0.1
+  },
+  "enu": "pyproj aeqd WGS84 centred on mean dt.cc position 34.999695 127.728890 13.9416 km",
+  "resolved_options": {
+   "my_dl_phasenet_original_window": {
+    "Config": {
+     "PSTableOnly": true,
+     "pickUncertaintyClasses": [
+      0.0,
+      0.025,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+     ],
+     "validPphases": [
+      "P",
+      "Pg",
+      "Pn"
+     ],
+     "validSphases": [
+      "S",
+      "Sg",
+      "Sn"
+     ],
+     "wfFilter": "<pyrtdd.hdd.hdd_ext.Config.WF_FILTER_TYPE object at 0x7f9e234296f0>"
+    },
+    "ClusteringOptions": {
+     "maxEvStaDist": -1.0,
+     "maxNeighbourDist": 10.0,
+     "maxNumNeigh": 0,
+     "maxNumPhases": 0,
+     "minEvStaDist": 0.0,
+     "minEvStaToInterEvRatio": 3.0,
+     "minNumNeigh": 1,
+     "minNumPhases": 1,
+     "numEllipsoids": 0
+    },
+    "SolverOptions": {
+     "L2normalization": true,
+     "absLocConstraintEnd": 0.0,
+     "absLocConstraintStart": 0.0,
+     "algoIterations": 20,
+     "dampingFactorEnd": 0.01,
+     "dampingFactorStart": 0.01,
+     "downWeightingByResidualEnd": 5.0,
+     "downWeightingByResidualStart": 10.0,
+     "solverIterations": 0,
+     "type": "LSMR",
+     "usePickUncertainties": false,
+     "xcorrWeightScaler": 2.0
+    },
+    "NLLGrid": {
+     "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time",
+     "gridModel": "kim1983",
+     "maxSearchDistance": 0.1
+    },
+    "n_clusters": 1,
+    "relocateMultiEvents": {
+     "saveProcessing": true,
+     "processingDataDir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_dl_phasenet_original_window/processing"
+    },
+    "catalog": [
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_dl_phasenet_original_window/station.csv",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_dl_phasenet_original_window/event.csv",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_dl_phasenet_original_window/phase.csv"
+    ]
+   },
+   "my_control_phasenet_plus": {
+    "Config": {
+     "PSTableOnly": true,
+     "pickUncertaintyClasses": [
+      0.0,
+      0.025,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+     ],
+     "validPphases": [
+      "P",
+      "Pg",
+      "Pn"
+     ],
+     "validSphases": [
+      "S",
+      "Sg",
+      "Sn"
+     ],
+     "wfFilter": "<pyrtdd.hdd.hdd_ext.Config.WF_FILTER_TYPE object at 0x7f9e234341f0>"
+    },
+    "ClusteringOptions": {
+     "maxEvStaDist": -1.0,
+     "maxNeighbourDist": 10.0,
+     "maxNumNeigh": 0,
+     "maxNumPhases": 0,
+     "minEvStaDist": 0.0,
+     "minEvStaToInterEvRatio": 3.0,
+     "minNumNeigh": 1,
+     "minNumPhases": 1,
+     "numEllipsoids": 0
+    },
+    "SolverOptions": {
+     "L2normalization": true,
+     "absLocConstraintEnd": 0.0,
+     "absLocConstraintStart": 0.0,
+     "algoIterations": 20,
+     "dampingFactorEnd": 0.01,
+     "dampingFactorStart": 0.01,
+     "downWeightingByResidualEnd": 5.0,
+     "downWeightingByResidualStart": 10.0,
+     "solverIterations": 0,
+     "type": "LSMR",
+     "usePickUncertainties": false,
+     "xcorrWeightScaler": 2.0
+    },
+    "NLLGrid": {
+     "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time",
+     "gridModel": "kim1983",
+     "maxSearchDistance": 0.1
+    },
+    "n_clusters": 1,
+    "relocateMultiEvents": {
+     "saveProcessing": true,
+     "processingDataDir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_control_phasenet_plus/processing"
+    },
+    "catalog": [
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_control_phasenet_plus/station.csv",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_control_phasenet_plus/event.csv",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/verify_gwangyang_dl/reloc/my_control_phasenet_plus/phase.csv"
+    ]
+   }
+  },
+  "versions": {
+   "python": "3.12.15 (main, Oct 13 2026, 16:52:04) [GCC 15.3.0]",
+   "numpy": "2.5.4",
+   "pandas": "3.0.6",
+   "pyproj": "3.8.0"
+  }
+ },
+ "results": {
+  "metric_a_from_step09_outputs_max_abs_diff_m": 0.00528238127685654,
+  "hypodd_bootstrap95_median_m": {
+   "hypodd_dtct": {
+    "boot_ex95_m": 33.8,
+    "boot_ey95_m": 16.5,
+    "boot_ez95_m": 43.3
+   },
+   "hypodd_dtcc": {
+    "boot_ex95_m": 3.2,
+    "boot_ey95_m": 2.2,
+    "boot_ez95_m": 5.5
+   }
+  },
+  "centroid_shift_vs_dtcc_m": {
+   "hypodd_dtct": {
+    "east_m": -0.1,
+    "north_m": 22.7,
+    "up_m": 70.8,
+    "norm_m": 74.4
+   },
+   "all_at_centroid": {
+    "east_m": -0.1,
+    "north_m": -0.0,
+    "up_m": -1.1,
+    "norm_m": 1.1
+   },
+   "control_phasenet_plus": {
+    "east_m": 1698.8,
+    "north_m": 151.0,
+    "up_m": 242.4,
+    "norm_m": 1722.7
+   },
+   "control_phasenet_plus_same_subset": {
+    "east_m": 402.1,
+    "north_m": 302.1,
+    "up_m": -74.9,
+    "norm_m": 508.5
+   },
+   "dl_phasenet_original_window": {
+    "east_m": -0.3,
+    "north_m": -50.0,
+    "up_m": -66.2,
+    "norm_m": 82.9
+   },
+   "dl_phasenet_original_window_tt": {
+    "east_m": -65.0,
+    "north_m": -9.3,
+    "up_m": 56.5,
+    "norm_m": 86.6
+   },
+   "dl_phasenet_original_matched_only": {
+    "east_m": -22.7,
+    "north_m": 44.9,
+    "up_m": 37.0,
+    "norm_m": 62.5
+   },
+   "dl_phasenet_instance_window": {
+    "east_m": 263.5,
+    "north_m": 158.4,
+    "up_m": -187.8,
+    "norm_m": 360.3
+   },
+   "dl_eqtransformer_stead_window": {
+    "east_m": -173.3,
+    "north_m": -160.6,
+    "up_m": 414.4,
+    "norm_m": 477.0
+   },
+   "dl_phasenet_stead_window": {
+    "east_m": -82.8,
+    "north_m": -243.2,
+    "up_m": -192.1,
+    "norm_m": 320.7
+   }
+  },
+  "dl_catalog_rebuild": {
+   "n_mine": 770,
+   "n_step09": 770,
+   "P_mine": 391,
+   "S_mine": 379,
+   "only_mine": 0,
+   "only_step09": 0,
+   "time_differs": 0
+  },
+  "my_dl_phasenet_original_window_n_relocated": 11,
+  "my_control_phasenet_plus_n_relocated": 11
+ }
+}

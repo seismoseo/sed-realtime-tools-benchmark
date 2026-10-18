@@ -1,0 +1,25 @@
+==== 12_dlpicker.sh  2026-10-17 22:41:32 KST  host server-a  APPLY=1  STAGE=tables
+== stage tables: polarity reference check and the markdown tables of the results note
++ py /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/scripts/12_polarity_reference_check.py --run-dir /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker
+inverted-channel analyst first motions tested: 148; same as direct neighbours: 0.318 | control (direct channels): 809 tests, 0.696
+network station channel   dip          gain  n_tests  frac_same_as_direct_neighbours
+     BK    MHDL     EP1 -90.0 -5.746200e+07       50                        0.120000
+     BK    OXMT     EP1 -90.0 -5.746200e+07       44                        0.295455
+     BK    PETB     EP1  90.0  1.650460e+09        2                        1.000000
+     BK    PETB     HN1  90.0  5.178540e+06        3                        0.333333
+     BK    SBRN     EP1 -90.0 -5.746200e+07       16                        0.500000
+     BK    SM2B     CN1 -90.0 -4.279080e+06        4                        0.250000
+     BK    SM2B     DP1 -90.0 -2.096810e+09        2                        0.500000
+     BK    VALB     EP1 -90.0 -2.097150e+09       12                        0.583333
+     BP    CCRB     DP1  90.0  5.744750e+10        1                        1.000000
+     NC    MBS1     EP1  90.0  3.584000e+08        2                        0.500000
+     NC    MDH1     DP1  90.0  2.335390e+09        1                        1.000000
+     NN     BAB     EHZ  90.0  2.182870e+11        1                        0.000000
+     NN     DON     EHZ  90.0  7.713030e+09        1                        0.000000
+     NN     KBF     EHZ -90.0 -4.082044e+11        1                        1.000000
+     NN     LOY     EHZ -90.0 -4.082044e+11        1                        0.000000
+     NN     LUL     EHZ -90.0 -4.082044e+11        4                        0.500000
+     NN     PNT     HHZ  90.0  7.558210e+08        2                        1.000000
+     NN     RUB     HHZ  90.0  7.558210e+08        1                        0.000000
++ py /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/scripts/12_tables_md.py --run-dir /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker > /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/analysis/tables.md
+==== 12_dlpicker.sh finished with exit code 0 (22:41:37)

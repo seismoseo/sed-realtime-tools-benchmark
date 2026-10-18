@@ -1,0 +1,18 @@
+{
+ "run": "V0_stock_no_disk_cache",
+ "started": "2026-10-17T16:48:30",
+ "host": "server-a",
+ "status": "ok",
+ "n_clusters": 1,
+ "cluster_sizes": [
+  11
+ ],
+ "n_relocated": 11,
+ "filter_calls_received_by_proxy": {
+  "bandpass;freqmin=5;freqmax=20;corners=4 @ 1000 Hz": 1165
+ },
+ "proxy_traces_processed": null,
+ "proxy_traces_failed": null,
+ "wall_time_s": 24.47,
+ "finished": "2026-10-17T16:48:54"
+}

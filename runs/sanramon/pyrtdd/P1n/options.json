@@ -1,0 +1,149 @@
+{
+ "run": "P1n",
+ "definition": {
+  "clustering": "nearest_neighbour",
+  "solver": "rtdd_default",
+  "xcorr": "rtdd_default_windows",
+  "wffilter": "bp1.5-15_causal_1000Hz",
+  "proxy": "preprocess",
+  "xcorr_precomputed": "P1",
+  "what": "sensitivity: P1 with nearest-neighbour clustering (P1 cross-correlations re-used)"
+ },
+ "Config": {
+  "PSTableOnly": true,
+  "pickUncertaintyClasses": [
+   0.0,
+   0.025,
+   0.05,
+   0.1,
+   0.2,
+   0.4
+  ],
+  "validPphases": [
+   "P"
+  ],
+  "validSphases": [
+   "S"
+  ],
+  "wfFilter": {
+   "extraTraceLen": 1.0,
+   "filterStr": "",
+   "resampleFreq": 0.0
+  }
+ },
+ "ClusteringOptions": {
+  "maxEvStaDist": -1.0,
+  "maxNeighbourDist": 5.0,
+  "maxNumNeigh": 40,
+  "maxNumPhases": 0,
+  "minEvStaDist": 0.0,
+  "minEvStaToInterEvRatio": 3.0,
+  "minNumNeigh": 8,
+  "minNumPhases": 8,
+  "numEllipsoids": 0
+ },
+ "SolverOptions": {
+  "L2normalization": true,
+  "absLocConstraintEnd": 0.3,
+  "absLocConstraintStart": 0.3,
+  "algoIterations": 20,
+  "dampingFactorEnd": 0.01,
+  "dampingFactorStart": 0.01,
+  "downWeightingByResidualEnd": 5.0,
+  "downWeightingByResidualStart": 10.0,
+  "solverIterations": 0,
+  "type": "LSMR",
+  "usePickUncertainties": false,
+  "xcorrWeightScaler": 2.0
+ },
+ "XcorrOptions": {
+  "enable": true,
+  "maxEvStaDist": -1.0,
+  "maxInterEvDist": -1.0,
+  "minEvStaDist": 0.0,
+  "phase": {
+   "P": {
+    "components": [
+     "Z",
+     "1"
+    ],
+    "endOffset": 0.5,
+    "maxDelay": 0.5,
+    "minCoef": 0.7,
+    "startOffset": -0.5,
+    "winScaling": 0.02
+   },
+   "S": {
+    "components": [
+     "L2"
+    ],
+    "endOffset": 1.0,
+    "maxDelay": 0.5,
+    "minCoef": 0.7,
+    "startOffset": -0.5,
+    "winScaling": 0.04
+   }
+  }
+ },
+ "wffilter_requested": {
+  "filterStr": "bandpass;freqmin=1.5;freqmax=15;corners=4",
+  "resampleFreq": 1000.0,
+  "extraTraceLen": 1.0
+ },
+ "travel_time_table": {
+  "type": "NLLGrid",
+  "gridPath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/nll_con_tm/time",
+  "gridModel": "sanramon_con",
+  "maxSearchDistance": 0.1,
+  "swapBytes": false,
+  "maxOpenFiles": 512,
+  "accessMethod": "KeepOpen"
+ },
+ "waveform_proxy": {
+  "type": "PreprocessingSDSProxy(ObspyClientProxy) defined in run_pyrtdd_sanramon.py",
+  "client": "obspy.clients.filesystem.sds.Client",
+  "sds": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/sds",
+  "inventory": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/stations.xml",
+  "guess_zne": false,
+  "waveform_disk_cache": "disabled (the proxy must see the window libhdd processes)",
+  "processing_actually_applied": "demean + libhdd sinc resample (numpy port) to 1000 Hz + obspy Trace.filter('bandpass', **{'freqmin': 1.5, 'freqmax': 15.0, 'corners': 4.0}) on window +- 1 s; then libhdd demeans again and slices",
+  "filter_kind": "bandpass",
+  "filter_kwargs": {
+   "freqmin": 1.5,
+   "freqmax": 15.0,
+   "corners": 4.0
+  },
+  "zerophase": false,
+  "batch_loading": "routed through loadTrace, no padding (multi-event mode only)"
+ },
+ "xcorr_precomputed": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/pyrtdd/P1/xcorr_cache.csv",
+ "catalog_files": {
+  "station.csv": {
+   "path": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/rtdd_catalog/station.csv",
+   "md5": "fa68657fe6befe257c2935b1e887db6f"
+  },
+  "event.csv": {
+   "path": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/rtdd_catalog/event.csv",
+   "md5": "922f3b164d1f6744bf66cf813238f2a1"
+  },
+  "phase.csv": {
+   "path": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/rtdd_catalog/phase.csv",
+   "md5": "6e4d9978aaa274587a346d8aabec2731"
+  }
+ },
+ "start_locations": "event.csv = NCSS routine locations",
+ "saveProcessing": true,
+ "threads_env": {
+  "OMP_NUM_THREADS": "8",
+  "OPENBLAS_NUM_THREADS": "8"
+ },
+ "versions": {
+  "python": "3.12.15",
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "obspy": "1.5.1",
+  "pyrtdd_commit": "d122c3ae50333839475f0d1134c01aba720153cd",
+  "libhdd_tag": "v2.0.9",
+  "pyrtdd_module": "/home/msseo/miniforge3/envs/pyrtdd/lib/python3.12/site-packages/pyrtdd/__init__.py"
+ }
+}

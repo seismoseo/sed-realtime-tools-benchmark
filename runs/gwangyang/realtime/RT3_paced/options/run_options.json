@@ -1,0 +1,4966 @@
+{
+ "run": "RT3_paced",
+ "generated": "2026-10-17T12:43:28.792009+00:00",
+ "config_stack_per_module": {
+  "scmaster": {
+   "module": "scmaster",
+   "generated": "2026-10-17T08:53:54.878303Z",
+   "files_read_in_order": [
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+     "md5": "5bcc3d9a7cb02ad3a5c40665fb6d310b"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scmaster.cfg",
+     "md5": "a870d5a68a30e0d0a70fca7048ae31cd"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+     "md5": "78d18128446a1284d3acd39f8c4f8407"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg",
+     "md5": "d745f8ad66539bbf6bde0ddfea3264c6"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg",
+     "md5": "62537cb18c991c8d2b816122f8aa2ff4"
+    }
+   ],
+   "n_set": 36,
+   "set": {
+    "core.plugins": {
+     "values": [
+      "dbsqlite3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+    },
+    "logging.level": {
+     "values": [
+      "2"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+    },
+    "logging.file.rotator": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:24"
+    },
+    "logging.file.rotator.timeSpan": {
+     "values": [
+      "86400"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:27"
+    },
+    "logging.file.rotator.archiveSize": {
+     "values": [
+      "7"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:30"
+    },
+    "connection.server": {
+     "values": [
+      "127.0.0.1:28180/production"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:6"
+    },
+    "connection.timeout": {
+     "values": [
+      "3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:39"
+    },
+    "connection.encoding": {
+     "values": [
+      "deflate"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:42"
+    },
+    "connection.contentType": {
+     "values": [
+      "binary"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:45"
+    },
+    "recordstream": {
+     "values": [
+      "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:10"
+    },
+    "agencyID": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:51"
+    },
+    "organization": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:54"
+    },
+    "picker.filters": {
+     "values": [
+      "BP 0.1 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,1)",
+      "BP 0.1 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,2)",
+      "BP 0.4 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.4,1)",
+      "@BP 0.7 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.7,2)",
+      "BP 1 - 3 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,3)",
+      "BP 1 - 5 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,5)",
+      "BP 2 - 4 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,2.0,4)",
+      "BP 3 - 6 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,3.0,6)",
+      "BP 4 - 8 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,4.0,8)",
+      "HP 3 Hz  3rd order;RMHP(1)>>ITAPER(2)>>BW_HP(3,3)",
+      "BP 0.7 - 2 Hz + STA/LTA(1,50);RMHP(10)->ITAPER(30)->BW(3,0.7,2)->STALTA(1,50)"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:69"
+    },
+    "eventlist.visibleColumns": {
+     "values": [
+      "M",
+      "MType",
+      "Phases",
+      "RMS",
+      "Lat",
+      "Lon",
+      "Depth",
+      "Stat",
+      "Agency",
+      "Region",
+      "ID"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:86"
+    },
+    "ttt.libtau.tables": {
+     "values": [
+      "iasp91",
+      "ak135"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:93"
+    },
+    "ttt.LOCSAT.tables": {
+     "values": [
+      "iasp91",
+      "tab"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:94"
+    },
+    "ttt.homogeneous.tables": {
+     "values": [
+      ""
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:95"
+    },
+    "queues": {
+     "values": [
+      "production"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:15"
+    },
+    "defaultGroups": {
+     "values": [
+      "AMPLITUDE",
+      "PICK",
+      "LOCATION",
+      "RELOCATION",
+      "MAGNITUDE",
+      "FOCMECH",
+      "EVENT",
+      "QC",
+      "PUBLICATION",
+      "GUI",
+      "INVENTORY",
+      "ROUTING",
+      "CONFIG",
+      "LOGGING",
+      "IMPORT_GROUP",
+      "SERVICE_REQUEST",
+      "SERVICE_PROVIDE"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:18"
+    },
+    "interface.bind": {
+     "values": [
+      "127.0.0.1:28180"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:6"
+    },
+    "interface.ssl.bind": {
+     "values": [
+      "127.0.0.1:-1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:12"
+    },
+    "interface.ssl.key": {
+     "values": [
+      "@CONFIGDIR@/ssl/key.pem"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scmaster.cfg:36"
+    },
+    "interface.ssl.certificate": {
+     "values": [
+      "@CONFIGDIR@/ssl/cert.pem"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scmaster.cfg:39"
+    },
+    "queues.production.acl": {
+     "values": [
+      "127.0.0.1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:24"
+    },
+    "queues.production.plugins": {
+     "values": [
+      "dbstore"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:27"
+    },
+    "queues.production.processors.messages": {
+     "values": [
+      "dbstore"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:29"
+    },
+    "queues.production.processors.messages.dbstore.driver": {
+     "values": [
+      "sqlite3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:32"
+    },
+    "queues.production.processors.messages.dbstore.read": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/db/seiscomp.sqlite"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:35"
+    },
+    "queues.production.processors.messages.dbstore.write": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/db/seiscomp.sqlite"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:37"
+    },
+    "queues.production.processors.messages.dbstore.strictVersionMatch": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:40"
+    },
+    "queues.playback.acl": {
+     "values": [
+      "127.0.0.1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scmaster.cfg:85"
+    },
+    "http.filebase": {
+     "values": [
+      "@DATADIR@/scmaster/http/"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scmaster.cfg:92"
+    },
+    "http.staticPath": {
+     "values": [
+      "/"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scmaster.cfg:96"
+    },
+    "http.brokerPath": {
+     "values": [
+      "/"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scmaster.cfg:99"
+    },
+    "interface.acl": {
+     "values": [
+      "127.0.0.1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:9"
+    },
+    "queues.production.groups": {
+     "values": [
+      "AMPLITUDE",
+      "PICK",
+      "LOCATION",
+      "RELOCATION",
+      "MAGNITUDE",
+      "FOCMECH",
+      "EVENT",
+      "QC",
+      "PUBLICATION",
+      "GUI",
+      "INVENTORY",
+      "ROUTING",
+      "CONFIG",
+      "LOGGING",
+      "IMPORT_GROUP",
+      "SERVICE_REQUEST",
+      "SERVICE_PROVIDE"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scmaster.cfg:21"
+    }
+   },
+   "n_documented_unset": 50,
+   "documented_defaults_of_unset_parameters": {
+    "interface.socketPortReuse": {
+     "default": "true",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scmaster.xml"
+    },
+    "interface.ssl.acl": {
+     "default": "",
+     "unit": null,
+     "type": "list:ipmask",
+     "described_in": "scmaster.xml"
+    },
+    "interface.ssl.socketPortReuse": {
+     "default": "true",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scmaster.xml"
+    },
+    "interface.ssl.verifyPeer": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scmaster.xml"
+    },
+    "datacenterID": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "author": {
+     "default": "@appname@@@@hostname@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "populateCIVersionAttribute": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "plugins": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "cityXML": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "loadCities": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "loadRegions": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "publicIDPattern": {
+     "default": "@classname@/@time/%Y%m%d%H%M%S.%f@.@id@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "configModule": {
+     "default": "trunk",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "logging.syslog": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.components": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "logging.component": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.context": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.utc": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.file.rotator.maxFileSize": {
+     "default": "104857600",
+     "unit": "byte",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.objects.timeSpan": {
+     "default": "60",
+     "unit": "s",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.syslog.facility": {
+     "default": "local0",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.username": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.certificate": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.primaryGroup": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.subscriptions": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "database.inventory": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "database.config": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "processing.whitelist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "processing.blacklist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "scripts.crashHandler": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "client.startStopMessage": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.autoShutdown": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterModule": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterUsername": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "commands.target": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.tableType": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.table": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.iaspei": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.interface": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.model": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.gain": {
+     "default": "2080",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.T0": {
+     "default": "0.8",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.h": {
+     "default": "0.7",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "magnitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    }
+   },
+   "note": "values as the SeisComP configuration parser reads them; a module may still apply its own built-in default where the description gives none (runtime dumps in this folder)"
+  },
+  "scautopick": {
+   "module": "scautopick",
+   "generated": "2026-10-17T08:53:54.881598Z",
+   "files_read_in_order": [
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+     "md5": "5bcc3d9a7cb02ad3a5c40665fb6d310b"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg",
+     "md5": "ca6372d32e5523829420328a82831ba3"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+     "md5": "78d18128446a1284d3acd39f8c4f8407"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg",
+     "md5": "d745f8ad66539bbf6bde0ddfea3264c6"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg",
+     "md5": "509c273905b8ccff6c6cc27aa114b21e"
+    }
+   ],
+   "n_set": 48,
+   "set": {
+    "core.plugins": {
+     "values": [
+      "dbsqlite3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+    },
+    "logging.level": {
+     "values": [
+      "2"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+    },
+    "logging.file.rotator": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:24"
+    },
+    "logging.file.rotator.timeSpan": {
+     "values": [
+      "86400"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:27"
+    },
+    "logging.file.rotator.archiveSize": {
+     "values": [
+      "7"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:30"
+    },
+    "connection.server": {
+     "values": [
+      "127.0.0.1:28180/production"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:6"
+    },
+    "connection.timeout": {
+     "values": [
+      "3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:39"
+    },
+    "connection.encoding": {
+     "values": [
+      "deflate"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:42"
+    },
+    "connection.contentType": {
+     "values": [
+      "binary"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:45"
+    },
+    "recordstream": {
+     "values": [
+      "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:10"
+    },
+    "agencyID": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:51"
+    },
+    "organization": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:54"
+    },
+    "picker.filters": {
+     "values": [
+      "BP 0.1 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,1)",
+      "BP 0.1 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,2)",
+      "BP 0.4 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.4,1)",
+      "@BP 0.7 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.7,2)",
+      "BP 1 - 3 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,3)",
+      "BP 1 - 5 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,5)",
+      "BP 2 - 4 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,2.0,4)",
+      "BP 3 - 6 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,3.0,6)",
+      "BP 4 - 8 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,4.0,8)",
+      "HP 3 Hz  3rd order;RMHP(1)>>ITAPER(2)>>BW_HP(3,3)",
+      "BP 0.7 - 2 Hz + STA/LTA(1,50);RMHP(10)->ITAPER(30)->BW(3,0.7,2)->STALTA(1,50)"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:69"
+    },
+    "eventlist.visibleColumns": {
+     "values": [
+      "M",
+      "MType",
+      "Phases",
+      "RMS",
+      "Lat",
+      "Lon",
+      "Depth",
+      "Stat",
+      "Agency",
+      "Region",
+      "ID"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:86"
+    },
+    "ttt.libtau.tables": {
+     "values": [
+      "iasp91",
+      "ak135"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:93"
+    },
+    "ttt.LOCSAT.tables": {
+     "values": [
+      "iasp91",
+      "tab"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:94"
+    },
+    "ttt.homogeneous.tables": {
+     "values": [
+      ""
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:95"
+    },
+    "connection.primaryGroup": {
+     "values": [
+      "PICK"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg:2"
+    },
+    "connection.amplitudeGroup": {
+     "values": [
+      "AMPLITUDE"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg:5"
+    },
+    "connection.subscriptions": {
+     "values": [
+      "CONFIG"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg:8"
+    },
+    "filter": {
+     "values": [
+      "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:32"
+    },
+    "timeCorrection": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:33"
+    },
+    "ringBufferSize": {
+     "values": [
+      "300"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:44"
+    },
+    "leadTime": {
+     "values": [
+      "60"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:45"
+    },
+    "initTime": {
+     "values": [
+      "60"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:46"
+    },
+    "gapInterpolation": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg:32"
+    },
+    "thresholds.triggerOn": {
+     "values": [
+      "1.8"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:34"
+    },
+    "thresholds.triggerOff": {
+     "values": [
+      "1.0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:35"
+    },
+    "thresholds.maxGapLength": {
+     "values": [
+      "4.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:47"
+    },
+    "thresholds.amplMaxTimeWindow": {
+     "values": [
+      "5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:41"
+    },
+    "thresholds.deadTime": {
+     "values": [
+      "15"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:39"
+    },
+    "thresholds.minAmplOffset": {
+     "values": [
+      "1.8"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:40"
+    },
+    "amplitudes": {
+     "values": [
+      "MLv",
+      "mb",
+      "mB"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:48"
+    },
+    "picker": {
+     "values": [
+      "DL3C"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:13"
+    },
+    "spicker": {
+     "values": [
+      "SDL3C"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:14"
+    },
+    "fx": {
+     "values": [
+      ""
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg:67"
+    },
+    "useAllStreams": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg:73"
+    },
+    "killPendingSPickers": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:36"
+    },
+    "sendDetections": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautopick.cfg:87"
+    },
+    "plugins": {
+     "values": [
+      "dlrtpicker"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:12"
+    },
+    "module.trunk.global.picker.DL3C.model": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_original.onnx"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:17"
+    },
+    "module.trunk.global.spicker.SDL3C.model": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_original.onnx"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:18"
+    },
+    "module.trunk.global.picker.DL3C.maxAttempts": {
+     "values": [
+      "1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:21"
+    },
+    "module.trunk.global.spicker.SDL3C.minLatency": {
+     "values": [
+      "15"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:25"
+    },
+    "module.trunk.global.spicker.SDL3C.maxLatency": {
+     "values": [
+      "30"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:26"
+    },
+    "module.trunk.global.spicker.SDL3C.maxAttempts": {
+     "values": [
+      "4"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:27"
+    },
+    "module.trunk.global.spicker.SDL3C.strategy": {
+     "values": [
+      "best"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:28"
+    },
+    "extraPickComments": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautopick.cfg:51"
+    }
+   },
+   "n_documented_unset": 137,
+   "documented_defaults_of_unset_parameters": {
+    "playback": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautopick.xml"
+    },
+    "phaseHint": {
+     "default": "P",
+     "unit": null,
+     "type": "string",
+     "described_in": "scautopick.xml"
+    },
+    "allowSPickersWithDetections": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautopick.xml"
+    },
+    "simplifiedIDs": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautopick.xml"
+    },
+    "thresholds.minDuration": {
+     "default": "-1",
+     "unit": "s",
+     "type": "double",
+     "described_in": "scautopick.xml"
+    },
+    "thresholds.maxDuration": {
+     "default": "-1",
+     "unit": "s",
+     "type": "double",
+     "described_in": "scautopick.xml"
+    },
+    "amplitudes.enableUpdate": {
+     "default": "",
+     "unit": "",
+     "type": "list:string",
+     "described_in": "scautopick.xml"
+    },
+    "comment.ID": {
+     "default": "",
+     "unit": null,
+     "type": "string",
+     "described_in": "scautopick.xml"
+    },
+    "comment.text": {
+     "default": "",
+     "unit": null,
+     "type": "string",
+     "described_in": "scautopick.xml"
+    },
+    "binding:detecEnable": {
+     "default": "true",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautopick.xml"
+    },
+    "binding:detecFilter": {
+     "default": "\"RMHP(10)>>ITAPER(30)>>BW(4,0.7,2)>>STALTA(2,80)\"",
+     "unit": null,
+     "type": "string",
+     "described_in": "scautopick.xml"
+    },
+    "binding:trigOn": {
+     "default": "3",
+     "unit": null,
+     "type": "double",
+     "described_in": "scautopick.xml"
+    },
+    "binding:trigOff": {
+     "default": "1.5",
+     "unit": null,
+     "type": "double",
+     "described_in": "scautopick.xml"
+    },
+    "binding:timeCorr": {
+     "default": "-0.8",
+     "unit": "s",
+     "type": "double",
+     "described_in": "scautopick.xml"
+    },
+    "binding:sensitivityCorrection": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautopick.xml"
+    },
+    "binding:picker.DL1C.model": {
+     "default": "",
+     "unit": null,
+     "type": "file",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.minConfidence": {
+     "default": "0.4",
+     "unit": null,
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.minLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.maxLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.maxAttempts": {
+     "default": null,
+     "unit": null,
+     "type": "int",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.strategy": {
+     "default": "fast",
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.polarityMinConfidence": {
+     "default": "0.5",
+     "unit": null,
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.polarityMaxTilt": {
+     "default": "20",
+     "unit": "deg",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL1C.uncertaintyMap": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.model": {
+     "default": "",
+     "unit": null,
+     "type": "file",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.minConfidence": {
+     "default": "0.4",
+     "unit": null,
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.minLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.maxLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.maxAttempts": {
+     "default": null,
+     "unit": null,
+     "type": "int",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.strategy": {
+     "default": "fast",
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.polarityMinConfidence": {
+     "default": "0.5",
+     "unit": null,
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.polarityMaxTilt": {
+     "default": "20",
+     "unit": "deg",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:picker.DL3C.uncertaintyMap": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.model": {
+     "default": "",
+     "unit": null,
+     "type": "file",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.minConfidence": {
+     "default": "0.3",
+     "unit": null,
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.phaseHint": {
+     "default": "S",
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.minLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.maxLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.maxAttempts": {
+     "default": null,
+     "unit": null,
+     "type": "int",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.strategy": {
+     "default": "fast",
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL1C.uncertaintyMap": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.model": {
+     "default": "",
+     "unit": null,
+     "type": "file",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.minConfidence": {
+     "default": "0.3",
+     "unit": null,
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.phaseHint": {
+     "default": "S",
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.minLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.maxLatency": {
+     "default": null,
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.maxAttempts": {
+     "default": null,
+     "unit": null,
+     "type": "int",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.strategy": {
+     "default": "fast",
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "binding:spicker.SDL3C.uncertaintyMap": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global_dlrtpicker.xml"
+    },
+    "datacenterID": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "author": {
+     "default": "@appname@@@@hostname@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "populateCIVersionAttribute": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "cityXML": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "loadCities": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "loadRegions": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "publicIDPattern": {
+     "default": "@classname@/@time/%Y%m%d%H%M%S.%f@.@id@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "configModule": {
+     "default": "trunk",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "logging.syslog": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.components": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "logging.component": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.context": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.utc": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.file.rotator.maxFileSize": {
+     "default": "104857600",
+     "unit": "byte",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.objects.timeSpan": {
+     "default": "60",
+     "unit": "s",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.syslog.facility": {
+     "default": "local0",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.username": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.certificate": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database.inventory": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "database.config": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "processing.whitelist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "processing.blacklist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "scripts.crashHandler": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "client.startStopMessage": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.autoShutdown": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterModule": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterUsername": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "commands.target": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.tableType": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.table": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.iaspei": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.interface": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.model": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.gain": {
+     "default": "2080",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.T0": {
+     "default": "0.8",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.h": {
+     "default": "0.7",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "magnitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "binding:detecLocid": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:detecStream": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.saturationThreshold": {
+     "default": "false",
+     "unit": "counts; %",
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.enable": {
+     "default": "true",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.enableResponses": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.resp.taper": {
+     "default": "5",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.resp.minFreq": {
+     "default": "0.00833333",
+     "unit": "Hz",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.resp.maxFreq": {
+     "default": "0",
+     "unit": "Hz",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.ttt.interface": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.ttt.model": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.WoodAnderson.gain": {
+     "default": "2080",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.WoodAnderson.T0": {
+     "default": "0.8",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:amplitudes.WoodAnderson.h": {
+     "default": "0.7",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.AIC.noiseBegin": {
+     "default": "0",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.AIC.signalBegin": {
+     "default": "-30",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.AIC.signalEnd": {
+     "default": "10",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.AIC.filter": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:picker.AIC.minSNR": {
+     "default": "3",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.noiseBegin": {
+     "default": "0",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.signalBegin": {
+     "default": "-20",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.signalEnd": {
+     "default": "80",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.filterType": {
+     "default": "BP",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.filterPoles": {
+     "default": "2",
+     "unit": null,
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.f1": {
+     "default": "5",
+     "unit": "Hz",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.f2": {
+     "default": "20",
+     "unit": "Hz",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.thrshl1": {
+     "default": "10",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:picker.BK.thrshl2": {
+     "default": "20",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.noiseBegin": {
+     "default": "-10",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.signalBegin": {
+     "default": "0",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.signalEnd": {
+     "default": "60",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.filter": {
+     "default": "BW(4,0.3,1.0)",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.detecFilter": {
+     "default": "STALTA(1,10)",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.threshold": {
+     "default": "3",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.timeCorr": {
+     "default": "0",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.marginAIC": {
+     "default": "5",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.L2.minSNR": {
+     "default": "15",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.noiseBegin": {
+     "default": "-10",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.signalBegin": {
+     "default": "0",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.signalEnd": {
+     "default": "60",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.filter": {
+     "default": "BW(4,0.3,1.0)",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.detecFilter": {
+     "default": "STALTA(1,10)",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.threshold": {
+     "default": "3",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.timeCorr": {
+     "default": "0",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.marginAIC": {
+     "default": "5",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "binding:spicker.V.minSNR": {
+     "default": "15",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    }
+   },
+   "note": "values as the SeisComP configuration parser reads them; a module may still apply its own built-in default where the description gives none (runtime dumps in this folder)"
+  },
+  "scautoloc": {
+   "module": "scautoloc",
+   "generated": "2026-10-17T08:53:54.885392Z",
+   "files_read_in_order": [
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+     "md5": "5bcc3d9a7cb02ad3a5c40665fb6d310b"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg",
+     "md5": "5e4f4e1fb6a701f5667bcc6501e2a245"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+     "md5": "78d18128446a1284d3acd39f8c4f8407"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg",
+     "md5": "d745f8ad66539bbf6bde0ddfea3264c6"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg",
+     "md5": "a1fe3a63a46ea08ee98dd32c602bb6d3"
+    }
+   ],
+   "n_set": 35,
+   "set": {
+    "core.plugins": {
+     "values": [
+      "dbsqlite3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+    },
+    "logging.level": {
+     "values": [
+      "2"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+    },
+    "logging.file.rotator": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:24"
+    },
+    "logging.file.rotator.timeSpan": {
+     "values": [
+      "86400"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:27"
+    },
+    "logging.file.rotator.archiveSize": {
+     "values": [
+      "7"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:30"
+    },
+    "connection.server": {
+     "values": [
+      "127.0.0.1:28180/production"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:6"
+    },
+    "connection.timeout": {
+     "values": [
+      "3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:39"
+    },
+    "connection.encoding": {
+     "values": [
+      "deflate"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:42"
+    },
+    "connection.contentType": {
+     "values": [
+      "binary"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:45"
+    },
+    "recordstream": {
+     "values": [
+      "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:10"
+    },
+    "agencyID": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:51"
+    },
+    "organization": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:54"
+    },
+    "picker.filters": {
+     "values": [
+      "BP 0.1 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,1)",
+      "BP 0.1 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,2)",
+      "BP 0.4 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.4,1)",
+      "@BP 0.7 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.7,2)",
+      "BP 1 - 3 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,3)",
+      "BP 1 - 5 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,5)",
+      "BP 2 - 4 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,2.0,4)",
+      "BP 3 - 6 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,3.0,6)",
+      "BP 4 - 8 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,4.0,8)",
+      "HP 3 Hz  3rd order;RMHP(1)>>ITAPER(2)>>BW_HP(3,3)",
+      "BP 0.7 - 2 Hz + STA/LTA(1,50);RMHP(10)->ITAPER(30)->BW(3,0.7,2)->STALTA(1,50)"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:69"
+    },
+    "eventlist.visibleColumns": {
+     "values": [
+      "M",
+      "MType",
+      "Phases",
+      "RMS",
+      "Lat",
+      "Lon",
+      "Depth",
+      "Stat",
+      "Agency",
+      "Region",
+      "ID"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:86"
+    },
+    "ttt.libtau.tables": {
+     "values": [
+      "iasp91",
+      "ak135"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:93"
+    },
+    "ttt.LOCSAT.tables": {
+     "values": [
+      "iasp91",
+      "tab"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:94"
+    },
+    "ttt.homogeneous.tables": {
+     "values": [
+      ""
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:95"
+    },
+    "connection.primaryGroup": {
+     "values": [
+      "LOCATION"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:4"
+    },
+    "connection.subscriptions": {
+     "values": [
+      "PICK",
+      "AMPLITUDE"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:8"
+    },
+    "buffer.cleanupInterval": {
+     "values": [
+      "3600"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:11"
+    },
+    "autoloc.maxRMS": {
+     "values": [
+      "1.0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:18"
+    },
+    "autoloc.maxResidual": {
+     "values": [
+      "1.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:22"
+    },
+    "autoloc.minPhaseCount": {
+     "values": [
+      "8"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:12"
+    },
+    "autoloc.maxStationDistance": {
+     "values": [
+      "1.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:15"
+    },
+    "autoloc.minStaCountIgnorePKP": {
+     "values": [
+      "15"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:28"
+    },
+    "autoloc.amplTypeAbs": {
+     "values": [
+      "mb"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:35"
+    },
+    "autoloc.amplTypeSNR": {
+     "values": [
+      "snr"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:40"
+    },
+    "autoloc.grid": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/config/scautoloc_grid.conf"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:6"
+    },
+    "autoloc.stationConfig": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/config/scautoloc_station.conf"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:9"
+    },
+    "autoloc.useManualPicks": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:49"
+    },
+    "autoloc.useManualOrigins": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scautoloc.cfg:61"
+    },
+    "autoloc.minPickSNR": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:27"
+    },
+    "autoloc.dynamicPickThresholdInterval": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:35"
+    },
+    "autoloc.pickLogEnable": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:38"
+    },
+    "autoloc.pickLog": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautoloc_picklog"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scautoloc.cfg:40"
+    }
+   },
+   "n_documented_unset": 72,
+   "documented_defaults_of_unset_parameters": {
+    "locator.profile": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "scautoloc.xml"
+    },
+    "locator.defaultDepth": {
+     "default": "10",
+     "unit": "km",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "locator.minimumDepth": {
+     "default": "5",
+     "unit": "km",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "buffer.pickKeep": {
+     "default": "21600",
+     "unit": "s",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "buffer.originKeep": {
+     "default": "86400",
+     "unit": "s",
+     "type": "int",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.maxDepth": {
+     "default": "1000",
+     "unit": "km",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.maxSGAP": {
+     "default": "360",
+     "unit": "deg",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.stationLocations": {
+     "default": "",
+     "unit": null,
+     "type": "file",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.adoptManualDepth": {
+     "default": "true",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.authors": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.tryDefaultDepth": {
+     "default": "true",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.publicationIntervalTimeSlope": {
+     "default": "0.5",
+     "unit": "s/count",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.publicationIntervalTimeIntercept": {
+     "default": "0.",
+     "unit": "s",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.xxl.enable": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.xxl.minAmplitude": {
+     "default": "10000",
+     "unit": null,
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.xxl.minSNR": {
+     "default": "8",
+     "unit": null,
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.xxl.minPhaseCount": {
+     "default": "4",
+     "unit": null,
+     "type": "int",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.xxl.maxStationDistance": {
+     "default": "10",
+     "unit": "deg",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "autoloc.xxl.maxDepth": {
+     "default": "100",
+     "unit": "km",
+     "type": "double",
+     "described_in": "scautoloc.xml"
+    },
+    "LOCSAT.profiles": {
+     "default": "iasp91, tab",
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.depthInit": {
+     "default": "20.0",
+     "unit": "km",
+     "type": "double",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.usePickUncertainties": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.defaultTimeError": {
+     "default": "1.0",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.usePickBackazimuth": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.usePickSlowness": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.degreesOfFreedom": {
+     "default": "9999",
+     "unit": null,
+     "type": "int",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.confLevel": {
+     "default": "0.9",
+     "unit": null,
+     "type": "double",
+     "described_in": "global_locsat.xml"
+    },
+    "LOCSAT.enableConfidenceEllipsoid": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global_locsat.xml"
+    },
+    "datacenterID": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "author": {
+     "default": "@appname@@@@hostname@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "populateCIVersionAttribute": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "plugins": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "cityXML": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "loadCities": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "loadRegions": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "publicIDPattern": {
+     "default": "@classname@/@time/%Y%m%d%H%M%S.%f@.@id@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "configModule": {
+     "default": "trunk",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "logging.syslog": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.components": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "logging.component": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.context": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.utc": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.file.rotator.maxFileSize": {
+     "default": "104857600",
+     "unit": "byte",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.objects.timeSpan": {
+     "default": "60",
+     "unit": "s",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.syslog.facility": {
+     "default": "local0",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.username": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.certificate": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database.inventory": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "database.config": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "processing.whitelist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "processing.blacklist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "scripts.crashHandler": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "client.startStopMessage": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.autoShutdown": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterModule": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterUsername": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "commands.target": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.tableType": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.table": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.iaspei": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.interface": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.model": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.gain": {
+     "default": "2080",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.T0": {
+     "default": "0.8",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.h": {
+     "default": "0.7",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "magnitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    }
+   },
+   "note": "values as the SeisComP configuration parser reads them; a module may still apply its own built-in default where the description gives none (runtime dumps in this folder)"
+  },
+  "scevent": {
+   "module": "scevent",
+   "generated": "2026-10-17T08:53:54.888137Z",
+   "files_read_in_order": [
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+     "md5": "5bcc3d9a7cb02ad3a5c40665fb6d310b"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg",
+     "md5": "8f91bdde5a88f71fd41b308efe89c685"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+     "md5": "78d18128446a1284d3acd39f8c4f8407"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg",
+     "md5": "d745f8ad66539bbf6bde0ddfea3264c6"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scevent.cfg",
+     "md5": "82b0bcab026c8e4a26f1dd9844a7ad76"
+    }
+   ],
+   "n_set": 41,
+   "set": {
+    "core.plugins": {
+     "values": [
+      "dbsqlite3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+    },
+    "logging.level": {
+     "values": [
+      "2"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+    },
+    "logging.file.rotator": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:24"
+    },
+    "logging.file.rotator.timeSpan": {
+     "values": [
+      "86400"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:27"
+    },
+    "logging.file.rotator.archiveSize": {
+     "values": [
+      "7"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:30"
+    },
+    "connection.server": {
+     "values": [
+      "127.0.0.1:28180/production"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:6"
+    },
+    "connection.timeout": {
+     "values": [
+      "3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:39"
+    },
+    "connection.encoding": {
+     "values": [
+      "deflate"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:42"
+    },
+    "connection.contentType": {
+     "values": [
+      "binary"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:45"
+    },
+    "recordstream": {
+     "values": [
+      "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:10"
+    },
+    "agencyID": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:51"
+    },
+    "organization": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:54"
+    },
+    "picker.filters": {
+     "values": [
+      "BP 0.1 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,1)",
+      "BP 0.1 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,2)",
+      "BP 0.4 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.4,1)",
+      "@BP 0.7 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.7,2)",
+      "BP 1 - 3 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,3)",
+      "BP 1 - 5 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,5)",
+      "BP 2 - 4 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,2.0,4)",
+      "BP 3 - 6 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,3.0,6)",
+      "BP 4 - 8 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,4.0,8)",
+      "HP 3 Hz  3rd order;RMHP(1)>>ITAPER(2)>>BW_HP(3,3)",
+      "BP 0.7 - 2 Hz + STA/LTA(1,50);RMHP(10)->ITAPER(30)->BW(3,0.7,2)->STALTA(1,50)"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:69"
+    },
+    "eventlist.visibleColumns": {
+     "values": [
+      "M",
+      "MType",
+      "Phases",
+      "RMS",
+      "Lat",
+      "Lon",
+      "Depth",
+      "Stat",
+      "Agency",
+      "Region",
+      "ID"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:86"
+    },
+    "ttt.libtau.tables": {
+     "values": [
+      "iasp91",
+      "ak135"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:93"
+    },
+    "ttt.LOCSAT.tables": {
+     "values": [
+      "iasp91",
+      "tab"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:94"
+    },
+    "ttt.homogeneous.tables": {
+     "values": [
+      ""
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:95"
+    },
+    "connection.primaryGroup": {
+     "values": [
+      "EVENT"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:2"
+    },
+    "connection.subscriptions": {
+     "values": [
+      "LOCATION",
+      "RELOCATION",
+      "MAGNITUDE",
+      "FOCMECH",
+      "EVENT"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scevent.cfg:6"
+    },
+    "eventAssociation.minimumMagnitudes": {
+     "values": [
+      "4"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:10"
+    },
+    "eventAssociation.minimumDefiningPhases": {
+     "values": [
+      "8"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scevent.cfg:9"
+    },
+    "eventAssociation.eventTimeBefore": {
+     "values": [
+      "1800"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:33"
+    },
+    "eventAssociation.eventTimeAfter": {
+     "values": [
+      "1800"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:37"
+    },
+    "eventAssociation.minimumMatchingArrivals": {
+     "values": [
+      "3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:42"
+    },
+    "eventAssociation.maximumMatchingArrivalTimeDiff": {
+     "values": [
+      "-1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:49"
+    },
+    "eventAssociation.compareAllArrivalTimes": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:57"
+    },
+    "eventAssociation.maximumTimeSpan": {
+     "values": [
+      "60"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:63"
+    },
+    "eventAssociation.maximumDistance": {
+     "values": [
+      "5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:69"
+    },
+    "eventAssociation.minMwCount": {
+     "values": [
+      "8"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:73"
+    },
+    "eventAssociation.magPriorityOverStationCount": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:82"
+    },
+    "eventAssociation.mbOverMwCount": {
+     "values": [
+      "30"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:86"
+    },
+    "eventAssociation.mbOverMwValue": {
+     "values": [
+      "6"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:90"
+    },
+    "eventAssociation.magTypes": {
+     "values": [
+      "M"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:95"
+    },
+    "eventAssociation.enableFallbackMagnitude": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:149"
+    },
+    "eventIDPrefix": {
+     "values": [
+      ""
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:153"
+    },
+    "eventIDPattern": {
+     "values": [
+      "%p%Y%04c"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:163"
+    },
+    "eventIDLookupMargin": {
+     "values": [
+      "-1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:172"
+    },
+    "eventAssociation.ignoreFMDerivedOrigins": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:191"
+    },
+    "eventAssociation.declareFakeEventForRejectedOrigin": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:196"
+    },
+    "eventAssociation.allowLooseAssociatedArrivals": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:199"
+    },
+    "populateFERegion": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scevent.cfg:203"
+    }
+   },
+   "n_documented_unset": 65,
+   "documented_defaults_of_unset_parameters": {
+    "restAPI": {
+     "default": null,
+     "unit": null,
+     "type": "host-with-port",
+     "described_in": "scevent.xml"
+    },
+    "processing.blacklist.eventIDs": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.minimumScore": {
+     "default": null,
+     "unit": null,
+     "type": "double",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.priorities": {
+     "default": "AGENCY,STATUS,PHASES_AUTOMATIC,TIME_AUTOMATIC",
+     "unit": null,
+     "type": "list:string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.authors": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.methods": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.score": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.enablePreferredFMSelection": {
+     "default": "true",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.delayTimeSpan": {
+     "default": "0",
+     "unit": "s",
+     "type": "int",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.region.rect": {
+     "default": null,
+     "unit": null,
+     "type": "list:double",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.region.minDepth": {
+     "default": null,
+     "unit": "km",
+     "type": "double",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.region.maxDepth": {
+     "default": null,
+     "unit": "km",
+     "type": "double",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.delayFilter.agencyID": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.delayFilter.author": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "scevent.xml"
+    },
+    "eventAssociation.delayFilter.evaluationMode": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "scevent.xml"
+    },
+    "eventIDSync.main": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "scevent.xml"
+    },
+    "eventIDSync.mainTimeout": {
+     "default": "5",
+     "unit": "s",
+     "type": "int",
+     "described_in": "scevent.xml"
+    },
+    "eventIDSync.cacheRetention": {
+     "default": "1800",
+     "unit": "s",
+     "type": "int",
+     "described_in": "scevent.xml"
+    },
+    "eventIDSync.db": {
+     "default": "",
+     "unit": null,
+     "type": "string",
+     "described_in": "scevent.xml"
+    },
+    "eventIDSync.databaseRetention": {
+     "default": "-1",
+     "unit": "s",
+     "type": "int",
+     "described_in": "scevent.xml"
+    },
+    "datacenterID": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "author": {
+     "default": "@appname@@@@hostname@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "populateCIVersionAttribute": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "plugins": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "cityXML": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "loadCities": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "loadRegions": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "publicIDPattern": {
+     "default": "@classname@/@time/%Y%m%d%H%M%S.%f@.@id@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "configModule": {
+     "default": "trunk",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "logging.syslog": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.components": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "logging.component": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.context": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.utc": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.file.rotator.maxFileSize": {
+     "default": "104857600",
+     "unit": "byte",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.objects.timeSpan": {
+     "default": "60",
+     "unit": "s",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.syslog.facility": {
+     "default": "local0",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.username": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.certificate": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database.inventory": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "database.config": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "processing.whitelist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "processing.blacklist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "scripts.crashHandler": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "client.startStopMessage": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.autoShutdown": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterModule": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterUsername": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "commands.target": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.tableType": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.table": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.iaspei": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.interface": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.model": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.gain": {
+     "default": "2080",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.T0": {
+     "default": "0.8",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.h": {
+     "default": "0.7",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "magnitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    }
+   },
+   "note": "values as the SeisComP configuration parser reads them; a module may still apply its own built-in default where the description gives none (runtime dumps in this folder)"
+  },
+  "scrtdd": {
+   "module": "scrtdd",
+   "generated": "2026-10-17T08:53:54.891433Z",
+   "files_read_in_order": [
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+     "md5": "5bcc3d9a7cb02ad3a5c40665fb6d310b"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scrtdd.cfg",
+     "md5": "931dc7a1cccf37697642c2c2a5feb2ae"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+     "md5": "78d18128446a1284d3acd39f8c4f8407"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg",
+     "md5": "d745f8ad66539bbf6bde0ddfea3264c6"
+    },
+    {
+     "file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg",
+     "md5": "360e138b6c78602279c15772894f31cd"
+    }
+   ],
+   "n_set": 82,
+   "set": {
+    "core.plugins": {
+     "values": [
+      "dbsqlite3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+    },
+    "logging.level": {
+     "values": [
+      "2"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+    },
+    "logging.file.rotator": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:24"
+    },
+    "logging.file.rotator.timeSpan": {
+     "values": [
+      "86400"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:27"
+    },
+    "logging.file.rotator.archiveSize": {
+     "values": [
+      "7"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:30"
+    },
+    "connection.server": {
+     "values": [
+      "127.0.0.1:28180/production"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:6"
+    },
+    "connection.timeout": {
+     "values": [
+      "3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:39"
+    },
+    "connection.encoding": {
+     "values": [
+      "deflate"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:42"
+    },
+    "connection.contentType": {
+     "values": [
+      "binary"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:45"
+    },
+    "recordstream": {
+     "values": [
+      "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:10"
+    },
+    "agencyID": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:51"
+    },
+    "organization": {
+     "values": [
+      "Unset"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:54"
+    },
+    "picker.filters": {
+     "values": [
+      "BP 0.1 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,1)",
+      "BP 0.1 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.1,2)",
+      "BP 0.4 - 1 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.4,1)",
+      "@BP 0.7 - 2 Hz  3rd order;RMHP(10)>>ITAPER(30)>>BW(3,0.7,2)",
+      "BP 1 - 3 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,3)",
+      "BP 1 - 5 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,1.0,5)",
+      "BP 2 - 4 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,2.0,4)",
+      "BP 3 - 6 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,3.0,6)",
+      "BP 4 - 8 Hz  3rd order;RMHP(5)>>ITAPER(10)>>BW(3,4.0,8)",
+      "HP 3 Hz  3rd order;RMHP(1)>>ITAPER(2)>>BW_HP(3,3)",
+      "BP 0.7 - 2 Hz + STA/LTA(1,50);RMHP(10)->ITAPER(30)->BW(3,0.7,2)->STALTA(1,50)"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:69"
+    },
+    "eventlist.visibleColumns": {
+     "values": [
+      "M",
+      "MType",
+      "Phases",
+      "RMS",
+      "Lat",
+      "Lon",
+      "Depth",
+      "Stat",
+      "Agency",
+      "Region",
+      "ID"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:86"
+    },
+    "ttt.libtau.tables": {
+     "values": [
+      "iasp91",
+      "ak135"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:93"
+    },
+    "ttt.LOCSAT.tables": {
+     "values": [
+      "iasp91",
+      "tab"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:94"
+    },
+    "ttt.homogeneous.tables": {
+     "values": [
+      ""
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:95"
+    },
+    "connection.primaryGroup": {
+     "values": [
+      "RELOCATION"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:25"
+    },
+    "connection.subscriptions": {
+     "values": [
+      "SERVICE_REQUEST",
+      "EVENT",
+      "LOCATION",
+      "PICK"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:27"
+    },
+    "automaticOrigins": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:31"
+    },
+    "manualOrigins": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:33"
+    },
+    "onlyPreferredOrigins": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:29"
+    },
+    "activeProfiles": {
+     "values": [
+      "gwangyang"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:17"
+    },
+    "performance.delayTime": {
+     "values": [
+      "10"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:35"
+    },
+    "performance.profileTimeAlive": {
+     "values": [
+      "-1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:37"
+    },
+    "performance.cacheWaveforms": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:39"
+    },
+    "performance.cacheDirectory": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/rtdd_cache"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:42"
+    },
+    "performance.cachedWaveformLength": {
+     "values": [
+      "10"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:44"
+    },
+    "plugins": {
+     "values": [
+      "tttnll"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:8"
+    },
+    "ttt.NLLGrid.tables": {
+     "values": [
+      "kim1983"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:10"
+    },
+    "ttt.NLLGrid.kim1983.tablePath": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:12"
+    },
+    "ttt.NLLGrid.kim1983.maxSearchDistance": {
+     "values": [
+      "0.1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:15"
+    },
+    "acceptedOriginAuthors": {
+     "values": [
+      "scautoloc@server-a"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:22"
+    },
+    "profile.gwangyang.regionType": {
+     "values": [
+      "CIRCULAR"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:46"
+    },
+    "profile.gwangyang.region": {
+     "values": [
+      "35.0000",
+      "127.7286",
+      "30"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:48"
+    },
+    "profile.gwangyang.methodID": {
+     "values": [
+      "RTDD"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:50"
+    },
+    "profile.gwangyang.tableType": {
+     "values": [
+      "NLLGrid"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:52"
+    },
+    "profile.gwangyang.tableModel": {
+     "values": [
+      "kim1983"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:54"
+    },
+    "profile.gwangyang.PSTableOnly": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:56"
+    },
+    "profile.gwangyang.P-Phases": {
+     "values": [
+      "P"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:58"
+    },
+    "profile.gwangyang.S-Phases": {
+     "values": [
+      "S"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:60"
+    },
+    "profile.gwangyang.pickUncertaintyClasses": {
+     "values": [
+      "0.000",
+      "0.025",
+      "0.050",
+      "0.100",
+      "0.200",
+      "0.400"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:62"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventFiltering.minNumPhases": {
+     "values": [
+      "1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:64"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventFiltering.minNumNeighbours": {
+     "values": [
+      "1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:66"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.phaseFiltering.minStationToEventPairDistRatio": {
+     "values": [
+      "3"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:68"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.phaseFiltering.minStationDistance": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:70"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.phaseFiltering.maxStationDistance": {
+     "values": [
+      "-1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:72"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.multiEvent.maxNumNeighbours": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:74"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.multiEvent.maxNeighbourDistance": {
+     "values": [
+      "10"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:76"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.multiEvent.numEllipsoids": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:78"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.singleEvent.maxNumNeighbours": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:80"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.singleEvent.maxNeighbourDistance": {
+     "values": [
+      "10"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:82"
+    },
+    "profile.gwangyang.doubleDifferenceSystem.eventPairSelection.singleEvent.numEllipsoids": {
+     "values": [
+      "5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:84"
+    },
+    "profile.gwangyang.solver.solverType": {
+     "values": [
+      "LSMR"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:86"
+    },
+    "profile.gwangyang.solver.algoIterations": {
+     "values": [
+      "20"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:88"
+    },
+    "profile.gwangyang.solver.downWeightingByResidual": {
+     "values": [
+      "10",
+      "5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:90"
+    },
+    "profile.gwangyang.solver.dampingFactor": {
+     "values": [
+      "0.01"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:92"
+    },
+    "profile.gwangyang.solver.absoluteLocationConstraint": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:94"
+    },
+    "profile.gwangyang.solver.xcorrWeightScaler": {
+     "values": [
+      "2.0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:96"
+    },
+    "profile.gwangyang.solver.usePickUncertainties": {
+     "values": [
+      "false"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:98"
+    },
+    "profile.gwangyang.crossCorrelation.enable": {
+     "values": [
+      "true"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:100"
+    },
+    "profile.gwangyang.crossCorrelation.minStationDistance": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:102"
+    },
+    "profile.gwangyang.crossCorrelation.maxStationDistance": {
+     "values": [
+      "-1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:104"
+    },
+    "profile.gwangyang.crossCorrelation.maxInterEventDistance": {
+     "values": [
+      "-1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:106"
+    },
+    "profile.gwangyang.crossCorrelation.p-phase.minCCCoef": {
+     "values": [
+      "0.7"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:108"
+    },
+    "profile.gwangyang.crossCorrelation.p-phase.winStart": {
+     "values": [
+      "-0.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:110"
+    },
+    "profile.gwangyang.crossCorrelation.p-phase.winEnd": {
+     "values": [
+      "0.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:112"
+    },
+    "profile.gwangyang.crossCorrelation.p-phase.winScaling": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:114"
+    },
+    "profile.gwangyang.crossCorrelation.p-phase.maxDelay": {
+     "values": [
+      "0.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:116"
+    },
+    "profile.gwangyang.crossCorrelation.p-phase.components": {
+     "values": [
+      "Z"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:118"
+    },
+    "profile.gwangyang.crossCorrelation.s-phase.minCCCoef": {
+     "values": [
+      "0.7"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:120"
+    },
+    "profile.gwangyang.crossCorrelation.s-phase.winStart": {
+     "values": [
+      "-0.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:122"
+    },
+    "profile.gwangyang.crossCorrelation.s-phase.winEnd": {
+     "values": [
+      "0.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:124"
+    },
+    "profile.gwangyang.crossCorrelation.s-phase.winScaling": {
+     "values": [
+      "0"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:126"
+    },
+    "profile.gwangyang.crossCorrelation.s-phase.maxDelay": {
+     "values": [
+      "0.5"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:128"
+    },
+    "profile.gwangyang.crossCorrelation.s-phase.components": {
+     "values": [
+      "L2"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:130"
+    },
+    "profile.gwangyang.crossCorrelation.waveformFiltering.filterString": {
+     "values": [
+      "BW(4,5,20)"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:132"
+    },
+    "profile.gwangyang.crossCorrelation.waveformFiltering.margin": {
+     "values": [
+      "1"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:134"
+    },
+    "profile.gwangyang.crossCorrelation.waveformFiltering.resampling": {
+     "values": [
+      "1000"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:136"
+    },
+    "profile.gwangyang.catalog.eventFile": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/event.csv"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:139"
+    },
+    "profile.gwangyang.catalog.phaFile": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/phase.csv"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:142"
+    },
+    "profile.gwangyang.catalog.stationFile": {
+     "values": [
+      "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/station.csv"
+     ],
+     "source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:145"
+    }
+   },
+   "n_documented_unset": 43,
+   "documented_defaults_of_unset_parameters": {
+    "datacenterID": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "author": {
+     "default": "@appname@@@@hostname@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "populateCIVersionAttribute": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "cityXML": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "loadCities": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "loadRegions": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "publicIDPattern": {
+     "default": "@classname@/@time/%Y%m%d%H%M%S.%f@.@id@",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "configModule": {
+     "default": "trunk",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "logging.syslog": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.components": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "logging.component": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.context": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.utc": {
+     "default": null,
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "logging.file.rotator.maxFileSize": {
+     "default": "104857600",
+     "unit": "byte",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.objects.timeSpan": {
+     "default": "60",
+     "unit": "s",
+     "type": "int",
+     "described_in": "global.xml"
+    },
+    "logging.syslog.facility": {
+     "default": "local0",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.username": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "connection.certificate": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "database.inventory": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "database.config": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "processing.whitelist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "processing.blacklist.agencies": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.whitelist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.nettype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "inventory.blacklist.statype": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "scripts.crashHandler": {
+     "default": null,
+     "unit": null,
+     "type": "file",
+     "described_in": "global.xml"
+    },
+    "client.startStopMessage": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.autoShutdown": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterModule": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "client.shutdownMasterUsername": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "commands.target": {
+     "default": null,
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.tableType": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "ttt.default.table": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.iaspei": {
+     "default": "false",
+     "unit": null,
+     "type": "boolean",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.interface": {
+     "default": "LOCSAT",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.ttt.model": {
+     "default": "iasp91",
+     "unit": null,
+     "type": "string",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.gain": {
+     "default": "2080",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.T0": {
+     "default": "0.8",
+     "unit": "s",
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "amplitudes.WoodAnderson.h": {
+     "default": "0.7",
+     "unit": null,
+     "type": "double",
+     "described_in": "global.xml"
+    },
+    "magnitudes.aliases": {
+     "default": null,
+     "unit": null,
+     "type": "list:string",
+     "described_in": "global.xml"
+    }
+   },
+   "note": "values as the SeisComP configuration parser reads them; a module may still apply its own built-in default where the description gives none (runtime dumps in this folder)"
+  }
+ },
+ "scrtdd_resolved": {
+  "config_files_read_in_order": [
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scrtdd.cfg",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg",
+   "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg"
+  ],
+  "profile": "gwangyang",
+  "profile_options": {
+   "regionType": {
+    "value": "CIRCULAR",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:46"
+   },
+   "region": {
+    "value": [
+     35.0,
+     127.7286,
+     30.0
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:48"
+   },
+   "methodID": {
+    "value": "RTDD",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:50"
+   },
+   "tableType": {
+    "value": "NLLGrid",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:52"
+   },
+   "tableModel": {
+    "value": "kim1983",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:54"
+   },
+   "PSTableOnly": {
+    "value": true,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:56"
+   },
+   "P-Phases": {
+    "value": [
+     "P"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:58"
+   },
+   "S-Phases": {
+    "value": [
+     "S"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:60"
+   },
+   "automaticOriginP": {
+    "value": "",
+    "set_in": "not set -> scrtdd default (rtddtool.cpp:505-508)"
+   },
+   "automaticOriginS": {
+    "value": "",
+    "set_in": "not set -> scrtdd default (rtddtool.cpp:512-515)"
+   },
+   "pickUncertaintyClasses": {
+    "value": [
+     0.0,
+     0.025,
+     0.05,
+     0.1,
+     0.2,
+     0.4
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:62"
+   },
+   "catalog.stationFile": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/station.csv",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:145"
+   },
+   "catalog.phaFile": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/phase.csv",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:142"
+   },
+   "catalog.eventFile": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/event.csv",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:139"
+   },
+   "doubleDifferenceSystem.eventFiltering.minNumPhases": {
+    "value": 1,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:64"
+   },
+   "doubleDifferenceSystem.eventFiltering.minNumNeighbours": {
+    "value": 1,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:66"
+   },
+   "doubleDifferenceSystem.phaseFiltering.minStationDistance": {
+    "value": 0.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:70"
+   },
+   "doubleDifferenceSystem.phaseFiltering.maxStationDistance": {
+    "value": -1.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:72"
+   },
+   "doubleDifferenceSystem.phaseFiltering.minStationToEventPairDistRatio": {
+    "value": 3.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:68"
+   },
+   "doubleDifferenceSystem.eventPairSelection.singleEvent.maxNumNeighbours": {
+    "value": 0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:80"
+   },
+   "doubleDifferenceSystem.eventPairSelection.singleEvent.numEllipsoids": {
+    "value": 5,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:84"
+   },
+   "doubleDifferenceSystem.eventPairSelection.singleEvent.maxNeighbourDistance": {
+    "value": 10.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:82"
+   },
+   "doubleDifferenceSystem.eventPairSelection.multiEvent.maxNumNeighbours": {
+    "value": 0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:74"
+   },
+   "doubleDifferenceSystem.eventPairSelection.multiEvent.numEllipsoids": {
+    "value": 0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:78"
+   },
+   "doubleDifferenceSystem.eventPairSelection.multiEvent.maxNeighbourDistance": {
+    "value": 10.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:76"
+   },
+   "crossCorrelation.enable": {
+    "value": true,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:100"
+   },
+   "crossCorrelation.minStationDistance": {
+    "value": 0.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:102"
+   },
+   "crossCorrelation.maxStationDistance": {
+    "value": -1.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:104"
+   },
+   "crossCorrelation.maxInterEventDistance": {
+    "value": -1.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:106"
+   },
+   "crossCorrelation.p-phase.winStart": {
+    "value": -0.5,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:110"
+   },
+   "crossCorrelation.p-phase.winEnd": {
+    "value": 0.5,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:112"
+   },
+   "crossCorrelation.p-phase.winScaling": {
+    "value": 0.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:114"
+   },
+   "crossCorrelation.p-phase.maxDelay": {
+    "value": 0.5,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:116"
+   },
+   "crossCorrelation.p-phase.minCCCoef": {
+    "value": 0.7,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:108"
+   },
+   "crossCorrelation.p-phase.components": {
+    "value": [
+     "Z"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:118"
+   },
+   "crossCorrelation.s-phase.winStart": {
+    "value": -0.5,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:122"
+   },
+   "crossCorrelation.s-phase.winEnd": {
+    "value": 0.5,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:124"
+   },
+   "crossCorrelation.s-phase.winScaling": {
+    "value": 0.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:126"
+   },
+   "crossCorrelation.s-phase.maxDelay": {
+    "value": 0.5,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:128"
+   },
+   "crossCorrelation.s-phase.minCCCoef": {
+    "value": 0.7,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:120"
+   },
+   "crossCorrelation.s-phase.components": {
+    "value": [
+     "L2"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:130"
+   },
+   "crossCorrelation.waveformFiltering.filterString": {
+    "value": "BW(4,5,20)",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:132"
+   },
+   "crossCorrelation.waveformFiltering.margin": {
+    "value": 1.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:134"
+   },
+   "crossCorrelation.waveformFiltering.resampling": {
+    "value": 1000.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:136"
+   },
+   "solver.solverType": {
+    "value": "LSMR",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:86"
+   },
+   "solver.algoIterations": {
+    "value": 20,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:88"
+   },
+   "solver.downWeightingByResidual": {
+    "value": [
+     10.0,
+     5.0
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:90"
+   },
+   "solver.dampingFactor": {
+    "value": [
+     0.01
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:92"
+   },
+   "solver.absoluteLocationConstraint": {
+    "value": [
+     0.0
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:94"
+   },
+   "solver.xcorrWeightScaler": {
+    "value": 2.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:96"
+   },
+   "solver.usePickUncertainties": {
+    "value": false,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:98"
+   }
+  },
+  "module_options": {
+   "automaticOrigins": {
+    "value": true,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:31"
+   },
+   "manualOrigins": {
+    "value": true,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:33"
+   },
+   "onlyPreferredOrigins": {
+    "value": true,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:29"
+   },
+   "activeProfiles": {
+    "value": [
+     "gwangyang"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:17"
+   },
+   "acceptedOriginAuthors": {
+    "value": [
+     "scautoloc@server-a"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:22"
+   },
+   "performance.delayTime": {
+    "value": 10,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:35"
+   },
+   "performance.profileTimeAlive": {
+    "value": -1,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:37"
+   },
+   "performance.cacheWaveforms": {
+    "value": true,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:39"
+   },
+   "performance.cacheDirectory": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/rtdd_cache",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:42"
+   },
+   "performance.cachedWaveformLength": {
+    "value": 10.0,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:44"
+   },
+   "connection.primaryGroup": {
+    "value": "RELOCATION",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:25"
+   },
+   "connection.subscriptions": {
+    "value": [
+     "SERVICE_REQUEST",
+     "EVENT",
+     "LOCATION",
+     "PICK"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:27"
+   }
+  },
+  "global_options": {
+   "core.plugins": {
+    "value": [
+     "dbsqlite3"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+   },
+   "plugins": {
+    "value": [
+     "tttnll"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:8"
+   },
+   "recordstream": {
+    "value": "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/global.cfg:10"
+   },
+   "ttt.NLLGrid.tables": {
+    "value": [
+     "kim1983"
+    ],
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:10"
+   },
+   "ttt.NLLGrid.kim1983.tablePath": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983",
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:12"
+   },
+   "ttt.NLLGrid.kim1983.maxSearchDistance": {
+    "value": 0.1,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/seiscomp_user/scrtdd.cfg:15"
+   },
+   "ttt.NLLGrid.kim1983.swapBytes": {
+    "value": false,
+    "set_in": "not set -> default"
+   },
+   "ttt.NLLGrid.kim1983.accessMethod": {
+    "value": "KeepOpen",
+    "set_in": "not set -> default"
+   },
+   "ttt.NLLGrid.kim1983.maxOpenFiles": {
+    "value": 512,
+    "set_in": "not set -> default"
+   },
+   "ttt.NLLGrid.kim1983.P-Phases": {
+    "value": [
+     "P",
+     "Pg",
+     "Pn"
+    ],
+    "set_in": "not set -> default"
+   },
+   "ttt.NLLGrid.kim1983.S-Phases": {
+    "value": [
+     "S",
+     "Sg",
+     "Sn"
+    ],
+    "set_in": "not set -> default"
+   },
+   "logging.level": {
+    "value": 2,
+    "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+   }
+  },
+  "libhdd_equivalent": {
+   "Config": {
+    "validPphases": [
+     "P"
+    ],
+    "validSphases": [
+     "S"
+    ],
+    "pickUncertaintyClasses": [
+     0.0,
+     0.025,
+     0.05,
+     0.1,
+     0.2,
+     0.4
+    ],
+    "PSTableOnly": true,
+    "wfFilter": {
+     "filterStr": "BW(4,5,20)",
+     "resampleFreq": 1000.0,
+     "extraTraceLen": 1.0
+    }
+   },
+   "ClusteringOptions_multiEvent": {
+    "minEvStaToInterEvRatio": 3.0,
+    "minEvStaDist": 0.0,
+    "maxEvStaDist": -1.0,
+    "minNumNeigh": 1,
+    "minNumPhases": 1,
+    "maxNumPhases": 0,
+    "maxNumNeigh": 0,
+    "maxNeighbourDist": 10.0,
+    "numEllipsoids": 0
+   },
+   "ClusteringOptions_singleEvent": {
+    "minEvStaToInterEvRatio": 3.0,
+    "minEvStaDist": 0.0,
+    "maxEvStaDist": -1.0,
+    "minNumNeigh": 1,
+    "minNumPhases": 1,
+    "maxNumPhases": 0,
+    "maxNumNeigh": 0,
+    "maxNeighbourDist": 10.0,
+    "numEllipsoids": 5,
+    "note": "single-event step 1 uses minEvStaToInterEvRatio=1 and no cross-correlation; step 2 uses numEllipsoids=1 (rtddtool.cpp:2075-2112). libhdd sets numEllipsoids=0 whenever maxNumNeigh<=0 (clustering.cpp:311-314)"
+   },
+   "XcorrOptions": {
+    "enable": true,
+    "minEvStaDist": 0.0,
+    "maxEvStaDist": -1.0,
+    "maxInterEvDist": -1.0,
+    "phase": {
+     "P": {
+      "minCoef": 0.7,
+      "startOffset": -0.5,
+      "endOffset": 0.5,
+      "winScaling": 0.0,
+      "maxDelay": 0.5,
+      "components": [
+       "Z"
+      ]
+     },
+     "S": {
+      "minCoef": 0.7,
+      "startOffset": -0.5,
+      "endOffset": 0.5,
+      "winScaling": 0.0,
+      "maxDelay": 0.5,
+      "components": [
+       "L2"
+      ]
+     }
+    }
+   },
+   "SolverOptions": {
+    "type": "LSMR",
+    "L2normalization": true,
+    "solverIterations": 0,
+    "algoIterations": 20,
+    "absLocConstraintStart": 0.0,
+    "absLocConstraintEnd": 0.0,
+    "dampingFactorStart": 0.01,
+    "dampingFactorEnd": 0.01,
+    "downWeightingByResidualStart": 10.0,
+    "downWeightingByResidualEnd": 5.0,
+    "usePickUncertainties": false,
+    "xcorrWeightScaler": 2.0
+   },
+   "TravelTimeTable": {
+    "tableType": "NLLGrid",
+    "tableModel": "kim1983",
+    "plugin_tablePath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983",
+    "maxSearchDistance_m": 0.1,
+    "swapBytes": false,
+    "accessMethod": "KeepOpen",
+    "maxOpenFiles": 512
+   },
+   "waveform_disk_cache": {
+    "enabled": true,
+    "directory": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/rtdd_cache/gwangyang/wfcache",
+    "cachedWaveformLength_s": 10.0
+   }
+  }
+ },
+ "scrtdd_vs_S1": {
+  "profile_options.catalog.eventFile.value": {
+   "realtime": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/event.csv",
+   "S1": null
+  },
+  "profile_options.catalog.phaFile.value": {
+   "realtime": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/phase.csv",
+   "S1": null
+  },
+  "profile_options.catalog.stationFile.value": {
+   "realtime": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/reference_catalog/station.csv",
+   "S1": null
+  },
+  "module_options.acceptedOriginAuthors.value": {
+   "realtime": [
+    "scautoloc@server-a"
+   ],
+   "S1": []
+  },
+  "module_options.activeProfiles.value": {
+   "realtime": [
+    "gwangyang"
+   ],
+   "S1": [
+    ""
+   ]
+  },
+  "module_options.connection.primaryGroup.value": {
+   "realtime": "RELOCATION",
+   "S1": "LOCATION"
+  },
+  "module_options.performance.cacheDirectory.value": {
+   "realtime": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/rtdd_cache",
+   "S1": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S1/wfcache"
+  },
+  "module_options.performance.profileTimeAlive.value": {
+   "realtime": -1,
+   "S1": 3600
+  },
+  "libhdd_equivalent.waveform_disk_cache.directory": {
+   "realtime": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/rtdd_cache/gwangyang/wfcache",
+   "S1": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S1/wfcache/gwangyang/wfcache"
+  }
+ },
+ "scautoloc_runtime": [
+  "  generic",
+  "    author                           scautoloc@server-a",
+  "    agencyID                         Unset",
+  "  locator",
+  "    profile                          iasp91",
+  "    default depth                    10 km",
+  "    minimum depth                    5 km",
+  "  associator",
+  "    gridConfigFile                   /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/config/scautoloc_grid.conf",
+  "  buffer",
+  "    picks kept in buffer             21600 s",
+  "    origins kept in buffer           86400 s",
+  "  autoloc",
+  "    maxRMS                           1.0 s",
+  "    maxResidual                      1.5 s",
+  "    maxResidual for keeping picks    4.5 s",
+  "    minPhaseCount                    8",
+  "    maxDepth                         1000.0 km",
+  "    minStaCountIgnorePKP             15",
+  "    defaultDepthStickiness           0.5",
+  "    tryDefaultDepth                  true",
+  "    adoptManualDepth                 false",
+  "    minScore                         8.0",
+  "    minPickSNR                       0.0",
+  "    goodRMS                          1.5 s",
+  "    use manual picks                 false",
+  "    use manual origins               false",
+  "    useImportedOrigins               false",
+  "    publicationIntervalTimeSlope     0.50",
+  "    publicationIntervalTimeIntercept 0.0",
+  "    publicationIntervalPickCount     20",
+  "    reportAllPhases                  true",
+  "    pickLog (prefix)                 /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautoloc_picklog",
+  "    pickLogEnable                    true",
+  "    dynamicPickThresholdInterval     0",
+  "  offline                            false",
+  "  test                               false",
+  "  playback                           true",
+  "    timing                           pickTime",
+  "  XXL feature is not enabled"
+ ],
+ "scautopick_dump_config": [
+  "Configuration:",
+  "amplitude group                  AMPLITUDE",
+  "testMode                         false",
+  "offline                          true",
+  "useAllStreams                    false",
+  "calculateAmplitudes              true",
+  "calculateAmplitudeTypes          MLv, mB, mb",
+  "update amplitude types           []",
+  "interpolateGaps                  false",
+  "maxGapLength                     4.50s",
+  "defaultFilter                    RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "defaultTriggerOnThreshold        1.80",
+  "defaultTriggerOffThreshold       1.00s",
+  "minDuration                      -1.00s",
+  "maxDuration                      -1.00",
+  "triggerDeadTime                  15.00s",
+  "amplitudeMaxTimeWindow           5.00s",
+  "amplitudeMinOffset               1.80s",
+  "defaultTimeCorrection            0.00s",
+  "ringBufferSize                   300s",
+  "leadTime                         60s",
+  "initTime                         60s",
+  "pickerType                       DL3C",
+  "secondaryPickerType              SDL3C",
+  "killPendingSPickers              false",
+  "sendDetections                   false",
+  "",
+  "Stream configuration:",
+  "KS.BAU..EL      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.BLLA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.BOSB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.CGPA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.CGWB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.CHDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.CHRB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.CLSA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.DGHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.DUSB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.EURB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.GACA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.GKSA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.GMNA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.GWYB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.HACA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.HADA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.HAIA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.HAMB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.HCNA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.IMSB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JAGA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JAHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JASA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JEU2..EL     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JINA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JLSA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JNHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.JNYA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.KCH2..EL     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.KH2B..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.KKDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.KUJA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.KWJ2..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.KWJU..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.MALA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.MMD..HH      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.MNDB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.NAHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.NAJA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.NAWB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.NLDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.SACA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.SCHA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.SIDA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.SUCA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.TOY2..EL     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.WICA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.YALB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.YESA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.YGJA..HG     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.YKDB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.YNDB..HH     1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "KS.YOA..EL      1.80 1.00 0.00 RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+ ],
+ "dump_settings_files": [
+  "scautoloc.dump-settings.txt",
+  "scautopick.dump-settings.txt",
+  "scevent.dump-settings.txt",
+  "scmaster.dump-settings.txt",
+  "scrtdd.dump-settings.txt"
+ ],
+ "command_lines": {
+  "processes": {
+   "scmaster": {
+    "pid": 1653197,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "scmaster",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scmaster.log",
+     "--verbosity=3"
+    ],
+    "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/work/scmaster",
+    "started": "2026-10-17T08:53:55.329238Z"
+   },
+   "scevent": {
+    "pid": 1653202,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "scevent",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scevent.log",
+     "--verbosity=4",
+     "-H",
+     "127.0.0.1:28180/production"
+    ],
+    "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/work/scevent",
+    "started": "2026-10-17T08:53:55.867440Z"
+   },
+   "scautoloc": {
+    "pid": 1653213,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "scautoloc",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautoloc.log",
+     "--verbosity=4",
+     "-H",
+     "127.0.0.1:28180/production",
+     "--playback"
+    ],
+    "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/work/scautoloc",
+    "started": "2026-10-17T08:53:58.869057Z"
+   },
+   "scrtdd": {
+    "pid": 1653235,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "scrtdd",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scrtdd.log",
+     "--verbosity=4",
+     "-H",
+     "127.0.0.1:28180/production",
+     "--dump-diagnostics"
+    ],
+    "cwd": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/work/scrtdd",
+    "started": "2026-10-17T08:54:01.871229Z"
+   },
+   "msrtsimul_20210827220322": {
+    "pid": 1653362,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "msrtsimul",
+     "-c",
+     "-m",
+     "historic",
+     "-s",
+     "1.0",
+     "-v",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/data/20210827220322_sorted.mseed"
+    ],
+    "started": "2026-10-17T08:54:14.168021Z"
+   },
+   "scautopick_20210827220322": {
+    "pid": 1653363,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "/usr/bin/timeout",
+     "900",
+     "/usr/bin/time",
+     "-v",
+     "-o",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20210827220322_paced.time.txt",
+     "scautopick",
+     "-H",
+     "127.0.0.1:28180/production",
+     "--playback",
+     "--verbosity=4",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20210827220322_paced.log",
+     "-I",
+     "file://-"
+    ],
+    "started": "2026-10-17T08:54:14.168777Z"
+   },
+   "msrtsimul_20260202194119": {
+    "pid": 1751504,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "msrtsimul",
+     "-c",
+     "-m",
+     "historic",
+     "-s",
+     "1.0",
+     "-v",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/data/20260202194119_sorted.mseed"
+    ],
+    "started": "2026-10-17T09:04:14.379026Z"
+   },
+   "scautopick_20260202194119": {
+    "pid": 1751505,
+    "argv": [
+     "nice",
+     "-n",
+     "10",
+     "/usr/bin/timeout",
+     "900",
+     "/usr/bin/time",
+     "-v",
+     "-o",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20260202194119_paced.time.txt",
+     "scautopick",
+     "-H",
+     "127.0.0.1:28180/production",
+     "--playback",
+     "--verbosity=4",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20260202194119_paced.log",
+     "-I",
+     "file://-"
+    ],
+    "started": "2026-10-17T09:04:14.379666Z"
+   }
+  },
+  "replays": [
+   {
+    "event": "20210827220322",
+    "feed": "paced",
+    "data": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/data/20210827220322_sorted.mseed",
+    "data_md5": "e4060fd40f343d785f1840aa3f2e41b5",
+    "pick_argv": [
+     "nice",
+     "-n",
+     "10",
+     "/usr/bin/timeout",
+     "900",
+     "/usr/bin/time",
+     "-v",
+     "-o",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20210827220322_paced.time.txt",
+     "scautopick",
+     "-H",
+     "127.0.0.1:28180/production",
+     "--playback",
+     "--verbosity=4",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20210827220322_paced.log",
+     "-I",
+     "file://-"
+    ],
+    "feed_argv": [
+     "nice",
+     "-n",
+     "10",
+     "msrtsimul",
+     "-c",
+     "-m",
+     "historic",
+     "-s",
+     "1.0",
+     "-v",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/data/20210827220322_sorted.mseed"
+    ],
+    "wall_start": "2026-10-17T08:54:14.166313Z",
+    "scautopick_exit": 0,
+    "scautopick_wall_s": 529.06,
+    "scautopick_time_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20210827220322_paced.time.txt",
+    "msrtsimul_exit": 0,
+    "wall_scautopick_end": "2026-10-17T09:03:03.229138Z",
+    "relocation_logged_after_s": 0.0,
+    "wall_end": "2026-10-17T09:03:38.235165Z",
+    "alive_after": {
+     "scmaster": true,
+     "scevent": true,
+     "scautoloc": true,
+     "scrtdd": true
+    },
+    "db_counts_after": {
+     "Network": 1,
+     "Station": 54,
+     "SensorLocation": 54,
+     "Stream": 255,
+     "ConfigModule": 1,
+     "ConfigStation": 54,
+     "ParameterSet": 108,
+     "Parameter": 108,
+     "Pick": 112,
+     "Amplitude": 219,
+     "Origin": 6,
+     "Arrival": 242,
+     "Event": 1,
+     "OriginReference": 6
+    }
+   },
+   {
+    "event": "20260202194119",
+    "feed": "paced",
+    "data": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/data/20260202194119_sorted.mseed",
+    "data_md5": "d968c95332333bf8c698d3cdda46a051",
+    "pick_argv": [
+     "nice",
+     "-n",
+     "10",
+     "/usr/bin/timeout",
+     "900",
+     "/usr/bin/time",
+     "-v",
+     "-o",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20260202194119_paced.time.txt",
+     "scautopick",
+     "-H",
+     "127.0.0.1:28180/production",
+     "--playback",
+     "--verbosity=4",
+     "--log-file",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20260202194119_paced.log",
+     "-I",
+     "file://-"
+    ],
+    "feed_argv": [
+     "nice",
+     "-n",
+     "10",
+     "msrtsimul",
+     "-c",
+     "-m",
+     "historic",
+     "-s",
+     "1.0",
+     "-v",
+     "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/data/20260202194119_sorted.mseed"
+    ],
+    "wall_start": "2026-10-17T09:04:14.377306Z",
+    "scautopick_exit": 0,
+    "scautopick_wall_s": 540.06,
+    "scautopick_time_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/realtime/RT3_paced/logs/scautopick_20260202194119_paced.time.txt",
+    "msrtsimul_exit": 0,
+    "wall_scautopick_end": "2026-10-17T09:13:14.436361Z",
+    "relocation_logged_after_s": 0.0,
+    "wall_end": "2026-10-17T09:13:49.447015Z",
+    "alive_after": {
+     "scmaster": true,
+     "scevent": true,
+     "scautoloc": true,
+     "scrtdd": true
+    },
+    "db_counts_after": {
+     "Network": 1,
+     "Station": 54,
+     "SensorLocation": 54,
+     "Stream": 255,
+     "ConfigModule": 1,
+     "ConfigStation": 54,
+     "ParameterSet": 108,
+     "Parameter": 108,
+     "Pick": 197,
+     "Amplitude": 374,
+     "Origin": 11,
+     "Arrival": 386,
+     "Event": 2,
+     "OriginReference": 11
+    }
+   }
+  ]
+ },
+ "scautoloc_timing_argument": "not given (scautoloc default pickTime, scautoloc/app.h:82)",
+ "script_provenance": "not recorded: run made before provenance recording; scripts edited later: rt_chain.py 18:27 KST during RT5, rt_offline_check.py 18:37 KST after its last --apply at 18:36",
+ "script_provenance_known_from_file_times": {
+  "versions_on_disk_before_the_provenance_fix": {
+   "rt_chain.py": {
+    "md5": "7062425225c77eb99ca5309fa53d3ced",
+    "modified_kst": "2026-10-17 18:27:10"
+   },
+   "rt_options.py": {
+    "md5": "e9c0cf0193b6b09d78ea014d0b94f370",
+    "modified_kst": "2026-10-17 18:04:48"
+   },
+   "rt_offline_check.py": {
+    "md5": "fa320d50b01c43ee568423f854f98841",
+    "modified_kst": "2026-10-17 18:37:31"
+   },
+   "rt_analyze.py": {
+    "md5": "05fd10a758c01cac1c07c74dec0ad1ec",
+    "modified_kst": "2026-10-17 18:34:34"
+   }
+  },
+  "what_ran_which_version": [
+   "rt_chain.py: every stage of RT1-RT4 and RT5's prepare, start and both replays started before 18:27:10 KST, so their version is not on disk; RT5's stop (18:36:07) and dump (18:36:09) ran the 18:27 version",
+   "rt_offline_check.py: its --apply runs (RT2 18:01:53, RT5 18:36:29 KST) both started before 18:37:31, so neither version is on disk",
+   "rt_options.py: run_options.json of RT1-RT4 (18:28:03) and RT5 (18:36:09) were written by the 18:04 version",
+   "rt_analyze.py: the results tables of 18:36 KST were written by the 18:34 version"
+  ]
+ },
+ "driver_scripts_on_disk_when_run_options_written": {
+  "rt_chain.py": {
+   "md5": "68ed961f40ba3a79482edd04e6f5e95d",
+   "modified_kst": "2026-10-17 21:41:17"
+  },
+  "rt_options.py": {
+   "md5": "a1b1cd8726607b4cacaa5888e6d6e890",
+   "modified_kst": "2026-10-17 21:42:19"
+  },
+  "rt_offline_check.py": {
+   "md5": "e198e90e5549ca4de6cb8dbbb06dbac9",
+   "modified_kst": "2026-10-17 21:41:41"
+  },
+  "rt_analyze.py": {
+   "md5": "fd07c0f9ef75fc7bdce5e53bfd266383",
+   "modified_kst": "2026-10-17 21:38:48"
+  }
+ }
+}

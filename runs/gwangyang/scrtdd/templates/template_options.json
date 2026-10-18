@@ -1,0 +1,473 @@
+{
+ "config_files_read_in_order": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/scrtdd.cfg",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/global.cfg",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg"
+ ],
+ "profile": "gwangyang",
+ "profile_options": {
+  "regionType": {
+   "value": "CIRCULAR",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:19"
+  },
+  "region": {
+   "value": [
+    35.0,
+    127.7286,
+    30.0
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:20"
+  },
+  "methodID": {
+   "value": "RTDD",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:21"
+  },
+  "tableType": {
+   "value": "NLLGrid",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:22"
+  },
+  "tableModel": {
+   "value": "kim1983",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:23"
+  },
+  "PSTableOnly": {
+   "value": true,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:24"
+  },
+  "P-Phases": {
+   "value": [
+    "P"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:25"
+  },
+  "S-Phases": {
+   "value": [
+    "S"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:26"
+  },
+  "automaticOriginP": {
+   "value": "",
+   "set_in": "not set -> scrtdd default (rtddtool.cpp:505-508)"
+  },
+  "automaticOriginS": {
+   "value": "",
+   "set_in": "not set -> scrtdd default (rtddtool.cpp:512-515)"
+  },
+  "pickUncertaintyClasses": {
+   "value": [
+    0.0,
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:27"
+  },
+  "catalog.stationFile": {
+   "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/reference_catalog/station.csv",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:67"
+  },
+  "catalog.phaFile": {
+   "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/reference_catalog/phase.csv",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:66"
+  },
+  "catalog.eventFile": {
+   "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/reference_catalog/event.csv",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:65"
+  },
+  "doubleDifferenceSystem.eventFiltering.minNumPhases": {
+   "value": 1,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:28"
+  },
+  "doubleDifferenceSystem.eventFiltering.minNumNeighbours": {
+   "value": 1,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:29"
+  },
+  "doubleDifferenceSystem.phaseFiltering.minStationDistance": {
+   "value": 0.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:31"
+  },
+  "doubleDifferenceSystem.phaseFiltering.maxStationDistance": {
+   "value": -1.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:32"
+  },
+  "doubleDifferenceSystem.phaseFiltering.minStationToEventPairDistRatio": {
+   "value": 3.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:30"
+  },
+  "doubleDifferenceSystem.eventPairSelection.singleEvent.maxNumNeighbours": {
+   "value": 0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:36"
+  },
+  "doubleDifferenceSystem.eventPairSelection.singleEvent.numEllipsoids": {
+   "value": 5,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:38"
+  },
+  "doubleDifferenceSystem.eventPairSelection.singleEvent.maxNeighbourDistance": {
+   "value": 10.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:37"
+  },
+  "doubleDifferenceSystem.eventPairSelection.multiEvent.maxNumNeighbours": {
+   "value": 0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:33"
+  },
+  "doubleDifferenceSystem.eventPairSelection.multiEvent.numEllipsoids": {
+   "value": 0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:35"
+  },
+  "doubleDifferenceSystem.eventPairSelection.multiEvent.maxNeighbourDistance": {
+   "value": 10.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:34"
+  },
+  "crossCorrelation.enable": {
+   "value": true,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:46"
+  },
+  "crossCorrelation.minStationDistance": {
+   "value": 0.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:47"
+  },
+  "crossCorrelation.maxStationDistance": {
+   "value": -1.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:48"
+  },
+  "crossCorrelation.maxInterEventDistance": {
+   "value": -1.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:49"
+  },
+  "crossCorrelation.p-phase.winStart": {
+   "value": -0.5,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:51"
+  },
+  "crossCorrelation.p-phase.winEnd": {
+   "value": 0.5,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:52"
+  },
+  "crossCorrelation.p-phase.winScaling": {
+   "value": 0.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:53"
+  },
+  "crossCorrelation.p-phase.maxDelay": {
+   "value": 0.5,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:54"
+  },
+  "crossCorrelation.p-phase.minCCCoef": {
+   "value": 0.7,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:50"
+  },
+  "crossCorrelation.p-phase.components": {
+   "value": [
+    "Z"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:55"
+  },
+  "crossCorrelation.s-phase.winStart": {
+   "value": -0.5,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:57"
+  },
+  "crossCorrelation.s-phase.winEnd": {
+   "value": 0.5,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:58"
+  },
+  "crossCorrelation.s-phase.winScaling": {
+   "value": 0.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:59"
+  },
+  "crossCorrelation.s-phase.maxDelay": {
+   "value": 0.5,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:60"
+  },
+  "crossCorrelation.s-phase.minCCCoef": {
+   "value": 0.7,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:56"
+  },
+  "crossCorrelation.s-phase.components": {
+   "value": [
+    "L2"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:61"
+  },
+  "crossCorrelation.waveformFiltering.filterString": {
+   "value": "BW(4,5,20)",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:62"
+  },
+  "crossCorrelation.waveformFiltering.margin": {
+   "value": 1.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:63"
+  },
+  "crossCorrelation.waveformFiltering.resampling": {
+   "value": 1000.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:64"
+  },
+  "solver.solverType": {
+   "value": "LSMR",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:39"
+  },
+  "solver.algoIterations": {
+   "value": 20,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:40"
+  },
+  "solver.downWeightingByResidual": {
+   "value": [
+    10.0,
+    5.0
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:41"
+  },
+  "solver.dampingFactor": {
+   "value": [
+    0.01
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:42"
+  },
+  "solver.absoluteLocationConstraint": {
+   "value": [
+    0.0
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:43"
+  },
+  "solver.xcorrWeightScaler": {
+   "value": 2.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:44"
+  },
+  "solver.usePickUncertainties": {
+   "value": false,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:45"
+  }
+ },
+ "module_options": {
+  "automaticOrigins": {
+   "value": true,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:12"
+  },
+  "manualOrigins": {
+   "value": true,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:13"
+  },
+  "onlyPreferredOrigins": {
+   "value": true,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:11"
+  },
+  "activeProfiles": {
+   "value": [
+    "gwangyang"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:7"
+  },
+  "acceptedOriginAuthors": {
+   "value": [
+    "scautoloc@server-a"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:8"
+  },
+  "performance.delayTime": {
+   "value": 10,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:14"
+  },
+  "performance.profileTimeAlive": {
+   "value": -1,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:15"
+  },
+  "performance.cacheWaveforms": {
+   "value": true,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:16"
+  },
+  "performance.cacheDirectory": {
+   "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/realtime/rtdd_cache",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:17"
+  },
+  "performance.cachedWaveformLength": {
+   "value": 10.0,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:18"
+  },
+  "connection.primaryGroup": {
+   "value": "LOCATION",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:9"
+  },
+  "connection.subscriptions": {
+   "value": [
+    "SERVICE_REQUEST",
+    "EVENT",
+    "LOCATION",
+    "PICK"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/scrtdd.cfg:10"
+  }
+ },
+ "global_options": {
+  "core.plugins": {
+   "value": [
+    "dbsqlite3"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/global.cfg:10"
+  },
+  "plugins": {
+   "value": [
+    "tttnll"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/global.cfg:6"
+  },
+  "recordstream": {
+   "value": "sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/sds",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/global.cfg:13"
+  },
+  "ttt.NLLGrid.tables": {
+   "value": [
+    "kim1983"
+   ],
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/global.cfg:7"
+  },
+  "ttt.NLLGrid.kim1983.tablePath": {
+   "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983",
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/global.cfg:8"
+  },
+  "ttt.NLLGrid.kim1983.maxSearchDistance": {
+   "value": 0.1,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates/_check/seiscomp_user/global.cfg:10"
+  },
+  "ttt.NLLGrid.kim1983.swapBytes": {
+   "value": false,
+   "set_in": "not set -> default"
+  },
+  "ttt.NLLGrid.kim1983.accessMethod": {
+   "value": "KeepOpen",
+   "set_in": "not set -> default"
+  },
+  "ttt.NLLGrid.kim1983.maxOpenFiles": {
+   "value": 512,
+   "set_in": "not set -> default"
+  },
+  "ttt.NLLGrid.kim1983.P-Phases": {
+   "value": [
+    "P",
+    "Pg",
+    "Pn"
+   ],
+   "set_in": "not set -> default"
+  },
+  "ttt.NLLGrid.kim1983.S-Phases": {
+   "value": [
+    "S",
+    "Sg",
+    "Sn"
+   ],
+   "set_in": "not set -> default"
+  },
+  "logging.level": {
+   "value": 2,
+   "set_in": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/etc/defaults/global.cfg:14"
+  }
+ },
+ "libhdd_equivalent": {
+  "Config": {
+   "validPphases": [
+    "P"
+   ],
+   "validSphases": [
+    "S"
+   ],
+   "pickUncertaintyClasses": [
+    0.0,
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+   ],
+   "PSTableOnly": true,
+   "wfFilter": {
+    "filterStr": "BW(4,5,20)",
+    "resampleFreq": 1000.0,
+    "extraTraceLen": 1.0
+   }
+  },
+  "ClusteringOptions_multiEvent": {
+   "minEvStaToInterEvRatio": 3.0,
+   "minEvStaDist": 0.0,
+   "maxEvStaDist": -1.0,
+   "minNumNeigh": 1,
+   "minNumPhases": 1,
+   "maxNumPhases": 0,
+   "maxNumNeigh": 0,
+   "maxNeighbourDist": 10.0,
+   "numEllipsoids": 0
+  },
+  "ClusteringOptions_singleEvent": {
+   "minEvStaToInterEvRatio": 3.0,
+   "minEvStaDist": 0.0,
+   "maxEvStaDist": -1.0,
+   "minNumNeigh": 1,
+   "minNumPhases": 1,
+   "maxNumPhases": 0,
+   "maxNumNeigh": 0,
+   "maxNeighbourDist": 10.0,
+   "numEllipsoids": 5,
+   "note": "single-event step 1 uses minEvStaToInterEvRatio=1 and no cross-correlation; step 2 uses numEllipsoids=1 (rtddtool.cpp:2075-2112). libhdd sets numEllipsoids=0 whenever maxNumNeigh<=0 (clustering.cpp:311-314)"
+  },
+  "XcorrOptions": {
+   "enable": true,
+   "minEvStaDist": 0.0,
+   "maxEvStaDist": -1.0,
+   "maxInterEvDist": -1.0,
+   "phase": {
+    "P": {
+     "minCoef": 0.7,
+     "startOffset": -0.5,
+     "endOffset": 0.5,
+     "winScaling": 0.0,
+     "maxDelay": 0.5,
+     "components": [
+      "Z"
+     ]
+    },
+    "S": {
+     "minCoef": 0.7,
+     "startOffset": -0.5,
+     "endOffset": 0.5,
+     "winScaling": 0.0,
+     "maxDelay": 0.5,
+     "components": [
+      "L2"
+     ]
+    }
+   }
+  },
+  "SolverOptions": {
+   "type": "LSMR",
+   "L2normalization": true,
+   "solverIterations": 0,
+   "algoIterations": 20,
+   "absLocConstraintStart": 0.0,
+   "absLocConstraintEnd": 0.0,
+   "dampingFactorStart": 0.01,
+   "dampingFactorEnd": 0.01,
+   "downWeightingByResidualStart": 10.0,
+   "downWeightingByResidualEnd": 5.0,
+   "usePickUncertainties": false,
+   "xcorrWeightScaler": 2.0
+  },
+  "TravelTimeTable": {
+   "tableType": "NLLGrid",
+   "tableModel": "kim1983",
+   "plugin_tablePath": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/nll_kim1983/time/kim1983",
+   "maxSearchDistance_m": 0.1,
+   "swapBytes": false,
+   "accessMethod": "KeepOpen",
+   "maxOpenFiles": 512
+  },
+  "waveform_disk_cache": {
+   "enabled": true,
+   "directory": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/realtime/rtdd_cache/gwangyang/wfcache",
+   "cachedWaveformLength_s": 10.0
+  }
+ },
+ "template_dir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/templates",
+ "reference_event_source": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/S1/work/reloc-event.csv",
+ "generated": "2026-10-17T16:42:48+09:00",
+ "print_config_vars_exit": 0,
+ "print_config_vars_not_in_dump": []
+}

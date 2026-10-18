@@ -1,0 +1,33 @@
+# The published file set is defined by install/07_publish_selection.py (files are added explicitly from its list).
+# These rules keep the large or non-public parts out of 'git add' by accident.
+/software/
+/logs/
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/wfcache/
+**/sds/
+**/playback/
+**/processing/
+**/work/
+**/seiscomp_home/
+**/seiscomp_user/
+**/db/
+**/output/
+**/nll_*/
+*.sac
+*.mseed
+*.buf
+*.hdr
+*.xml
+*.sqlite*
+*.db
+*.npz
+*.gz
+*.tgz
+*.tar
+*.so
+*.o
+*.a
+*.pem
+*.onnx
+*.log

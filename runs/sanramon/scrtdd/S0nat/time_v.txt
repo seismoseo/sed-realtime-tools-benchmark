@@ -1,0 +1,23 @@
+	Command being timed: "/usr/bin/timeout 21600 scrtdd --reloc-catalog /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/rtdd_catalog/station.csv,/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/rtdd_catalog/event.csv,/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/rtdd_catalog/phase.csv --profile sanramon --inventory-db file:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/scrtdd/inputs/inventory_sc.xml -I sdsarchive:///home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/inputs/sds --dump-diagnostics --xmlout --verbosity=3 --console=1"
+	User time (seconds): 47.80
+	System time (seconds): 3.15
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:51.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 364384
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 186370
+	Voluntary context switches: 59
+	Involuntary context switches: 74
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 188944
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

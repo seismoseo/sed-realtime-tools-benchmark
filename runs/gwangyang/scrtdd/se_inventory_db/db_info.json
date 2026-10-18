@@ -1,0 +1,30 @@
+{
+ "schema": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/seiscomp/share/db/sqlite3.sql",
+ "schema_md5": "02b12483c74cb9e05cb9e3c19987daa0",
+ "import_cmd": [
+  "nice",
+  "-n",
+  "10",
+  "/usr/bin/timeout",
+  "300",
+  "scdb",
+  "-d",
+  "sqlite3:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/scrtdd/se_inventory_db/inventory.sqlite",
+  "-i",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/inventory_sc.xml",
+  "--verbosity=3",
+  "--console=1"
+ ],
+ "scdb_exit": 0,
+ "row_counts": {
+  "Network": 1,
+  "Station": 54,
+  "SensorLocation": 54,
+  "Stream": 255,
+  "Origin": 0,
+  "Pick": 0,
+  "Event": 0
+ },
+ "db_md5_after_import": "9a7180882d8f484f2e8386cf53d4b75d",
+ "inventory_md5": "2d40fa9f6def8f3f0a3933a7e935af6f"
+}

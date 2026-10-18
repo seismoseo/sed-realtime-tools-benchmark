@@ -1,0 +1,48 @@
+id,quantity,note,files,agree
+runs,"picking runs: logs, events, variants, start-up runs","216, 26, 8, 8","216, 26, 8, 8",True
+dup,'Duplicate pick' warning lines,75,75,True
+usable,"usable analyst picks (all, P, S)","2585, 2422, 163","2585, 2422, 163",True
+nodata,"P picks without waveform; playback radius (km, download_waveforms.py)","694, 80","694, 80",True
+nbtable,"section 4 table, events and P picks on complete records per neighbour class (none, 60-120 s, 15-60 s, <= 15 s)","15, 493, 2, 47, 2, 110, 6, 196","16, 493, 2, 47, 2, 110, 6, 196",False
+no3c,"picks at stations without a usable 3-C sensor (all, P, S)","412, 411, 1","412, 411, 1",True
+trig,"picks on triggered records (all, P, S)","543, 471, 72","543, 471, 72",True
+trigstart,triggered records start on average ... s before the origin,43,43,True
+complete,"picks on complete 3-C records (all, P, S)","936, 846, 90","936, 846, 90",True
+records,"main-set records: all, complete, triggered, NC HN, NP HN, NC EH, median start (s before origin)","3291, 1789, 1502, 1026, 474, 2, 36","3291, 1789, 1502, 1026, 474, 2, 36",True
+bound,"stations bound, by sensor HN, HH, EH, EP, CN, DP","181, 145, 15, 9, 9, 2, 1","181, 145, 15, 9, 9, 2, 1",True
+vert35,vertical-only EH stations not bound,35,35,True
+nc17,NC stations with a vertical EH plus an HN; their P picks on EH / all; S picks on HN / all,"17, 239, 249, 35, 37","17, 239, 249, 35, 37",True
+hnpicks,"HN analyst picks: P, S, P on triggered records, P","571, 109, 466, 571","571, 109, 466, 571",True
+bestP,"phasenet_instance P recall: all, with data, 3-C, complete","0.31, 0.43, 0.56, 0.82","0.31, 0.43, 0.56, 0.82",True
+others,"P recall complete: original, SCEDC, EQTP","0.80, 0.67, 0.62","0.80, 0.67, 0.62",True
+Scomp,S recall complete (four models),"0.80, 0.84, 0.58, 0.76","0.80, 0.84, 0.58, 0.76",True
+f1,"pooled F1: instance, SCEDC, EQTP, original","0.505, 0.488, 0.460, 0.438","0.505, 0.488, 0.460, 0.438",True
+meddt,P median |dt| range (s),"0.02, 0.03","0.02, 0.03",True
+w0p95,weight-0 P p95 |dt| range (s),"0.06, 0.12","0.06, 0.12",True
+offsets,"P offset (ms): instance early, original late","20, 42","20, 42",True
+swarm,"P recall complete: neighbour within 15 s (min, max), none within 120 s (min, max)","0.43, 0.56, 0.71, 0.89","0.43, 0.56, 0.71, 0.89",True
+foreshock,"foreshock P recall: PhaseNet min, max; EQTP","0.04, 0.09, 0.28","0.04, 0.09, 0.28",True
+ev71097904,"71097904: time after its neighbour (s); P recall min, max","12.1, 0.00, 0.29","12.1, 0.00, 0.29",True
+ev72541095,"72541095 and 72545170: EQTP, PhaseNet min, max","0.34, 0.72, 0.91, 0.37, 0.80, 0.87","0.34, 0.72, 0.91, 0.37, 0.80, 0.87",True
+eq01,EQTP P misses below minConfidence (complete records); of them with best value <= 0.1,"144, 81","144, 92",False
+eqnonb,of those: in events with no neighbour; all; median SNR (dB) there,"105, 144, 9","105, 144, 9",True
+wpo,"'window picked another time' in events with a neighbour within 15 s: PhaseNet min, max; EQTP","64, 82, 69","64, 82, 69",True
+late,"'record starts too late' (PhaseNet), triggered P picks, EQTP","410, 471, 342","410, 471, 342",True
+eq19,EQTP P recall on triggered records (%),19,19,True
+dpprec,lowest P precision by sensor: HN original; DP: number of picks; DP precision,"0.56, 7, 0.60","0.56, 15, 0.60",False
+accel,"P recall at 13 sites instance: accelerometer, velocity; S: accelerometer, velocity","0.80, 0.87, 0.59, 0.83","0.80, 0.87, 0.59, 0.83",True
+false,"false P per station-hour: instance, EQTP, SCEDC, original","1.1, 1.3, 1.8, 3.9","1.1, 1.3, 1.8, 3.9",True
+cost,"CPU-s per station-hour PhaseNet min, max; ms per window PhaseNet (median); EQTP; EQTP ms per window","0.22, 0.25, 4, 3.9, 113","0.22, 0.25, 4, 3.9, 113",True
+x16,EQTP CPU per station-hour / phasenet_instance's,16,17,False
+trigrate,detector triggers per station-hour,29,29,True
+sbcpu,SeisBench CPU-s per station-hour; times the plugin's EQTP,"5.7, 1.5","5.7, 1.5",True
+normmed,median P value at the missed onsets (plugin input),0.015,0.015,True
+normrec,"normalization test: recovered, missed windows, lost, matched windows","13, 154, 10, 617","13, 154, 10, 617",True
+sb2x,"P recall at 3-C stations, 5 events: SeisBench, plugin","0.84, 0.42","0.84, 0.42",True
+sb5,"5 events, complete records: instance found, picks, recall; original recall","199, 221, 0.90, 0.88","199, 221, 0.90, 0.88",True
+sb5b,"5 events, 3-C stations: instance found, picks, recall","249, 380, 0.66","249, 380, 0.66",True
+polcov,"polarity coverage (%) at 0.5, 0.7","83, 62","83, 62",True
+poldir,"agreement on normal channels at 0.5, 0.7","0.83, 0.90","0.83, 0.90",True
+polw0,"agreement weight 0 at 0.5, 0.7; emergent at 0.5","0.91, 0.93, 0.53","0.91, 0.93, 0.53",True
+polinv,"inverted channels: pairs, agreement at 0.5","51, 0.21","51, 0.21",True
+polhn,"accelerometer set: pairs, coverage 0.5, 0.7, agreement 0.5, 0.7","156, 0.84, 0.72, 0.94, 0.95","156, 0.84, 0.72, 0.94, 0.95",True

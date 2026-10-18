@@ -1,0 +1,80 @@
+ERR  https://nocaldd.ldeo.columbia.edu  (no response, see logs/sanramon_requests.tsv)
+ERR  https://nocaldd.ldeo.columbia.edu/  (no response, see logs/sanramon_requests.tsv)
+200       79 B  http://nocaldd.ldeo.columbia.edu/  -> final http://nocaldd.ldeo.columbia.edu/  content-type=text/html; charset=UTF-8  links=0
+ERR  http://ddrt.ldeo.columbia.edu/DDRT/index.html  (no response, see logs/sanramon_requests.tsv)
+200    11630 B  https://www.ldeo.columbia.edu/~felixw/NCAeqDD/  -> final https://www.ldeo.columbia.edu/~felixw/NCAeqDD/  content-type=text/html; charset=UTF-8  links=22
+      link: ./stats.txt
+      link: ./NCAeqDD_map_web.png
+      link: ./NCAeqDD.SAF.upd.jpg
+      link: ./NCAeqDD.MTJ.upd.jpg
+      link: ./NCAeqDD.LVC.upd.jpg
+      link: ./NCAeqDD.GGF.upd.jpg
+      link: ./errors.jpg
+      link: ./delta_dd11_dd09.jpg
+      link: ./delta_dd_ncsn.jpg
+      link: ./NCAeqDD.CorrEv.jpg
+      link: ./NCAeqDD.CorrEv_growth.jpg
+      link: ./NCAeqDD.ncc_growth.jpg
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Waldhauser_Schaff_JGR2008.pdf
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Schaff_Waldhauser_BSSA2005.pdf
+      link: ./README
+      link: ./NCAeqDD.v201112.1.gz
+      link: http://www.ldeo.columbia.edu/~felixw/NCAeqDD/200305/
+      link: http://www.ldeo.columbia.edu/~felixw/NCAeqDD/200812/
+      link: http://www.ldeo.columbia.edu/~felixw/NCAeqDD/200912/
+      link: mailto:felixw@ldeo.columbia.edu
+      link: mailto:felixw@ldeo.columbia.edu
+      link: http://www.ldeo.columbia.edu/~felixw/NCAeqDD/3d.html
+ERR  https://nocaldd.ldeo.columbia.edu  (no response, see logs/sanramon_requests.tsv)
+ERR  https://nocaldd.ldeo.columbia.edu/  (no response, see logs/sanramon_requests.tsv)
+skip (on disk) nocaldd_http_root.html
+ERR  http://ddrt.ldeo.columbia.edu/DDRT/index.html  (no response, see logs/sanramon_requests.tsv)
+skip (on disk) felixw_NCAeqDD_dir.html
+ERR  https://nocal.ldeo.columbia.edu  (no response, see logs/sanramon_requests.tsv)
+ERR  http://nocal.ldeo.columbia.edu/  (no response, see logs/sanramon_requests.tsv)
+200    41795 B  https://nocaldd.ldeo.columbia.edu/  -> final https://nocaldd.ldeo.columbia.edu/  content-type=text/html; charset=UTF-8  links=4
+      link: ./ddrt.map.png
+      link: http://www.ncedc.org/ncsn/
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Waldhauser_BSSA2009.pdf
+      link: mailto:felixw@ldeo.columbia.edu
+200    11904 B  https://nocaldd.ldeo.columbia.edu/catalog/  -> final https://nocaldd.ldeo.columbia.edu/catalog/  content-type=text/html; charset=UTF-8  links=23
+      link: ./stats.txt
+      link: ./NCAeqDD.map_web.png
+      link: ./NCAeqDD.SAF.upd.png
+      link: ./NCAeqDD.MTJ.upd.png
+      link: ./NCAeqDD.LVC.upd.png
+      link: ./NCAeqDD.GGF.upd.png
+      link: ./errors.png
+      link: ./delta_dd21_dd19.png
+      link: ./delta_dd_ncsn.png
+      link: ./NCAeqDD.CorrEv.png
+      link: ./NCAeqDD.CorrEv_growth.png
+      link: ./NCAeqDD.ncc_growth.png
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Waldhauser_Schaff_JGR2008.pdf
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Schaff_Waldhauser_BSSA2005.pdf
+      link: ./README
+      link: ./NCAeqDD.v202112.1.gz
+      link: http://nocalDD.ldeo.columbia.edu/catalog/200305/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/200812/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/200912/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/201112/
+      link: mailto:felixw@ldeo.columbia.edu
+      link: mailto:felixw@ldeo.columbia.edu
+      link: http://www.ldeo.columbia.edu/~felixw/NCAeqDD/3d.html
+200       15 B  https://nocaldd.ldeo.columbia.edu/catalog/search.html  -> final https://nocaldd.ldeo.columbia.edu/catalog/search.html  content-type=text/html; charset=UTF-8  links=0
+200     4858 B  https://nocaldd.ldeo.columbia.edu/catalog/README  -> final https://nocaldd.ldeo.columbia.edu/catalog/README  content-type=text/plain; charset=UTF-8  links=0
+200     1380 B  https://nocaldd.ldeo.columbia.edu/catalog/stats.txt  -> final https://nocaldd.ldeo.columbia.edu/catalog/stats.txt  content-type=text/plain; charset=UTF-8  links=0
+200 26082007 B  https://nocaldd.ldeo.columbia.edu/catalog/NCAeqDD.v202112.1.gz  -> final https://nocaldd.ldeo.columbia.edu/catalog/NCAeqDD.v202112.1.gz  content-type=application/x-gzip  links=0
+ERR  https://nocaldd.ldeo.columbia.edu  (no response; reason in logs/sanramon_requests.tsv)
+skip (on disk) nocaldd_http_root.html
+ERR  https://nocal.ldeo.columbia.edu  (no response; reason in logs/sanramon_requests.tsv)
+ERR  http://ddrt.ldeo.columbia.edu/DDRT/index.html  (no response; reason in logs/sanramon_requests.tsv)
+skip (on disk) felixw_NCAeqDD_dir.html
+skip (on disk) EEEMIncommonOVG2C.crt
+skip (on disk) EMIncommonOVG2C.p7c
+skip (on disk) nocaldd_https_root_verified.html
+skip (on disk) nocaldd_catalog_dir.html
+skip (on disk) nocaldd_catalog_search.html
+skip (on disk) NCAeqDD.v202112.1_README.txt
+skip (on disk) NCAeqDD.v202112.1_stats.txt
+skip (on disk) NCAeqDD.v202112.1.gz

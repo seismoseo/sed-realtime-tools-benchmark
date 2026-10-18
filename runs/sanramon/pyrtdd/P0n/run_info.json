@@ -1,0 +1,21 @@
+{
+ "run": "P0n",
+ "what": "sensitivity: P0 with nearest-neighbour clustering",
+ "started": "2026-10-17T21:47:07",
+ "host": "server-a",
+ "pid": 1894940,
+ "status": "ok",
+ "n_input_events": 685,
+ "n_clusters": 1,
+ "cluster_sizes": [
+  680
+ ],
+ "n_clustered": 680,
+ "n_relocated": 680,
+ "clustering_s": 0.6,
+ "relocation_incl_xcorr_s": 49.2,
+ "wall_time_s": 50.67,
+ "peak_rss_mb_process_so_far": 400.4,
+ "cpu_user_s_process_so_far": 47.9,
+ "finished": "2026-10-17T21:47:58"
+}

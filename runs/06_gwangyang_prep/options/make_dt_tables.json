@@ -1,0 +1,65 @@
+{
+ "script": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/make_dt_tables.py",
+ "run_time": "2026-10-17T16:08:43.784063+09:00",
+ "argv": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/tools/make_dt_tables.py",
+  "--outdir",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_tables",
+  "--summary",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/dtables/dt_tables_summary.json",
+  "--options-json",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/make_dt_tables.json"
+ ],
+ "args": {
+  "outdir": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference_tables",
+  "summary": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/dtables/dt_tables_summary.json",
+  "options_json": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/06_gwangyang_prep/options/make_dt_tables.json"
+ },
+ "CC_THRESHOLD": [
+  0.7,
+  1.0
+ ],
+ "RES_IDX": {
+  "1": [
+   "cc",
+   "P"
+  ],
+  "2": [
+   "cc",
+   "S"
+  ],
+  "3": [
+   "ct",
+   "P"
+  ],
+  "4": [
+   "ct",
+   "S"
+  ]
+ },
+ "inputs": {
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/dt.cc_0.7_combined": "a3b296cbe16843941d8d52850f0c0c73",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/dt.cc_P_0.7": "fa8efa29eca075b2b4a945ed0cd7d2c8",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/dt.cc_S_0.7": "a825c74dce4fc7b0a95c86274c5d27c9",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/dt.ct": "623e5a771591660faf5ed1c7b05c802a",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/00.ph2dt/dt.ct": "623e5a771591660faf5ed1c7b05c802a",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/01.dt.ct/dt.ct": "623e5a771591660faf5ed1c7b05c802a",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/hypoDD.inp": "e0f28caabd6f8ac3509e37878819a6ef",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/hypoDD.res": "1127ce69b35c5cf29f6b5af53a5d2b35",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/event_id_map.csv": "b459ba968ae126cdb13973369250458d",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/event.csv": "79acbc4aac3c66b2d2ecf5af7954a539",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/phase.csv": "21d150245600cf965f75a82bfdbda041",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/phase_extra.csv": "ff0ca572ebaba972b7df2e93c08ad186",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/inputs/rtdd_catalog/station.csv": "a36bc6bb424bb088616c2875de40f97e"
+ },
+ "pair_file_globs": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/dt.cc_P/dt.cc_P_*_*",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/data/gwangyang_11ev/reference/gwangyang_pnplus/2.HypoDD/02.dt.cc/dt.cc_S/dt.cc_S_*_*"
+ ],
+ "versions": {
+  "python": "3.12.15",
+  "pandas": "3.0.6",
+  "numpy": "2.5.4"
+ },
+ "n_problems": 0
+}

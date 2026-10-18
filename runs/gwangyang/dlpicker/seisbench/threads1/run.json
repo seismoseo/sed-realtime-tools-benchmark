@@ -1,0 +1,34 @@
+{
+ "seisbench": "0.11.0",
+ "torch": "2.12.0+cu130",
+ "threads": 1,
+ "cache_root": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/seisbench/cache",
+ "files": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20210720161418_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20210827002315_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20210827220322_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20210828133410_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20210828133922_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20210828234556_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20260101024947_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20260101084800_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20260202194119_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20260203021535_sorted.mseed",
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/gwangyang/dlpicker/input/20260204054406_sorted.mseed"
+ ],
+ "station_hours_Z": 71.04074444444444,
+ "models": {
+  "phasenet_instance": {
+   "weights_version": "2",
+   "n_picks": 785,
+   "cpu_classify_s": 23.831107999999997,
+   "wall_classify_s": 23.311779022216797
+  },
+  "eqtransformer_stead": {
+   "weights_version": "2",
+   "n_picks": 630,
+   "cpu_classify_s": 67.95195199999999,
+   "wall_classify_s": 67.84342670440674
+  }
+ }
+}

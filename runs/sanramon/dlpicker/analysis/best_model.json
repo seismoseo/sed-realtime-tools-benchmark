@@ -1,0 +1,40 @@
+{
+ "rule": "highest pooled P+S F1 (recall over 3-C stations, precision vs any catalog pick) among the main-set models; ties (<0.005) -> smaller pooled p95 |dt|",
+ "best_model": "phasenet_instance",
+ "cfg_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/scautopick_phasenet_instance.cfg",
+ "bindings_config": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon/dlpicker/config/bindings_main.xml",
+ "ranking": [
+  {
+   "variant": "phasenet_instance",
+   "f1": 0.5050761575945671,
+   "recall_3c": 0.5557809330628803,
+   "precision": 0.46284965034965037,
+   "p95_abs_dt_s": 0.16000000000000003,
+   "median_abs_dt_s": 0.030001
+  },
+  {
+   "variant": "phasenet_scedc",
+   "f1": 0.48757502306098083,
+   "recall_3c": 0.45030425963488846,
+   "precision": 0.5315721649484536,
+   "p95_abs_dt_s": 0.24750025,
+   "median_abs_dt_s": 0.03160700000000005
+  },
+  {
+   "variant": "eqtp_ncedc",
+   "f1": 0.45950713690072104,
+   "recall_3c": 0.4665314401622718,
+   "precision": 0.4526912181303116,
+   "p95_abs_dt_s": 0.14,
+   "median_abs_dt_s": 0.028391
+  },
+  {
+   "variant": "phasenet_original",
+   "f1": 0.4381143430290873,
+   "recall_3c": 0.5490196078431373,
+   "precision": 0.3644859813084112,
+   "p95_abs_dt_s": 0.18,
+   "median_abs_dt_s": 0.029998999999999998
+  }
+ ]
+}

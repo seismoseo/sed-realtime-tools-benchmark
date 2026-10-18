@@ -1,0 +1,168 @@
+{
+ "phasenet_instance": {
+  "stations": [
+   "GWYB",
+   "BAU",
+   "HAIA",
+   "JASA",
+   "MMD",
+   "YOA"
+  ],
+  "onnx_phases": [
+   "P",
+   "S",
+   "N"
+  ],
+  "seisbench_outputs": [
+   "P",
+   "S",
+   "N"
+  ],
+  "onnx_normalization": "peak",
+  "seisbench_norm": "peak",
+  "component_order": "ZNE",
+  "phases": {
+   "P": {
+    "same_input_max_abs_diff": 5.364418029785156e-07,
+    "same_input_argmax_equal": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "plugin_input_max_abs_diff": 3.993511199951172e-06,
+    "plugin_input_argmax_shift_samples": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "peak_values_seisbench": [
+     0.9799,
+     0.9894,
+     0.9787,
+     0.9073,
+     0.6969,
+     0.9611
+    ]
+   },
+   "S": {
+    "same_input_max_abs_diff": 6.258487701416016e-07,
+    "same_input_argmax_equal": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "plugin_input_max_abs_diff": 1.360476016998291e-05,
+    "plugin_input_argmax_shift_samples": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "peak_values_seisbench": [
+     0.9472,
+     0.9604,
+     0.7336,
+     0.2381,
+     0.4864,
+     0.2075
+    ]
+   }
+  },
+  "input_max_abs_diff_plugin_vs_seisbench": 3.319978713989258e-05,
+  "same_weights": true
+ },
+ "eqtransformer_stead": {
+  "stations": [
+   "GWYB",
+   "BAU",
+   "HAIA",
+   "JASA",
+   "MMD",
+   "YOA"
+  ],
+  "onnx_phases": [
+   "Detection",
+   "P",
+   "S"
+  ],
+  "seisbench_outputs": [
+   "Detection",
+   "P",
+   "S"
+  ],
+  "onnx_normalization": "peak",
+  "seisbench_norm": "peak",
+  "component_order": "ZNE",
+  "phases": {
+   "P": {
+    "same_input_max_abs_diff": 8.642673492431641e-07,
+    "same_input_argmax_equal": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "plugin_input_max_abs_diff": 0.0009826123714447021,
+    "plugin_input_argmax_shift_samples": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "peak_values_seisbench": [
+     0.9699,
+     0.969,
+     0.9615,
+     0.7296,
+     0.9357,
+     0.8483
+    ]
+   },
+   "S": {
+    "same_input_max_abs_diff": 4.172325134277344e-07,
+    "same_input_argmax_equal": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "plugin_input_max_abs_diff": 0.0002593994140625,
+    "plugin_input_argmax_shift_samples": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "peak_values_seisbench": [
+     0.9688,
+     0.9655,
+     0.9607,
+     0.8456,
+     0.899,
+     0.7125
+    ]
+   }
+  },
+  "input_max_abs_diff_plugin_vs_seisbench": 0.22846072912216187,
+  "same_weights": true
+ }
+}

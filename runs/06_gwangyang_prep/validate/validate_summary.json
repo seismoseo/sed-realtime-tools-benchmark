@@ -1,0 +1,53 @@
+{
+ "schema_valid": true,
+ "schema_errors": [],
+ "networks": 1,
+ "stations": 54,
+ "channel_epochs": 255,
+ "channel_codes": 162,
+ "sac_files": 1656,
+ "sac_channels": 162,
+ "sac_files_covered_once": 1656,
+ "channel_codes_equal_sac_set": true,
+ "picks": 763,
+ "picks_coordinates_equal_station_csv": 763,
+ "picks_coordinate_errors": 0,
+ "nll_stations_rtdd.xml_0.1m": {
+  "lookups": 108,
+  "succeeded": 108,
+  "own_grid": 108,
+  "wrong_grid": 0,
+  "wrong_grid_list": []
+ },
+ "nll_stations_rtdd.xml_10m": {
+  "lookups": 108,
+  "succeeded": 108,
+  "own_grid": 108,
+  "wrong_grid": 0,
+  "wrong_grid_list": []
+ },
+ "nll_original_0.1m": {
+  "lookups": 108,
+  "succeeded": 6,
+  "own_grid": 4,
+  "wrong_grid": 2,
+  "wrong_grid_list": [
+   "KWJU->KWJ2"
+  ]
+ },
+ "nll_original_10m": {
+  "lookups": 108,
+  "succeeded": 10,
+  "own_grid": 8,
+  "wrong_grid": 2,
+  "wrong_grid_list": [
+   "KWJU->KWJ2"
+  ]
+ },
+ "nll_new_time_diff_0p1_vs_10m_s": 0.0,
+ "nll_new_vs_c1_validation_max_abs_s": 4.984130868024295e-07,
+ "nll_new_nearest_is_own": 108,
+ "nll_new_max_own_grid_dist_m": 0.004,
+ "nll_new_min_second_grid_dist_m": 11.0,
+ "problems": []
+}

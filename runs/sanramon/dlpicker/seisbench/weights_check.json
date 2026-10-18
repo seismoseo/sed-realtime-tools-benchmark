@@ -1,0 +1,251 @@
+{
+ "model": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/eqtp_ncedc.onnx",
+ "stations": [
+  "NC.CRH.HN",
+  "NC.CBR.EH",
+  "NC.CLCB.HN",
+  "NC.CMOB.HN",
+  "NC.CSL.HN",
+  "NC.CMC.HN",
+  "BK.BDM.HH",
+  "NC.CNI.EH"
+ ],
+ "onnx_outputs": [
+  "Polarity_U",
+  "Polarity_D",
+  "P",
+  "S"
+ ],
+ "seisbench_outputs": [
+  "Polarity_U",
+  "Polarity_D",
+  "P",
+  "S"
+ ],
+ "onnx_normalization": "std",
+ "seisbench_norm": "std",
+ "same_input": {
+  "Polarity_U": 9.149312973022461e-06,
+  "Polarity_D": 1.2218952178955078e-05,
+  "P": 2.0265579223632812e-05,
+  "S": 5.3942203521728516e-06
+ },
+ "plugin_input": {
+  "Polarity_U": 0.200109601020813,
+  "Polarity_D": 0.36199676990509033,
+  "P": 0.4068138301372528,
+  "S": 0.387444406747818
+ },
+ "per_window": [
+  {
+   "station": "NC.CRH.HN",
+   "component_std_ratio_H_over_Z": [
+    1.21,
+    1.217
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 6004,
+    "P_peak": 0.9405,
+    "S_peak_sample": 6225,
+    "S_peak": 0.4088,
+    "polarity": "D",
+    "polarity_conf": 0.8283
+   },
+   "plugin_input": {
+    "P_peak_sample": 6003,
+    "P_peak": 0.9198,
+    "S_peak_sample": 6229,
+    "S_peak": 0.395,
+    "polarity": "D",
+    "polarity_conf": 0.8223
+   },
+   "P_shift_samples": -1,
+   "S_shift_samples": 4,
+   "same_polarity": true
+  },
+  {
+   "station": "NC.CBR.EH",
+   "component_std_ratio_H_over_Z": [
+    0.791,
+    1.243
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 5369,
+    "P_peak": 0.6332,
+    "S_peak_sample": 6022,
+    "S_peak": 0.6239,
+    "polarity": "U",
+    "polarity_conf": 0.177
+   },
+   "plugin_input": {
+    "P_peak_sample": 5369,
+    "P_peak": 0.6506,
+    "S_peak_sample": 6022,
+    "S_peak": 0.6248,
+    "polarity": "U",
+    "polarity_conf": 0.2107
+   },
+   "P_shift_samples": 0,
+   "S_shift_samples": 0,
+   "same_polarity": true
+  },
+  {
+   "station": "NC.CLCB.HN",
+   "component_std_ratio_H_over_Z": [
+    1.852,
+    1.748
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 6000,
+    "P_peak": 0.962,
+    "S_peak_sample": 6245,
+    "S_peak": 0.9352,
+    "polarity": "D",
+    "polarity_conf": 0.7395
+   },
+   "plugin_input": {
+    "P_peak_sample": 6000,
+    "P_peak": 0.9566,
+    "S_peak_sample": 6245,
+    "S_peak": 0.9378,
+    "polarity": "D",
+    "polarity_conf": 0.6922
+   },
+   "P_shift_samples": 0,
+   "S_shift_samples": 0,
+   "same_polarity": true
+  },
+  {
+   "station": "NC.CMOB.HN",
+   "component_std_ratio_H_over_Z": [
+    2.064,
+    2.902
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 5372,
+    "P_peak": 0.8454,
+    "S_peak_sample": 6033,
+    "S_peak": 0.4121,
+    "polarity": "D",
+    "polarity_conf": 0.5168
+   },
+   "plugin_input": {
+    "P_peak_sample": 5372,
+    "P_peak": 0.9018,
+    "S_peak_sample": 6125,
+    "S_peak": 0.3078,
+    "polarity": "D",
+    "polarity_conf": 0.5267
+   },
+   "P_shift_samples": 0,
+   "S_shift_samples": 92,
+   "same_polarity": true
+  },
+  {
+   "station": "NC.CSL.HN",
+   "component_std_ratio_H_over_Z": [
+    2.516,
+    1.715
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 6003,
+    "P_peak": 0.9669,
+    "S_peak_sample": 6312,
+    "S_peak": 0.8967,
+    "polarity": "D",
+    "polarity_conf": 0.672
+   },
+   "plugin_input": {
+    "P_peak_sample": 6004,
+    "P_peak": 0.9619,
+    "S_peak_sample": 6314,
+    "S_peak": 0.8741,
+    "polarity": "D",
+    "polarity_conf": 0.5311
+   },
+   "P_shift_samples": 1,
+   "S_shift_samples": 2,
+   "same_polarity": true
+  },
+  {
+   "station": "NC.CMC.HN",
+   "component_std_ratio_H_over_Z": [
+    1.182,
+    1.335
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 6012,
+    "P_peak": 0.9716,
+    "S_peak_sample": 6329,
+    "S_peak": 0.8713,
+    "polarity": "U",
+    "polarity_conf": 0.7648
+   },
+   "plugin_input": {
+    "P_peak_sample": 6012,
+    "P_peak": 0.969,
+    "S_peak_sample": 6329,
+    "S_peak": 0.8963,
+    "polarity": "U",
+    "polarity_conf": 0.7247
+   },
+   "P_shift_samples": 0,
+   "S_shift_samples": 0,
+   "same_polarity": true
+  },
+  {
+   "station": "BK.BDM.HH",
+   "component_std_ratio_H_over_Z": [
+    1.063,
+    1.149
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 6008,
+    "P_peak": 0.9239,
+    "S_peak_sample": 6304,
+    "S_peak": 0.7126,
+    "polarity": "D",
+    "polarity_conf": 0.8455
+   },
+   "plugin_input": {
+    "P_peak_sample": 6008,
+    "P_peak": 0.9326,
+    "S_peak_sample": 6304,
+    "S_peak": 0.7218,
+    "polarity": "D",
+    "polarity_conf": 0.8533
+   },
+   "P_shift_samples": 0,
+   "S_shift_samples": 0,
+   "same_polarity": true
+  },
+  {
+   "station": "NC.CNI.EH",
+   "component_std_ratio_H_over_Z": [
+    1.591,
+    2.317
+   ],
+   "seisbench_input": {
+    "P_peak_sample": 5366,
+    "P_peak": 0.948,
+    "S_peak_sample": 6377,
+    "S_peak": 0.9012,
+    "polarity": "D",
+    "polarity_conf": 0.9488
+   },
+   "plugin_input": {
+    "P_peak_sample": 5365,
+    "P_peak": 0.9714,
+    "S_peak_sample": 6377,
+    "S_peak": 0.9039,
+    "polarity": "D",
+    "polarity_conf": 0.9506
+   },
+   "P_shift_samples": -1,
+   "S_shift_samples": 0,
+   "same_polarity": true
+  }
+ ],
+ "same_weights": true,
+ "input_max_abs_diff_plugin_vs_seisbench": 10.278398513793945
+}
