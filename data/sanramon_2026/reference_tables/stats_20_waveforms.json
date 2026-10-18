@@ -1,0 +1,1739 @@
+{
+ "cc": {
+  "read_back": {
+   "lines": 62246,
+   "with_data": 62008,
+   "no_data": 238,
+   "complete_one_piece": 61943,
+   "partial": 65,
+   "samples": 281576480,
+   "expected": 282618400,
+   "from_earthscope": 81,
+   "by_type": {
+    "BH": {
+     "lines": 324,
+     "with_data": 324,
+     "complete": 324
+    },
+    "CN": {
+     "lines": 204,
+     "with_data": 204,
+     "complete": 204
+    },
+    "DP": {
+     "lines": 629,
+     "with_data": 629,
+     "complete": 629
+    },
+    "EH": {
+     "lines": 19437,
+     "with_data": 19232,
+     "complete": 19192
+    },
+    "EP": {
+     "lines": 3252,
+     "with_data": 3249,
+     "complete": 3249
+    },
+    "HH": {
+     "lines": 16830,
+     "with_data": 16821,
+     "complete": 16818
+    },
+    "HN": {
+     "lines": 21570,
+     "with_data": 21549,
+     "complete": 21527
+    }
+   },
+   "by_network": {
+    "BK": {
+     "lines": 17144,
+     "with_data": 17135
+    },
+    "CE": {
+     "lines": 3600,
+     "with_data": 3597
+    },
+    "NC": {
+     "lines": 29004,
+     "with_data": 28784
+    },
+    "NP": {
+     "lines": 10032,
+     "with_data": 10026
+    },
+    "PB": {
+     "lines": 1977,
+     "with_data": 1977
+    },
+    "WR": {
+     "lines": 489,
+     "with_data": 489
+    }
+   }
+  },
+  "sample_rates": {
+   "BH": {
+    "rates_in_data": [
+     40.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "CN": {
+    "rates_in_data": [
+     500.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "DP": {
+    "rates_in_data": [
+     500.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "EH": {
+    "rates_in_data": [
+     100.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "EP": {
+    "rates_in_data": [
+     100.0,
+     200.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "HH": {
+    "rates_in_data": [
+     100.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "HN": {
+    "rates_in_data": [
+     100.0,
+     200.0
+    ],
+    "lines_rate_differs_from_stationxml": 42
+   }
+  },
+  "sds_bytes": 318136832,
+  "sds_files": 18868,
+  "sds_channels": 692,
+  "dayfiles": {
+   "n": 18868,
+   "overlaps": 0,
+   "files_with_overlaps": 0,
+   "traces_outside_day": 0,
+   "wrong_ids": 0,
+   "record_lengths": [
+    "512"
+   ],
+   "traces": 59484,
+   "samples": 275731733,
+   "records": 621361
+  },
+  "picks": {
+   "picks": 31919,
+   "covered_pick_channel": 31810,
+   "covered_rtdd_components": 31804,
+   "by_phase": {
+    "P": {
+     "picks": 27956,
+     "covered_pick_channel": 27864,
+     "covered_rtdd_components": 27864
+    },
+    "S": {
+     "picks": 3963,
+     "covered_pick_channel": 3946,
+     "covered_rtdd_components": 3940
+    }
+   },
+   "by_channel_type": {
+    "BH": {
+     "picks": 108,
+     "covered_pick_channel": 108,
+     "covered_rtdd_components": 108
+    },
+    "CN": {
+     "picks": 70,
+     "covered_pick_channel": 70,
+     "covered_rtdd_components": 70
+    },
+    "DP": {
+     "picks": 259,
+     "covered_pick_channel": 259,
+     "covered_rtdd_components": 258
+    },
+    "EH": {
+     "picks": 15568,
+     "covered_pick_channel": 15474,
+     "covered_rtdd_components": 15469
+    },
+    "EP": {
+     "picks": 1375,
+     "covered_pick_channel": 1374,
+     "covered_rtdd_components": 1374
+    },
+    "HH": {
+     "picks": 6244,
+     "covered_pick_channel": 6240,
+     "covered_rtdd_components": 6240
+    },
+    "HN": {
+     "picks": 8295,
+     "covered_pick_channel": 8285,
+     "covered_rtdd_components": 8285
+    }
+   },
+   "S_without_2_horizontals": 6
+  },
+  "picks_in_phase_csv": {
+   "picks": 31745,
+   "covered_pick_channel": 31640,
+   "covered_rtdd_components": 31634,
+   "by_phase": {
+    "P": {
+     "picks": 27808,
+     "covered_pick_channel": 27720,
+     "covered_rtdd_components": 27720
+    },
+    "S": {
+     "picks": 3937,
+     "covered_pick_channel": 3920,
+     "covered_rtdd_components": 3914
+    }
+   },
+   "by_channel_type": {
+    "BH": {
+     "picks": 107,
+     "covered_pick_channel": 107,
+     "covered_rtdd_components": 107
+    },
+    "CN": {
+     "picks": 70,
+     "covered_pick_channel": 70,
+     "covered_rtdd_components": 70
+    },
+    "DP": {
+     "picks": 257,
+     "covered_pick_channel": 257,
+     "covered_rtdd_components": 256
+    },
+    "EH": {
+     "picks": 15536,
+     "covered_pick_channel": 15444,
+     "covered_rtdd_components": 15439
+    },
+    "EP": {
+     "picks": 1375,
+     "covered_pick_channel": 1374,
+     "covered_rtdd_components": 1374
+    },
+    "HH": {
+     "picks": 6209,
+     "covered_pick_channel": 6205,
+     "covered_rtdd_components": 6205
+    },
+    "HN": {
+     "picks": 8191,
+     "covered_pick_channel": 8183,
+     "covered_rtdd_components": 8183
+    }
+   },
+   "S_without_2_horizontals": 6
+  },
+  "channels": {
+   "n": 692,
+   "always_complete": 639,
+   "never_any_data": 0,
+   "worst": [
+    {
+     "network": "NC",
+     "station": "CNI",
+     "location": "",
+     "channel": "EHE",
+     "dist_km": 16.8,
+     "windows": 594,
+     "no_data": 64,
+     "partial": 11,
+     "first_not_complete": "2025-11-10T16:14:07.880000Z",
+     "last_not_complete": "2026-02-25T06:05:50.300000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CNI",
+     "location": "",
+     "channel": "EHN",
+     "dist_km": 16.8,
+     "windows": 594,
+     "no_data": 64,
+     "partial": 11,
+     "first_not_complete": "2025-11-10T16:14:07.880000Z",
+     "last_not_complete": "2026-02-25T06:05:50.300000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CNI",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 16.8,
+     "windows": 594,
+     "no_data": 64,
+     "partial": 11,
+     "first_not_complete": "2025-11-10T16:14:07.880000Z",
+     "last_not_complete": "2026-02-25T06:05:50.300000Z"
+    },
+    {
+     "network": "BK",
+     "station": "TESL",
+     "location": "00",
+     "channel": "HHE",
+     "dist_km": 34.6,
+     "windows": 508,
+     "no_data": 3,
+     "partial": 1,
+     "first_not_complete": "2026-02-05T22:01:45.110000Z",
+     "last_not_complete": "2026-02-05T23:59:53.210000Z"
+    },
+    {
+     "network": "BK",
+     "station": "TESL",
+     "location": "00",
+     "channel": "HHN",
+     "dist_km": 34.6,
+     "windows": 508,
+     "no_data": 3,
+     "partial": 1,
+     "first_not_complete": "2026-02-05T22:01:45.110000Z",
+     "last_not_complete": "2026-02-05T23:59:53.210000Z"
+    },
+    {
+     "network": "BK",
+     "station": "TESL",
+     "location": "00",
+     "channel": "HHZ",
+     "dist_km": 34.6,
+     "windows": 508,
+     "no_data": 3,
+     "partial": 1,
+     "first_not_complete": "2026-02-05T22:01:45.110000Z",
+     "last_not_complete": "2026-02-05T23:59:53.210000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CAP",
+     "location": "01",
+     "channel": "EHZ",
+     "dist_km": 28.1,
+     "windows": 383,
+     "no_data": 1,
+     "partial": 4,
+     "first_not_complete": "2025-11-09T18:42:25.860000Z",
+     "last_not_complete": "2026-02-03T00:26:08.820000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CLCB",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 11.3,
+     "windows": 920,
+     "no_data": 1,
+     "partial": 1,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-06-08T17:47:42.380000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CRPB",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 17.5,
+     "windows": 871,
+     "no_data": 1,
+     "partial": 1,
+     "first_not_complete": "2025-12-09T03:00:01.180000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CSL",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 16.3,
+     "windows": 816,
+     "no_data": 1,
+     "partial": 1,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-06-08T17:47:42.380000Z"
+    },
+    {
+     "network": "CE",
+     "station": "58219",
+     "location": "10",
+     "channel": "HNE",
+     "dist_km": 15.4,
+     "windows": 471,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "CE",
+     "station": "58219",
+     "location": "10",
+     "channel": "HNN",
+     "dist_km": 15.4,
+     "windows": 471,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "CE",
+     "station": "58219",
+     "location": "10",
+     "channel": "HNZ",
+     "dist_km": 15.4,
+     "windows": 471,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CAL",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 36.1,
+     "windows": 444,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CBR",
+     "location": "",
+     "channel": "EHE",
+     "dist_km": 12.8,
+     "windows": 870,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CBR",
+     "location": "",
+     "channel": "EHN",
+     "dist_km": 12.8,
+     "windows": 870,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CBR",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 12.8,
+     "windows": 870,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CBSB",
+     "location": "01",
+     "channel": "EHZ",
+     "dist_km": 27.2,
+     "windows": 401,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CGP1",
+     "location": "",
+     "channel": "EP1",
+     "dist_km": 13.7,
+     "windows": 623,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CGP1",
+     "location": "",
+     "channel": "EP2",
+     "dist_km": 13.7,
+     "windows": 623,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CGP1",
+     "location": "",
+     "channel": "EP3",
+     "dist_km": 13.7,
+     "windows": 623,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CGP1",
+     "location": "",
+     "channel": "HN1",
+     "dist_km": 13.6,
+     "windows": 70,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CGP1",
+     "location": "",
+     "channel": "HN2",
+     "dist_km": 13.6,
+     "windows": 70,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CGP1",
+     "location": "",
+     "channel": "HN3",
+     "dist_km": 13.6,
+     "windows": 70,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CMOB",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 13.5,
+     "windows": 888,
+     "no_data": 1,
+     "partial": 0,
+     "first_not_complete": "2026-02-09T22:05:12.110000Z",
+     "last_not_complete": "2026-02-09T22:05:12.110000Z"
+    }
+   ]
+  }
+ },
+ "dl": {
+  "read_back": {
+   "lines": 20435,
+   "with_data": 18511,
+   "no_data": 1924,
+   "complete_one_piece": 18336,
+   "partial": 175,
+   "samples": 502976095,
+   "expected": 586660800,
+   "from_earthscope": 138,
+   "by_type": {
+    "BH": {
+     "lines": 858,
+     "with_data": 858,
+     "complete": 858
+    },
+    "CN": {
+     "lines": 156,
+     "with_data": 156,
+     "complete": 156
+    },
+    "DP": {
+     "lines": 273,
+     "with_data": 252,
+     "complete": 252
+    },
+    "EH": {
+     "lines": 2024,
+     "with_data": 1885,
+     "complete": 1884
+    },
+    "EP": {
+     "lines": 546,
+     "with_data": 546,
+     "complete": 546
+    },
+    "HH": {
+     "lines": 2442,
+     "with_data": 2391,
+     "complete": 2388
+    },
+    "HN": {
+     "lines": 14136,
+     "with_data": 12423,
+     "complete": 12252
+    }
+   },
+   "by_network": {
+    "BK": {
+     "lines": 4779,
+     "with_data": 4677
+    },
+    "CE": {
+     "lines": 1134,
+     "with_data": 1011
+    },
+    "NC": {
+     "lines": 8075,
+     "with_data": 6562
+    },
+    "NP": {
+     "lines": 5823,
+     "with_data": 5679
+    },
+    "PB": {
+     "lines": 156,
+     "with_data": 156
+    },
+    "WR": {
+     "lines": 468,
+     "with_data": 426
+    }
+   }
+  },
+  "sample_rates": {
+   "BH": {
+    "rates_in_data": [
+     40.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "CN": {
+    "rates_in_data": [
+     500.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "DP": {
+    "rates_in_data": [
+     500.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "EH": {
+    "rates_in_data": [
+     100.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "EP": {
+    "rates_in_data": [
+     100.0,
+     200.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "HH": {
+    "rates_in_data": [
+     100.0
+    ],
+    "lines_rate_differs_from_stationxml": 0
+   },
+   "HN": {
+    "rates_in_data": [
+     100.0,
+     200.0
+    ],
+    "lines_rate_differs_from_stationxml": 66
+   }
+  },
+  "playback_bytes": 517822464,
+  "playback_files": 26,
+  "files": [
+   {
+    "event_id": 75261626,
+    "exists": true,
+    "bytes": 19034624,
+    "n_records": 37177,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 688,
+    "n_channels": 688,
+    "n_channels_requested": 779,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18444832
+   },
+   {
+    "event_id": 75261651,
+    "exists": true,
+    "bytes": 19158528,
+    "n_records": 37419,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 694,
+    "n_channels": 694,
+    "n_channels_requested": 779,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18652800
+   },
+   {
+    "event_id": 75264991,
+    "exists": true,
+    "bytes": 18518528,
+    "n_records": 36169,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 693,
+    "n_channels": 693,
+    "n_channels_requested": 776,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18757200
+   },
+   {
+    "event_id": 75265026,
+    "exists": true,
+    "bytes": 17667072,
+    "n_records": 34506,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 690,
+    "n_channels": 690,
+    "n_channels_requested": 776,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18700800
+   },
+   {
+    "event_id": 75265071,
+    "exists": true,
+    "bytes": 17661440,
+    "n_records": 34495,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 690,
+    "n_channels": 690,
+    "n_channels_requested": 776,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18612257
+   },
+   {
+    "event_id": 75276381,
+    "exists": true,
+    "bytes": 17110016,
+    "n_records": 33418,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 675,
+    "n_channels": 675,
+    "n_channels_requested": 782,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 17860800
+   },
+   {
+    "event_id": 75279581,
+    "exists": true,
+    "bytes": 17828352,
+    "n_records": 34821,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 678,
+    "n_channels": 678,
+    "n_channels_requested": 782,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 17932800
+   },
+   {
+    "event_id": 75282561,
+    "exists": true,
+    "bytes": 18168320,
+    "n_records": 35485,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 699,
+    "n_channels": 699,
+    "n_channels_requested": 782,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18868800
+   },
+   {
+    "event_id": 75283011,
+    "exists": true,
+    "bytes": 21293568,
+    "n_records": 41589,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 722,
+    "n_channels": 722,
+    "n_channels_requested": 782,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19287000
+   },
+   {
+    "event_id": 75283031,
+    "exists": true,
+    "bytes": 21190144,
+    "n_records": 41387,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 722,
+    "n_channels": 719,
+    "n_channels_requested": 782,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19264152
+   },
+   {
+    "event_id": 75283066,
+    "exists": true,
+    "bytes": 19002368,
+    "n_records": 37114,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 695,
+    "n_channels": 695,
+    "n_channels_requested": 782,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18772800
+   },
+   {
+    "event_id": 75283271,
+    "exists": true,
+    "bytes": 17847808,
+    "n_records": 34859,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 686,
+    "n_channels": 686,
+    "n_channels_requested": 780,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18556800
+   },
+   {
+    "event_id": 75285161,
+    "exists": true,
+    "bytes": 17513472,
+    "n_records": 34206,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 681,
+    "n_channels": 678,
+    "n_channels_requested": 782,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 18147519
+   },
+   {
+    "event_id": 75304291,
+    "exists": true,
+    "bytes": 21789696,
+    "n_records": 42558,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 723,
+    "n_channels": 723,
+    "n_channels_requested": 787,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19849132
+   },
+   {
+    "event_id": 75305736,
+    "exists": true,
+    "bytes": 24704512,
+    "n_records": 48251,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 780,
+    "n_channels": 780,
+    "n_channels_requested": 790,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 21092160
+   },
+   {
+    "event_id": 75305761,
+    "exists": true,
+    "bytes": 21805568,
+    "n_records": 42589,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 741,
+    "n_channels": 735,
+    "n_channels_requested": 796,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 20185153
+   },
+   {
+    "event_id": 75305776,
+    "exists": true,
+    "bytes": 21270528,
+    "n_records": 41544,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 738,
+    "n_channels": 735,
+    "n_channels_requested": 796,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 20171903
+   },
+   {
+    "event_id": 75305781,
+    "exists": true,
+    "bytes": 20746240,
+    "n_records": 40520,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 729,
+    "n_channels": 726,
+    "n_channels_requested": 787,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19959438
+   },
+   {
+    "event_id": 75305796,
+    "exists": true,
+    "bytes": 20779008,
+    "n_records": 40584,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 725,
+    "n_channels": 725,
+    "n_channels_requested": 790,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 20020800
+   },
+   {
+    "event_id": 75305826,
+    "exists": true,
+    "bytes": 22918144,
+    "n_records": 44762,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 749,
+    "n_channels": 749,
+    "n_channels_requested": 787,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 20459400
+   },
+   {
+    "event_id": 75309267,
+    "exists": true,
+    "bytes": 20611584,
+    "n_records": 40257,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 723,
+    "n_channels": 723,
+    "n_channels_requested": 792,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19972800
+   },
+   {
+    "event_id": 75311747,
+    "exists": true,
+    "bytes": 19073024,
+    "n_records": 37252,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 716,
+    "n_channels": 713,
+    "n_channels_requested": 792,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19443549
+   },
+   {
+    "event_id": 75327827,
+    "exists": true,
+    "bytes": 21168640,
+    "n_records": 41345,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 737,
+    "n_channels": 737,
+    "n_channels_requested": 798,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 20308800
+   },
+   {
+    "event_id": 75335142,
+    "exists": true,
+    "bytes": 20729344,
+    "n_records": 40487,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 718,
+    "n_channels": 718,
+    "n_channels_requested": 795,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19852800
+   },
+   {
+    "event_id": 75335382,
+    "exists": true,
+    "bytes": 19522560,
+    "n_records": 38130,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 715,
+    "n_channels": 715,
+    "n_channels_requested": 792,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 19780800
+   },
+   {
+    "event_id": 75339357,
+    "exists": true,
+    "bytes": 20709376,
+    "n_records": 40448,
+    "record_lengths": "512",
+    "sorted_by_endtime": true,
+    "n_traces": 725,
+    "n_channels": 725,
+    "n_channels_requested": 793,
+    "unrequested_ids": 0,
+    "n_overlaps": 0,
+    "n_samples": 20020800
+   }
+  ],
+  "picks": {
+   "picks": 2402,
+   "covered_pick_channel": 2400,
+   "covered_rtdd_components": 2400,
+   "covered_pm10s": 2400,
+   "by_phase": {
+    "P": {
+     "picks": 2166,
+     "covered_pick_channel": 2164,
+     "covered_rtdd_components": 2164
+    },
+    "S": {
+     "picks": 236,
+     "covered_pick_channel": 236,
+     "covered_rtdd_components": 236
+    }
+   },
+   "by_channel_type": {
+    "BH": {
+     "picks": 5,
+     "covered_pick_channel": 5,
+     "covered_rtdd_components": 5
+    },
+    "CN": {
+     "picks": 10,
+     "covered_pick_channel": 10,
+     "covered_rtdd_components": 10
+    },
+    "DP": {
+     "picks": 25,
+     "covered_pick_channel": 25,
+     "covered_rtdd_components": 25
+    },
+    "EH": {
+     "picks": 915,
+     "covered_pick_channel": 913,
+     "covered_rtdd_components": 913
+    },
+    "EP": {
+     "picks": 98,
+     "covered_pick_channel": 98,
+     "covered_rtdd_components": 98
+    },
+    "HH": {
+     "picks": 451,
+     "covered_pick_channel": 451,
+     "covered_rtdd_components": 451
+    },
+    "HN": {
+     "picks": 898,
+     "covered_pick_channel": 898,
+     "covered_rtdd_components": 898
+    }
+   },
+   "S_without_2_horizontals": 0
+  },
+  "channels": {
+   "n": 806,
+   "always_complete": 632,
+   "never_any_data": 10,
+   "worst": [
+    {
+     "network": "CE",
+     "station": "57254",
+     "location": "10",
+     "channel": "HNE",
+     "dist_km": 22.9,
+     "windows": 26,
+     "no_data": 26,
+     "partial": 0,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "CE",
+     "station": "57254",
+     "location": "10",
+     "channel": "HNN",
+     "dist_km": 22.9,
+     "windows": 26,
+     "no_data": 26,
+     "partial": 0,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "CE",
+     "station": "57254",
+     "location": "10",
+     "channel": "HNZ",
+     "dist_km": 22.9,
+     "windows": 26,
+     "no_data": 26,
+     "partial": 0,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CMLP",
+     "location": "",
+     "channel": "EHZ",
+     "dist_km": 35.1,
+     "windows": 26,
+     "no_data": 26,
+     "partial": 0,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CMLP",
+     "location": "",
+     "channel": "HNE",
+     "dist_km": 35.1,
+     "windows": 26,
+     "no_data": 26,
+     "partial": 0,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CMLP",
+     "location": "",
+     "channel": "HNN",
+     "dist_km": 35.1,
+     "windows": 26,
+     "no_data": 26,
+     "partial": 0,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "CMLP",
+     "location": "",
+     "channel": "HNZ",
+     "dist_km": 35.1,
+     "windows": 26,
+     "no_data": 26,
+     "partial": 0,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C015",
+     "location": "01",
+     "channel": "HNE",
+     "dist_km": 22.1,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C015",
+     "location": "01",
+     "channel": "HNN",
+     "dist_km": 22.1,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C015",
+     "location": "01",
+     "channel": "HNZ",
+     "dist_km": 22.1,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C031",
+     "location": "01",
+     "channel": "HNE",
+     "dist_km": 31.9,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C031",
+     "location": "01",
+     "channel": "HNN",
+     "dist_km": 31.9,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C031",
+     "location": "01",
+     "channel": "HNZ",
+     "dist_km": 31.9,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C033",
+     "location": "01",
+     "channel": "HNE",
+     "dist_km": 32.3,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C033",
+     "location": "01",
+     "channel": "HNN",
+     "dist_km": 32.3,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C033",
+     "location": "01",
+     "channel": "HNZ",
+     "dist_km": 32.3,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C049",
+     "location": "01",
+     "channel": "HNE",
+     "dist_km": 29.8,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C049",
+     "location": "01",
+     "channel": "HNN",
+     "dist_km": 29.8,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C049",
+     "location": "01",
+     "channel": "HNZ",
+     "dist_km": 29.8,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C067",
+     "location": "01",
+     "channel": "HNE",
+     "dist_km": 39.3,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C067",
+     "location": "01",
+     "channel": "HNN",
+     "dist_km": 39.3,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "C067",
+     "location": "01",
+     "channel": "HNZ",
+     "dist_km": 39.3,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "J020",
+     "location": "01",
+     "channel": "HNE",
+     "dist_km": 44.0,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "J020",
+     "location": "01",
+     "channel": "HNN",
+     "dist_km": 44.0,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    },
+    {
+     "network": "NC",
+     "station": "J020",
+     "location": "01",
+     "channel": "HNZ",
+     "dist_km": 44.0,
+     "windows": 26,
+     "no_data": 25,
+     "partial": 1,
+     "first_not_complete": "2025-11-10T20:25:41.100000Z",
+     "last_not_complete": "2026-04-05T16:39:37.870000Z"
+    }
+   ]
+  }
+ },
+ "raw_cache": {
+  "bytes": 1204148362,
+  "files": 2078
+ },
+ "aic_timing_check": {
+  "all": {
+   "n": 13336,
+   "median_s": 0.01,
+   "mad_s": 0.01,
+   "within_0p05s": 0.891,
+   "within_0p10s": 0.943
+  },
+  "snr_ge_5": {
+   "n": 10018,
+   "median_s": 0.01,
+   "mad_s": 0.01,
+   "within_0p05s": 0.945,
+   "within_0p10s": 0.981
+  },
+  "snr_ge_5_by_channel_type": {
+   "BH": {
+    "n": 50,
+    "median_s": 0.0095,
+    "mad_s": 0.0224,
+    "within_0p05s": 0.7,
+    "within_0p10s": 0.9
+   },
+   "DP": {
+    "n": 50,
+    "median_s": 0.01,
+    "mad_s": 0.009,
+    "within_0p05s": 0.96,
+    "within_0p10s": 1.0
+   },
+   "EH": {
+    "n": 5681,
+    "median_s": 0.01,
+    "mad_s": 0.01,
+    "within_0p05s": 0.959,
+    "within_0p10s": 0.984
+   },
+   "EP": {
+    "n": 389,
+    "median_s": 0.005,
+    "mad_s": 0.005,
+    "within_0p05s": 0.974,
+    "within_0p10s": 0.992
+   },
+   "HH": {
+    "n": 1993,
+    "median_s": 0.0084,
+    "mad_s": 0.0121,
+    "within_0p05s": 0.908,
+    "within_0p10s": 0.966
+   },
+   "HN": {
+    "n": 1855,
+    "median_s": 0.01,
+    "mad_s": 0.01,
+    "within_0p05s": 0.941,
+    "within_0p10s": 0.985
+   }
+  },
+  "snr_ge_5_by_weight": {
+   "0": {
+    "n": 6586,
+    "median_s": 0.0084,
+    "mad_s": 0.0084,
+    "within_0p05s": 0.968,
+    "within_0p10s": 0.988
+   },
+   "1": {
+    "n": 3432,
+    "median_s": 0.0104,
+    "mad_s": 0.0104,
+    "within_0p05s": 0.9,
+    "within_0p10s": 0.966
+   }
+  }
+ },
+ "requests_all_runs": {
+  "earthscope/cc/200": {
+   "n": 1,
+   "bytes": 1038848,
+   "seconds": 16.4,
+   "max_seconds": 16.4
+  },
+  "earthscope/dl/200": {
+   "n": 4,
+   "bytes": 4047360,
+   "seconds": 90.3,
+   "max_seconds": 27.9
+  },
+  "ncedc/cc/200": {
+   "n": 927,
+   "bytes": 604041216,
+   "seconds": 3797.4,
+   "max_seconds": 30.9
+  },
+  "ncedc/dl/200": {
+   "n": 104,
+   "bytes": 586579968,
+   "seconds": 1080.6,
+   "max_seconds": 22.5
+  }
+ },
+ "requests_total": {
+  "n": 1036,
+  "bytes": 1195707392,
+  "seconds": 4984.7,
+  "retries": 0
+ },
+ "runs": [
+  {
+   "start": "2026-10-18T04:24:50",
+   "text": "sets ['cc', 'dl'], steps ['plan', 'ncedc', 'fallback', 'build'], limit 0, workers 2, pid 2091655",
+   "end": "2026-10-18T05:09:26",
+   "seconds": 2677.0
+  }
+ ],
+ "main_run": {
+  "runs": [
+   {
+    "start": "2026-10-18T04:24:50",
+    "text": "sets ['cc', 'dl'], steps ['plan', 'ncedc', 'fallback', 'build'], limit 0, workers 2, pid 2091655",
+    "end": "2026-10-18T05:09:26",
+    "seconds": 2677.0
+   }
+  ],
+  "requests": {
+   "earthscope/cc/200": {
+    "n": 1,
+    "bytes": 1038848,
+    "seconds": 16.4,
+    "median_seconds": 16.36,
+    "max_seconds": 16.4
+   },
+   "earthscope/dl/200": {
+    "n": 4,
+    "bytes": 4047360,
+    "seconds": 90.3,
+    "median_seconds": 21.91,
+    "max_seconds": 27.9
+   },
+   "ncedc/cc/200": {
+    "n": 927,
+    "bytes": 604041216,
+    "seconds": 3797.4,
+    "median_seconds": 2.63,
+    "max_seconds": 30.9
+   },
+   "ncedc/dl/200": {
+    "n": 104,
+    "bytes": 586579968,
+    "seconds": 1080.6,
+    "median_seconds": 9.4,
+    "max_seconds": 22.5
+   }
+  },
+  "first_request": "2026-10-18T04:25:20",
+  "last_request": "2026-10-18T05:08:35",
+  "attempts_gt1": 0
+ },
+ "status_cc.json": {
+  "set": "cc",
+  "limit": 0,
+  "events": 927,
+  "plan_lines": 62246,
+  "ncedc": {
+   "results": {
+    "200": 927
+   },
+   "failed": 0,
+   "seconds": 1926.5
+  },
+  "fallback": {
+   "results": {
+    "200": 1
+   },
+   "failed": 0,
+   "missing_lines": 319,
+   "missing_channels": 94,
+   "earthscope_channels_with_data": [
+    "NC.C001.01.HNE",
+    "NC.C001.01.HNN",
+    "NC.C001.01.HNZ",
+    "NC.C006.01.HNE",
+    "NC.C006.01.HNN",
+    "NC.C006.01.HNZ",
+    "NC.C015.01.HNE",
+    "NC.C015.01.HNN",
+    "NC.C015.01.HNZ",
+    "NC.C021.01.HNE",
+    "NC.C021.01.HNN",
+    "NC.C021.01.HNZ",
+    "NC.C031.01.HNE",
+    "NC.C031.01.HNN",
+    "NC.C031.01.HNZ",
+    "NC.C033.01.HNE",
+    "NC.C033.01.HNN",
+    "NC.C033.01.HNZ",
+    "NC.C049.01.HNE",
+    "NC.C049.01.HNN",
+    "NC.C049.01.HNZ",
+    "NC.C055.01.HNE",
+    "NC.C055.01.HNN",
+    "NC.C055.01.HNZ",
+    "NC.C056.01.HNE",
+    "NC.C056.01.HNN",
+    "NC.C056.01.HNZ",
+    "NC.C062.01.HNE",
+    "NC.C062.01.HNN",
+    "NC.C062.01.HNZ",
+    "NC.C067.01.HNE",
+    "NC.C067.01.HNN",
+    "NC.C067.01.HNZ",
+    "NC.C071.01.HNE",
+    "NC.C071.01.HNN",
+    "NC.C071.01.HNZ",
+    "NC.C073.01.HNE",
+    "NC.C073.01.HNN",
+    "NC.C073.01.HNZ",
+    "NC.J020.01.HNE",
+    "NC.J020.01.HNN",
+    "NC.J020.01.HNZ",
+    "NC.J025.01.HNE",
+    "NC.J025.01.HNN",
+    "NC.J025.01.HNZ",
+    "NC.J032.01.HNE",
+    "NC.J032.01.HNN",
+    "NC.J032.01.HNZ",
+    "NC.J043.01.HNE",
+    "NC.J043.01.HNN",
+    "NC.J043.01.HNZ"
+   ],
+   "seconds": 23.5
+  },
+  "build": {
+   "day_files_written": 18868,
+   "day_files_unchanged": 0,
+   "unexpected_traces": 0,
+   "overlaps_cut": 0,
+   "seconds": 57.6
+  },
+  "failed_requests": [],
+  "finished_utc": "2026-10-18T04:58:40.226167Z"
+ },
+ "status_dl.json": {
+  "set": "dl",
+  "limit": 0,
+  "events": 26,
+  "plan_lines": 20435,
+  "ncedc": {
+   "results": {
+    "200": 104
+   },
+   "failed": 0,
+   "seconds": 542.7
+  },
+  "fallback": {
+   "results": {
+    "200": 4
+   },
+   "failed": 0,
+   "missing_lines": 2062,
+   "missing_channels": 158,
+   "earthscope_channels_with_data": [
+    "NC.C001.01.HNE",
+    "NC.C001.01.HNN",
+    "NC.C001.01.HNZ",
+    "NC.C006.01.HNE",
+    "NC.C006.01.HNN",
+    "NC.C006.01.HNZ",
+    "NC.C015.01.HNE",
+    "NC.C015.01.HNN",
+    "NC.C015.01.HNZ",
+    "NC.C021.01.HNE",
+    "NC.C021.01.HNN",
+    "NC.C021.01.HNZ",
+    "NC.C031.01.HNE",
+    "NC.C031.01.HNN",
+    "NC.C031.01.HNZ",
+    "NC.C033.01.HNE",
+    "NC.C033.01.HNN",
+    "NC.C033.01.HNZ",
+    "NC.C049.01.HNE",
+    "NC.C049.01.HNN",
+    "NC.C049.01.HNZ",
+    "NC.C055.01.HNE",
+    "NC.C055.01.HNN",
+    "NC.C055.01.HNZ",
+    "NC.C056.01.HNE",
+    "NC.C056.01.HNN",
+    "NC.C056.01.HNZ",
+    "NC.C062.01.HNE",
+    "NC.C062.01.HNN",
+    "NC.C062.01.HNZ",
+    "NC.C067.01.HNE",
+    "NC.C067.01.HNN",
+    "NC.C067.01.HNZ",
+    "NC.C071.01.HNE",
+    "NC.C071.01.HNN",
+    "NC.C071.01.HNZ",
+    "NC.C073.01.HNE",
+    "NC.C073.01.HNN",
+    "NC.C073.01.HNZ",
+    "NC.J020.01.HNE",
+    "NC.J020.01.HNN",
+    "NC.J020.01.HNZ",
+    "NC.J025.01.HNE",
+    "NC.J025.01.HNN",
+    "NC.J025.01.HNZ",
+    "NC.J032.01.HNE",
+    "NC.J032.01.HNN",
+    "NC.J032.01.HNZ",
+    "NC.J043.01.HNE",
+    "NC.J043.01.HNN",
+    "NC.J043.01.HNZ"
+   ],
+   "seconds": 52.1
+  },
+  "build": {
+   "files_written": 26,
+   "files_unchanged": 0,
+   "unexpected_traces": 0,
+   "overlaps_cut": 0,
+   "seconds": 51.8
+  },
+  "failed_requests": [],
+  "finished_utc": "2026-10-18T05:09:26.822426Z"
+ }
+}

@@ -1,0 +1,5 @@
+run,wall_s,clustering_s,relocation_incl_xcorr_s,proxy_traces_processed,proxy_traces_failed,peak_rss_mb,process_wall,cpu_user_s,n_clusters,n_relocated,event_startRms_median_ms,event_finalRms_median_ms,exit_code
+P0,90.64,2.6,86.2,,,626.2,1:31.00,82.84,1,893,367.378,310.867,
+P1,2305.04,3.0,2294.3,34737.0,16922.0,1535.9,38:25.67,2074.16,1,893,367.378,316.00800000000004,
+S0,114.1,,,,,531.8,1:54.06,105.46,1,893,367.378,310.876,0.0
+S1,1737.6,,,,,1118.4,28:57.58,1720.7,1,893,367.378,316.053,0.0

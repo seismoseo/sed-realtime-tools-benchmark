@@ -1,0 +1,16 @@
+Files of this folder that were copied from data/sanramon_2015/reference/docs (downloaded there on 2026-10-17; URLs in data/sanramon_2015/reference/PROVENANCE.md):
+ncedc_catalog-search.html	https://ncedc.org/ncedc/catalog-search.html
+ncedc_catalog-search-help.html	https://ncedc.org/ncedc/catalog-search-help.html
+ncedc_catalog-reproducing-hypoinverse-locations.html	https://ncedc.org/ncedc/catalog-reproducing-hypoinverse-locations.html
+ncedc_blog_2014-06-02_dd_locations.html	https://ncedc.org/blog/2014/06/02/double-difference-locations-now-available.html
+ncedc_blog_2015-10-07_depth_datum.html	https://ncedc.org/blog/2015/10/07/the-ncss-now-reports-earthquake.html
+ncedc_shadow2000.pdf	https://ncedc.org/pub/doc/ncsn/shadow2000.pdf
+ncedc_catlist.txt	https://ncedc.org/pub/doc/cat1/catlist.txt
+Waldhauser_Schaff_JGR2008.pdf	http://www.ldeo.columbia.edu/~felixw/papers/Waldhauser_Schaff_JGR2008.pdf
+NCAeqDD_README.txt	https://www.ldeo.columbia.edu/~felixw/NCAeqDD/README
+usgs_ofr02-171_landing.html	https://pubs.usgs.gov/of/2002/0171/
+ncedc_hypoinverse_dir_index.html	https://ncedc.org/pub/catalogs/ncsn/hypoinverse/
+usgs_ofr02-171_hypoinverse2000_manual.pdf	https://pubs.usgs.gov/of/2002/0171/pdf/of02-171.pdf
+hyp1.40_manual.pdf	https://escweb.wr.usgs.gov/content/software/HYPOINVERSE/doc/hyp1.40.pdf
+hypoinv-standalone-20230210.zip	https://ncedc.org/pub/catalogs/ncsn/hypoinverse/hypoinv-standalone-20230210.zip
+hypoinverse-standalone-filenames-descriptions.xlsx	https://ncedc.org/pub/catalogs/ncsn/hypoinverse/hypoinverse-standalone-filenames-descriptions.xlsx

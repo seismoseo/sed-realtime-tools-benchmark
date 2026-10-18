@@ -1,0 +1,22 @@
+{
+ "set": "cc",
+ "service": "ncedc",
+ "event_id": 75276946,
+ "chunk": 0,
+ "url": "https://service.ncedc.org/fdsnws/dataselect/1/query",
+ "status": 200,
+ "bytes": 49152,
+ "seconds": 0.84,
+ "attempts": 1,
+ "traces": 6,
+ "file": "data/sanramon_2026/reference/waveforms_raw/cc/ncedc/75276946_c00.mseed",
+ "utc": "2026-10-18T04:32:54.742881Z",
+ "lines": [
+  "NC CBR -- EHE 2025-12-08T23:39:57.460000 2025-12-08T23:40:37.460000",
+  "NC CBR -- EHN 2025-12-08T23:39:57.460000 2025-12-08T23:40:37.460000",
+  "NC CBR -- EHZ 2025-12-08T23:39:57.460000 2025-12-08T23:40:37.460000",
+  "NC CLCB -- EHZ 2025-12-08T23:39:57.460000 2025-12-08T23:40:37.460000",
+  "NC CMOB -- EHZ 2025-12-08T23:39:57.460000 2025-12-08T23:40:37.460000",
+  "NC CSL -- EHZ 2025-12-08T23:39:57.460000 2025-12-08T23:40:37.460000"
+ ]
+}

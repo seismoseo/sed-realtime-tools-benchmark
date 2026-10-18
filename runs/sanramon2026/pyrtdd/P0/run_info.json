@@ -1,0 +1,21 @@
+{
+ "run": "P0",
+ "what": "catalog dt only; rtDD default clustering (ellipsoids; maxEvStaDist 120 km) and solver (absLocConstraint 0.3)",
+ "started": "2026-10-18T14:20:28",
+ "host": "server-a",
+ "pid": 2101940,
+ "status": "ok",
+ "n_input_events": 927,
+ "n_clusters": 1,
+ "cluster_sizes": [
+  893
+ ],
+ "n_clustered": 893,
+ "n_relocated": 893,
+ "clustering_s": 2.6,
+ "relocation_incl_xcorr_s": 86.2,
+ "wall_time_s": 90.64,
+ "peak_rss_mb_process_so_far": 626.2,
+ "cpu_user_s_process_so_far": 82.8,
+ "finished": "2026-10-18T14:21:58"
+}

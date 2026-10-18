@@ -31,3 +31,5 @@
 *.pem
 *.onnx
 *.log
+**/report_build_cache/
+**/report_build_tmp/

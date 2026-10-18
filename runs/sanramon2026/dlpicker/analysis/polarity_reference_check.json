@@ -1,0 +1,174 @@
+{
+ "rule": "neighbours: same event, direct channel, |daz| <= 10.0, |dtakeoff| <= 10.0, >= 2, majority >= 70 %",
+ "n_inverted_channel_picks": 313,
+ "n_direct_channel_picks": 23602,
+ "inverted_tests": 147,
+ "inverted_frac_same": 0.24489795918367346,
+ "control_tests": 595,
+ "control_frac_same": 0.8201680672268907,
+ "per_channel": [
+  {
+   "network": "BG",
+   "station": "DES",
+   "channel": "DPZ",
+   "dip": 90.0,
+   "gain": 230400000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "BG",
+   "station": "FNF",
+   "channel": "DPZ",
+   "dip": 90.0,
+   "gain": 609600000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "BG",
+   "station": "FUM",
+   "channel": "DPZ",
+   "dip": 90.0,
+   "gain": 609600000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "BG",
+   "station": "NEG",
+   "channel": "DPZ",
+   "dip": 90.0,
+   "gain": 609600000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "BG",
+   "station": "PFR",
+   "channel": "DPZ",
+   "dip": 90.0,
+   "gain": 609600000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "BG",
+   "station": "STY",
+   "channel": "DPZ",
+   "dip": 90.0,
+   "gain": 609600000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "BK",
+   "station": "MHDL",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -57462000.0,
+   "n_tests": 43,
+   "frac_same_as_direct_neighbours": 0.11627906976744186
+  },
+  {
+   "network": "BK",
+   "station": "OHLN",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -57462000.0,
+   "n_tests": 33,
+   "frac_same_as_direct_neighbours": 0.24242424242424243
+  },
+  {
+   "network": "BK",
+   "station": "OXMT",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -57462000.0,
+   "n_tests": 29,
+   "frac_same_as_direct_neighbours": 0.06896551724137931
+  },
+  {
+   "network": "BK",
+   "station": "PETB",
+   "channel": "EP1",
+   "dip": 90.0,
+   "gain": 1650460000.0,
+   "n_tests": 4,
+   "frac_same_as_direct_neighbours": 0.75
+  },
+  {
+   "network": "BK",
+   "station": "RB2B",
+   "channel": "DP1",
+   "dip": 90.0,
+   "gain": 2687700000.0,
+   "n_tests": 3,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "BK",
+   "station": "SBRN",
+   "channel": "EP1",
+   "dip": -90.0,
+   "gain": -57462000.0,
+   "n_tests": 19,
+   "frac_same_as_direct_neighbours": 0.3684210526315789
+  },
+  {
+   "network": "BK",
+   "station": "SM2B",
+   "channel": "CN1",
+   "dip": 90.0,
+   "gain": 4285470.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  },
+  {
+   "network": "BK",
+   "station": "SM2B",
+   "channel": "DP1",
+   "dip": 90.0,
+   "gain": 2687700000.0,
+   "n_tests": 6,
+   "frac_same_as_direct_neighbours": 0.6666666666666666
+  },
+  {
+   "network": "BK",
+   "station": "VALB",
+   "channel": "DP1",
+   "dip": 90.0,
+   "gain": 2687700000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "BP",
+   "station": "SMNB",
+   "channel": "DP1",
+   "dip": 90.0,
+   "gain": 7367820000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 1.0
+  },
+  {
+   "network": "NN",
+   "station": "WAK",
+   "channel": "HHZ",
+   "dip": 90.0,
+   "gain": 503735000.0,
+   "n_tests": 1,
+   "frac_same_as_direct_neighbours": 0.0
+  }
+ ],
+ "analyst_only": {
+  "rule": "neighbours: same event, direct channel, |daz| <= 10.0, |dtakeoff| <= 10.0, >= 2, majority >= 70 %",
+  "n_inverted_channel_picks": 275,
+  "n_direct_channel_picks": 21465,
+  "inverted_tests": 129,
+  "inverted_frac_same": 0.24031007751937986,
+  "control_tests": 574,
+  "control_frac_same": 0.8275261324041812
+ },
+ "n_unknown_sense": 7
+}

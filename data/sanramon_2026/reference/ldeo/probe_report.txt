@@ -1,0 +1,72 @@
+copied /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/reference/ldeo/tls/EEEMIncommonOVG2C.crt -> /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2026/reference/ldeo/tls/EEEMIncommonOVG2C.crt
+copied /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/reference/ldeo/tls/EEEMIncommonOVG2C.pem -> /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2026/reference/ldeo/tls/EEEMIncommonOVG2C.pem
+copied /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/reference/ldeo/tls/EMIncommonOVG2C.p7c -> /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2026/reference/ldeo/tls/EMIncommonOVG2C.p7c
+copied /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/reference/ldeo/tls/EMIncommonOVG2C_p7c.pem -> /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2026/reference/ldeo/tls/EMIncommonOVG2C_p7c.pem
+copied /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/reference/ldeo/tls/README.txt -> /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2026/reference/ldeo/tls/README.txt
+copied /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2015/reference/ldeo/tls/ca_bundle_certifi_plus_incommon_ovg2c.pem -> /home/msseo/works/74.SeisComP_rtDD_DLpicker/data/sanramon_2026/reference/ldeo/tls/ca_bundle_certifi_plus_incommon_ovg2c.pem
+200     41374 B  https://nocaldd.ldeo.columbia.edu/ -> https://nocaldd.ldeo.columbia.edu/  links=78
+      link: ./ddrt.map.png
+      link: javascript:popUp4(
+      link: http://www.ncedc.org/ncsn/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Waldhauser_BSSA2009.pdf
+      link: javascript:popUp4(
+      link: javascript:popUp4(
+      link: javascript:popUp4(
+      link: ./specevents/20230810_M4.3_Parkfield/
+      link: ./specevents/20250110_M3.6_SanFrancisco/
+      link: ./specevents/20221025_M5.0_AlumRock/
+      link: ./specevents/20210708_M6.0_SmithValley/
+      link: ./specevents/20200819_M4.0_Willits/
+      link: ./specevents/20150817_Fremont_M4.0/
+      link: ./specevents/20140824_SouthNapa_M6.0/
+      link: ./specevents/20121021_M5.3/
+      link: ./specevents/2012_M4.4_Parkfield/
+      link: ./specevents/2011_M4.0_Berkeley/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/NCAeqDDRT.v202201
+      link: http://nocalDD.ldeo.columbia.edu/catalog/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/search.html
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+      link: javascript:popUp3(
+      link: javascript:popUp3(
+      link: javascript:popUp1(
+200     11904 B  https://nocaldd.ldeo.columbia.edu/catalog/ -> https://nocaldd.ldeo.columbia.edu/catalog/  links=23
+      link: ./stats.txt
+      link: ./NCAeqDD.map_web.png
+      link: ./NCAeqDD.SAF.upd.png
+      link: ./NCAeqDD.MTJ.upd.png
+      link: ./NCAeqDD.LVC.upd.png
+      link: ./NCAeqDD.GGF.upd.png
+      link: ./errors.png
+      link: ./delta_dd21_dd19.png
+      link: ./delta_dd_ncsn.png
+      link: ./NCAeqDD.CorrEv.png
+      link: ./NCAeqDD.CorrEv_growth.png
+      link: ./NCAeqDD.ncc_growth.png
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Waldhauser_Schaff_JGR2008.pdf
+      link: http://www.ldeo.columbia.edu/~felixw/papers/Schaff_Waldhauser_BSSA2005.pdf
+      link: ./README
+      link: ./NCAeqDD.v202112.1.gz
+      link: http://nocalDD.ldeo.columbia.edu/catalog/200305/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/200812/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/200912/
+      link: http://nocalDD.ldeo.columbia.edu/catalog/201112/
+      link: mailto:felixw@ldeo.columbia.edu
+      link: mailto:felixw@ldeo.columbia.edu
+      link: http://www.ldeo.columbia.edu/~felixw/NCAeqDD/3d.html
+200  13089473 B  https://nocaldd.ldeo.columbia.edu/catalog/NCAeqDDRT.v202201 -> https://nocaldd.ldeo.columbia.edu/catalog/NCAeqDDRT.v202201  links=0

@@ -1,0 +1,166 @@
+{
+ "run": "S0",
+ "exit_code": 0,
+ "wall_s": 114.1,
+ "time_v": {
+  "user_s": "105.46",
+  "sys_s": "7.89",
+  "cpu_percent": "99%",
+  "wall": "1:54.06",
+  "max_rss_kb": "544608",
+  "exit_status": "0"
+ },
+ "outputs": [
+  "multievent_20261018052304_9348",
+  "reloc-event.csv",
+  "reloc-phase.csv",
+  "reloc-station.csv",
+  "relocated.xml",
+  "scrtdd.log"
+ ],
+ "diagnostics_dirs": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/scrtdd/S0/work/multievent_20261018052304_9348"
+ ],
+ "log": {
+  "n_lines": 621,
+  "errors": [],
+  "warnings_n": 11,
+  "successfully_relocated": 891,
+  "clusters": 1,
+  "waveform_line": null,
+  "iterations_logged": 21,
+  "iteration_lines": [
+   "0 893 dampingFactor=0.01 downWeightingByResidual=10.00 absLocConstraint=0.30",
+   "1 893 dampingFactor=0.01 downWeightingByResidual=9.74 absLocConstraint=0.30",
+   "2 893 dampingFactor=0.01 downWeightingByResidual=9.47 absLocConstraint=0.30",
+   "3 893 dampingFactor=0.01 downWeightingByResidual=9.21 absLocConstraint=0.30",
+   "4 893 dampingFactor=0.01 downWeightingByResidual=8.95 absLocConstraint=0.30",
+   "5 893 dampingFactor=0.01 downWeightingByResidual=8.68 absLocConstraint=0.30",
+   "6 893 dampingFactor=0.01 downWeightingByResidual=8.42 absLocConstraint=0.30",
+   "7 893 dampingFactor=0.01 downWeightingByResidual=8.16 absLocConstraint=0.30",
+   "8 893 dampingFactor=0.01 downWeightingByResidual=7.89 absLocConstraint=0.30",
+   "9 893 dampingFactor=0.01 downWeightingByResidual=7.63 absLocConstraint=0.30",
+   "10 893 dampingFactor=0.01 downWeightingByResidual=7.37 absLocConstraint=0.30",
+   "11 893 dampingFactor=0.01 downWeightingByResidual=7.11 absLocConstraint=0.30",
+   "12 893 dampingFactor=0.01 downWeightingByResidual=6.84 absLocConstraint=0.30",
+   "13 893 dampingFactor=0.01 downWeightingByResidual=6.58 absLocConstraint=0.30",
+   "14 893 dampingFactor=0.01 downWeightingByResidual=6.32 absLocConstraint=0.30",
+   "15 893 dampingFactor=0.01 downWeightingByResidual=6.05 absLocConstraint=0.30",
+   "16 893 dampingFactor=0.01 downWeightingByResidual=5.79 absLocConstraint=0.30",
+   "17 893 dampingFactor=0.01 downWeightingByResidual=5.53 absLocConstraint=0.30",
+   "18 893 dampingFactor=0.01 downWeightingByResidual=5.26 absLocConstraint=0.30",
+   "19 893 dampingFactor=0.01 downWeightingByResidual=5.00 absLocConstraint=0.30",
+   "20 893 dampingFactor=0.01 downWeightingByResidual=4.74 absLocConstraint=0.30"
+  ],
+  "event_rms_lines": [
+   "min 105.709 1st quartile 292.427 median 367.378 3rd quartile 463.068 max 1258.601 ",
+   "min 154.318 1st quartile 263.422 median 311.933 3rd quartile 394.113 max 4187.834 ",
+   "min 177.790 1st quartile 265.368 median 311.472 3rd quartile 390.529 max 4187.834 ",
+   "min 179.119 1st quartile 265.708 median 312.168 3rd quartile 388.672 max 3103.679 ",
+   "min 179.359 1st quartile 265.686 median 312.393 3rd quartile 389.039 max 3103.679 ",
+   "min 179.267 1st quartile 265.629 median 311.999 3rd quartile 388.769 max 3103.679 ",
+   "min 179.202 1st quartile 265.688 median 311.581 3rd quartile 388.343 max 3103.679 ",
+   "min 179.221 1st quartile 265.238 median 311.215 3rd quartile 387.256 max 5561.897 ",
+   "min 179.097 1st quartile 265.401 median 310.945 3rd quartile 386.294 max 5561.897 ",
+   "min 179.096 1st quartile 265.396 median 310.626 3rd quartile 385.528 max 5561.897 ",
+   "min 179.101 1st quartile 265.607 median 310.000 3rd quartile 385.334 max 5561.897 ",
+   "min 179.165 1st quartile 265.854 median 310.418 3rd quartile 385.823 max 5561.897 ",
+   "min 179.315 1st quartile 265.975 median 310.299 3rd quartile 384.798 max 5561.897 ",
+   "min 179.594 1st quartile 266.147 median 310.884 3rd quartile 384.944 max 5561.897 ",
+   "min 180.003 1st quartile 266.771 median 310.653 3rd quartile 385.079 max 5561.897 ",
+   "min 180.476 1st quartile 266.381 median 310.349 3rd quartile 383.755 max 5561.897 ",
+   "min 181.027 1st quartile 266.885 median 310.227 3rd quartile 382.502 max 5561.897 ",
+   "min 181.550 1st quartile 267.159 median 310.329 3rd quartile 383.188 max 5561.897 ",
+   "min 182.140 1st quartile 267.443 median 310.063 3rd quartile 383.536 max 5561.897 ",
+   "min 182.716 1st quartile 267.923 median 309.948 3rd quartile 383.858 max 5561.897 ",
+   "min 183.335 1st quartile 268.140 median 310.876 3rd quartile 383.155 max 5561.897 "
+  ],
+  "dd_residual_lines": [
+   [
+    "557268",
+    "median 1.262 MedianAbsoluteDeviation 71.143"
+   ],
+   [
+    "557166",
+    "median 0.279 MedianAbsoluteDeviation 49.765"
+   ],
+   [
+    "557174",
+    "median 0.011 MedianAbsoluteDeviation 45.407"
+   ],
+   [
+    "557252",
+    "median -0.132 MedianAbsoluteDeviation 44.379"
+   ],
+   [
+    "557252",
+    "median -0.066 MedianAbsoluteDeviation 43.796"
+   ],
+   [
+    "557252",
+    "median -0.023 MedianAbsoluteDeviation 43.431"
+   ],
+   [
+    "557252",
+    "median -0.002 MedianAbsoluteDeviation 43.114"
+   ],
+   [
+    "557260",
+    "median -0.014 MedianAbsoluteDeviation 42.848"
+   ],
+   [
+    "557268",
+    "median -0.051 MedianAbsoluteDeviation 42.606"
+   ],
+   [
+    "557268",
+    "median -0.077 MedianAbsoluteDeviation 42.377"
+   ],
+   [
+    "557268",
+    "median -0.110 MedianAbsoluteDeviation 42.143"
+   ],
+   [
+    "557268",
+    "median -0.113 MedianAbsoluteDeviation 41.878"
+   ],
+   [
+    "557268",
+    "median -0.114 MedianAbsoluteDeviation 41.578"
+   ],
+   [
+    "557268",
+    "median -0.123 MedianAbsoluteDeviation 41.298"
+   ],
+   [
+    "557268",
+    "median -0.142 MedianAbsoluteDeviation 40.975"
+   ],
+   [
+    "557268",
+    "median -0.169 MedianAbsoluteDeviation 40.668"
+   ],
+   [
+    "557268",
+    "median -0.169 MedianAbsoluteDeviation 40.395"
+   ],
+   [
+    "557268",
+    "median -0.150 MedianAbsoluteDeviation 40.133"
+   ],
+   [
+    "557268",
+    "median -0.164 MedianAbsoluteDeviation 39.849"
+   ],
+   [
+    "557268",
+    "median -0.210 MedianAbsoluteDeviation 39.558"
+   ],
+   [
+    "557268",
+    "median -0.247 MedianAbsoluteDeviation 39.261"
+   ]
+  ]
+ },
+ "reloc_event_rows": 893
+}

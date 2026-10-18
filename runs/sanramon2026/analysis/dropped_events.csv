@@ -1,0 +1,137 @@
+run,id,review,magnitude,n_P,n_S,n_auto_R,n_phases_with_grid,n_phases_within_120km,in_LDEO,in_NCEDC,events_within_5km,neighbours_sharing_ge8_phases,max_shared_phases,reason
+P0,75261411,F,0.45,6,0,0,6,6,True,True,824,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75265421,F,0.63,5,1,0,6,6,True,True,844,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75274076,F,0.87,16,4,0,20,20,True,True,7,7,18,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P0,75274081,F,0.84,12,3,0,15,15,True,True,21,6,15,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P0,75276591,A,1.41,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75276641,I,1.7,6,0,0,6,6,False,False,819,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75276726,A,1.56,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75276736,I,1.6,7,0,0,7,7,False,False,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75276771,A,1.34,7,0,7,7,7,True,True,849,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75276946,A,1.97,5,0,5,5,5,True,False,101,0,4,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75276971,I,1.6,4,1,0,5,5,False,False,826,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75277036,F,0.45,7,0,0,7,7,True,True,512,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75277046,I,1.6,5,1,0,6,6,False,False,768,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75284636,A,1.6,6,0,6,6,6,True,True,863,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75285406,I,1.6,7,0,0,7,7,False,False,189,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75299706,I,1.7,6,1,0,7,7,False,False,200,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75300901,I,1.7,7,0,0,7,7,False,False,828,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75305706,F,1.26,8,2,0,10,10,True,True,93,6,9,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P0,75305886,A,1.7,7,0,7,7,7,True,True,200,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75305936,A,1.24,7,0,7,7,7,True,True,788,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75305946,A,1.64,8,0,8,7,7,True,True,857,0,7,fewer than 8 picks within 120 km (maxEvStaDist)
+P0,75306431,I,1.7,6,1,0,7,7,False,False,92,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75306436,A,1.34,7,0,7,7,7,True,True,856,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75306551,A,1.07,5,0,5,5,5,True,True,246,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75306621,A,1.35,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75306661,I,1.8,7,0,0,7,7,False,False,197,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75306671,A,1.23,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75307952,A,1.58,7,0,7,7,7,True,True,203,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75308112,A,1.31,7,0,7,7,7,True,True,858,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75308662,I,1.7,7,1,0,8,8,False,False,6,1,8,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P0,75308842,I,1.7,7,0,0,7,7,False,False,632,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75309002,A,1.59,7,0,7,7,7,True,True,815,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75309222,I,1.6,5,0,0,5,5,False,False,867,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P0,75414102,F,0.69,11,0,0,11,11,True,True,125,4,10,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P1,75261411,F,0.45,6,0,0,6,6,True,True,824,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75265421,F,0.63,5,1,0,6,6,True,True,844,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75274076,F,0.87,16,4,0,20,20,True,True,7,7,18,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P1,75274081,F,0.84,12,3,0,15,15,True,True,21,6,15,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P1,75276591,A,1.41,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75276641,I,1.7,6,0,0,6,6,False,False,819,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75276726,A,1.56,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75276736,I,1.6,7,0,0,7,7,False,False,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75276771,A,1.34,7,0,7,7,7,True,True,849,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75276946,A,1.97,5,0,5,5,5,True,False,101,0,4,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75276971,I,1.6,4,1,0,5,5,False,False,826,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75277036,F,0.45,7,0,0,7,7,True,True,512,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75277046,I,1.6,5,1,0,6,6,False,False,768,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75284636,A,1.6,6,0,6,6,6,True,True,863,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75285406,I,1.6,7,0,0,7,7,False,False,189,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75299706,I,1.7,6,1,0,7,7,False,False,200,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75300901,I,1.7,7,0,0,7,7,False,False,828,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75305706,F,1.26,8,2,0,10,10,True,True,93,6,9,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P1,75305886,A,1.7,7,0,7,7,7,True,True,200,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75305936,A,1.24,7,0,7,7,7,True,True,788,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75305946,A,1.64,8,0,8,7,7,True,True,857,0,7,fewer than 8 picks within 120 km (maxEvStaDist)
+P1,75306431,I,1.7,6,1,0,7,7,False,False,92,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75306436,A,1.34,7,0,7,7,7,True,True,856,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75306551,A,1.07,5,0,5,5,5,True,True,246,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75306621,A,1.35,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75306661,I,1.8,7,0,0,7,7,False,False,197,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75306671,A,1.23,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75307952,A,1.58,7,0,7,7,7,True,True,203,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75308112,A,1.31,7,0,7,7,7,True,True,858,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75308662,I,1.7,7,1,0,8,8,False,False,6,1,8,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+P1,75308842,I,1.7,7,0,0,7,7,False,False,632,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75309002,A,1.59,7,0,7,7,7,True,True,815,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75309222,I,1.6,5,0,0,5,5,False,False,867,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+P1,75414102,F,0.69,11,0,0,11,11,True,True,125,4,10,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S0,75261411,F,0.45,6,0,0,6,6,True,True,824,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75265421,F,0.63,5,1,0,6,6,True,True,844,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75274076,F,0.87,16,4,0,20,20,True,True,7,7,18,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S0,75274081,F,0.84,12,3,0,15,15,True,True,21,6,15,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S0,75276591,A,1.41,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75276641,I,1.7,6,0,0,6,6,False,False,819,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75276726,A,1.56,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75276736,I,1.6,7,0,0,7,7,False,False,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75276771,A,1.34,7,0,7,7,7,True,True,849,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75276946,A,1.97,5,0,5,5,5,True,False,101,0,4,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75276971,I,1.6,4,1,0,5,5,False,False,826,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75277036,F,0.45,7,0,0,7,7,True,True,512,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75277046,I,1.6,5,1,0,6,6,False,False,768,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75284636,A,1.6,6,0,6,6,6,True,True,863,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75285406,I,1.6,7,0,0,7,7,False,False,189,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75299706,I,1.7,6,1,0,7,7,False,False,200,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75300901,I,1.7,7,0,0,7,7,False,False,828,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75305706,F,1.26,8,2,0,10,10,True,True,93,6,9,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S0,75305886,A,1.7,7,0,7,7,7,True,True,200,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75305936,A,1.24,7,0,7,7,7,True,True,788,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75305946,A,1.64,8,0,8,7,7,True,True,857,0,7,fewer than 8 picks within 120 km (maxEvStaDist)
+S0,75306431,I,1.7,6,1,0,7,7,False,False,92,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75306436,A,1.34,7,0,7,7,7,True,True,856,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75306551,A,1.07,5,0,5,5,5,True,True,246,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75306621,A,1.35,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75306661,I,1.8,7,0,0,7,7,False,False,197,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75306671,A,1.23,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75307952,A,1.58,7,0,7,7,7,True,True,203,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75308112,A,1.31,7,0,7,7,7,True,True,858,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75308662,I,1.7,7,1,0,8,8,False,False,6,1,8,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S0,75308842,I,1.7,7,0,0,7,7,False,False,632,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75309002,A,1.59,7,0,7,7,7,True,True,815,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75309222,I,1.6,5,0,0,5,5,False,False,867,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S0,75414102,F,0.69,11,0,0,11,11,True,True,125,4,10,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S1,75261411,F,0.45,6,0,0,6,6,True,True,824,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75265421,F,0.63,5,1,0,6,6,True,True,844,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75274076,F,0.87,16,4,0,20,20,True,True,7,7,18,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S1,75274081,F,0.84,12,3,0,15,15,True,True,21,6,15,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S1,75276591,A,1.41,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75276641,I,1.7,6,0,0,6,6,False,False,819,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75276726,A,1.56,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75276736,I,1.6,7,0,0,7,7,False,False,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75276771,A,1.34,7,0,7,7,7,True,True,849,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75276946,A,1.97,5,0,5,5,5,True,False,101,0,4,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75276971,I,1.6,4,1,0,5,5,False,False,826,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75277036,F,0.45,7,0,0,7,7,True,True,512,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75277046,I,1.6,5,1,0,6,6,False,False,768,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75284636,A,1.6,6,0,6,6,6,True,True,863,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75285406,I,1.6,7,0,0,7,7,False,False,189,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75299706,I,1.7,6,1,0,7,7,False,False,200,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75300901,I,1.7,7,0,0,7,7,False,False,828,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75305706,F,1.26,8,2,0,10,10,True,True,93,6,9,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S1,75305886,A,1.7,7,0,7,7,7,True,True,200,0,6,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75305936,A,1.24,7,0,7,7,7,True,True,788,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75305946,A,1.64,8,0,8,7,7,True,True,857,0,7,fewer than 8 picks within 120 km (maxEvStaDist)
+S1,75306431,I,1.7,6,1,0,7,7,False,False,92,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75306436,A,1.34,7,0,7,7,7,True,True,856,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75306551,A,1.07,5,0,5,5,5,True,True,246,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75306621,A,1.35,7,0,7,7,7,True,True,857,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75306661,I,1.8,7,0,0,7,7,False,False,197,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75306671,A,1.23,7,0,7,7,7,True,True,861,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75307952,A,1.58,7,0,7,7,7,True,True,203,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75308112,A,1.31,7,0,7,7,7,True,True,858,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75308662,I,1.7,7,1,0,8,8,False,False,6,1,8,fewer than minNumNeigh=8 neighbours sharing >= 8 phases
+S1,75308842,I,1.7,7,0,0,7,7,False,False,632,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75309002,A,1.59,7,0,7,7,7,True,True,815,0,7,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75309222,I,1.6,5,0,0,5,5,False,False,867,0,5,fewer than 8 picks: cannot share minNumPhases=8 phases with any neighbour
+S1,75414102,F,0.69,11,0,0,11,11,True,True,125,4,10,fewer than minNumNeigh=8 neighbours sharing >= 8 phases

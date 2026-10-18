@@ -1,0 +1,168 @@
+{
+ "run": "S1",
+ "exit_code": 0,
+ "wall_s": 1737.6,
+ "time_v": {
+  "user_s": "1720.70",
+  "sys_s": "10.54",
+  "cpu_percent": "99%",
+  "wall": "28:57.58",
+  "max_rss_kb": "1145208",
+  "exit_status": "0"
+ },
+ "outputs": [
+  "multievent_20261018052532_5530",
+  "reloc-event.csv",
+  "reloc-phase.csv",
+  "reloc-station.csv",
+  "relocated.xml",
+  "scrtdd.log"
+ ],
+ "diagnostics_dirs": [
+  "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/scrtdd/S1/work/multievent_20261018052532_5530"
+ ],
+ "log": {
+  "n_lines": 2299,
+  "errors": [],
+  "warnings_n": 1,
+  "successfully_relocated": 890,
+  "clusters": 1,
+  "cc_P_line": "521099 13.3 69386  Above coeff threshold (0.70) 46.8% (243630)",
+  "cc_S_line": "36169 11.2 4063  Above coeff threshold (0.70) 52.4% (18955)",
+  "waveform_line": "waveforms downloaded 34734, not available 16925, loaded from disk cache 0",
+  "iterations_logged": 21,
+  "iteration_lines": [
+   "0 893 dampingFactor=0.01 downWeightingByResidual=10.00 absLocConstraint=0.30",
+   "1 893 dampingFactor=0.01 downWeightingByResidual=9.74 absLocConstraint=0.30",
+   "2 893 dampingFactor=0.01 downWeightingByResidual=9.47 absLocConstraint=0.30",
+   "3 893 dampingFactor=0.01 downWeightingByResidual=9.21 absLocConstraint=0.30",
+   "4 893 dampingFactor=0.01 downWeightingByResidual=8.95 absLocConstraint=0.30",
+   "5 893 dampingFactor=0.01 downWeightingByResidual=8.68 absLocConstraint=0.30",
+   "6 893 dampingFactor=0.01 downWeightingByResidual=8.42 absLocConstraint=0.30",
+   "7 893 dampingFactor=0.01 downWeightingByResidual=8.16 absLocConstraint=0.30",
+   "8 893 dampingFactor=0.01 downWeightingByResidual=7.89 absLocConstraint=0.30",
+   "9 893 dampingFactor=0.01 downWeightingByResidual=7.63 absLocConstraint=0.30",
+   "10 893 dampingFactor=0.01 downWeightingByResidual=7.37 absLocConstraint=0.30",
+   "11 893 dampingFactor=0.01 downWeightingByResidual=7.11 absLocConstraint=0.30",
+   "12 893 dampingFactor=0.01 downWeightingByResidual=6.84 absLocConstraint=0.30",
+   "13 893 dampingFactor=0.01 downWeightingByResidual=6.58 absLocConstraint=0.30",
+   "14 893 dampingFactor=0.01 downWeightingByResidual=6.32 absLocConstraint=0.30",
+   "15 893 dampingFactor=0.01 downWeightingByResidual=6.05 absLocConstraint=0.30",
+   "16 893 dampingFactor=0.01 downWeightingByResidual=5.79 absLocConstraint=0.30",
+   "17 893 dampingFactor=0.01 downWeightingByResidual=5.53 absLocConstraint=0.30",
+   "18 893 dampingFactor=0.01 downWeightingByResidual=5.26 absLocConstraint=0.30",
+   "19 893 dampingFactor=0.01 downWeightingByResidual=5.00 absLocConstraint=0.30",
+   "20 893 dampingFactor=0.01 downWeightingByResidual=4.74 absLocConstraint=0.30"
+  ],
+  "event_rms_lines": [
+   "min 105.709 1st quartile 292.427 median 367.378 3rd quartile 463.068 max 1258.601 ",
+   "min 144.437 1st quartile 267.721 median 316.929 3rd quartile 408.641 max 5111.278 ",
+   "min 160.253 1st quartile 270.093 median 319.324 3rd quartile 407.225 max 5111.278 ",
+   "min 159.743 1st quartile 269.030 median 317.119 3rd quartile 404.450 max 5111.278 ",
+   "min 158.595 1st quartile 268.588 median 316.491 3rd quartile 402.924 max 5111.278 ",
+   "min 158.058 1st quartile 269.292 median 316.066 3rd quartile 402.110 max 5111.278 ",
+   "min 157.831 1st quartile 269.338 median 315.306 3rd quartile 400.491 max 5111.278 ",
+   "min 157.621 1st quartile 269.098 median 315.587 3rd quartile 400.620 max 5111.278 ",
+   "min 157.474 1st quartile 269.272 median 315.026 3rd quartile 398.701 max 5111.278 ",
+   "min 157.469 1st quartile 269.035 median 314.321 3rd quartile 398.624 max 5111.278 ",
+   "min 157.410 1st quartile 268.600 median 313.967 3rd quartile 397.874 max 5111.278 ",
+   "min 157.366 1st quartile 267.782 median 314.232 3rd quartile 397.596 max 5111.278 ",
+   "min 157.454 1st quartile 268.012 median 314.597 3rd quartile 397.327 max 5111.278 ",
+   "min 157.475 1st quartile 268.033 median 314.143 3rd quartile 396.792 max 5111.278 ",
+   "min 157.599 1st quartile 268.286 median 314.694 3rd quartile 396.801 max 5111.278 ",
+   "min 157.799 1st quartile 268.623 median 314.159 3rd quartile 397.089 max 5111.278 ",
+   "min 157.977 1st quartile 268.664 median 315.459 3rd quartile 397.170 max 5111.278 ",
+   "min 158.336 1st quartile 269.171 median 315.378 3rd quartile 397.318 max 5111.278 ",
+   "min 158.810 1st quartile 269.074 median 315.549 3rd quartile 398.169 max 5111.278 ",
+   "min 159.456 1st quartile 269.310 median 315.874 3rd quartile 397.887 max 5111.278 ",
+   "min 160.231 1st quartile 269.599 median 316.053 3rd quartile 397.986 max 5111.278 "
+  ],
+  "dd_residual_lines": [
+   [
+    "557268",
+    "median 1.359 MedianAbsoluteDeviation 77.242"
+   ],
+   [
+    "557140",
+    "median 0.487 MedianAbsoluteDeviation 49.067"
+   ],
+   [
+    "557109",
+    "median 0.265 MedianAbsoluteDeviation 45.172"
+   ],
+   [
+    "557140",
+    "median 0.159 MedianAbsoluteDeviation 44.307"
+   ],
+   [
+    "557140",
+    "median 0.171 MedianAbsoluteDeviation 43.859"
+   ],
+   [
+    "557140",
+    "median 0.149 MedianAbsoluteDeviation 43.574"
+   ],
+   [
+    "557140",
+    "median 0.103 MedianAbsoluteDeviation 43.328"
+   ],
+   [
+    "557140",
+    "median 0.073 MedianAbsoluteDeviation 43.074"
+   ],
+   [
+    "557140",
+    "median 0.055 MedianAbsoluteDeviation 42.827"
+   ],
+   [
+    "557140",
+    "median 0.026 MedianAbsoluteDeviation 42.599"
+   ],
+   [
+    "557140",
+    "median -0.005 MedianAbsoluteDeviation 42.350"
+   ],
+   [
+    "557140",
+    "median -0.026 MedianAbsoluteDeviation 42.096"
+   ],
+   [
+    "557140",
+    "median -0.026 MedianAbsoluteDeviation 41.801"
+   ],
+   [
+    "557140",
+    "median -0.077 MedianAbsoluteDeviation 41.438"
+   ],
+   [
+    "557140",
+    "median -0.134 MedianAbsoluteDeviation 41.168"
+   ],
+   [
+    "557140",
+    "median -0.170 MedianAbsoluteDeviation 40.947"
+   ],
+   [
+    "557140",
+    "median -0.188 MedianAbsoluteDeviation 40.746"
+   ],
+   [
+    "557140",
+    "median -0.192 MedianAbsoluteDeviation 40.540"
+   ],
+   [
+    "557140",
+    "median -0.217 MedianAbsoluteDeviation 40.312"
+   ],
+   [
+    "557140",
+    "median -0.240 MedianAbsoluteDeviation 40.099"
+   ],
+   [
+    "557140",
+    "median -0.252 MedianAbsoluteDeviation 39.901"
+   ]
+  ]
+ },
+ "reloc_event_rows": 893
+}

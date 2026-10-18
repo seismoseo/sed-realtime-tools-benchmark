@@ -1,0 +1,1467 @@
+{
+ "variant": "phasenet_scedc",
+ "cfg_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/scautopick_phasenet_scedc.cfg",
+ "cfg_file_values": {
+  "plugins": "dlrtpicker",
+  "picker": "DL3C",
+  "spicker": "SDL3C",
+  "module.trunk.global.picker.DL3C.model": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_scedc.onnx",
+  "module.trunk.global.spicker.SDL3C.model": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_scedc.onnx",
+  "module.trunk.global.picker.DL3C.maxAttempts": "1",
+  "module.trunk.global.spicker.SDL3C.minLatency": "15",
+  "module.trunk.global.spicker.SDL3C.maxLatency": "30",
+  "module.trunk.global.spicker.SDL3C.maxAttempts": "4",
+  "module.trunk.global.spicker.SDL3C.strategy": "best",
+  "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+  "timeCorrection": "0",
+  "thresholds.triggerOn": "1.8",
+  "thresholds.triggerOff": "1.0",
+  "killPendingSPickers": "false",
+  "thresholds.deadTime": "15",
+  "thresholds.minAmplOffset": "1.8",
+  "thresholds.amplMaxTimeWindow": "5",
+  "ringBufferSize": "300",
+  "leadTime": "60",
+  "initTime": "60",
+  "thresholds.maxGapLength": "4.5",
+  "amplitudes": "MLv, mb, mB",
+  "extraPickComments": "true"
+ },
+ "plugin_resolved": {
+  "picker.DL3C": {
+   "minConfidence": {
+    "value": 0.4,
+    "source": "plugin default (dl.cpp:63,125)"
+   },
+   "polarityMinConfidence": {
+    "value": 0.5,
+    "source": "plugin default (dl.cpp:64,130-131)"
+   },
+   "polarityMaxTilt": {
+    "value": 20.0,
+    "source": "plugin default (dl.cpp:134-135)"
+   },
+   "uncertaintyMap": {
+    "value": null,
+    "source": "plugin default (dl.cpp:162 (unset: no uncertainty))"
+   },
+   "strategy": {
+    "value": "fast",
+    "source": "plugin default (dl.cpp:173-175)"
+   },
+   "maxLatency": {
+    "value": "windowDuration/2",
+    "source": "plugin default (dl.cpp:197-198)"
+   },
+   "minLatency": {
+    "value": "= maxLatency",
+    "source": "plugin default (dl.cpp:201-202)"
+   },
+   "maxAttempts": {
+    "value": "1",
+    "source": "cfg file"
+   },
+   "S-veto (internal)": {
+    "value": "P peak skipped if S curve >= 0.8 * P there",
+    "source": "plugin default (dl.cpp:408-445)"
+   },
+   "model": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_scedc.onnx",
+    "source": "cfg file"
+   },
+   "resolved": {
+    "window_duration_s": 30.01,
+    "minLatency_s": 15.005,
+    "maxLatency_s": 15.005,
+    "attempts": 1,
+    "attempt_window_ends_after_reference_s": [
+     15.005
+    ],
+    "attempt_window_starts_after_reference_s": [
+     -15.005
+    ],
+    "reference": "detector trigger"
+   }
+  },
+  "spicker.SDL3C": {
+   "minConfidence": {
+    "value": 0.3,
+    "source": "plugin default (S_dl.cpp:49,106)"
+   },
+   "phaseHint": {
+    "value": "S",
+    "source": "plugin default (S_dl.cpp:49,112)"
+   },
+   "uncertaintyMap": {
+    "value": null,
+    "source": "plugin default (S_dl.cpp:122 (unset: no uncertainty))"
+   },
+   "strategy": {
+    "value": "best",
+    "source": "cfg file"
+   },
+   "maxLatency": {
+    "value": "30",
+    "source": "cfg file"
+   },
+   "minLatency": {
+    "value": "15",
+    "source": "cfg file"
+   },
+   "maxAttempts": {
+    "value": "4",
+    "source": "cfg file"
+   },
+   "search region (internal)": {
+    "value": "only samples strictly after the reference P pick",
+    "source": "plugin default (S_dl.cpp:345-354)"
+   },
+   "model": {
+    "value": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_scedc.onnx",
+    "source": "cfg file"
+   },
+   "resolved": {
+    "window_duration_s": 30.01,
+    "minLatency_s": 15.0,
+    "maxLatency_s": 30.0,
+    "attempts": 4,
+    "attempt_window_ends_after_reference_s": [
+     15.0,
+     20.0,
+     25.0,
+     30.0
+    ],
+    "attempt_window_starts_after_reference_s": [
+     -15.01,
+     -10.01,
+     -5.01,
+     -0.01
+    ],
+    "reference": "P pick"
+   }
+  }
+ },
+ "model_file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/software/src/seiscomp/src/extras/scdlrtpicker/models/phasenet_scedc.onnx",
+ "model_metadata": {
+  "seiscomp.picker.numComponents": "3",
+  "seiscomp.picker.sampleRate": "100.0",
+  "seiscomp.picker.windowLength": "3001",
+  "seiscomp.picker.phases": "P,S,N",
+  "seiscomp.picker.normalization": "peak",
+  "seiscomp.picker.componentOrder": "ZNE"
+ },
+ "scautopick_resolved": {
+  "dump_config_module": {
+   "amplitude group": "AMPLITUDE",
+   "testMode": "false",
+   "offline": "true",
+   "useAllStreams": "false",
+   "calculateAmplitudes": "true",
+   "calculateAmplitudeTypes": "MLv, mB, mb",
+   "update amplitude types": "[]",
+   "interpolateGaps": "false",
+   "maxGapLength": "4.50s",
+   "defaultFilter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)",
+   "defaultTriggerOnThreshold": "1.80",
+   "defaultTriggerOffThreshold": "1.00s",
+   "minDuration": "-1.00s",
+   "maxDuration": "-1.00",
+   "triggerDeadTime": "15.00s",
+   "amplitudeMaxTimeWindow": "5.00s",
+   "amplitudeMinOffset": "1.80s",
+   "defaultTimeCorrection": "0.00s",
+   "ringBufferSize": "300s",
+   "leadTime": "60s",
+   "initTime": "60s",
+   "pickerType": "DL3C",
+   "secondaryPickerType": "SDL3C",
+   "killPendingSPickers": "false",
+   "sendDetections": "false"
+  },
+  "dump_config_streams": {
+   "BK.ATP.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BDM.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BKS.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BL67.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BL88.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BRIB.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BRK.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.BUCI.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.CMSB.40.DP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.HERB.40.CN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.JASP.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.JEPS.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.LCOS.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.LLNL.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.MHC.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.MHDL.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.MLKN.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.MTOS.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.OHLN.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.OXMT.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.PESC.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.PETB.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.PINL.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.RFSB.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.RVRP.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.SBRN.40.EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.SCCB.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.SM2B.40.CN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.TESL.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.TWIT.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.UMUN.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.VAK.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.VALB.40.DP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "BK.WENL.00.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.57195.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.57201.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.57202.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.57252.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.57370.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.57392.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.57734.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.58219.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.58463.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.58667.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.67210.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.67215.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.68583.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "CE.68586.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C001.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C006.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C015.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C021.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C031.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C033.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C049.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C055.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C056.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C062.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C067.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C071.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.C073.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CAG..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CAL..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CAO.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CAP.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CBP..HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CBR..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CBSB.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CCOB..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CGP..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CGP1..EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CLCB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CMC.02.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CMOB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CNI..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CPI..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CPM..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CRH..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CRPB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CSL..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CSPB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CSR.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CSUM.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CTA..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CVL..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CYB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CYD..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.CYD1..EP": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.HMS.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J020.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J025.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J032.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.J043.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JBG..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JBMB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JBNB..HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JBR..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JCH..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JCPB.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JJO..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JLO.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JMGB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JPE.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JSA..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JSB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JSFB..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JSJ..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JSP..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JST.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.JSV.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NAPC..HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NBO..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NBW.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NGI.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NGVB..HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NHM..HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NLH..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NMI..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NNI.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NTAC..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NTO..HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NC.NVC.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1002.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1003.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1678.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1684.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1688.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1689.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1690.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1691.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1722.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1737B.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1739.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1750.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1752.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1753.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1755.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1756.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1758.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1759.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1760.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1762.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1765.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1769.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1775.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1779.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1780.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1781.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1782.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1786.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1788.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1791.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1792.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1793B.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1794B.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1798.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1799.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1801.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1802.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1803.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1804.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1805.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1806.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1810.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1813B.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1814.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1815B.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1823.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1829.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1830.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1836.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1838.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1846.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1847B.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1853.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1855.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1857.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1858.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1859.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1861.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1862.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1863.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1877.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1879.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.1880.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.DIX.01.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVA1.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVA2.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVA3.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVA4.01.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVB1.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVB2.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVB3.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.LVB4.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.SIA.02.HH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "NP.TWIT2.00.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "PB.B054..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "PB.B057..EH": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "WR.CK04.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "WR.CKR.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "WR.CLFS.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "WR.HLT..HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "WR.MOFF.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   },
+   "WR.STNI.10.HN": {
+    "trigger_on": "1.80",
+    "trigger_off": "1.00",
+    "time_correction": "0.00",
+    "filter": "RMHP(10)->ITAPER(30)->BW_BP(4,5,20)->STALTA(1,30)"
+   }
+  },
+  "n_streams": 204,
+  "dump_settings": {
+   "scripts.crashHandler": "",
+   "logging.level": "2",
+   "logging.context": "0",
+   "logging.component": "None",
+   "logging.components": "[]",
+   "logging.output": "",
+   "logging.syslog": "0",
+   "logging.stderr": "0",
+   "logging.utc": "0",
+   "logging.file.rotator": "1",
+   "logging.file.rotator.timeSpan": "86400",
+   "logging.file.rotator.archiveSize": "7",
+   "logging.file.rotator.maxFileSize": "104857600",
+   "--quiet,q": "0",
+   "--verbosity": "2",
+   "--print-context": "0",
+   "--print-component": "None",
+   "--component": "[]",
+   "--console": "0",
+   "--debug": "0",
+   "--trace": "0",
+   "--log-file": "",
+   "--log-utc": "0",
+   "--syslog,s": "0",
+   "--config-file": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/scautopick_phasenet_scedc.cfg",
+   "--plugins": "",
+   "--lockfile,l": "",
+   "certStore": "@ROOTDIR@/var/lib/certs",
+   "logging.objects.timeSpan": "60",
+   "agencyID": "UNSET",
+   "author": "scautopick@server-a",
+   "loadRegions": "0",
+   "publicIDPattern": "",
+   "processing.whitelist.agencies": "[]",
+   "processing.blacklist.agencies": "[]",
+   "amplitudes.aliases": "[]",
+   "magnitudes.aliases": "[]",
+   "IntervalSOH": "60",
+   "soh.interval": "60",
+   "recordstream": "file:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/input/75261626_sorted.mseed",
+   "--record-driver-list": "0",
+   "--record-url,I": "file:///home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/input/75261626_sorted.mseed",
+   "--record-file": "",
+   "--record-type": ""
+  }
+ },
+ "binding_set": "main",
+ "bound_stations": {
+  "n": 204,
+  "per_sensor": {
+   "HH": 34,
+   "HN": 152,
+   "DP": 2,
+   "CN": 2,
+   "EP": 7,
+   "EH": 7
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "unlimited_2015": {
+  "maxEvStaDist": -1.0,
+  "n_clusters": 1,
+  "cluster_sizes": [
+   893
+  ],
+  "n_events": 893,
+  "n_phase_pairs": 564447,
+  "n_event_pairs": 27040,
+  "n_P": 528278,
+  "n_S": 36169
+ },
+ "120km_2026": {
+  "maxEvStaDist": 120.0,
+  "n_clusters": 1,
+  "cluster_sizes": [
+   893
+  ],
+  "n_events": 893,
+  "n_phase_pairs": 557268,
+  "n_event_pairs": 27044,
+  "n_P": 521099,
+  "n_S": 36169
+ },
+ "comparison": {
+  "events_only_unlimited": [],
+  "events_only_120km": [],
+  "phase_pairs_only_unlimited": 7455,
+  "phase_pairs_only_120km": 276,
+  "event_pairs_only_unlimited": 27,
+  "only_unlimited_station_without_grid": 7063,
+  "only_unlimited_station_with_grid": 392,
+  "only_unlimited_max_dist_km_median": 146.57791125413578,
+  "only_unlimited_by_phase": {
+   "P": 7455
+  },
+  "clustering_120km_equals_P0_pair_file": true,
+  "P0_pair_file_rows": 557268
+ }
+}

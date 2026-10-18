@@ -1,0 +1,125 @@
+{
+ "centre_shift_NCSS_routine": {
+  "km": 3.8434455860783445,
+  "azimuth_deg": 147.91094192079524
+ },
+ "centre_shift_NCEDC_DD": {
+  "km": 3.9923548747585524,
+  "azimuth_deg": 142.4218002586606
+ },
+ "plane_NCEDC_DD": {
+  "y2015": {
+   "strike_deg": 346.2,
+   "dip_deg": 84.8,
+   "rms_off_plane_km": 0.397,
+   "sv_km": [
+    0.911,
+    0.776,
+    0.397
+   ]
+  },
+  "y2026": {
+   "strike_deg": 187.8,
+   "dip_deg": 81.2,
+   "rms_off_plane_km": 0.788,
+   "sv_km": [
+    1.376,
+    1.211,
+    0.788
+   ]
+  }
+ },
+ "centre_shift_LDEO_DD": {
+  "km": 3.903263126071761,
+  "azimuth_deg": 143.86549273086584
+ },
+ "plane_LDEO_DD": {
+  "y2015": {
+   "strike_deg": 352.7,
+   "dip_deg": 83.6,
+   "rms_off_plane_km": 0.359,
+   "sv_km": [
+    0.86,
+    0.519,
+    0.359
+   ]
+  },
+  "y2026": {
+   "strike_deg": 189.4,
+   "dip_deg": 80.9,
+   "rms_off_plane_km": 0.786,
+   "sv_km": [
+    1.409,
+    1.23,
+    0.786
+   ]
+  }
+ },
+ "nearest_2015_event_km_quantiles": [
+  0.3724785190057942,
+  1.4701312785655554,
+  3.989320185948198
+ ],
+ "location_code_changes": [
+  "BK.RAMR",
+  "BK.SUTB",
+  "NC.BMS",
+  "NC.BSG",
+  "NC.CAO",
+  "NC.CML",
+  "NC.GBB",
+  "NC.GBG",
+  "NC.GFC",
+  "NC.GHO",
+  "NC.GRT",
+  "NC.GSN",
+  "NC.HAZ",
+  "NC.HGS",
+  "NC.MDH1",
+  "NC.MDR",
+  "NC.MEM",
+  "NC.MHD",
+  "NC.MRD",
+  "NC.NSM",
+  "NP.1002",
+  "NP.1003",
+  "NP.1689",
+  "NP.1690",
+  "NP.1691",
+  "NP.1722",
+  "NP.1739",
+  "NP.1750",
+  "NP.1752",
+  "NP.1753",
+  "NP.1755",
+  "NP.1756",
+  "NP.1760",
+  "NP.1775",
+  "NP.1788",
+  "NP.1799",
+  "NP.1801",
+  "NP.1804",
+  "NP.1806",
+  "NP.1810",
+  "NP.1814",
+  "NP.1830",
+  "NP.1836",
+  "NP.1846",
+  "NP.1853",
+  "NP.1877",
+  "WR.KPK",
+  "WR.SAQ",
+  "WR.SLD",
+  "WR.SPR"
+ ],
+ "picks_per_event_2015": {
+  "P_median": 19.0,
+  "S_median": 4.0,
+  "S_fraction": 0.12221616570627628
+ },
+ "picks_per_event_2026": {
+  "P_median": 22.0,
+  "S_median": 3.0,
+  "S_fraction": 0.09412467160257941
+ }
+}

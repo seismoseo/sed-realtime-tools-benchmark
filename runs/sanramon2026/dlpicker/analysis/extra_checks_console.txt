@@ -1,0 +1,92 @@
+SeisBench in the overlap file: {'75283011': {'analyst_P_at_3c_stations': 139, 'with_seisbench_P_within_0p5s': 121}, '75283016': {'analyst_P_at_3c_stations': 164, 'with_seisbench_P_within_0p5s': 66}}
+noise-span P picks confirmed by another model: {'phasenet_instance': {'n_noise_span_P': 49, 'n_confirmed_by_other_model': 33}, 'phasenet_original': {'n_noise_span_P': 218, 'n_confirmed_by_other_model': 53}, 'phasenet_scedc': {'n_noise_span_P': 163, 'n_confirmed_by_other_model': 38}, 'eqtp_ncedc': {'n_noise_span_P': 75, 'n_confirmed_by_other_model': 27}}
+overlap file 75283011, matched P picks by event: {'phasenet_instance': {'75283016': 145, '75283011': 15}, 'phasenet_original': {'75283016': 128, '75283011': 26}, 'phasenet_scedc': {'75283016': 55, '75283011': 54}, 'eqtp_ncedc': {'75283011': 109, '75283016': 33}}
+hn set: failed 3-C assembly (processor count): {'BK.LCOS': 405, 'BK.BRIB': 270, 'BK.BRK': 126} ; ambiguous-vertical errors: {'BK.BRK.00.HN': 108}
+            model          sensor phase                stations  n_stations  n_ref  n_matched  recall
+phasenet_instance velocity sensor     P         all hn stations          28    411        340   0.827
+phasenet_instance velocity sensor     P hn stations that worked          25    365        299   0.819
+phasenet_instance velocity sensor     S         all hn stations          28     93         68   0.731
+phasenet_instance velocity sensor     S hn stations that worked          25     87         63   0.724
+phasenet_instance   accelerometer     P         all hn stations          28    411        295   0.718
+phasenet_instance   accelerometer     P hn stations that worked          25    365        295   0.808
+phasenet_instance   accelerometer     S         all hn stations          28     93         72   0.774
+phasenet_instance   accelerometer     S hn stations that worked          25     87         72   0.828
+phasenet_original velocity sensor     P         all hn stations          28    411        341   0.830
+phasenet_original velocity sensor     P hn stations that worked          25    365        300   0.822
+phasenet_original velocity sensor     S         all hn stations          28     93         72   0.774
+phasenet_original velocity sensor     S hn stations that worked          25     87         67   0.770
+phasenet_original   accelerometer     P         all hn stations          28    411        309   0.752
+phasenet_original   accelerometer     P hn stations that worked          25    365        309   0.847
+phasenet_original   accelerometer     S         all hn stations          28     93         77   0.828
+phasenet_original   accelerometer     S hn stations that worked          25     87         77   0.885
+   phasenet_scedc velocity sensor     P         all hn stations          28    411        313   0.762
+   phasenet_scedc velocity sensor     P hn stations that worked          25    365        274   0.751
+   phasenet_scedc velocity sensor     S         all hn stations          28     93         50   0.538
+   phasenet_scedc velocity sensor     S hn stations that worked          25     87         45   0.517
+   phasenet_scedc   accelerometer     P         all hn stations          28    411        246   0.599
+   phasenet_scedc   accelerometer     P hn stations that worked          25    365        246   0.674
+   phasenet_scedc   accelerometer     S         all hn stations          28     93         44   0.473
+   phasenet_scedc   accelerometer     S hn stations that worked          25     87         44   0.506
+       eqtp_ncedc velocity sensor     P         all hn stations          28    411        259   0.630
+       eqtp_ncedc velocity sensor     P hn stations that worked          25    365        236   0.647
+       eqtp_ncedc velocity sensor     S         all hn stations          28     93         68   0.731
+       eqtp_ncedc velocity sensor     S hn stations that worked          25     87         64   0.736
+       eqtp_ncedc   accelerometer     P         all hn stations          28    411        276   0.672
+       eqtp_ncedc   accelerometer     P hn stations that worked          25    365        276   0.756
+       eqtp_ncedc   accelerometer     S         all hn stations          28     93         72   0.774
+       eqtp_ncedc   accelerometer     S hn stations that worked          25     87         72   0.828
+CMSB record rates: {'00.HNE': [200.0], '00.HNN': [200.0], '00.HNZ': [200.0], '40.DP1': [500.0], '40.DP2': [500.0], '40.DP3': [500.0]}
+CMSB inventory epochs:
+channel                     start                       end  inventory_rate_hz
+ 00.HNE 2016-11-24T00:20:00.0000Z 2026-03-12T23:00:00.0000Z              100.0
+ 00.HNN 2016-11-24T00:20:00.0000Z 2026-03-12T23:00:00.0000Z              100.0
+ 00.HNZ 2016-11-24T00:20:00.0000Z 2026-03-12T23:00:00.0000Z              100.0
+ 00.HNE 2026-03-12T23:00:00.0000Z 2026-03-13T15:55:00.0000Z              100.0
+ 00.HNN 2026-03-12T23:00:00.0000Z 2026-03-13T15:55:00.0000Z              100.0
+ 00.HNZ 2026-03-12T23:00:00.0000Z 2026-03-13T15:55:00.0000Z              100.0
+ 00.HNE 2026-03-13T15:55:00.0000Z                       NaN              200.0
+ 00.HNN 2026-03-13T15:55:00.0000Z                       NaN              200.0
+ 00.HNZ 2026-03-13T15:55:00.0000Z                       NaN              200.0
+ 40.DP1 2016-08-10T22:17:00.0000Z 2026-03-12T23:00:00.0000Z              500.0
+ 40.DP2 2016-08-10T22:17:00.0000Z 2026-03-12T23:00:00.0000Z              500.0
+ 40.DP3 2016-08-10T22:17:00.0000Z 2026-03-12T23:00:00.0000Z              500.0
+ 40.DP1 2026-03-12T23:00:00.0000Z 2026-03-13T15:55:00.0000Z              500.0
+ 40.DP2 2026-03-12T23:00:00.0000Z 2026-03-13T15:55:00.0000Z              500.0
+ 40.DP3 2026-03-12T23:00:00.0000Z 2026-03-13T15:55:00.0000Z              500.0
+ 40.DP1 2026-03-13T15:55:00.0000Z                       NaN              500.0
+ 40.DP2 2026-03-13T15:55:00.0000Z                       NaN              500.0
+ 40.DP3 2026-03-13T15:55:00.0000Z                       NaN              500.0
+'sampling rate changed' warnings: {'n': 0, 'examples': []}
+CMSB HN pickers created in hn runs: 210
+             variant phase  analyst_picks  matched dl_channels analyst_channels  median_dt_s  max_abs_dt_s
+          eqtp_ncedc     P             11       10         DP1              DP1       0.0150          0.11
+          eqtp_ncedc     S              6        6         DP1          DP2,DP3       0.1600          0.35
+       eqtp_ncedc_hn     P             11        7         HNZ              DP1       0.0700          0.11
+       eqtp_ncedc_hn     S              6        4         HNZ          DP2,DP3       0.3750          0.71
+   phasenet_instance     P             11       10         DP1              DP1      -0.0350          0.39
+   phasenet_instance     S              6        6         DP1          DP2,DP3       0.0150          0.26
+phasenet_instance_hn     P             11       10         HNZ              DP1       0.0300          0.15
+phasenet_instance_hn     S              6        6         HNZ          DP2,DP3       0.2100          0.54
+   phasenet_original     P             11       10         DP1              DP1       0.0200          0.10
+   phasenet_original     S              6        6         DP1          DP2,DP3       0.1850          0.36
+phasenet_original_hn     P             11       10         HNZ              DP1       0.1050          0.21
+phasenet_original_hn     S              6        6         HNZ          DP2,DP3       0.3100          0.65
+      phasenet_scedc     P             11       11         DP1              DP1       0.0100          0.39
+      phasenet_scedc     S              6        5         DP1          DP2,DP3       0.1500          0.48
+   phasenet_scedc_hn     P             11        8         HNZ              DP1       0.1396          0.31
+   phasenet_scedc_hn     S              6        5         HNZ          DP2,DP3       0.3400          0.71
+CMSB hn vs main picks (same model): {'n_hn_picks_with_a_dp_pick': 95, 'n_within_1s': 86, 'median_abs_dt_within_1s': 0.135}
+events after the inventory switches to 200 Hz: ['75327827', '75335142', '75335382', '75339357']
+          variant                 reference    n  recall_all  n_all  recall_3c  n_3c  recall_complete  n_complete
+phasenet_instance all usable (step-12 rule) 3329       0.481   3329      0.854  1874            0.858        1861
+phasenet_instance          analyst 'J' only 3258       0.482   3258      0.852  1843            0.857        1830
+phasenet_instance        automatic 'R' only   71       0.408     71      0.935    31            0.935          31
+phasenet_original all usable (step-12 rule) 3329       0.478   3329      0.850  1874            0.854        1861
+phasenet_original          analyst 'J' only 3258       0.480   3258      0.848  1843            0.852        1830
+phasenet_original        automatic 'R' only   71       0.408     71      0.935    31            0.935          31
+   phasenet_scedc all usable (step-12 rule) 3329       0.417   3329      0.741  1874            0.746        1861
+   phasenet_scedc          analyst 'J' only 3258       0.418   3258      0.739  1843            0.744        1830
+   phasenet_scedc        automatic 'R' only   71       0.380     71      0.871    31            0.871          31
+       eqtp_ncedc all usable (step-12 rule) 3329       0.414   3329      0.735  1874            0.740        1861
+       eqtp_ncedc          analyst 'J' only 3258       0.416   3258      0.736  1843            0.740        1830
+       eqtp_ncedc        automatic 'R' only   71       0.310     71      0.710    31            0.710          31

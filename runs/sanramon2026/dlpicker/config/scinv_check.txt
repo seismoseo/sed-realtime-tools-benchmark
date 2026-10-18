@@ -1,0 +1,80 @@
+Parsing /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml ... done
+Merging inventory ... done
+Checking inventory ... done
+C SensorLocation BK.BRIB.01
+  overlapping epochs 2024-09-05 17:14:05 - ... and 2023-12-15 18:45:00 - ...
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml and 
+             /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+   SensorLocation [01][2024-09-05T17:14:05.0000Z]
+    start: "2024-09-05T17:14:05.0000Z" != "2023-12-15T18:45:00.0000Z"
+    elevation: 237 != 235.1
+I SensorLocation BK.BRK.00.HN?
+  found 2 but not 3 components in 2014-08-20T21:14:00.0000Z
+C SensorLocation BK.BRK.00
+  overlapping epochs 2014-08-20 21:14:00 - ... and 2011-09-12 19:15:00 - ...
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml and 
+             /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+   SensorLocation [00][2014-08-20T21:14:00.0000Z]
+    start: "2014-08-20T21:14:00.0000Z" != "2011-09-12T19:15:00.0000Z"
+C SensorLocation BK.LCOS.00
+  overlapping epochs 2024-12-18 21:20:00 - ... and 2025-07-08 22:30:00 - ...
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml and 
+             /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+   SensorLocation [00][2024-12-18T21:20:00.0000Z]
+    start: "2024-12-18T21:20:00.0000Z" != "2025-07-08T22:30:00.0000Z"
+    elevation: 206.2 != 203.4
+W SensorLocation NC.MDH1.
+  sensor location is 2606 m below parent station. Differences > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1..DP1
+  channel depth is 2592 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1..DP2
+  channel depth is 2592 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1..DP3
+  channel depth is 2592 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W SensorLocation NC.MDH1.01
+  sensor location is 2250 m below parent station. Differences > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1.01.DP1
+  channel depth is 2263 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1.01.DP2
+  channel depth is 2263 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream NC.MDH1.01.DP3
+  channel depth is 2263 m. Depths > 500 m are reported as per configuration
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+I SensorLocation NC.PHF..EH?
+  found 2 but not 3 components in 2015-01-29T16:00:00.0000Z
+W Stream WR.CKR.10.HNE
+  channel depth is -0.3 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.CKR.10.HNN
+  channel depth is -0.3 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.CKR.10.HNZ
+  channel depth is -0.3 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.ORES.10.HHE
+  channel depth is -0.5 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.ORES.10.HHN
+  channel depth is -0.5 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.ORES.10.HHZ
+  channel depth is -0.5 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.SLD.10.HNE
+  channel depth is -0.6 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.SLD.10.HNN
+  channel depth is -0.6 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+W Stream WR.SLD.10.HNZ
+  channel depth is -0.6 m which seems unreasonable
+  Defined in /home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/config/inventory_sc.xml
+3 conflicts
+17 warnings

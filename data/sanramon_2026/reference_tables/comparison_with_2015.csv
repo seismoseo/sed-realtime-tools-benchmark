@@ -1,0 +1,54 @@
+section,item,y2015,y2026,note
+events,benchmark events,685,927,
+events,period,2015-10-01 to 2015-12-01,2025-10-01 to 2026-10-18 (end excl.),
+events,box (lat; lon),37.75-37.83; -122.01..-121.91,37.70-37.80; -122.01..-121.89,
+events,largest magnitude,3.60,4.18,
+events,NCSS review flag (col 164),{'F': 685},"{'F': 764, 'A': 97, 'I': 65, 'H': 1}","A = automatic, not analyst-reviewed"
+events,NCSS processing (cols 165-168),{'NC 5.0': 685},{'NC 6': 927},
+swarm position,"NCSS routine: median lat, lon","37.7862, -121.9627","37.7568, -121.9395","2025-26 centre is 3.84 km from the 2015 centre, azimuth 148 deg"
+swarm position,NCSS routine: depth 5/50/95 % (km),"[5.99, 7.81, 9.18]","[3.43, 7.38, 9.45]",geoid depth
+swarm position,"NCSS routine: extent E-W / N-S, 5-95 % (km)",1.25 / 2.58,2.81 / 3.58,
+swarm position,"NCEDC DD: median lat, lon","37.7881, -121.9607","37.7596, -121.9330","2025-26 centre is 3.99 km from the 2015 centre, azimuth 142 deg"
+swarm position,NCEDC DD: depth 5/50/95 % (km),"[5.7, 7.0, 8.2]","[4.43, 7.12, 8.35]",model depth (below the local station datum)
+swarm position,"NCEDC DD: extent E-W / N-S, 5-95 % (km)",1.08 / 2.26,2.37 / 3.51,
+swarm position,"NCEDC DD: best plane strike/dip (deg), rms off-plane (km)","346.2/84.8, 0.397","187.8/81.2, 0.788",SVD of all hypocentres; z down; strike = az(upward normal) - 90
+swarm position,"LDEO DD: median lat, lon","37.7869, -121.9621","37.7585, -121.9360","2025-26 centre is 3.90 km from the 2015 centre, azimuth 144 deg"
+swarm position,LDEO DD: depth 5/50/95 % (km),"[6.58, 7.19, 8.27]","[4.8, 7.37, 8.55]","geoid depth; 2015 base catalog, 2025-26 DD-RT"
+swarm position,"LDEO DD: extent E-W / N-S, 5-95 % (km)",0.90 / 2.21,2.42 / 3.45,
+swarm position,"LDEO DD: best plane strike/dip (deg), rms off-plane (km)","352.7/83.6, 0.359","189.4/80.9, 0.786",SVD of all hypocentres; z down; strike = az(upward normal) - 90
+swarm position,2025-26 LDEO DD events within 0.5 km (3-D) of a 2015 LDEO DD event,,68 of 864,
+swarm position,2025-26 LDEO DD events within 1.0 km (3-D) of a 2015 LDEO DD event,,199 of 864,
+swarm position,2025-26 LDEO DD events within 2.0 km (3-D) of a 2015 LDEO DD event,,649 of 864,
+swarm position,2025-26 LDEO DD: distance to nearest 2015 event 5/50/95 % (km),,"[0.37, 1.47, 3.99]",
+"stations (rtDD station.csv, net.sta.loc)",<= 60 km of each swarm centre,204,181,"common 65, only 2015 139, only 2025-26 116"
+"stations (rtDD station.csv, net.sta.loc)",<= 120 km of each swarm centre,264,300,"common 97, only 2015 167, only 2025-26 203"
+"stations (rtDD station.csv, net.sta.loc)",all of each swarm centre,415,594,"common 148, only 2015 267, only 2025-26 446"
+"stations (net.sta, location code ignored)",<= 60 km of each swarm centre,199,178,"common 91; only 2015 108 (NC 80, NP 24, BK 3, PB 1); only 2025-26 87 (NP 42, NC 18, CE 12, BK 10, WR 5)"
+"stations (net.sta, location code ignored)",<= 120 km of each swarm centre,259,297,"common 129; only 2015 130 (NC 101, NP 25, BK 4); only 2025-26 168 (NC 59, NP 51, BK 27, CE 18, WR 9, RE 3, PB 1)"
+"stations (net.sta, location code ignored)",stations in both years whose location code(s) differ,,50,"BK.RAMR, BK.SUTB, NC.BMS, NC.BSG, NC.CAO, NC.CML, NC.GBB, NC.GBG, NC.GFC, NC.GHO, NC.GRT, NC.GSN, NC.HAZ, NC.HGS, NC.MDH1, NC.MDR, NC.MEM, NC.MHD, NC.MRD, NC.NSM, NP.1002, NP.1003, NP.1689, NP.1690, NP.1691 ..."
+stations by network (<= 60 km / all),BG,0 / 0,0 / 31,
+stations by network (<= 60 km / all),BK,22 / 41,30 / 132,
+stations by network (<= 60 km / all),BP,0 / 6,0 / 9,
+stations by network (<= 60 km / all),CE,0 / 0,12 / 19,
+stations by network (<= 60 km / all),CI,0 / 8,0 / 11,
+stations by network (<= 60 km / all),GM,0 / 0,0 / 1,
+stations by network (<= 60 km / all),NC,129 / 267,63 / 258,
+stations by network (<= 60 km / all),NN,0 / 20,0 / 18,
+stations by network (<= 60 km / all),NP,51 / 55,70 / 82,
+stations by network (<= 60 km / all),PB,2 / 9,1 / 13,
+stations by network (<= 60 km / all),PG,0 / 3,0 / 2,
+stations by network (<= 60 km / all),RE,0 / 0,0 / 3,
+stations by network (<= 60 km / all),SB,0 / 0,0 / 1,
+stations by network (<= 60 km / all),WR,0 / 6,5 / 14,
+sensors (stations.xml),vertical-only sensors / all sensors <= 60 km,42 / 246,41 / 252,no S cross-correlation possible on vertical-only sensors
+sensors (stations.xml),vertical-only sensors / all sensors <= 120 km,80 / 308,86 / 396,no S cross-correlation possible on vertical-only sensors
+picks in phase.csv by channel type (P / S),BH,24 / 2,108 / 0,
+picks in phase.csv by channel type (P / S),CN,519 / 127,68 / 3,
+picks in phase.csv by channel type (P / S),DP,359 / 0,508 / 23,
+picks in phase.csv by channel type (P / S),EH,13655 / 888,20218 / 690,
+picks in phase.csv by channel type (P / S),EL,1 / 20,0 / 0,
+picks in phase.csv by channel type (P / S),EP,1908 / 555,1122 / 293,
+picks in phase.csv by channel type (P / S),HH,3128 / 160,9697 / 631,
+picks in phase.csv by channel type (P / S),HN,2951 / 1387,6208 / 2301,
+picks,"P / S picks per event, median",19 / 4,22 / 3,
+picks,S fraction of phase.csv,0.122,0.094,

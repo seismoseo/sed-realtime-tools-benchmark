@@ -1,0 +1,15 @@
+catalog,event_set,strike,dip,dip_direction,thickness_rms_m,median_abs_dist_m,p90_abs_dist_m,spread_along_strike_rms_m,spread_down_dip_rms_m,n
+NCSS,common (LDEO and all main runs),196.40,81.10,286.40,783.53,332.43,989.50,1461.50,1755.73,842
+NCSS,own (all events of the catalog; references: in the box),196.80,81.60,286.80,850.23,345.72,1033.54,1424.16,1999.57,927
+P0,common (LDEO and all main runs),188.80,78.60,278.80,799.93,284.19,891.78,1627.26,1057.31,842
+P0,own (all events of the catalog; references: in the box),188.60,79.10,278.60,790.14,276.06,885.69,1600.28,1164.35,893
+P1,common (LDEO and all main runs),15.60,87.70,105.60,792.75,366.81,805.03,1446.59,1082.76,842
+P1,own (all events of the catalog; references: in the box),14.70,89.50,104.70,783.61,350.89,802.78,1425.38,1113.79,893
+S0,common (LDEO and all main runs),189.50,79.40,279.50,797.05,292.35,879.42,1616.11,1057.21,842
+S0,own (all events of the catalog; references: in the box),189.20,79.40,279.20,787.48,283.70,878.32,1589.42,1164.56,893
+S1,common (LDEO and all main runs),15.60,87.70,105.60,792.84,366.54,804.83,1446.61,1082.64,842
+S1,own (all events of the catalog; references: in the box),14.70,89.40,104.70,783.70,351.16,802.71,1425.40,1113.70,893
+REF_LDEO,common (LDEO and all main runs),189.10,80.10,279.10,724.87,259.54,809.96,1321.39,1234.26,842
+REF_LDEO,own (all events of the catalog; references: in the box),189.50,80.90,279.50,788.38,275.17,819.58,1313.44,1329.60,864
+REF_NCEDC,common (LDEO and all main runs),187.60,81.80,277.60,727.53,265.80,813.43,1311.82,1222.04,842
+REF_NCEDC,own (all events of the catalog; references: in the box),187.80,81.60,277.80,791.82,276.57,825.52,1306.52,1293.86,864

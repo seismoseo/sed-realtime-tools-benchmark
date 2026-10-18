@@ -1,0 +1,264 @@
+
+
+
+DATACENTER COMMANDS                                    CATLIST(1)
+
+
+
+NAME
+     catlist - list earthquake catalog entries in a readable for-
+     mat.
+
+SYNOPSIS
+     catlist [-m mag_type_1,mag_type_2,... ] [-f  ncsn  |  ucb  |
+     mech   |   cnss]   [-nheader]   [-D  m|j]  [-h]  [input_file
+     [output_file] ]
+
+DESCRIPTION
+     The catlist program will print selected fields  from  either
+     NCSN  catalog,  NCSN mechanism, UCB catalog, or CNSS catalog
+     entries in an easy-to-read format.  The format of  the  file
+     is  automatically  determined,  although you may specify the
+     format if you desire.  Each catalog entry field  is  identi-
+     fied on the header line.  The catalog entry fields displayed
+     are:
+
+     Heading    Description
+     ________________________________________________________________
+
+     Date       Date of event.
+                Date of the earthquake in the format yyyy/mm/dd
+                where yyyy is the year, mm is the month, and dd
+                is the day of the month.
+     Time       Time of event.
+                Origin time of the earthquake in Universal
+                Coordinated Time (UTC) in the format hh:mm:ss.ss
+                where hh is the hour, mm is the minute, and
+                ss.ss is the second.  UTC is 8 hours ahead of PST
+                and 7 hours ahead of PDT.  If you are looking for
+                an earthquake which you felt at a particular time,
+                remember to convert to UTC.
+     Lat        Latitude (in decimal degrees).
+                Latitude of the earthquake in degrees.  Positive
+                latitudes are North; negative latitudes are South.
+     Lon        Longitude (in decimal degrees).
+                Longitude of the earthquake in degrees.  Positive
+                longitudes are East; negative longitudes are West.
+     Depth      Depth (km).
+                The depth of the earthquake in km.
+     Mag        Magnitude.
+                The magnitude of the earthquake.  Earthquakes
+                often
+                may differ, depending on the method of measurement.
+                In general, the cataloged magnitude has been
+                determined to be the most reliable.
+     Magt       Magnitude type.
+                Identification of the magnitude type. Commonly used
+                identifiers are:
+                Mw
+                ML,MLt,MLn,MLm,MLb - Local Richter magnitudes
+
+
+
+UC Berkeley       Last change: 20 November 2002                 1
+
+
+
+
+
+
+DATACENTER COMMANDS                                    CATLIST(1)
+
+
+
+                Mc - Coda amplitude magnitude
+                Md - Coda duration magnitude
+                Mx - Max amplitude magnitude
+                Mavg - Average of Mx and Md magnitudes
+                mb - Body-wave magnitude
+                Ms - Surface-wave magnitude
+                Me - Energy magnitude
+                Mlg - Lg magnitude
+     Nst        Number of stations (or phases) used to compute the
+                location.
+     Gap        Maxumum Azimuthal gap
+                The azimuthal gap of the hypocenter solution in
+                degrees. If you have have a line between each
+                station and the hypocenter, the largest angle
+                between any 2 lines is the gap.  In general, the
+                smaller the gap, the better the location.
+     Clo        Distance of closest station to event (km).
+                The distance to closest station used in creating
+                the location in km.
+     RMS        RMS travel time residual.
+                The root mean square of the travel-time residuals
+                in computing the location.  Essentially, it is a
+                measure of how well the event is located.
+                Smaller is better.
+     Event ID   Event_id (0 if no id) (not for CNSS)
+                Internal identifier for "tagging" events.
+     SRC        Source of event info (for CNSS)
+                The reporting source for the solution (ie what
+                organization is responsible for the solution)
+
+
+
+     See the options below for details on the magnitude field.
+
+
+OPTIONS
+     -f ncsn | ucb | mech
+          specifies the format of the input catalog  file  to  be
+          read.   The  supported options are ncsn, mech, ucb, and
+          cnss. The format of the  file  is  normally  determined
+          automatically, but you may specify the format with this
+          option if you desire.
+
+     -nheader
+          supressed the printing of the header lines  that  iden-
+          tify  each  output field.  You may want to suppress the
+          header lines if the out output from catlist  is  to  be
+          used as input to another program.
+
+     -D m|j
+          specifies that the date should  be  printed  in  either
+          year/month/day  or  julian  (day-of-year)  format.  The
+
+
+
+UC Berkeley       Last change: 20 November 2002                 2
+
+
+
+
+
+
+DATACENTER COMMANDS                                    CATLIST(1)
+
+
+
+          default format is year/month/day format.
+
+     -m _t_y_p_e__1,_t_y_p_e__2,...,_t_y_p_e__n
+          Specifies an optional ordered list of  magnitude  types
+          that  should  be  used for the magnitude field.  If the
+          magnitude value is empty (or zero) for a specified mag-
+          nitude type, the value for the next magnitude type will
+          be examined.  Since not all events have values for  all
+          magnitude  types, this allow you to specify a preferred
+          list of magnitudes to used when searching on  magnitude
+          values.  The current magnitude types are:
+
+          magtype   formats     description
+          __________________________________________________________________
+          pref      ncsn,cnss   Preferred magnitude.
+          ml        ncsn,ucb    Richter ML magnitude from BKS,ARC,MIN,MHC.
+          mlm       ncsn        ML computed by Menlo from UCB amplitudes.
+          mlt       ucb         Synonym for ML.
+          mln       ucb         "Network" ML (from all UCB stations).
+          mlb       ucb         Simulated ML from 14-kg Benioff seismometer.
+          md        ncsn        Coda magnitude.
+          mx        ncsn        Amplitude magnitude.
+          avg       ncsn,mech   Average of Coda and Amp magnitudes.
+          mw        ncsn,ucb    Momemt magnitude Mw.
+
+          The default magnitude search orders are:
+
+          Input data format   Default magnitude list
+          __________________________________________
+
+          ncsn                pref,mw,mlm,ml,md,mx
+          mech                avg
+          ucb                 mw,mln,ml,mlb
+          cnss                pref
+
+     -h   prints out a summary help message with the command syn-
+          tax.
+
+     _i_n_p_u_t__f_i_l_e
+          specifies the name of the  input  catalog  file  to  be
+          read.   If no input file is specified, the program will
+          read catalog lines from stdin.
+
+     _o_u_t_p_u_t__f_i_l_e
+          specifies the name of the output  catalog  file  to  be
+          written.   If  no output file is specified, the program
+          will write to stdout.  Note that you cannot specify  an
+          output file without specifying an input file.
+
+EXAMPLES
+     catlist mylist.catalog
+          will read the NCSN catalog entries from  mylist.catalog
+
+
+
+UC Berkeley       Last change: 20 November 2002                 3
+
+
+
+
+
+
+DATACENTER COMMANDS                                    CATLIST(1)
+
+
+
+          and  write the formatted output to stdout (normally the
+          terminal).
+
+     catlist -f ucb mylist.catalog mylist.list
+          will read the UCB catalog entries  from  mylist.catalog
+          and write the formatted output to mylist.list.
+
+     eqselect -catalog -t 940101000000 940201000000 -mag  5  9  |
+     catlist
+          will search the online NCSN catalog  for  January  1994
+          for events >= magnitude 5, and display the output using
+          catlist in an easy-to-read format.
+
+     eqselect -catalog -t 940101000000 940201000000 -mag  5  9  >
+     mylist.cat; catlist mylist.cat
+          will search the online NCSN catalog  for  January  1994
+          for  events >= magnitude 5, save the output to the file
+          mylist.cat, and then display the output  using  catlist
+          in an easy-to-read format.
+
+SEE ALSO
+     eqselect    (1),    catalog(5),    ncsn(5)    ncsn.phase(5),
+     ncsn.catalog(5), ucb(5), ucb.catalog(5), ucb.phase(5)
+
+AUTHOR
+     Please   report   bugs    and    address    questions    to:
+     doug@seismo.berkeley.edu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UC Berkeley       Last change: 20 November 2002                 4
+
+
+

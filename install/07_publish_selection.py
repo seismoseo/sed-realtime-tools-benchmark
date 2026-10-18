@@ -15,7 +15,8 @@ import os
 PROJECT = "/home/msseo/works/74.SeisComP_rtDD_DLpicker"
 MAX_BYTES = 2_000_000
 EXCLUDED_DIRS = {"software", "logs", "wfcache", "sds", "playback", "processing", "work", "time", "model", "home",
-                 "seiscomp_home", "seiscomp_user", "db", "output", "__pycache__", ".ipynb_checkpoints", ".git"}
+                 "seiscomp_home", "seiscomp_user", "db", "output", "__pycache__", ".ipynb_checkpoints", ".git",
+                 "report_build_cache", "report_build_tmp"}
 EXCLUDED_DIR_PREFIXES = ("nll_",)
 PUBLISHED_EXT = {".py", ".sh", ".md", ".csv", ".json", ".txt", ".cfg", ".ipynb", ".png", ".pdf", ".in", ".run",
                  ".tsv", ".yml", ".yaml"}
@@ -31,6 +32,8 @@ def selected_files():
         for f in sorted(fn):
             rel = os.path.normpath(os.path.join(rel_dir, f))
             path = os.path.join(PROJECT, rel)
+            if any(w in rel.lower() for w in ("server-a", "server B")):
+                continue    # file names that carry a server name cannot be redacted by the text filter; not published
             if rel in ALWAYS:
                 out.append(rel)
                 continue

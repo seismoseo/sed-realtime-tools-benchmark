@@ -44,6 +44,7 @@ PYRTDD_PKGS=(
   numpy scipy pandas matplotlib obspy pyproj
   pytest ipykernel nbformat nbclient nbconvert
   onnx "onnxruntime=*=*cpu*"                   # CPU build; to inspect / cross-check the scdlrtpicker ONNX models
+  tectonic                                     # PDF reports from Markdown via pandoc (added 2026-10-18)
 )
 
 run() {

@@ -1,0 +1,17 @@
+{
+ "seisbench": "0.11.0",
+ "torch": "2.12.0+cu130",
+ "threads": 1,
+ "cache_root": "/home/msseo/works/74.SeisComP_rtDD_DLpicker/runs/sanramon2026/dlpicker/seisbench/cache",
+ "events": [
+  "75305736",
+  "75283011",
+  "75285161",
+  "75283271",
+  "75282561"
+ ],
+ "station_hours_Z": 59.486066111111114,
+ "n_picks": 1372,
+ "cpu_classify_s": 348.06129300000003,
+ "wall_classify_s": 348.422780752182
+}

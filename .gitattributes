@@ -1,5 +1,6 @@
-# Server addresses are replaced by placeholders in the committed files (git "redact" clean filter, as in the
-# user's other public repositories). The rules live outside the repository: /home/msseo/works/_git/sed-realtime-tools-redact.sed
+# Server addresses and local server names are replaced in the committed files (git "redact" clean filter, as in
+# the user's other public repositories). The rules live outside the repository, in a Python filter that leaves
+# notebook image data untouched.
 *.py filter=redact
 *.sh filter=redact
 *.ipynb filter=redact

@@ -1,0 +1,825 @@
+{
+ "cmsb_record_rates": {
+  "00.HNE": [
+   200.0
+  ],
+  "00.HNN": [
+   200.0
+  ],
+  "00.HNZ": [
+   200.0
+  ],
+  "40.DP1": [
+   500.0
+  ],
+  "40.DP2": [
+   500.0
+  ],
+  "40.DP3": [
+   500.0
+  ]
+ },
+ "cmsb_inventory_epochs": [
+  {
+   "channel": "00.HNE",
+   "start": "2016-11-24T00:20:00.0000Z",
+   "end": "2026-03-12T23:00:00.0000Z",
+   "inventory_rate_hz": 100.0
+  },
+  {
+   "channel": "00.HNN",
+   "start": "2016-11-24T00:20:00.0000Z",
+   "end": "2026-03-12T23:00:00.0000Z",
+   "inventory_rate_hz": 100.0
+  },
+  {
+   "channel": "00.HNZ",
+   "start": "2016-11-24T00:20:00.0000Z",
+   "end": "2026-03-12T23:00:00.0000Z",
+   "inventory_rate_hz": 100.0
+  },
+  {
+   "channel": "00.HNE",
+   "start": "2026-03-12T23:00:00.0000Z",
+   "end": "2026-03-13T15:55:00.0000Z",
+   "inventory_rate_hz": 100.0
+  },
+  {
+   "channel": "00.HNN",
+   "start": "2026-03-12T23:00:00.0000Z",
+   "end": "2026-03-13T15:55:00.0000Z",
+   "inventory_rate_hz": 100.0
+  },
+  {
+   "channel": "00.HNZ",
+   "start": "2026-03-12T23:00:00.0000Z",
+   "end": "2026-03-13T15:55:00.0000Z",
+   "inventory_rate_hz": 100.0
+  },
+  {
+   "channel": "00.HNE",
+   "start": "2026-03-13T15:55:00.0000Z",
+   "end": NaN,
+   "inventory_rate_hz": 200.0
+  },
+  {
+   "channel": "00.HNN",
+   "start": "2026-03-13T15:55:00.0000Z",
+   "end": NaN,
+   "inventory_rate_hz": 200.0
+  },
+  {
+   "channel": "00.HNZ",
+   "start": "2026-03-13T15:55:00.0000Z",
+   "end": NaN,
+   "inventory_rate_hz": 200.0
+  },
+  {
+   "channel": "40.DP1",
+   "start": "2016-08-10T22:17:00.0000Z",
+   "end": "2026-03-12T23:00:00.0000Z",
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP2",
+   "start": "2016-08-10T22:17:00.0000Z",
+   "end": "2026-03-12T23:00:00.0000Z",
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP3",
+   "start": "2016-08-10T22:17:00.0000Z",
+   "end": "2026-03-12T23:00:00.0000Z",
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP1",
+   "start": "2026-03-12T23:00:00.0000Z",
+   "end": "2026-03-13T15:55:00.0000Z",
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP2",
+   "start": "2026-03-12T23:00:00.0000Z",
+   "end": "2026-03-13T15:55:00.0000Z",
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP3",
+   "start": "2026-03-12T23:00:00.0000Z",
+   "end": "2026-03-13T15:55:00.0000Z",
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP1",
+   "start": "2026-03-13T15:55:00.0000Z",
+   "end": NaN,
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP2",
+   "start": "2026-03-13T15:55:00.0000Z",
+   "end": NaN,
+   "inventory_rate_hz": 500.0
+  },
+  {
+   "channel": "40.DP3",
+   "start": "2026-03-13T15:55:00.0000Z",
+   "end": NaN,
+   "inventory_rate_hz": 500.0
+  }
+ ],
+ "sampling_rate_changed_warnings": {
+  "n": 0,
+  "examples": []
+ },
+ "cmsb_hn_pickers_created_in_hn_runs": 210,
+ "cmsb_vs_analyst": [
+  {
+   "variant": "eqtp_ncedc",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 10,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP1",
+   "median_dt_s": 0.015,
+   "max_abs_dt_s": 0.11
+  },
+  {
+   "variant": "eqtp_ncedc",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 6,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.16,
+   "max_abs_dt_s": 0.35
+  },
+  {
+   "variant": "eqtp_ncedc_hn",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 7,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP1",
+   "median_dt_s": 0.07,
+   "max_abs_dt_s": 0.11
+  },
+  {
+   "variant": "eqtp_ncedc_hn",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 4,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.375,
+   "max_abs_dt_s": 0.71
+  },
+  {
+   "variant": "phasenet_instance",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 10,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP1",
+   "median_dt_s": -0.035,
+   "max_abs_dt_s": 0.39
+  },
+  {
+   "variant": "phasenet_instance",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 6,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.015,
+   "max_abs_dt_s": 0.26
+  },
+  {
+   "variant": "phasenet_instance_hn",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 10,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP1",
+   "median_dt_s": 0.03,
+   "max_abs_dt_s": 0.15
+  },
+  {
+   "variant": "phasenet_instance_hn",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 6,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.21000000000000002,
+   "max_abs_dt_s": 0.54
+  },
+  {
+   "variant": "phasenet_original",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 10,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP1",
+   "median_dt_s": 0.02,
+   "max_abs_dt_s": 0.1
+  },
+  {
+   "variant": "phasenet_original",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 6,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.185,
+   "max_abs_dt_s": 0.36
+  },
+  {
+   "variant": "phasenet_original_hn",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 10,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP1",
+   "median_dt_s": 0.105,
+   "max_abs_dt_s": 0.21
+  },
+  {
+   "variant": "phasenet_original_hn",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 6,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.31000000000000005,
+   "max_abs_dt_s": 0.65
+  },
+  {
+   "variant": "phasenet_scedc",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 11,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP1",
+   "median_dt_s": 0.01,
+   "max_abs_dt_s": 0.39
+  },
+  {
+   "variant": "phasenet_scedc",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 5,
+   "dl_channels": "DP1",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.15,
+   "max_abs_dt_s": 0.48
+  },
+  {
+   "variant": "phasenet_scedc_hn",
+   "phase": "P",
+   "analyst_picks": 11,
+   "matched": 8,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP1",
+   "median_dt_s": 0.1396,
+   "max_abs_dt_s": 0.31
+  },
+  {
+   "variant": "phasenet_scedc_hn",
+   "phase": "S",
+   "analyst_picks": 6,
+   "matched": 5,
+   "dl_channels": "HNZ",
+   "analyst_channels": "DP2,DP3",
+   "median_dt_s": 0.34,
+   "max_abs_dt_s": 0.71
+  }
+ ],
+ "cmsb_hn_vs_dp_same_model": {
+  "n_hn_picks_with_a_dp_pick": 95,
+  "n_within_1s": 86,
+  "median_abs_dt_within_1s": 0.135
+ },
+ "cmsb_events_in_200hz_epoch_of_inventory": [
+  "75327827",
+  "75335142",
+  "75335382",
+  "75339357"
+ ],
+ "reference_data_source_counts": {
+  "P|J": 3258,
+  "P|R": 71,
+  "S|J": 229
+ },
+ "recall_P_by_data_source": [
+  {
+   "variant": "phasenet_instance",
+   "reference": "all usable (step-12 rule)",
+   "n": 3329,
+   "recall_all": 0.48062481225593273,
+   "n_all": 3329,
+   "recall_3c": 0.8537886872998933,
+   "n_3c": 1874,
+   "recall_complete": 0.8581407845244492,
+   "n_complete": 1861
+  },
+  {
+   "variant": "phasenet_instance",
+   "reference": "analyst 'J' only",
+   "n": 3258,
+   "recall_all": 0.4821976672805402,
+   "n_all": 3258,
+   "recall_3c": 0.8524145415084102,
+   "n_3c": 1843,
+   "recall_complete": 0.8568306010928962,
+   "n_complete": 1830
+  },
+  {
+   "variant": "phasenet_instance",
+   "reference": "automatic 'R' only",
+   "n": 71,
+   "recall_all": 0.4084507042253521,
+   "n_all": 71,
+   "recall_3c": 0.9354838709677419,
+   "n_3c": 31,
+   "recall_complete": 0.9354838709677419,
+   "n_complete": 31
+  },
+  {
+   "variant": "phasenet_original",
+   "reference": "all usable (step-12 rule)",
+   "n": 3329,
+   "recall_all": 0.47822168819465305,
+   "n_all": 3329,
+   "recall_3c": 0.8495197438633938,
+   "n_3c": 1874,
+   "recall_complete": 0.8538420204191295,
+   "n_complete": 1861
+  },
+  {
+   "variant": "phasenet_original",
+   "reference": "analyst 'J' only",
+   "n": 3258,
+   "recall_all": 0.47974217311233885,
+   "n_all": 3258,
+   "recall_3c": 0.8480737927292458,
+   "n_3c": 1843,
+   "recall_complete": 0.8524590163934426,
+   "n_complete": 1830
+  },
+  {
+   "variant": "phasenet_original",
+   "reference": "automatic 'R' only",
+   "n": 71,
+   "recall_all": 0.4084507042253521,
+   "n_all": 71,
+   "recall_3c": 0.9354838709677419,
+   "n_3c": 31,
+   "recall_complete": 0.9354838709677419,
+   "n_complete": 31
+  },
+  {
+   "variant": "phasenet_scedc",
+   "reference": "all usable (step-12 rule)",
+   "n": 3329,
+   "recall_all": 0.4172424151396816,
+   "n_all": 3329,
+   "recall_3c": 0.7411953041622199,
+   "n_3c": 1874,
+   "recall_complete": 0.7458355722729715,
+   "n_complete": 1861
+  },
+  {
+   "variant": "phasenet_scedc",
+   "reference": "analyst 'J' only",
+   "n": 3258,
+   "recall_all": 0.4180478821362799,
+   "n_all": 3258,
+   "recall_3c": 0.7390124796527401,
+   "n_3c": 1843,
+   "recall_complete": 0.7437158469945355,
+   "n_complete": 1830
+  },
+  {
+   "variant": "phasenet_scedc",
+   "reference": "automatic 'R' only",
+   "n": 71,
+   "recall_all": 0.38028169014084506,
+   "n_all": 71,
+   "recall_3c": 0.8709677419354839,
+   "n_3c": 31,
+   "recall_complete": 0.8709677419354839,
+   "n_complete": 31
+  },
+  {
+   "variant": "eqtp_ncedc",
+   "reference": "all usable (step-12 rule)",
+   "n": 3329,
+   "recall_all": 0.41393811955542203,
+   "n_all": 3329,
+   "recall_3c": 0.7353255069370331,
+   "n_3c": 1874,
+   "recall_complete": 0.739924771628157,
+   "n_complete": 1861
+  },
+  {
+   "variant": "eqtp_ncedc",
+   "reference": "analyst 'J' only",
+   "n": 3258,
+   "recall_all": 0.4162062615101289,
+   "n_all": 3258,
+   "recall_3c": 0.7357569180683667,
+   "n_3c": 1843,
+   "recall_complete": 0.7404371584699454,
+   "n_complete": 1830
+  },
+  {
+   "variant": "eqtp_ncedc",
+   "reference": "automatic 'R' only",
+   "n": 71,
+   "recall_all": 0.30985915492957744,
+   "n_all": 71,
+   "recall_3c": 0.7096774193548387,
+   "n_3c": 31,
+   "recall_complete": 0.7096774193548387,
+   "n_complete": 31
+  }
+ ],
+ "hn_failed_three_component_assembly": {
+  "BK.LCOS": 405,
+  "BK.BRIB": 270,
+  "BK.BRK": 126
+ },
+ "hn_ambiguous_vertical_errors": {
+  "BK.BRK.00.HN": 108
+ },
+ "accelerometer_vs_velocity_without_failed": [
+  {
+   "model": "phasenet_instance",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 340,
+   "recall": 0.8272506082725061
+  },
+  {
+   "model": "phasenet_instance",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 299,
+   "recall": 0.8191780821917808
+  },
+  {
+   "model": "phasenet_instance",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 68,
+   "recall": 0.7311827956989247
+  },
+  {
+   "model": "phasenet_instance",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 63,
+   "recall": 0.7241379310344828
+  },
+  {
+   "model": "phasenet_instance",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 295,
+   "recall": 0.7177615571776156
+  },
+  {
+   "model": "phasenet_instance",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 295,
+   "recall": 0.8082191780821918
+  },
+  {
+   "model": "phasenet_instance",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 72,
+   "recall": 0.7741935483870968
+  },
+  {
+   "model": "phasenet_instance",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 72,
+   "recall": 0.8275862068965517
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 341,
+   "recall": 0.829683698296837
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 300,
+   "recall": 0.821917808219178
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 72,
+   "recall": 0.7741935483870968
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 67,
+   "recall": 0.7701149425287356
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 309,
+   "recall": 0.7518248175182481
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 309,
+   "recall": 0.8465753424657534
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 77,
+   "recall": 0.8279569892473119
+  },
+  {
+   "model": "phasenet_original",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 77,
+   "recall": 0.8850574712643678
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 313,
+   "recall": 0.7615571776155717
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 274,
+   "recall": 0.7506849315068493
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 50,
+   "recall": 0.5376344086021505
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 45,
+   "recall": 0.5172413793103449
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 246,
+   "recall": 0.5985401459854015
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 246,
+   "recall": 0.673972602739726
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 44,
+   "recall": 0.4731182795698925
+  },
+  {
+   "model": "phasenet_scedc",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 44,
+   "recall": 0.5057471264367817
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 259,
+   "recall": 0.6301703163017032
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "velocity sensor",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 236,
+   "recall": 0.6465753424657534
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 68,
+   "recall": 0.7311827956989247
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "velocity sensor",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 64,
+   "recall": 0.735632183908046
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 411,
+   "n_matched": 276,
+   "recall": 0.6715328467153284
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "accelerometer",
+   "phase": "P",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 365,
+   "n_matched": 276,
+   "recall": 0.7561643835616438
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "all hn stations",
+   "n_stations": 28,
+   "n_ref": 93,
+   "n_matched": 72,
+   "recall": 0.7741935483870968
+  },
+  {
+   "model": "eqtp_ncedc",
+   "sensor": "accelerometer",
+   "phase": "S",
+   "stations": "hn stations that worked",
+   "n_stations": 25,
+   "n_ref": 87,
+   "n_matched": 72,
+   "recall": 0.8275862068965517
+  }
+ ],
+ "noise_span_P_confirmed_by_other_model": {
+  "phasenet_instance": {
+   "n_noise_span_P": 49,
+   "n_confirmed_by_other_model": 33
+  },
+  "phasenet_original": {
+   "n_noise_span_P": 218,
+   "n_confirmed_by_other_model": 53
+  },
+  "phasenet_scedc": {
+   "n_noise_span_P": 163,
+   "n_confirmed_by_other_model": 38
+  },
+  "eqtp_ncedc": {
+   "n_noise_span_P": 75,
+   "n_confirmed_by_other_model": 27
+  }
+ },
+ "overlap_file_75283011_matched_P_by_event": {
+  "phasenet_instance": {
+   "75283016": 145,
+   "75283011": 15
+  },
+  "phasenet_original": {
+   "75283016": 128,
+   "75283011": 26
+  },
+  "phasenet_scedc": {
+   "75283016": 55,
+   "75283011": 54
+  },
+  "eqtp_ncedc": {
+   "75283011": 109,
+   "75283016": 33
+  }
+ },
+ "seisbench_overlap_file_75283011": {
+  "75283011": {
+   "analyst_P_at_3c_stations": 139,
+   "with_seisbench_P_within_0p5s": 121
+  },
+  "75283016": {
+   "analyst_P_at_3c_stations": 164,
+   "with_seisbench_P_within_0p5s": 66
+  }
+ }
+}

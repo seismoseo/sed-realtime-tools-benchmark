@@ -48,6 +48,8 @@ Every figure lives in an executed notebook in `notebooks/`, with PNG and PDF cop
 | `05_gwangyang_sp_offset` | Finding: the reference S-P times are about 0.27 s shorter than the kim1983 model predicts (see below) |
 | `06_sanramon_relocation` | rtDD against the LDEO and NCEDC double-difference catalogs; fault-plane sharpening |
 | `07_sanramon_dlpicker` | DL picker against NCSS analyst picks; what limits recall; eqtp_ncedc first-motion polarity |
+| `08_sanramon2026_relocation` | 2025-26 San Ramon sequence (2015 settings): rtDD against Lamont's real-time DD catalog; the new sequence relative to the 2015 strand (clean, key figures only) |
+| `09_sanramon2026_dlpicker` | 2025-26 San Ramon sequence: DL picker against analyst picks, 2015 vs 2025-26 (clean, key figures only) |
 
 The written results, in plain language and with every table, are in:
 - `docs/results/07_gwangyang_pyrtdd.md`
@@ -102,7 +104,21 @@ Independent verifiers recomputed the headline numbers. Their findings and the co
 - **Effect on double differences.** Relative positions are exactly unchanged by any S shift common to all events. Event-specific parts move events by
   up to 11 m.
 
-### San Ramon
+### San Ramon 2025-26 (report: `docs/report_sanramon_2025-26/report.pdf`)
+
+The same test, with the 2015 settings, on the 2025-26 sequence (927 events; Mw 4.18 on 2026-02-02). Notes 13 and 14,
+notebooks 08 and 09.
+
+- **Relocation.** 893 events relocated, and scrtdd = pyrtdd (median 1 m).
+  - rtDD improves the routine catalog about 2.4 times.
+  - Against Lamont's real-time DD catalog, local geometry is off by 142 / 217 m. Cross-correlation helps much less
+    than in 2015, and the causes cannot be separated (weaker real-time reference, wider sequence, new network,
+    poorer correlations).
+  - The new sequence lies on a parallel strand about 2 km east of the 2015 fault plane, not on the 2015 strand.
+- **DL picker.** The models behave as in 2015 (isolated-event P recall 0.89). Strong-motion records are now
+  continuous, so phasenet_instance finds 85 % of the analyst P picks at 3-component stations (2015: 56 %).
+
+### San Ramon 2015
 
 **Relocation** (note 11; notebook 06)
 - **Events relocated:** 680 of 685 (5 have fewer than 8 picks).
@@ -170,7 +186,7 @@ I can draft GitHub issues for problems 1 and 2 for the SED developers with the e
 | `data/sanramon_2015/` | NCEDC catalogs, picks, StationXML, CON model and grids, waveforms, reference tables |
 | `runs/` | Every run: option dumps, logs, outputs (`gwangyang/{pyrtdd,scrtdd,dlpicker,realtime,sp_offset}`, `sanramon/...`) |
 | `notebooks/` | Notebooks 02-07, their builder scripts, `lib/`, `figures/` |
-| `docs/` | `install_notes/`, `results/`, `reference_run_settings.md`, `sanramon_inputs.md`, `sanramon_waveforms.md`, `patches.md` (no source patches), `side_effects_outside_project.md` |
+| `docs/` | `report_sanramon_2025-26/` (report, PDF), `install_notes/`, `results/`, `reference_run_settings.md`, `sanramon_inputs.md`, `sanramon_waveforms.md`, `patches.md` (no source patches), `side_effects_outside_project.md` |
 | `logs/` | Logs of every step |
 
 ## This public repository
@@ -190,8 +206,11 @@ github.com/seismoseo/sed-realtime-tools-benchmark holds a curated part of the pr
   - databases and caches;
   - per-iteration dumps and logs;
   - third-party software: SeisComP, scrtdd and scdlrtpicker (AGPL-3.0), pyrtdd (MIT), NonLinLoc, ONNX Runtime. The install scripts fetch these from their official sources.
-- **Redacted:** server addresses in text files are replaced by placeholders such as `<server-B>`, `<server-A>` and
-  `<server-ip>` (a git clean filter). Paths such as `/home/msseo/works/...` are the original working paths.
+- **Redacted:** local server names and addresses are replaced (a git clean filter).
+  - "Server A" is the Linux analysis server where everything was installed and run.
+  - "Server B" is the data server that holds the Gwangyang reference data, which was copied from it read-only.
+  - Addresses become `<server-A>`, `<server-B>` and `<server-ip>`.
+  - Paths such as `/home/msseo/works/...` are the original working paths.
 
 Data and acknowledgements:
 - **Gwangyang.** Waveforms and metadata come from the Korea Meteorological Administration (KMA). The picks, hand picks and HypoDD

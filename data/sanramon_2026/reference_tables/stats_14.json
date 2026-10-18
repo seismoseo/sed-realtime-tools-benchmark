@@ -1,0 +1,34 @@
+{
+ "beyond_10km": {
+  "n_pairs": 3026,
+  "n_events_wadati": 273,
+  "vpvs_median": 1.7756340362310623,
+  "vpvs_iqr": [
+   1.6977139865631274,
+   1.8596636476080266
+  ],
+  "pooled_fit": {
+   "vpvs": 1.7721509727896254,
+   "intercept_s": 0.07090846508815883
+  },
+  "median_sp_residual_vpvs_1p73_s": 0.25649999999999995
+ },
+ "within_10km_pairs": 909,
+ "n_pairs": 3935,
+ "n_pairs_s_not_after_p": 0,
+ "n_events_wadati": 527,
+ "vpvs_median": 1.5993776430224207,
+ "vpvs_iqr": [
+  1.452952447793649,
+  1.6784122444243774
+ ],
+ "pooled_fit": {
+  "vpvs": 1.6799801943585626,
+  "intercept_s": 0.5294444071980449
+ },
+ "median_sp_residual_s": {
+  "NCSS psm 1.708 +0.208": 0.1985199999999998,
+  "Vp/Vs 1.78": 0.11680000000000001,
+  "Vp/Vs 1.73": 0.3174999999999999
+ }
+}
